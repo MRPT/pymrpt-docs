@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.apps</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.apps</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::apps&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>(<a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a>, <a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Live">ICP_SLAM_App_Live</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Rawlog">ICP_SLAM_App_Rawlog</a>(<a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>, <a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a>)
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>(<a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a>, <a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Rawlog">MonteCarloLocalization_Rawlog</a>(<a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>, <a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a>)
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>(<a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a>, <a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Rawlog">RBPF_SLAM_App_Rawlog</a>(<a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>, <a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a>)
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#KFSLAMApp">KFSLAMApp</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#RawlogEditApp">RawlogEditApp</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.apps.html#RawlogGrabberApp">RawlogGrabberApp</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="BaseAppDataSource">class <strong>BaseAppDataSource</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Virtual&nbsp;interface&nbsp;for&nbsp;offline&nbsp;datasets&nbsp;(rawlog)&nbsp;or&nbsp;live&nbsp;sensors.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="BaseAppDataSource-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#BaseAppDataSource-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#BaseAppDataSource-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#BaseAppDataSource-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="BaseAppDataSource-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#BaseAppDataSource-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#BaseAppDataSource">BaseAppDataSource</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#BaseAppDataSource">BaseAppDataSource</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#BaseAppDataSource">BaseAppDataSource</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="BaseAppDataSource-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="BaseAppInitializableCLI">class <strong>BaseAppInitializableCLI</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Virtual&nbsp;interface&nbsp;for&nbsp;applications&nbsp;that&nbsp;initialize&nbsp;from&nbsp;CLI&nbsp;parameters.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="BaseAppInitializableCLI-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="BaseAppInitializableCLI-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#BaseAppInitializableCLI-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppInitializableCLI">BaseAppInitializableCLI</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppInitializableCLI">BaseAppInitializableCLI</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppInitializableCLI">BaseAppInitializableCLI</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#BaseAppInitializableCLI">BaseAppInitializableCLI</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#BaseAppInitializableCLI">BaseAppInitializableCLI</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#BaseAppInitializableCLI">BaseAppInitializableCLI</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="BaseAppInitializableCLI-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DataSourceRawlog">class <strong>DataSourceRawlog</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Implementation&nbsp;of&nbsp;<a href="#BaseAppDataSource">BaseAppDataSource</a>&nbsp;for&nbsp;reading&nbsp;from&nbsp;a&nbsp;rawlog&nbsp;file<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="DataSourceRawlog-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#DataSourceRawlog-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#DataSourceRawlog">DataSourceRawlog</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>:<br>
+<dl><dt><a name="DataSourceRawlog-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#DataSourceRawlog-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#BaseAppDataSource">BaseAppDataSource</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#BaseAppDataSource">BaseAppDataSource</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#BaseAppDataSource">BaseAppDataSource</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#BaseAppDataSource">BaseAppDataSource</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="DataSourceRawlog-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ICP_SLAM_App_Base">class <strong>ICP_SLAM_App_Base</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a>, <a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>ICP-SLAM&nbsp;virtual&nbsp;base&nbsp;class&nbsp;for&nbsp;application&nbsp;wrappers.<br>
+&nbsp;<br>
+This&nbsp;virtual&nbsp;base&nbsp;provides&nbsp;the&nbsp;common&nbsp;code&nbsp;to&nbsp;the&nbsp;applications&nbsp;icp-slam&nbsp;and<br>
+icp-slam-live,&nbsp;and&nbsp;could&nbsp;be&nbsp;used&nbsp;by&nbsp;users&nbsp;to&nbsp;build&nbsp;their&nbsp;own&nbsp;ICP-SLAM<br>
+solution.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;mrpt::slam::CMetricMapBuilderICP<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ICP_SLAM_App_Base-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ICP_SLAM_App_Base-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Base-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="ICP_SLAM_App_Base-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Base-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>::<a href="#ICP_SLAM_App_Base-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<dl><dt><strong>quits_with_esc_key</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ICP_SLAM_App_Base-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ICP_SLAM_App_Live">class <strong>ICP_SLAM_App_Live</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Instance&nbsp;of&nbsp;<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;to&nbsp;run&nbsp;mapping&nbsp;from&nbsp;a&nbsp;live&nbsp;LIDAR&nbsp;sensor.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Live">ICP_SLAM_App_Live</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ICP_SLAM_App_Live-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Live-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Live">ICP_SLAM_App_Live</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>:<br>
+<dl><dt><a name="ICP_SLAM_App_Live-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Live-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="ICP_SLAM_App_Live-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Live-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>::<a href="#ICP_SLAM_App_Live-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>:<br>
+<dl><dt><strong>out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<dl><dt><strong>quits_with_esc_key</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ICP_SLAM_App_Live-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ICP_SLAM_App_Rawlog">class <strong>ICP_SLAM_App_Rawlog</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>, <a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Instance&nbsp;of&nbsp;<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;to&nbsp;run&nbsp;mapping&nbsp;from&nbsp;an&nbsp;offline&nbsp;dataset&nbsp;file.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Rawlog">ICP_SLAM_App_Rawlog</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ICP_SLAM_App_Rawlog-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Rawlog-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Rawlog">ICP_SLAM_App_Rawlog</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>:<br>
+<dl><dt><a name="ICP_SLAM_App_Rawlog-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Rawlog-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="ICP_SLAM_App_Rawlog-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#ICP_SLAM_App_Rawlog-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>::<a href="#ICP_SLAM_App_Rawlog-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.apps.html#ICP_SLAM_App_Base">ICP_SLAM_App_Base</a>:<br>
+<dl><dt><strong>out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<dl><dt><strong>quits_with_esc_key</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ICP_SLAM_App_Rawlog-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="KFSLAMApp">class <strong>KFSLAMApp</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>EKF-SLAM&nbsp;application&nbsp;wrapper&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+mrpt::slam::CRangeBearingKFSLAM2D,&nbsp;mrpt::slam::CRangeBearingKFSLAM<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#KFSLAMApp">KFSLAMApp</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="KFSLAMApp-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#KFSLAMApp-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#KFSLAMApp-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#KFSLAMApp">KFSLAMApp</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#KFSLAMApp-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#KFSLAMApp">KFSLAMApp</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#KFSLAMApp">KFSLAMApp</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="KFSLAMApp-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#KFSLAMApp-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#KFSLAMApp">KFSLAMApp</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#KFSLAMApp">KFSLAMApp</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#KFSLAMApp">KFSLAMApp</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#KFSLAMApp">KFSLAMApp</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#KFSLAMApp">KFSLAMApp</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#KFSLAMApp">KFSLAMApp</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="KFSLAMApp-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#KFSLAMApp-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#KFSLAMApp">KFSLAMApp</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#KFSLAMApp">KFSLAMApp</a>::<a href="#KFSLAMApp-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>loc_error_wrt_gt</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<dl><dt><strong>rawlogFileName</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="KFSLAMApp-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MonteCarloLocalization_Base">class <strong>MonteCarloLocalization_Base</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a>, <a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>MonteCarlo&nbsp;(Particle&nbsp;filter)&nbsp;localization&nbsp;wrapper&nbsp;class&nbsp;for&nbsp;CLI&nbsp;or&nbsp;custom<br>
+applications:&nbsp;virtual&nbsp;base&nbsp;class,&nbsp;which&nbsp;can&nbsp;be&nbsp;used&nbsp;as&nbsp;base&nbsp;for&nbsp;custom<br>
+user&nbsp;robotic&nbsp;applications.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MonteCarloLocalization_Base-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="MonteCarloLocalization_Base-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#MonteCarloLocalization_Base-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="MonteCarloLocalization_Base-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#MonteCarloLocalization_Base-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>::<a href="#MonteCarloLocalization_Base-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>allow_quit_on_esc_key</strong></dt>
+</dl>
+<dl><dt><strong>fill_out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MonteCarloLocalization_Base-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MonteCarloLocalization_Rawlog">class <strong>MonteCarloLocalization_Rawlog</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>, <a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>MonteCarlo&nbsp;(Particle&nbsp;filter)&nbsp;localization&nbsp;wrapper&nbsp;class,&nbsp;reading&nbsp;from&nbsp;a<br>
+rawlog&nbsp;dataset.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Rawlog">MonteCarloLocalization_Rawlog</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MonteCarloLocalization_Rawlog-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#MonteCarloLocalization_Rawlog-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Rawlog">MonteCarloLocalization_Rawlog</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>:<br>
+<dl><dt><a name="MonteCarloLocalization_Rawlog-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#MonteCarloLocalization_Rawlog-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="MonteCarloLocalization_Rawlog-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#MonteCarloLocalization_Rawlog-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>::<a href="#MonteCarloLocalization_Rawlog-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.apps.html#MonteCarloLocalization_Base">MonteCarloLocalization_Base</a>:<br>
+<dl><dt><strong>allow_quit_on_esc_key</strong></dt>
+</dl>
+<dl><dt><strong>fill_out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MonteCarloLocalization_Rawlog-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RBPF_SLAM_App_Base">class <strong>RBPF_SLAM_App_Base</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a>, <a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>RBPF-SLAM&nbsp;virtual&nbsp;base&nbsp;class&nbsp;for&nbsp;application&nbsp;wrappers.<br>
+&nbsp;<br>
+This&nbsp;virtual&nbsp;base&nbsp;provides&nbsp;the&nbsp;common&nbsp;code&nbsp;to&nbsp;the&nbsp;application&nbsp;rbpf-slam.<br>
+It&nbsp;can&nbsp;be&nbsp;used&nbsp;by&nbsp;users&nbsp;to&nbsp;build&nbsp;their&nbsp;own&nbsp;RBPF-SLAM&nbsp;solution.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;mrpt::slam::CMetricMapBuilderRBPF<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="RBPF_SLAM_App_Base-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="RBPF_SLAM_App_Base-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#RBPF_SLAM_App_Base-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="RBPF_SLAM_App_Base-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#RBPF_SLAM_App_Base-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>::<a href="#RBPF_SLAM_App_Base-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>mapBuilder</strong></dt>
+</dl>
+<dl><dt><strong>out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<dl><dt><strong>quits_with_esc_key</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="RBPF_SLAM_App_Base-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RBPF_SLAM_App_Rawlog">class <strong>RBPF_SLAM_App_Rawlog</strong></a>(<a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>, <a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Instance&nbsp;of&nbsp;<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>&nbsp;to&nbsp;run&nbsp;mapping&nbsp;from&nbsp;an&nbsp;offline&nbsp;dataset&nbsp;file.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Rawlog">RBPF_SLAM_App_Rawlog</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppInitializableCLI">BaseAppInitializableCLI</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#DataSourceRawlog">DataSourceRawlog</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#BaseAppDataSource">BaseAppDataSource</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="RBPF_SLAM_App_Rawlog-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#RBPF_SLAM_App_Rawlog-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Rawlog">RBPF_SLAM_App_Rawlog</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="RBPF_SLAM_App_Rawlog-init"><strong>init</strong></a>(...)</dt><dd><tt><a href="#RBPF_SLAM_App_Rawlog-init">init</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Rawlog">RBPF_SLAM_App_Rawlog</a>,&nbsp;iniConfigFile:&nbsp;str,&nbsp;rawlogFile:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Rawlog">RBPF_SLAM_App_Rawlog</a>::<a href="#RBPF_SLAM_App_Rawlog-init">init</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>:<br>
+<dl><dt><a name="RBPF_SLAM_App_Rawlog-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#RBPF_SLAM_App_Rawlog-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>::operator=(const&nbsp;class&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="RBPF_SLAM_App_Rawlog-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#RBPF_SLAM_App_Rawlog-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>::<a href="#RBPF_SLAM_App_Rawlog-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.apps.html#RBPF_SLAM_App_Base">RBPF_SLAM_App_Base</a>:<br>
+<dl><dt><strong>mapBuilder</strong></dt>
+</dl>
+<dl><dt><strong>out_estimated_path</strong></dt>
+</dl>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<dl><dt><strong>quits_with_esc_key</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="RBPF_SLAM_App_Rawlog-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RawlogEditApp">class <strong>RawlogEditApp</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;C++&nbsp;class&nbsp;behind&nbsp;the&nbsp;rawlog-edit&nbsp;CLI&nbsp;tool.<br>
+&nbsp;<br>
+Refer&nbsp;to&nbsp;the&nbsp;online&nbsp;documentation&nbsp;for&nbsp;rawlog-edit.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#RawlogEditApp">RawlogEditApp</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="RawlogEditApp-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#RawlogEditApp-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RawlogEditApp">RawlogEditApp</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="RawlogEditApp-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RawlogGrabberApp">class <strong>RawlogGrabberApp</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>RawlogGrabber&nbsp;application&nbsp;wrapper&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;environment&nbsp;variable&nbsp;`MRPT_HWDRIVERS_VERBOSE=1`&nbsp;is&nbsp;defined<br>
+before&nbsp;calling&nbsp;initialize(),&nbsp;verbosity&nbsp;level&nbsp;will&nbsp;be&nbsp;changed&nbsp;to&nbsp;LVL_DEBUG.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.apps.html#RawlogGrabberApp">RawlogGrabberApp</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="RawlogGrabberApp-SensorThread"><strong>SensorThread</strong></a>(...)</dt><dd><tt><a href="#RawlogGrabberApp-SensorThread">SensorThread</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RawlogGrabberApp">RawlogGrabberApp</a>,&nbsp;sensor_label:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+@}&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RawlogGrabberApp">RawlogGrabberApp</a>::<a href="#RawlogGrabberApp-SensorThread">SensorThread</a>(std::string)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="RawlogGrabberApp-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#RawlogGrabberApp-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RawlogGrabberApp">RawlogGrabberApp</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="RawlogGrabberApp-isRunning"><strong>isRunning</strong></a>(...)</dt><dd><tt><a href="#RawlogGrabberApp-isRunning">isRunning</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RawlogGrabberApp">RawlogGrabberApp</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RawlogGrabberApp">RawlogGrabberApp</a>::<a href="#RawlogGrabberApp-isRunning">isRunning</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="RawlogGrabberApp-run"><strong>run</strong></a>(...)</dt><dd><tt><a href="#RawlogGrabberApp-run">run</a>(self:&nbsp;mrpt.pymrpt.mrpt.apps.<a href="#RawlogGrabberApp">RawlogGrabberApp</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Runs&nbsp;with&nbsp;the&nbsp;current&nbsp;parameter&nbsp;set.&nbsp;Throws&nbsp;on&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::apps::<a href="#RawlogGrabberApp">RawlogGrabberApp</a>::<a href="#RawlogGrabberApp-run">run</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>params</strong></dt>
+</dl>
+<dl><dt><strong>rawlog_filename</strong></dt>
+</dl>
+<dl><dt><strong>rawlog_saved_objects</strong></dt>
+</dl>
+<dl><dt><strong>run_for_seconds</strong></dt>
+</dl>
+<dl><dt><strong>show_sensor_thread_exceptions</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="RawlogGrabberApp-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

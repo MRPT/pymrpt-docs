@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.expr</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.expr</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::expr&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.expr.html#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CRuntimeCompiledExpression">class <strong>CRuntimeCompiledExpression</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;wrapper&nbsp;of&nbsp;`exprtk`&nbsp;runtime&nbsp;expression&nbsp;compiler:&nbsp;it&nbsp;takes&nbsp;a&nbsp;string<br>
+representing&nbsp;an&nbsp;expression&nbsp;(from&nbsp;a&nbsp;simple&nbsp;mathematical&nbsp;formula&nbsp;to&nbsp;a&nbsp;complete<br>
+program),&nbsp;compiles&nbsp;it&nbsp;and&nbsp;evaluates&nbsp;its&nbsp;result&nbsp;as&nbsp;many&nbsp;times&nbsp;as&nbsp;required.&nbsp;The<br>
+result&nbsp;will&nbsp;change&nbsp;as&nbsp;the&nbsp;"variables"&nbsp;appearing&nbsp;in&nbsp;the&nbsp;expression&nbsp;(hold&nbsp;and<br>
+managed&nbsp;by&nbsp;the&nbsp;user&nbsp;of&nbsp;this&nbsp;object)&nbsp;change.<br>
+&nbsp;<br>
+Refer&nbsp;to&nbsp;[exprtk&nbsp;documentation](<a href="https://github.com/ArashPartow/exprtk">https://github.com/ArashPartow/exprtk</a>)&nbsp;for<br>
+reference&nbsp;on&nbsp;supported&nbsp;formulas,&nbsp;control&nbsp;flow&nbsp;instructions,&nbsp;etc.<br>
+&nbsp;<br>
+This&nbsp;wrapper&nbsp;is&nbsp;provided&nbsp;to&nbsp;reduce&nbsp;the&nbsp;(very&nbsp;large)&nbsp;compilation&nbsp;time&nbsp;and<br>
+memory&nbsp;required&nbsp;by&nbsp;the&nbsp;original&nbsp;library,&nbsp;at&nbsp;the&nbsp;cost&nbsp;of&nbsp;only&nbsp;exposing&nbsp;the<br>
+most&nbsp;commonly&nbsp;used&nbsp;part&nbsp;of&nbsp;its&nbsp;API:<br>
+&nbsp;-&nbsp;Only&nbsp;expressions&nbsp;returning&nbsp;`double`&nbsp;are&nbsp;supported.<br>
+&nbsp;-&nbsp;Variables&nbsp;must&nbsp;be&nbsp;provided&nbsp;via&nbsp;a&nbsp;`std::map`&nbsp;container&nbsp;**or**&nbsp;pointers&nbsp;to<br>
+user-stored&nbsp;variables.<br>
+&nbsp;-&nbsp;Custom&nbsp;user-defined&nbsp;functions&nbsp;taking&nbsp;0-3&nbsp;arguments&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.8).<br>
+&nbsp;<br>
+See&nbsp;examples&nbsp;of&nbsp;usage&nbsp;in&nbsp;the&nbsp;[unit&nbsp;test<br>
+file](<a href="https://github.com/MRPT/mrpt/blob/master/libs/base/src/math/CRuntimeCompiledExpression_unittest.cpp">https://github.com/MRPT/mrpt/blob/master/libs/base/src/math/CRuntimeCompiledExpression_unittest.cpp</a>).<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;environment&nbsp;variable&nbsp;`MRPT_EXPR_VERBOSE=1`&nbsp;is&nbsp;defined,&nbsp;debug<br>
+information&nbsp;will&nbsp;be&nbsp;dumped&nbsp;to&nbsp;std::cout&nbsp;explaining&nbsp;the&nbsp;values&nbsp;of&nbsp;**all**&nbsp;the<br>
+involved&nbsp;variables&nbsp;upon&nbsp;each&nbsp;call&nbsp;to&nbsp;`<a href="#CRuntimeCompiledExpression-eval">eval</a>()`.<br>
+Alternatively,&nbsp;the&nbsp;env&nbsp;var&nbsp;`MRPT_EXPR_VERBOSE`&nbsp;can&nbsp;be&nbsp;set&nbsp;to&nbsp;a&nbsp;list&nbsp;of<br>
+terms&nbsp;split&nbsp;by&nbsp;`|`,&nbsp;and&nbsp;only&nbsp;those&nbsp;formulas&nbsp;that&nbsp;match&nbsp;(i.e.&nbsp;contain&nbsp;as<br>
+substrings)&nbsp;any&nbsp;of&nbsp;the&nbsp;terms&nbsp;will&nbsp;be&nbsp;traced.<br>
+Example:&nbsp;`MRPT_EXPR_VERBOSE="cos|sin|speed|if&nbsp;(x&gt;0)"`.<br>
+&nbsp;<br>
+&nbsp;<br>
+(New&nbsp;in&nbsp;MRPT&nbsp;1.5.0)<br>
+&nbsp;<br>
+&nbsp;<br>
+(`MRPT_EXPR_VERBOSE`&nbsp;new&nbsp;in&nbsp;MRPT&nbsp;1.5.7)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.expr.html#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CRuntimeCompiledExpression-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CRuntimeCompiledExpression-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CRuntimeCompiledExpression-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CRuntimeCompiledExpression-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::operator=(const&nbsp;class&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CRuntimeCompiledExpression-compile"><strong>compile</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-compile">compile</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str,&nbsp;variables:&nbsp;mrpt.pymrpt.std.map_std_string_double)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str,&nbsp;variables:&nbsp;mrpt.pymrpt.std.map_std_string_double,&nbsp;expr_name_for_error_reporting:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Initializes&nbsp;the&nbsp;object&nbsp;by&nbsp;compiling&nbsp;an&nbsp;expression.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::runtime_error&nbsp;On&nbsp;any&nbsp;syntax&nbsp;error&nbsp;or&nbsp;undefined&nbsp;symbol<br>
+&nbsp;while&nbsp;compiling&nbsp;the&nbsp;expression.&nbsp;The&nbsp;`e.what()`&nbsp;message&nbsp;describes&nbsp;what&nbsp;is<br>
+&nbsp;exactly&nbsp;the&nbsp;problem.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;register_symbol_table()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-compile">compile</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;std::map&lt;std::string,&nbsp;double,&nbsp;struct&nbsp;std::less&lt;std::string&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;std::string,&nbsp;double&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CRuntimeCompiledExpression-eval"><strong>eval</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-eval">eval</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Evaluates&nbsp;the&nbsp;current&nbsp;value&nbsp;of&nbsp;the&nbsp;precompiled&nbsp;formula.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::runtime_error&nbsp;If&nbsp;the&nbsp;formula&nbsp;has&nbsp;not&nbsp;been&nbsp;compiled&nbsp;yet.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-eval">eval</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CRuntimeCompiledExpression-get_original_expression"><strong>get_original_expression</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-get_original_expression">get_original_expression</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;original&nbsp;formula&nbsp;passed&nbsp;to&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(),&nbsp;or&nbsp;an&nbsp;empty&nbsp;string&nbsp;if<br>
+&nbsp;still&nbsp;not&nbsp;compiled.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-get_original_expression">get_original_expression</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;std::string&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CRuntimeCompiledExpression-is_compiled"><strong>is_compiled</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-is_compiled">is_compiled</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>()&nbsp;was&nbsp;called&nbsp;and&nbsp;ended&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-is_compiled">is_compiled</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CRuntimeCompiledExpression-register_function"><strong>register_function</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-register_function">register_function</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;name:&nbsp;str,&nbsp;func:&nbsp;std::function&lt;double&nbsp;()&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Register&nbsp;a&nbsp;user-defined&nbsp;nullary&nbsp;function.&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.8)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;std::function&lt;double&nbsp;(void)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;name:&nbsp;str,&nbsp;func:&nbsp;std::function&lt;double&nbsp;(double)&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Register&nbsp;a&nbsp;user-defined&nbsp;unary&nbsp;function.&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.8)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;std::function&lt;double&nbsp;(double)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;name:&nbsp;str,&nbsp;func:&nbsp;std::function&lt;double&nbsp;(double,&nbsp;double)&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Register&nbsp;a&nbsp;user-defined&nbsp;binary&nbsp;function.&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.8)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;std::function&lt;double&nbsp;(double,&nbsp;double)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;name:&nbsp;str,&nbsp;func:&nbsp;std::function&lt;double&nbsp;(double,&nbsp;double,&nbsp;double)&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Register&nbsp;a&nbsp;user-defined&nbsp;ternary&nbsp;function.&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.8)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-register_function">register_function</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;std::function&lt;double&nbsp;(double,&nbsp;double,&nbsp;double)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CRuntimeCompiledExpression-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

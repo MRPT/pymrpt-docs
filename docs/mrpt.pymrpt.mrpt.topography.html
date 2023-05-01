@@ -1,0 +1,1011 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.topography</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.topography</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::topography&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TCoords">TCoords</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatum10Params">TDatum10Params</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatum1DTransf">TDatum1DTransf</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatum7Params">TDatum7Params</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatum7Params_TOPCON">TDatum7Params_TOPCON</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert2D">TDatumHelmert2D</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert2D_TOPCON">TDatumHelmert2D_TOPCON</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert3D">TDatumHelmert3D</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert3D_TOPCON">TDatumHelmert3D_TOPCON</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TDatumTransfInterpolation">TDatumTransfInterpolation</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TEllipsoid">TEllipsoid</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TGeodeticCoords">TGeodeticCoords</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.topography.html#TPathFromRTKInfo">TPathFromRTKInfo</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TCoords">class <strong>TCoords</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;coordinate&nbsp;that&nbsp;is&nbsp;stored&nbsp;as&nbsp;a&nbsp;simple&nbsp;"decimal"&nbsp;angle&nbsp;in&nbsp;degrees,&nbsp;but&nbsp;can<br>
+be&nbsp;retrieved/set&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;DEGREES&nbsp;+&nbsp;arc-MINUTES&nbsp;+&nbsp;arc-SECONDS.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TCoords">TCoords</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TCoords-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TCoords-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#TCoords-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>,&nbsp;_deg:&nbsp;int,&nbsp;_min:&nbsp;int,&nbsp;_sec:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#TCoords-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>,&nbsp;dec:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#TCoords-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#TCoords-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TCoords-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt><a href="#TCoords-__str__">__str__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="TCoords-getAsString"><strong>getAsString</strong></a>(...)</dt><dd><tt><a href="#TCoords-getAsString">getAsString</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Return&nbsp;a&nbsp;std::string&nbsp;in&nbsp;the&nbsp;format&nbsp;"DEGdeg&nbsp;MIN'&nbsp;SEC''"&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TCoords">TCoords</a>::<a href="#TCoords-getAsString">getAsString</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="TCoords-getDecimalValue"><strong>getDecimalValue</strong></a>(...)</dt><dd><tt><a href="#TCoords-getDecimalValue">getDecimalValue</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get&nbsp;the&nbsp;decimal&nbsp;value&nbsp;(XX.YYYYY),&nbsp;in&nbsp;degrees&nbsp;-&nbsp;you&nbsp;can&nbsp;also&nbsp;use&nbsp;the<br>
+&nbsp;automatic&nbsp;conversion&nbsp;between&nbsp;<a href="#TCoords">TCoords</a>&nbsp;and&nbsp;a&nbsp;double.&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TCoords">TCoords</a>::<a href="#TCoords-getDecimalValue">getDecimalValue</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="TCoords-getDegMinSec"><strong>getDegMinSec</strong></a>(...)</dt><dd><tt><a href="#TCoords-getDegMinSec">getDegMinSec</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>,&nbsp;degrees:&nbsp;int,&nbsp;minutes:&nbsp;int,&nbsp;seconds:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;Deg&nbsp;Min'&nbsp;Sec''&nbsp;representation&nbsp;of&nbsp;this&nbsp;value.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TCoords">TCoords</a>::<a href="#TCoords-getDegMinSec">getDegMinSec</a>(int&nbsp;&amp;,&nbsp;int&nbsp;&amp;,&nbsp;double&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="TCoords-setDegMinSec"><strong>setDegMinSec</strong></a>(...)</dt><dd><tt><a href="#TCoords-setDegMinSec">setDegMinSec</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>,&nbsp;degrees:&nbsp;int,&nbsp;minutes:&nbsp;int,&nbsp;seconds:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Set&nbsp;the&nbsp;coordinate&nbsp;from&nbsp;its&nbsp;Deg&nbsp;Min'&nbsp;Deg''&nbsp;parts.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TCoords">TCoords</a>::<a href="#TCoords-setDegMinSec">setDegMinSec</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="TCoords-setFromDecimal"><strong>setFromDecimal</strong></a>(...)</dt><dd><tt><a href="#TCoords-setFromDecimal">setFromDecimal</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TCoords">TCoords</a>,&nbsp;dec:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Set&nbsp;from&nbsp;a&nbsp;decimal&nbsp;value&nbsp;(XX.YYYYY)&nbsp;in&nbsp;degrees.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TCoords">TCoords</a>::<a href="#TCoords-setFromDecimal">setFromDecimal</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>decimal_value</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TCoords-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatum10Params">class <strong>TDatum10Params</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Parameters&nbsp;for&nbsp;a&nbsp;topographic&nbsp;transfomation<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#TDatum7Params">TDatum7Params</a>,&nbsp;transform10params<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatum10Params">TDatum10Params</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatum10Params-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatum10Params-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum10Params">TDatum10Params</a>,&nbsp;_dX:&nbsp;float,&nbsp;_dY:&nbsp;float,&nbsp;_dZ:&nbsp;float,&nbsp;_Xp:&nbsp;float,&nbsp;_Yp:&nbsp;float,&nbsp;_Zp:&nbsp;float,&nbsp;_Rx:&nbsp;float,&nbsp;_Ry:&nbsp;float,&nbsp;_Rz:&nbsp;float,&nbsp;_dS:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Rx</strong></dt>
+</dl>
+<dl><dt><strong>Ry</strong></dt>
+</dl>
+<dl><dt><strong>Rz</strong></dt>
+</dl>
+<dl><dt><strong>Xp</strong></dt>
+</dl>
+<dl><dt><strong>Yp</strong></dt>
+</dl>
+<dl><dt><strong>Zp</strong></dt>
+</dl>
+<dl><dt><strong>dS</strong></dt>
+</dl>
+<dl><dt><strong>dX</strong></dt>
+</dl>
+<dl><dt><strong>dY</strong></dt>
+</dl>
+<dl><dt><strong>dZ</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatum10Params-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatum1DTransf">class <strong>TDatum1DTransf</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Parameters&nbsp;for&nbsp;a&nbsp;topographic&nbsp;transfomation<br>
+&nbsp;<br>
+&nbsp;<br>
+transform1D<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatum1DTransf">TDatum1DTransf</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatum1DTransf-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatum1DTransf-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum1DTransf">TDatum1DTransf</a>,&nbsp;_dX:&nbsp;float,&nbsp;_dY:&nbsp;float,&nbsp;_DZ:&nbsp;float,&nbsp;_dS:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>DZ</strong></dt>
+</dl>
+<dl><dt><strong>dS</strong></dt>
+</dl>
+<dl><dt><strong>dX</strong></dt>
+</dl>
+<dl><dt><strong>dY</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatum1DTransf-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatum7Params">class <strong>TDatum7Params</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Parameters&nbsp;for&nbsp;a&nbsp;topographic&nbsp;transfomation<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#TDatum10Params">TDatum10Params</a>,&nbsp;transform7params<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatum7Params">TDatum7Params</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatum7Params-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatum7Params-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum7Params">TDatum7Params</a>,&nbsp;_dX:&nbsp;float,&nbsp;_dY:&nbsp;float,&nbsp;_dZ:&nbsp;float,&nbsp;_Rx:&nbsp;float,&nbsp;_Ry:&nbsp;float,&nbsp;_Rz:&nbsp;float,&nbsp;_dS:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Rx</strong></dt>
+</dl>
+<dl><dt><strong>Ry</strong></dt>
+</dl>
+<dl><dt><strong>Rz</strong></dt>
+</dl>
+<dl><dt><strong>dS</strong></dt>
+</dl>
+<dl><dt><strong>dX</strong></dt>
+</dl>
+<dl><dt><strong>dY</strong></dt>
+</dl>
+<dl><dt><strong>dZ</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatum7Params-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatum7Params_TOPCON">class <strong>TDatum7Params_TOPCON</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatum7Params_TOPCON">TDatum7Params_TOPCON</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatum7Params_TOPCON-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatum7Params_TOPCON-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum7Params_TOPCON">TDatum7Params_TOPCON</a>,&nbsp;_dX:&nbsp;float,&nbsp;_dY:&nbsp;float,&nbsp;_dZ:&nbsp;float,&nbsp;_m11:&nbsp;float,&nbsp;_m12:&nbsp;float,&nbsp;_m13:&nbsp;float,&nbsp;_m21:&nbsp;float,&nbsp;_m22:&nbsp;float,&nbsp;_m23:&nbsp;float,&nbsp;_m31:&nbsp;float,&nbsp;_m32:&nbsp;float,&nbsp;_m33:&nbsp;float,&nbsp;_dS:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>dS</strong></dt>
+</dl>
+<dl><dt><strong>dX</strong></dt>
+</dl>
+<dl><dt><strong>dY</strong></dt>
+</dl>
+<dl><dt><strong>dZ</strong></dt>
+</dl>
+<dl><dt><strong>m11</strong></dt>
+</dl>
+<dl><dt><strong>m12</strong></dt>
+</dl>
+<dl><dt><strong>m13</strong></dt>
+</dl>
+<dl><dt><strong>m21</strong></dt>
+</dl>
+<dl><dt><strong>m22</strong></dt>
+</dl>
+<dl><dt><strong>m23</strong></dt>
+</dl>
+<dl><dt><strong>m31</strong></dt>
+</dl>
+<dl><dt><strong>m32</strong></dt>
+</dl>
+<dl><dt><strong>m33</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatum7Params_TOPCON-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatumHelmert2D">class <strong>TDatumHelmert2D</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Parameters&nbsp;for&nbsp;a&nbsp;topographic&nbsp;transfomation<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#TDatumHelmert3D">TDatumHelmert3D</a>,&nbsp;transformHelmert2D<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert2D">TDatumHelmert2D</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatumHelmert2D-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatumHelmert2D-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert2D">TDatumHelmert2D</a>,&nbsp;_dX:&nbsp;float,&nbsp;_dY:&nbsp;float,&nbsp;_alpha:&nbsp;float,&nbsp;_dS:&nbsp;float,&nbsp;_Xp:&nbsp;float,&nbsp;_Yp:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Xp</strong></dt>
+</dl>
+<dl><dt><strong>Yp</strong></dt>
+</dl>
+<dl><dt><strong>alpha</strong></dt>
+</dl>
+<dl><dt><strong>dS</strong></dt>
+</dl>
+<dl><dt><strong>dX</strong></dt>
+</dl>
+<dl><dt><strong>dY</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatumHelmert2D-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatumHelmert2D_TOPCON">class <strong>TDatumHelmert2D_TOPCON</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert2D_TOPCON">TDatumHelmert2D_TOPCON</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatumHelmert2D_TOPCON-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatumHelmert2D_TOPCON-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert2D_TOPCON">TDatumHelmert2D_TOPCON</a>,&nbsp;_a:&nbsp;float,&nbsp;_b:&nbsp;float,&nbsp;_c:&nbsp;float,&nbsp;_d:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>a</strong></dt>
+</dl>
+<dl><dt><strong>b</strong></dt>
+</dl>
+<dl><dt><strong>c</strong></dt>
+</dl>
+<dl><dt><strong>d</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatumHelmert2D_TOPCON-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatumHelmert3D">class <strong>TDatumHelmert3D</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Parameters&nbsp;for&nbsp;a&nbsp;topographic&nbsp;transfomation<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#TDatumHelmert2D">TDatumHelmert2D</a>,&nbsp;transformHelmert3D<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert3D">TDatumHelmert3D</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatumHelmert3D-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatumHelmert3D-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert3D">TDatumHelmert3D</a>,&nbsp;_dX:&nbsp;float,&nbsp;_dY:&nbsp;float,&nbsp;_dZ:&nbsp;float,&nbsp;_Rx:&nbsp;float,&nbsp;_Ry:&nbsp;float,&nbsp;_Rz:&nbsp;float,&nbsp;_dS:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Rx</strong></dt>
+</dl>
+<dl><dt><strong>Ry</strong></dt>
+</dl>
+<dl><dt><strong>Rz</strong></dt>
+</dl>
+<dl><dt><strong>dS</strong></dt>
+</dl>
+<dl><dt><strong>dX</strong></dt>
+</dl>
+<dl><dt><strong>dY</strong></dt>
+</dl>
+<dl><dt><strong>dZ</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatumHelmert3D-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatumHelmert3D_TOPCON">class <strong>TDatumHelmert3D_TOPCON</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Parameters&nbsp;for&nbsp;a&nbsp;topographic&nbsp;transfomation<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#TDatumHelmert2D">TDatumHelmert2D</a>,&nbsp;transformHelmert3D<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatumHelmert3D_TOPCON">TDatumHelmert3D_TOPCON</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatumHelmert3D_TOPCON-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatumHelmert3D_TOPCON-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert3D_TOPCON">TDatumHelmert3D_TOPCON</a>,&nbsp;_a:&nbsp;float,&nbsp;_b:&nbsp;float,&nbsp;_c:&nbsp;float,&nbsp;_d:&nbsp;float,&nbsp;_e:&nbsp;float,&nbsp;_f:&nbsp;float,&nbsp;_g:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>a</strong></dt>
+</dl>
+<dl><dt><strong>b</strong></dt>
+</dl>
+<dl><dt><strong>c</strong></dt>
+</dl>
+<dl><dt><strong>d</strong></dt>
+</dl>
+<dl><dt><strong>e</strong></dt>
+</dl>
+<dl><dt><strong>f</strong></dt>
+</dl>
+<dl><dt><strong>g</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatumHelmert3D_TOPCON-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TDatumTransfInterpolation">class <strong>TDatumTransfInterpolation</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Parameters&nbsp;for&nbsp;a&nbsp;topographic&nbsp;transfomation<br>
+&nbsp;<br>
+&nbsp;<br>
+transform1D<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TDatumTransfInterpolation">TDatumTransfInterpolation</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TDatumTransfInterpolation-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TDatumTransfInterpolation-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumTransfInterpolation">TDatumTransfInterpolation</a>,&nbsp;_dX:&nbsp;float,&nbsp;_dY:&nbsp;float,&nbsp;_dSx:&nbsp;float,&nbsp;_dSy:&nbsp;float,&nbsp;_beta:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>beta</strong></dt>
+</dl>
+<dl><dt><strong>dSx</strong></dt>
+</dl>
+<dl><dt><strong>dSy</strong></dt>
+</dl>
+<dl><dt><strong>dX</strong></dt>
+</dl>
+<dl><dt><strong>dY</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TDatumTransfInterpolation-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TEllipsoid">class <strong>TEllipsoid</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TEllipsoid">TEllipsoid</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TEllipsoid-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TEllipsoid-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#TEllipsoid-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#TEllipsoid-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>,&nbsp;_sa:&nbsp;float,&nbsp;_sb:&nbsp;float,&nbsp;_name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#TEllipsoid-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#TEllipsoid-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::operator=(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="TEllipsoid-Ellipsoid_Airy_1830"><strong>Ellipsoid_Airy_1830</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Airy_1830">Ellipsoid_Airy_1830</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Airy_1830">Ellipsoid_Airy_1830</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Airy_Modificado_1965"><strong>Ellipsoid_Airy_Modificado_1965</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Airy_Modificado_1965">Ellipsoid_Airy_Modificado_1965</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Airy_Modificado_1965">Ellipsoid_Airy_Modificado_1965</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Bessel_1841"><strong>Ellipsoid_Bessel_1841</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Bessel_1841">Ellipsoid_Bessel_1841</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Bessel_1841">Ellipsoid_Bessel_1841</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Clarke_1866"><strong>Ellipsoid_Clarke_1866</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Clarke_1866">Ellipsoid_Clarke_1866</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Clarke_1866">Ellipsoid_Clarke_1866</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Clarke_1880"><strong>Ellipsoid_Clarke_1880</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Clarke_1880">Ellipsoid_Clarke_1880</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Clarke_1880">Ellipsoid_Clarke_1880</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Fischer_1960"><strong>Ellipsoid_Fischer_1960</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Fischer_1960">Ellipsoid_Fischer_1960</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Fischer_1960">Ellipsoid_Fischer_1960</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Fischer_1968"><strong>Ellipsoid_Fischer_1968</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Fischer_1968">Ellipsoid_Fischer_1968</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Fischer_1968">Ellipsoid_Fischer_1968</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_GRS80"><strong>Ellipsoid_GRS80</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_GRS80">Ellipsoid_GRS80</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_GRS80">Ellipsoid_GRS80</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Hayford_1909"><strong>Ellipsoid_Hayford_1909</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Hayford_1909">Ellipsoid_Hayford_1909</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Hayford_1909">Ellipsoid_Hayford_1909</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Helmert_1906"><strong>Ellipsoid_Helmert_1906</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Helmert_1906">Ellipsoid_Helmert_1906</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Helmert_1906">Ellipsoid_Helmert_1906</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Hough_1960"><strong>Ellipsoid_Hough_1960</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Hough_1960">Ellipsoid_Hough_1960</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Hough_1960">Ellipsoid_Hough_1960</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Internacional_1909"><strong>Ellipsoid_Internacional_1909</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Internacional_1909">Ellipsoid_Internacional_1909</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Internacional_1909">Ellipsoid_Internacional_1909</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Internacional_1924"><strong>Ellipsoid_Internacional_1924</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Internacional_1924">Ellipsoid_Internacional_1924</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Internacional_1924">Ellipsoid_Internacional_1924</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Krasovsky_1940"><strong>Ellipsoid_Krasovsky_1940</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Krasovsky_1940">Ellipsoid_Krasovsky_1940</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Krasovsky_1940">Ellipsoid_Krasovsky_1940</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Mercury_1960"><strong>Ellipsoid_Mercury_1960</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Mercury_1960">Ellipsoid_Mercury_1960</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Mercury_1960">Ellipsoid_Mercury_1960</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Mercury_Modificado_1968"><strong>Ellipsoid_Mercury_Modificado_1968</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Mercury_Modificado_1968">Ellipsoid_Mercury_Modificado_1968</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Mercury_Modificado_1968">Ellipsoid_Mercury_Modificado_1968</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Nuevo_Internacional_1967"><strong>Ellipsoid_Nuevo_Internacional_1967</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Nuevo_Internacional_1967">Ellipsoid_Nuevo_Internacional_1967</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Nuevo_Internacional_1967">Ellipsoid_Nuevo_Internacional_1967</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Sudamericano_1969"><strong>Ellipsoid_Sudamericano_1969</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Sudamericano_1969">Ellipsoid_Sudamericano_1969</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Sudamericano_1969">Ellipsoid_Sudamericano_1969</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_WGS66"><strong>Ellipsoid_WGS66</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_WGS66">Ellipsoid_WGS66</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_WGS66">Ellipsoid_WGS66</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_WGS72"><strong>Ellipsoid_WGS72</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_WGS72">Ellipsoid_WGS72</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_WGS72">Ellipsoid_WGS72</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_WGS84"><strong>Ellipsoid_WGS84</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_WGS84">Ellipsoid_WGS84</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_WGS84">Ellipsoid_WGS84</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<dl><dt><a name="TEllipsoid-Ellipsoid_Walbeck_1817"><strong>Ellipsoid_Walbeck_1817</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TEllipsoid-Ellipsoid_Walbeck_1817">Ellipsoid_Walbeck_1817</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>::<a href="#TEllipsoid-Ellipsoid_Walbeck_1817">Ellipsoid_Walbeck_1817</a>()&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a></tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>name</strong></dt>
+</dl>
+<dl><dt><strong>sa</strong></dt>
+</dl>
+<dl><dt><strong>sb</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TEllipsoid-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TGeodeticCoords">class <strong>TGeodeticCoords</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;set&nbsp;of&nbsp;geodetic&nbsp;coordinates:&nbsp;latitude,&nbsp;longitude&nbsp;and&nbsp;height,&nbsp;defined&nbsp;over<br>
+a&nbsp;given&nbsp;geoid&nbsp;(typically,&nbsp;WGS84)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TGeodeticCoords">TGeodeticCoords</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TGeodeticCoords-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TGeodeticCoords-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#TGeodeticCoords-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#TGeodeticCoords-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;_lat:&nbsp;float,&nbsp;_lon:&nbsp;float,&nbsp;_height:&nbsp;float)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TGeodeticCoords-isClear"><strong>isClear</strong></a>(...)</dt><dd><tt><a href="#TGeodeticCoords-isClear">isClear</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>::<a href="#TGeodeticCoords-isClear">isClear</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>height</strong></dt>
+</dl>
+<dl><dt><strong>lat</strong></dt>
+</dl>
+<dl><dt><strong>lon</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TGeodeticCoords-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TPathFromRTKInfo">class <strong>TPathFromRTKInfo</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Used&nbsp;to&nbsp;return&nbsp;optional&nbsp;information&nbsp;from&nbsp;mrpt::topography::path_from_rtk_gps<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.topography.html#TPathFromRTKInfo">TPathFromRTKInfo</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TPathFromRTKInfo-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TPathFromRTKInfo-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#TPathFromRTKInfo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#TPathFromRTKInfo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TPathFromRTKInfo-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#TPathFromRTKInfo-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>::operator=(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::topography::<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>W_star</strong></dt>
+</dl>
+<dl><dt><strong>best_gps_path</strong></dt>
+</dl>
+<dl><dt><strong>mahalabis_quality_measure</strong></dt>
+</dl>
+<dl><dt><strong>vehicle_uncertainty</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TPathFromRTKInfo-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-ENUToGeocentric"><strong>ENUToGeocentric</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-ENUToGeocentric">ENUToGeocentric</a>(in_ENU_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;in_coords_origin:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;out_coords:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+ENU&nbsp;to&nbsp;geocentric&nbsp;coordinates.&nbsp;<br>
+&nbsp;geodeticToENU_WGS84&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-ENUToGeocentric">ENUToGeocentric</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-ENU_axes_from_WGS84"><strong>ENU_axes_from_WGS84</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-ENU_axes_from_WGS84">ENU_axes_from_WGS84</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-ENU_axes_from_WGS84">ENU_axes_from_WGS84</a>(in_longitude_reference_degrees:&nbsp;float,&nbsp;in_latitude_reference_degrees:&nbsp;float,&nbsp;in_height_reference_meters:&nbsp;float,&nbsp;out_ENU:&nbsp;mrpt.pymrpt.mrpt.math.TPose3D)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-ENU_axes_from_WGS84">ENU_axes_from_WGS84</a>(in_longitude_reference_degrees:&nbsp;float,&nbsp;in_latitude_reference_degrees:&nbsp;float,&nbsp;in_height_reference_meters:&nbsp;float,&nbsp;out_ENU:&nbsp;mrpt.pymrpt.mrpt.math.TPose3D,&nbsp;only_angles:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;East-North-Up&nbsp;(ENU)&nbsp;coordinate&nbsp;system&nbsp;associated&nbsp;to&nbsp;the&nbsp;given<br>
+&nbsp;point.<br>
+&nbsp;This&nbsp;is&nbsp;the&nbsp;reference&nbsp;employed&nbsp;in&nbsp;geodeticToENU_WGS84<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;If&nbsp;set&nbsp;to&nbsp;true,&nbsp;the&nbsp;(x,y,z)&nbsp;fields&nbsp;will&nbsp;be&nbsp;left&nbsp;zeroed.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;"Up"&nbsp;(Z)&nbsp;direction&nbsp;in&nbsp;ENU&nbsp;is&nbsp;the&nbsp;normal&nbsp;to&nbsp;the&nbsp;ellipsoid,&nbsp;which<br>
+&nbsp;coincides&nbsp;with&nbsp;the&nbsp;direction&nbsp;of&nbsp;an&nbsp;increasing&nbsp;geodetic&nbsp;height.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;geodeticToENU_WGS84<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-ENU_axes_from_WGS84">ENU_axes_from_WGS84</a>(double,&nbsp;double,&nbsp;double,&nbsp;struct&nbsp;mrpt::math::TPose3D&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-ENU_axes_from_WGS84">ENU_axes_from_WGS84</a>(in_coords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;out_ENU:&nbsp;mrpt.pymrpt.mrpt.math.TPose3D)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#-ENU_axes_from_WGS84">ENU_axes_from_WGS84</a>(in_coords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;out_ENU:&nbsp;mrpt.pymrpt.mrpt.math.TPose3D,&nbsp;only_angles:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-ENU_axes_from_WGS84">ENU_axes_from_WGS84</a>(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPose3D&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-GeodeticToUTM"><strong>GeodeticToUTM</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-GeodeticToUTM">GeodeticToUTM</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-GeodeticToUTM">GeodeticToUTM</a>(in_latitude_degrees:&nbsp;float,&nbsp;in_longitude_degrees:&nbsp;float,&nbsp;out_UTM_x:&nbsp;float,&nbsp;out_UTM_y:&nbsp;float,&nbsp;out_UTM_zone:&nbsp;int,&nbsp;out_UTM_latitude_band:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-GeodeticToUTM">GeodeticToUTM</a>(in_latitude_degrees:&nbsp;float,&nbsp;in_longitude_degrees:&nbsp;float,&nbsp;out_UTM_x:&nbsp;float,&nbsp;out_UTM_y:&nbsp;float,&nbsp;out_UTM_zone:&nbsp;int,&nbsp;out_UTM_latitude_band:&nbsp;str,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Convert&nbsp;latitude&nbsp;and&nbsp;longitude&nbsp;coordinates&nbsp;into&nbsp;UTM&nbsp;coordinates,&nbsp;computing<br>
+&nbsp;the&nbsp;corresponding&nbsp;UTM&nbsp;zone&nbsp;and&nbsp;latitude&nbsp;band.<br>
+&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;is&nbsp;based&nbsp;on&nbsp;public&nbsp;code&nbsp;by&nbsp;Gabriel&nbsp;Ruiz&nbsp;Martinez&nbsp;and&nbsp;Rafael<br>
+&nbsp;Palacios.<br>
+&nbsp;&nbsp;&nbsp;Example:<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<a href="http://www.mathworks.com/matlabcentral/fileexchange/10915">http://www.mathworks.com/matlabcentral/fileexchange/10915</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-GeodeticToUTM">GeodeticToUTM</a>(double,&nbsp;double,&nbsp;double&nbsp;&amp;,&nbsp;double&nbsp;&amp;,&nbsp;int&nbsp;&amp;,&nbsp;char&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-GeodeticToUTM">GeodeticToUTM</a>(GeodeticCoords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;UTMCoords:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;UTMZone:&nbsp;int,&nbsp;UTMLatitudeBand:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#-GeodeticToUTM">GeodeticToUTM</a>(GeodeticCoords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;UTMCoords:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;UTMZone:&nbsp;int,&nbsp;UTMLatitudeBand:&nbsp;str,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Convert&nbsp;latitude&nbsp;and&nbsp;longitude&nbsp;coordinates&nbsp;into&nbsp;UTM&nbsp;coordinates,&nbsp;computing<br>
+&nbsp;the&nbsp;corresponding&nbsp;UTM&nbsp;zone&nbsp;and&nbsp;latitude&nbsp;band.<br>
+&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;is&nbsp;based&nbsp;on&nbsp;public&nbsp;code&nbsp;by&nbsp;Gabriel&nbsp;Ruiz&nbsp;Martinez&nbsp;and&nbsp;Rafael<br>
+&nbsp;Palacios.<br>
+&nbsp;&nbsp;&nbsp;Example:<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<a href="http://www.mathworks.com/matlabcentral/fileexchange/10915">http://www.mathworks.com/matlabcentral/fileexchange/10915</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-GeodeticToUTM">GeodeticToUTM</a>(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;int&nbsp;&amp;,&nbsp;char&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-UTMToGeodetic"><strong>UTMToGeodetic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-UTMToGeodetic">UTMToGeodetic</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-UTMToGeodetic">UTMToGeodetic</a>(X:&nbsp;float,&nbsp;Y:&nbsp;float,&nbsp;zone:&nbsp;int,&nbsp;hem:&nbsp;str,&nbsp;out_lon:&nbsp;float,&nbsp;out_lat:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-UTMToGeodetic">UTMToGeodetic</a>(X:&nbsp;float,&nbsp;Y:&nbsp;float,&nbsp;zone:&nbsp;int,&nbsp;hem:&nbsp;str,&nbsp;out_lon:&nbsp;float,&nbsp;out_lat:&nbsp;float,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;Geodetic&nbsp;coordinates&nbsp;of&nbsp;the&nbsp;UTM&nbsp;input&nbsp;point.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;East&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;input&nbsp;point.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;North&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;input&nbsp;point.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;time&nbsp;zone&nbsp;(Spanish:&nbsp;"huso").<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;hemisphere&nbsp;('N'/'n'&nbsp;for&nbsp;North&nbsp;or&nbsp;'S'/s'&nbsp;for&nbsp;South&nbsp;).&nbsp;An<br>
+&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;on&nbsp;any&nbsp;other&nbsp;value.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;the&nbsp;reference&nbsp;ellipsoid&nbsp;used&nbsp;for&nbsp;the&nbsp;transformation&nbsp;(default:<br>
+&nbsp;WGS84)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;Out&nbsp;latitude,&nbsp;in&nbsp;degrees.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;Out&nbsp;longitude,&nbsp;in&nbsp;degrees.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-UTMToGeodetic">UTMToGeodetic</a>(double,&nbsp;double,&nbsp;int,&nbsp;char,&nbsp;double&nbsp;&amp;,&nbsp;double&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-UTMToGeodetic">UTMToGeodetic</a>(UTMCoords:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;zone:&nbsp;int,&nbsp;hem:&nbsp;str,&nbsp;GeodeticCoords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#-UTMToGeodetic">UTMToGeodetic</a>(UTMCoords:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;zone:&nbsp;int,&nbsp;hem:&nbsp;str,&nbsp;GeodeticCoords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;Geodetic&nbsp;coordinates&nbsp;of&nbsp;the&nbsp;UTM&nbsp;input&nbsp;point.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;UTM&nbsp;input&nbsp;coordinates.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;time&nbsp;zone&nbsp;(Spanish:&nbsp;"huso").<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;hemisphere&nbsp;('N'/'n'&nbsp;for&nbsp;North&nbsp;or&nbsp;'S'/s'&nbsp;for&nbsp;South&nbsp;).&nbsp;An<br>
+&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;on&nbsp;any&nbsp;other&nbsp;value.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Out&nbsp;geodetic&nbsp;coordinates.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;the&nbsp;reference&nbsp;ellipsoid&nbsp;used&nbsp;for&nbsp;the&nbsp;transformation&nbsp;(default:<br>
+&nbsp;WGS84)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-UTMToGeodetic">UTMToGeodetic</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;int,&nbsp;char,&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-geocentricToENU_WGS84"><strong>geocentricToENU_WGS84</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-geocentricToENU_WGS84">geocentricToENU_WGS84</a>(in_geocentric_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;out_ENU_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;in_coords_origin:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+ENU&nbsp;to&nbsp;EFEC&nbsp;(Geocentric)&nbsp;coordinates&nbsp;<br>
+&nbsp;ENUToGeocentric,<br>
+&nbsp;geodeticToENU_WGS84&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-geocentricToENU_WGS84">geocentricToENU_WGS84</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-geocentricToGeodetic"><strong>geocentricToGeodetic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-geocentricToGeodetic">geocentricToGeodetic</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-geocentricToGeodetic">geocentricToGeodetic</a>(in_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;out_coords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-geocentricToGeodetic">geocentricToGeodetic</a>(in_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;out_coords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Coordinates&nbsp;transformation&nbsp;from&nbsp;geocentric&nbsp;X/Y/Z&nbsp;coordinates&nbsp;to<br>
+&nbsp;longitude/latitude/height.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;geodeticToGeocentric<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-geocentricToGeodetic">geocentricToGeodetic</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-geodeticToENU_WGS84"><strong>geodeticToENU_WGS84</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-geodeticToENU_WGS84">geodeticToENU_WGS84</a>(in_coords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;out_ENU_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;in_coords_origin:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Coordinates&nbsp;transformation&nbsp;from&nbsp;longitude/latitude/height&nbsp;to&nbsp;ENU<br>
+&nbsp;(East-North-Up)&nbsp;&nbsp;X/Y/Z&nbsp;coordinates<br>
+&nbsp;&nbsp;The&nbsp;WGS84&nbsp;ellipsoid&nbsp;is&nbsp;used&nbsp;for&nbsp;the&nbsp;transformation.&nbsp;The&nbsp;coordinates&nbsp;are&nbsp;in<br>
+&nbsp;3D<br>
+&nbsp;&nbsp;&nbsp;relative&nbsp;to&nbsp;some&nbsp;user-provided&nbsp;point,&nbsp;with&nbsp;local&nbsp;X&nbsp;axis&nbsp;being&nbsp;east-ward,&nbsp;Y<br>
+&nbsp;north-ward,&nbsp;Z&nbsp;up-ward.<br>
+&nbsp;&nbsp;For&nbsp;an&nbsp;explanation,&nbsp;refer&nbsp;to<br>
+&nbsp;<a href="http://en.wikipedia.org/wiki/Reference_ellipsoid">http://en.wikipedia.org/wiki/Reference_ellipsoid</a><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;coordinatesTransformation_WGS84_geocentric,&nbsp;ENU_axes_from_WGS84,<br>
+&nbsp;ENUToGeocentric<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;"Up"&nbsp;(Z)&nbsp;direction&nbsp;in&nbsp;ENU&nbsp;is&nbsp;the&nbsp;normal&nbsp;to&nbsp;the&nbsp;ellipsoid,&nbsp;which<br>
+&nbsp;coincides&nbsp;with&nbsp;the&nbsp;direction&nbsp;of&nbsp;an&nbsp;increasing&nbsp;geodetic&nbsp;height.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-geodeticToENU_WGS84">geodeticToENU_WGS84</a>(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-geodeticToGeocentric"><strong>geodeticToGeocentric</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-geodeticToGeocentric">geodeticToGeocentric</a>(in_coords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;out_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Coordinates&nbsp;transformation&nbsp;from&nbsp;longitude/latitude/height&nbsp;to&nbsp;geocentric<br>
+&nbsp;X/Y/Z&nbsp;coordinates&nbsp;(with&nbsp;an&nbsp;specified&nbsp;geoid).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;geocentricToGeodetic<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-geodeticToGeocentric">geodeticToGeocentric</a>(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-geodeticToGeocentric_WGS84"><strong>geodeticToGeocentric_WGS84</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-geodeticToGeocentric_WGS84">geodeticToGeocentric_WGS84</a>(in_coords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;out_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Coordinates&nbsp;transformation&nbsp;from&nbsp;longitude/latitude/height&nbsp;to&nbsp;geocentric<br>
+&nbsp;X/Y/Z&nbsp;coordinates&nbsp;(with&nbsp;a&nbsp;WGS84&nbsp;geoid).<br>
+&nbsp;&nbsp;The&nbsp;WGS84&nbsp;ellipsoid&nbsp;is&nbsp;used&nbsp;for&nbsp;the&nbsp;transformation.&nbsp;The&nbsp;coordinates&nbsp;are&nbsp;in<br>
+&nbsp;3D<br>
+&nbsp;&nbsp;&nbsp;where&nbsp;the&nbsp;reference&nbsp;is&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;Earth.<br>
+&nbsp;&nbsp;For&nbsp;an&nbsp;explanation,&nbsp;refer&nbsp;to<br>
+&nbsp;<a href="http://en.wikipedia.org/wiki/Reference_ellipsoid">http://en.wikipedia.org/wiki/Reference_ellipsoid</a><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;geodeticToENU_WGS84<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-geodeticToGeocentric_WGS84">geodeticToGeocentric_WGS84</a>(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-geodeticToUTM"><strong>geodeticToUTM</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-geodeticToUTM">geodeticToUTM</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-geodeticToUTM">geodeticToUTM</a>(GeodeticCoords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;UTMCoords:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;UTMZone:&nbsp;int,&nbsp;UTMLatitudeBand:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-geodeticToUTM">geodeticToUTM</a>(GeodeticCoords:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TGeodeticCoords">TGeodeticCoords</a>,&nbsp;UTMCoords:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;UTMZone:&nbsp;int,&nbsp;UTMLatitudeBand:&nbsp;str,&nbsp;ellip:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TEllipsoid">TEllipsoid</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-geodeticToUTM">geodeticToUTM</a>(const&nbsp;struct&nbsp;mrpt::topography::<a href="#TGeodeticCoords">TGeodeticCoords</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;int&nbsp;&amp;,&nbsp;char&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TEllipsoid">TEllipsoid</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-path_from_rtk_gps"><strong>path_from_rtk_gps</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-path_from_rtk_gps">path_from_rtk_gps</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-path_from_rtk_gps">path_from_rtk_gps</a>(robot_path:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3DInterpolator,&nbsp;rawlog:&nbsp;mrpt.pymrpt.mrpt.obs.CRawlog,&nbsp;rawlog_first:&nbsp;int,&nbsp;rawlog_last:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-path_from_rtk_gps">path_from_rtk_gps</a>(robot_path:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3DInterpolator,&nbsp;rawlog:&nbsp;mrpt.pymrpt.mrpt.obs.CRawlog,&nbsp;rawlog_first:&nbsp;int,&nbsp;rawlog_last:&nbsp;int,&nbsp;isGUI:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-path_from_rtk_gps">path_from_rtk_gps</a>(robot_path:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3DInterpolator,&nbsp;rawlog:&nbsp;mrpt.pymrpt.mrpt.obs.CRawlog,&nbsp;rawlog_first:&nbsp;int,&nbsp;rawlog_last:&nbsp;int,&nbsp;isGUI:&nbsp;bool,&nbsp;disableGPSInterp:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#-path_from_rtk_gps">path_from_rtk_gps</a>(robot_path:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3DInterpolator,&nbsp;rawlog:&nbsp;mrpt.pymrpt.mrpt.obs.CRawlog,&nbsp;rawlog_first:&nbsp;int,&nbsp;rawlog_last:&nbsp;int,&nbsp;isGUI:&nbsp;bool,&nbsp;disableGPSInterp:&nbsp;bool,&nbsp;path_smooth_filter_size:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#-path_from_rtk_gps">path_from_rtk_gps</a>(robot_path:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3DInterpolator,&nbsp;rawlog:&nbsp;mrpt.pymrpt.mrpt.obs.CRawlog,&nbsp;rawlog_first:&nbsp;int,&nbsp;rawlog_last:&nbsp;int,&nbsp;isGUI:&nbsp;bool,&nbsp;disableGPSInterp:&nbsp;bool,&nbsp;path_smooth_filter_size:&nbsp;int,&nbsp;outInfo:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reconstruct&nbsp;the&nbsp;path&nbsp;of&nbsp;a&nbsp;vehicle&nbsp;equipped&nbsp;with&nbsp;3&nbsp;RTK&nbsp;GPSs.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[OUT]&nbsp;The&nbsp;reconstructed&nbsp;vehicle&nbsp;path<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;The&nbsp;dataset.&nbsp;It&nbsp;must&nbsp;contain&nbsp;mrpt::obs::CObservationGPS<br>
+&nbsp;observations&nbsp;with&nbsp;GGA&nbsp;datums.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;first&nbsp;entry&nbsp;to&nbsp;process&nbsp;(first=0)<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;last&nbsp;entry&nbsp;to&nbsp;process<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;If&nbsp;set&nbsp;to&nbsp;true,&nbsp;some&nbsp;progress&nbsp;dialogs&nbsp;will&nbsp;be&nbsp;shown<br>
+&nbsp;during&nbsp;the&nbsp;computation&nbsp;(requires&nbsp;MRPT&nbsp;built&nbsp;with&nbsp;support&nbsp;for&nbsp;wxWidgets).<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;Whether&nbsp;to&nbsp;interpolate&nbsp;missing&nbsp;GPS&nbsp;readings<br>
+&nbsp;between&nbsp;very&nbsp;close&nbsp;datums.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;Size&nbsp;of&nbsp;the&nbsp;window&nbsp;in&nbsp;the&nbsp;pitch&nbsp;&amp;&nbsp;roll<br>
+&nbsp;noise&nbsp;filtering.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;[OUT]&nbsp;Optional&nbsp;output:&nbsp;additional&nbsp;information&nbsp;from&nbsp;the<br>
+&nbsp;optimization<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;more&nbsp;details&nbsp;on&nbsp;the&nbsp;method,&nbsp;refer&nbsp;to&nbsp;the&nbsp;paper:&nbsp;(...)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;mrpt::topography<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-path_from_rtk_gps">path_from_rtk_gps</a>(class&nbsp;mrpt::poses::CPose3DInterpolator&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;mrpt::obs::CRawlog&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;unsigned&nbsp;long,&nbsp;bool,&nbsp;bool,&nbsp;int,&nbsp;struct&nbsp;mrpt::topography::<a href="#TPathFromRTKInfo">TPathFromRTKInfo</a>&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transfInterpolation"><strong>transfInterpolation</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transfInterpolation">transfInterpolation</a>(p:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;d:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumTransfInterpolation">TDatumTransfInterpolation</a>,&nbsp;o:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Interpolation:<br>
+&nbsp;&nbsp;&nbsp;[&nbsp;Z&nbsp;]_WGS84&nbsp;=&nbsp;(dy&nbsp;*&nbsp;X&nbsp;-&nbsp;dx&nbsp;*&nbsp;Y&nbsp;+&nbsp;Z)*(1+e)+DZ<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transfInterpolation">transfInterpolation</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatumTransfInterpolation">TDatumTransfInterpolation</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transform10params"><strong>transform10params</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transform10params">transform10params</a>(in_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;in_datum:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum10Params">TDatum10Params</a>,&nbsp;out_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+10-parameter&nbsp;Molodensky-Badekas&nbsp;transformation:<br>
+&nbsp;&nbsp;&nbsp;[&nbsp;X&nbsp;Y&nbsp;Z&nbsp;]_WGS84&nbsp;=&nbsp;[&nbsp;dX&nbsp;dY&nbsp;dZ&nbsp;]&nbsp;+&nbsp;(&nbsp;1&nbsp;+&nbsp;dS&nbsp;)&nbsp;[&nbsp;1&nbsp;RZ&nbsp;-RY;&nbsp;-RZ&nbsp;1&nbsp;RX;&nbsp;RY&nbsp;-RX&nbsp;1<br>
+&nbsp;]&nbsp;[&nbsp;X-Xp&nbsp;Y-Yp&nbsp;Z-Zp&nbsp;]_local&nbsp;&nbsp;+&nbsp;[Xp&nbsp;Yp&nbsp;Zp]<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;transform7params<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transform10params">transform10params</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatum10Params">TDatum10Params</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transform1D"><strong>transform1D</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transform1D">transform1D</a>(p:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;d:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum1DTransf">TDatum1DTransf</a>,&nbsp;o:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+1D&nbsp;transformation:<br>
+&nbsp;&nbsp;&nbsp;[&nbsp;Z&nbsp;]_WGS84&nbsp;=&nbsp;(dy&nbsp;*&nbsp;X&nbsp;-&nbsp;dx&nbsp;*&nbsp;Y&nbsp;+&nbsp;Z)*(1+e)+DZ<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transform1D">transform1D</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatum1DTransf">TDatum1DTransf</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transform7params"><strong>transform7params</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transform7params">transform7params</a>(in_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;in_datum:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum7Params">TDatum7Params</a>,&nbsp;out_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7-parameter&nbsp;Bursa-Wolf&nbsp;transformation:<br>
+&nbsp;&nbsp;&nbsp;[&nbsp;X&nbsp;Y&nbsp;Z&nbsp;]_WGS84&nbsp;=&nbsp;[&nbsp;dX&nbsp;dY&nbsp;dZ&nbsp;]&nbsp;+&nbsp;(&nbsp;1&nbsp;+&nbsp;dS&nbsp;)&nbsp;[&nbsp;1&nbsp;RZ&nbsp;-RY;&nbsp;-RZ&nbsp;1&nbsp;RX;&nbsp;RY&nbsp;-RX&nbsp;1<br>
+&nbsp;]&nbsp;[&nbsp;X&nbsp;Y&nbsp;Z&nbsp;]_local<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;transform10params<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transform7params">transform7params</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatum7Params">TDatum7Params</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transform7params_TOPCON"><strong>transform7params_TOPCON</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transform7params_TOPCON">transform7params_TOPCON</a>(in_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;in_datum:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatum7Params_TOPCON">TDatum7Params_TOPCON</a>,&nbsp;out_point:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transform7params_TOPCON">transform7params_TOPCON</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatum7Params_TOPCON">TDatum7Params_TOPCON</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transformHelmert2D"><strong>transformHelmert2D</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transformHelmert2D">transformHelmert2D</a>(p:&nbsp;mrpt::math::TPoint2D_&lt;double&gt;,&nbsp;d:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert2D">TDatumHelmert2D</a>,&nbsp;o:&nbsp;mrpt::math::TPoint2D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Helmert&nbsp;2D&nbsp;transformation:<br>
+&nbsp;&nbsp;&nbsp;[&nbsp;X&nbsp;Y&nbsp;]_WGS84&nbsp;=&nbsp;[&nbsp;dX&nbsp;dY&nbsp;]&nbsp;+&nbsp;(&nbsp;1&nbsp;+&nbsp;dS&nbsp;)&nbsp;[&nbsp;cos(alpha)&nbsp;-sin(alpha);<br>
+&nbsp;sin(alpha)&nbsp;cos(alpha)&nbsp;]&nbsp;[&nbsp;X-Xp&nbsp;Y-Yp&nbsp;Z-Zp&nbsp;]_local&nbsp;+&nbsp;[Xp&nbsp;Yp&nbsp;Zp]<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;transformHelmert3D<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transformHelmert2D">transformHelmert2D</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint2D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatumHelmert2D">TDatumHelmert2D</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint2D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transformHelmert2D_TOPCON"><strong>transformHelmert2D_TOPCON</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transformHelmert2D_TOPCON">transformHelmert2D_TOPCON</a>(p:&nbsp;mrpt::math::TPoint2D_&lt;double&gt;,&nbsp;d:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert2D_TOPCON">TDatumHelmert2D_TOPCON</a>,&nbsp;o:&nbsp;mrpt::math::TPoint2D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transformHelmert2D_TOPCON">transformHelmert2D_TOPCON</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint2D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatumHelmert2D_TOPCON">TDatumHelmert2D_TOPCON</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint2D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transformHelmert3D"><strong>transformHelmert3D</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transformHelmert3D">transformHelmert3D</a>(p:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;d:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert3D">TDatumHelmert3D</a>,&nbsp;o:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Helmert3D&nbsp;transformation:<br>
+&nbsp;&nbsp;&nbsp;[&nbsp;X&nbsp;Y&nbsp;Z&nbsp;]_WGS84&nbsp;=&nbsp;[&nbsp;dX&nbsp;dY&nbsp;dZ&nbsp;]&nbsp;+&nbsp;(&nbsp;1&nbsp;+&nbsp;dS&nbsp;)&nbsp;[&nbsp;1&nbsp;-RZ&nbsp;RY;&nbsp;RZ&nbsp;1&nbsp;-RX;&nbsp;-RY&nbsp;RX&nbsp;1<br>
+&nbsp;]&nbsp;[&nbsp;X&nbsp;Y&nbsp;Z&nbsp;]_local<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;transformHelmert2D<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transformHelmert3D">transformHelmert3D</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatumHelmert3D">TDatumHelmert3D</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-transformHelmert3D_TOPCON"><strong>transformHelmert3D_TOPCON</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-transformHelmert3D_TOPCON">transformHelmert3D_TOPCON</a>(p:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;d:&nbsp;mrpt.pymrpt.mrpt.topography.<a href="#TDatumHelmert3D_TOPCON">TDatumHelmert3D_TOPCON</a>,&nbsp;o:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::topography::<a href="#-transformHelmert3D_TOPCON">transformHelmert3D_TOPCON</a>(const&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::topography::<a href="#TDatumHelmert3D_TOPCON">TDatumHelmert3D_TOPCON</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+</td></tr></table>
+</body></html>

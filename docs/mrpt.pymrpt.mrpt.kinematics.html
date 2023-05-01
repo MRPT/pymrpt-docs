@@ -1,0 +1,1128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.kinematics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.kinematics</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::kinematics&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.html#Stringifyable">mrpt.pymrpt.mrpt.Stringifyable</a>(pybind11_builtins.pybind11_object)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a>, <a href="mrpt.pymrpt.mrpt.html#Stringifyable">mrpt.pymrpt.mrpt.Stringifyable</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a>(<a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CKinematicChain">CKinematicChain</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a>, <a href="mrpt.pymrpt.mrpt.html#Stringifyable">mrpt.pymrpt.mrpt.Stringifyable</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimul_Holo">CVehicleSimul_Holo</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.kinematics.html#TKinematicLink">TKinematicLink</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CKinematicChain">class <strong>CKinematicChain</strong></a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;open-loop&nbsp;kinematic&nbsp;chain&nbsp;model,&nbsp;suitable&nbsp;to&nbsp;robotic&nbsp;manipulators.<br>
+&nbsp;Each&nbsp;link&nbsp;is&nbsp;parameterized&nbsp;with&nbsp;standard&nbsp;Denavit-Hartenberg&nbsp;standard<br>
+parameterization&nbsp;[theta,&nbsp;d,&nbsp;a,&nbsp;alpha].<br>
+&nbsp;<br>
+&nbsp;The&nbsp;orientation&nbsp;of&nbsp;the&nbsp;first&nbsp;link&nbsp;can&nbsp;be&nbsp;modified&nbsp;with&nbsp;<a href="#CKinematicChain-setOriginPose">setOriginPose</a>(),<br>
+which&nbsp;defaults&nbsp;to&nbsp;standard&nbsp;XYZ&nbsp;axes&nbsp;with&nbsp;+Z&nbsp;pointing&nbsp;upwards.<br>
+&nbsp;<br>
+&nbsp;<br>
+CPose3D<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CKinematicChain">CKinematicChain</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CKinematicChain-GetRuntimeClass"><strong>GetRuntimeClass</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-GetRuntimeClass">GetRuntimeClass</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-GetRuntimeClass">GetRuntimeClass</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CKinematicChain-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CKinematicChain-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CKinematicChain-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-addLink"><strong>addLink</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-addLink">addLink</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;theta:&nbsp;float,&nbsp;d:&nbsp;float,&nbsp;a:&nbsp;float,&nbsp;alpha:&nbsp;float,&nbsp;is_prismatic:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Appends&nbsp;a&nbsp;new&nbsp;link&nbsp;to&nbsp;the&nbsp;robotic&nbsp;arm,&nbsp;with&nbsp;the&nbsp;given&nbsp;Denavit-Hartenberg<br>
+&nbsp;parameters&nbsp;(see&nbsp;<a href="#TKinematicLink">TKinematicLink</a>&nbsp;for&nbsp;further&nbsp;details)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-addLink">addLink</a>(double,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::operator=(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Erases&nbsp;all&nbsp;links&nbsp;and&nbsp;leave&nbsp;the&nbsp;robot&nbsp;arm&nbsp;empty.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-clone"><strong>clone</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-clone">clone</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-clone">clone</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;mrpt::rtti::CObject&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-getLink"><strong>getLink</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-getLink">getLink</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;idx:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#TKinematicLink">TKinematicLink</a><br>
+&nbsp;<br>
+Get&nbsp;a&nbsp;ref&nbsp;to&nbsp;a&nbsp;given&nbsp;link&nbsp;(read-only)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getLink">getLink</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::kinematics::<a href="#TKinematicLink">TKinematicLink</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-getLinkRef"><strong>getLinkRef</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-getLinkRef">getLinkRef</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;idx:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#TKinematicLink">TKinematicLink</a><br>
+&nbsp;<br>
+Get&nbsp;a&nbsp;ref&nbsp;to&nbsp;a&nbsp;given&nbsp;link&nbsp;(read-write)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getLinkRef">getLinkRef</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::kinematics::<a href="#TKinematicLink">TKinematicLink</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-getOriginPose"><strong>getOriginPose</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-getOriginPose">getOriginPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;current&nbsp;pose&nbsp;of&nbsp;the&nbsp;first&nbsp;link.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getOriginPose">getOriginPose</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;mrpt::poses::CPose3D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-removeLink"><strong>removeLink</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-removeLink">removeLink</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;idx:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Removes&nbsp;one&nbsp;link&nbsp;from&nbsp;the&nbsp;kinematic&nbsp;chain&nbsp;(0&lt;=idx&lt;N)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-removeLink">removeLink</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-setOriginPose"><strong>setOriginPose</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-setOriginPose">setOriginPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;new_pose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Can&nbsp;be&nbsp;used&nbsp;to&nbsp;define&nbsp;a&nbsp;first&nbsp;degree&nbsp;of&nbsp;freedom&nbsp;along&nbsp;a&nbsp;+Z&nbsp;axis&nbsp;which<br>
+&nbsp;does&nbsp;not&nbsp;coincide&nbsp;with&nbsp;the&nbsp;global&nbsp;+Z&nbsp;axis.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-setOriginPose">setOriginPose</a>(const&nbsp;class&nbsp;mrpt::poses::CPose3D&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-size"><strong>size</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-size">size</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;number&nbsp;of&nbsp;links&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="CKinematicChain-CreateObject"><strong>CreateObject</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CKinematicChain-CreateObject">CreateObject</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-CreateObject">CreateObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CKinematicChain-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CKinematicChain-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CKinematicChain-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
+<dl><dt><a name="CKinematicChain-duplicateGetSmartPtr"><strong>duplicateGetSmartPtr</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-duplicateGetSmartPtr">duplicateGetSmartPtr</a>(self:&nbsp;mrpt.pymrpt.mrpt.rtti.CObject)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+Makes&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;object&nbsp;and&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;it&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::rtti::CObject::<a href="#CKinematicChain-duplicateGetSmartPtr">duplicateGetSmartPtr</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CKinematicChain-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CVehicleSimulVirtualBase">class <strong>CVehicleSimulVirtualBase</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;simulate&nbsp;the&nbsp;kinematics&nbsp;and&nbsp;dynamics&nbsp;of&nbsp;a<br>
+differential&nbsp;driven&nbsp;planar&nbsp;mobile&nbsp;robot,&nbsp;including&nbsp;odometry&nbsp;errors&nbsp;and<br>
+dynamics&nbsp;limitations.<br>
+&nbsp;Main&nbsp;API&nbsp;methods&nbsp;are:<br>
+&nbsp;-&nbsp;movementCommand:&nbsp;Call&nbsp;this&nbsp;for&nbsp;send&nbsp;a&nbsp;command&nbsp;to&nbsp;the&nbsp;robot.&nbsp;This&nbsp;comamnd<br>
+will&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;delayed&nbsp;and&nbsp;passed&nbsp;throught&nbsp;a&nbsp;first&nbsp;order&nbsp;low-pass&nbsp;filter&nbsp;to&nbsp;simulate<br>
+&nbsp;&nbsp;&nbsp;robot&nbsp;dynamics.<br>
+&nbsp;-&nbsp;simulateInterval:&nbsp;Call&nbsp;this&nbsp;for&nbsp;run&nbsp;the&nbsp;simulator&nbsp;for&nbsp;the&nbsp;desired&nbsp;time<br>
+period.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CVehicleSimulVirtualBase-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleSimulVirtualBase-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleSimulVirtualBase-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::operator=(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getCurrentGTPose"><strong>getCurrentGTPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getCurrentGTPose">getCurrentGTPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;pose&nbsp;in&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getCurrentGTPose">getCurrentGTPose</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getCurrentGTVel"><strong>getCurrentGTVel</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getCurrentGTVel">getCurrentGTVel</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getCurrentGTVel">getCurrentGTVel</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TTwist2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getCurrentGTVelLocal"><strong>getCurrentGTVelLocal</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getCurrentGTVelLocal">getCurrentGTVelLocal</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;the&nbsp;robot&nbsp;local&nbsp;frame&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getCurrentGTVelLocal">getCurrentGTVelLocal</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::math::TTwist2D</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getCurrentOdometricPose"><strong>getCurrentOdometricPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getCurrentOdometricPose">getCurrentOdometricPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;current&nbsp;pose&nbsp;according&nbsp;to&nbsp;(noisy)&nbsp;odometry&nbsp;<br>
+&nbsp;<br>
+&nbsp;setOdometryErrors&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getCurrentOdometricPose">getCurrentOdometricPose</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getCurrentOdometricVel"><strong>getCurrentOdometricVel</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getCurrentOdometricVel">getCurrentOdometricVel</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;odometric&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getCurrentOdometricVel">getCurrentOdometricVel</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TTwist2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getCurrentOdometricVelLocal"><strong>getCurrentOdometricVelLocal</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getCurrentOdometricVelLocal">getCurrentOdometricVelLocal</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;odometric&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;the&nbsp;robot&nbsp;local&nbsp;frame&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getCurrentOdometricVelLocal">getCurrentOdometricVelLocal</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::math::TTwist2D</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getTime"><strong>getTime</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getTime">getTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get&nbsp;the&nbsp;current&nbsp;simulation&nbsp;time&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getTime">getTime</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-getVelCmdType"><strong>getVelCmdType</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-getVelCmdType">getVelCmdType</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a><br>
+&nbsp;<br>
+Gets&nbsp;an&nbsp;empty&nbsp;velocity&nbsp;command&nbsp;object&nbsp;that&nbsp;can&nbsp;be&nbsp;queried&nbsp;to&nbsp;find&nbsp;out<br>
+&nbsp;the&nbsp;number&nbsp;of&nbsp;velcmd&nbsp;components,...&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-getVelCmdType">getVelCmdType</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&gt;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-resetStatus"><strong>resetStatus</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-resetStatus">resetStatus</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-resetStatus">resetStatus</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-resetTime"><strong>resetTime</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-resetTime">resetTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reset&nbsp;all&nbsp;simulator&nbsp;variables&nbsp;to&nbsp;0&nbsp;(except&nbsp;the<br>
+&nbsp;simulation&nbsp;time).&nbsp;<br>
+&nbsp;<br>
+&nbsp;resetTime<br>
+&nbsp;Reset&nbsp;time&nbsp;counter&nbsp;<br>
+&nbsp;<br>
+&nbsp;resetStatus&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-resetTime">resetTime</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-sendVelCmd"><strong>sendVelCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-sendVelCmd">sendVelCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;cmd_vel:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Sends&nbsp;a&nbsp;velocity&nbsp;command&nbsp;to&nbsp;the&nbsp;robot.&nbsp;The&nbsp;number&nbsp;of&nbsp;components&nbsp;and<br>
+&nbsp;their&nbsp;meaning&nbsp;depends<br>
+&nbsp;on&nbsp;the&nbsp;vehicle-kinematics&nbsp;derived&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-sendVelCmd">sendVelCmd</a>(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-setCurrentGTPose"><strong>setCurrentGTPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-setCurrentGTPose">setCurrentGTPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;pose:&nbsp;mrpt.pymrpt.mrpt.math.TPose2D)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Brute-force&nbsp;move&nbsp;robot&nbsp;to&nbsp;target&nbsp;coordinates&nbsp;("teleport")&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-setCurrentGTPose">setCurrentGTPose</a>(const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-setOdometryErrors"><strong>setOdometryErrors</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+6.&nbsp;<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float,&nbsp;Aphi_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7.&nbsp;<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float,&nbsp;Aphi_err_bias:&nbsp;float,&nbsp;Aphi_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Enable/Disable&nbsp;odometry&nbsp;errors.&nbsp;Errors&nbsp;in&nbsp;odometry&nbsp;are&nbsp;1&nbsp;sigma&nbsp;Gaussian<br>
+&nbsp;values&nbsp;per&nbsp;second&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-setOdometryErrors">setOdometryErrors</a>(bool,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimulVirtualBase-simulateOneTimeStep"><strong>simulateOneTimeStep</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimulVirtualBase-simulateOneTimeStep">simulateOneTimeStep</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;dt:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Runs&nbsp;the&nbsp;simulator&nbsp;during&nbsp;"dt"&nbsp;seconds.&nbsp;It&nbsp;will&nbsp;be&nbsp;split&nbsp;into&nbsp;periods&nbsp;of<br>
+&nbsp;"m_firmware_control_period".&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimulVirtualBase-simulateOneTimeStep">simulateOneTimeStep</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CVehicleSimulVirtualBase-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CVehicleSimul_DiffDriven">class <strong>CVehicleSimul_DiffDriven</strong></a>(<a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Simulates&nbsp;the&nbsp;kinematics&nbsp;of&nbsp;a&nbsp;differential-driven&nbsp;planar&nbsp;mobile<br>
+robot/vehicle,&nbsp;including&nbsp;odometry&nbsp;errors&nbsp;and&nbsp;dynamics&nbsp;limitations.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CVehicleSimul_DiffDriven-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleSimul_DiffDriven-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleSimul_DiffDriven-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleSimul_DiffDriven-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::operator=(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getV"><strong>getV</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getV">getV</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-getV">getV</a>()&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getVelCmdType"><strong>getVelCmdType</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getVelCmdType">getVelCmdType</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-getVelCmdType">getVelCmdType</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&gt;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getW"><strong>getW</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getW">getW</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-getW">getW</a>()&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-movementCommand"><strong>movementCommand</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-movementCommand">movementCommand</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;lin_vel:&nbsp;float,&nbsp;ang_vel:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;command&nbsp;the&nbsp;robot&nbsp;a&nbsp;desired&nbsp;movement:<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Linar&nbsp;velocity&nbsp;(m/s)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Angular&nbsp;velocity&nbsp;(rad/s)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-movementCommand">movementCommand</a>(double,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-sendVelCmd"><strong>sendVelCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-sendVelCmd">sendVelCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;cmd_vel:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-sendVelCmd">sendVelCmd</a>(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-setDelayModelParams"><strong>setDelayModelParams</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-setDelayModelParams">setDelayModelParams</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleSimul_DiffDriven-setDelayModelParams">setDelayModelParams</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleSimul_DiffDriven-setDelayModelParams">setDelayModelParams</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;TAU_delay_sec:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleSimul_DiffDriven-setDelayModelParams">setDelayModelParams</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;TAU_delay_sec:&nbsp;float,&nbsp;CMD_delay_sec:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Change&nbsp;the&nbsp;model&nbsp;of&nbsp;delays&nbsp;used&nbsp;for&nbsp;the&nbsp;orders&nbsp;sent&nbsp;to&nbsp;the&nbsp;robot&nbsp;<br>
+&nbsp;<br>
+&nbsp;movementCommand&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-setDelayModelParams">setDelayModelParams</a>(double,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-setV"><strong>setV</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-setV">setV</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;v:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-setV">setV</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-setW"><strong>setW</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-setW">setW</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>,&nbsp;w:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_DiffDriven">CVehicleSimul_DiffDriven</a>::<a href="#CVehicleSimul_DiffDriven-setW">setW</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>:<br>
+<dl><dt><a name="CVehicleSimul_DiffDriven-getCurrentGTPose"><strong>getCurrentGTPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getCurrentGTPose">getCurrentGTPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;pose&nbsp;in&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-getCurrentGTPose">getCurrentGTPose</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getCurrentGTVel"><strong>getCurrentGTVel</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getCurrentGTVel">getCurrentGTVel</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-getCurrentGTVel">getCurrentGTVel</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TTwist2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getCurrentGTVelLocal"><strong>getCurrentGTVelLocal</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getCurrentGTVelLocal">getCurrentGTVelLocal</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;the&nbsp;robot&nbsp;local&nbsp;frame&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-getCurrentGTVelLocal">getCurrentGTVelLocal</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::math::TTwist2D</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getCurrentOdometricPose"><strong>getCurrentOdometricPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getCurrentOdometricPose">getCurrentOdometricPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;current&nbsp;pose&nbsp;according&nbsp;to&nbsp;(noisy)&nbsp;odometry&nbsp;<br>
+&nbsp;<br>
+&nbsp;setOdometryErrors&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-getCurrentOdometricPose">getCurrentOdometricPose</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getCurrentOdometricVel"><strong>getCurrentOdometricVel</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getCurrentOdometricVel">getCurrentOdometricVel</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;odometric&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-getCurrentOdometricVel">getCurrentOdometricVel</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TTwist2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getCurrentOdometricVelLocal"><strong>getCurrentOdometricVelLocal</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getCurrentOdometricVelLocal">getCurrentOdometricVelLocal</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;odometric&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;the&nbsp;robot&nbsp;local&nbsp;frame&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-getCurrentOdometricVelLocal">getCurrentOdometricVelLocal</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::math::TTwist2D</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-getTime"><strong>getTime</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-getTime">getTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get&nbsp;the&nbsp;current&nbsp;simulation&nbsp;time&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-getTime">getTime</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-resetStatus"><strong>resetStatus</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-resetStatus">resetStatus</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-resetStatus">resetStatus</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-resetTime"><strong>resetTime</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-resetTime">resetTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reset&nbsp;all&nbsp;simulator&nbsp;variables&nbsp;to&nbsp;0&nbsp;(except&nbsp;the<br>
+&nbsp;simulation&nbsp;time).&nbsp;<br>
+&nbsp;<br>
+&nbsp;resetTime<br>
+&nbsp;Reset&nbsp;time&nbsp;counter&nbsp;<br>
+&nbsp;<br>
+&nbsp;resetStatus&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-resetTime">resetTime</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-setCurrentGTPose"><strong>setCurrentGTPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-setCurrentGTPose">setCurrentGTPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;pose:&nbsp;mrpt.pymrpt.mrpt.math.TPose2D)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Brute-force&nbsp;move&nbsp;robot&nbsp;to&nbsp;target&nbsp;coordinates&nbsp;("teleport")&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-setCurrentGTPose">setCurrentGTPose</a>(const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-setOdometryErrors"><strong>setOdometryErrors</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+6.&nbsp;<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float,&nbsp;Aphi_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7.&nbsp;<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float,&nbsp;Aphi_err_bias:&nbsp;float,&nbsp;Aphi_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Enable/Disable&nbsp;odometry&nbsp;errors.&nbsp;Errors&nbsp;in&nbsp;odometry&nbsp;are&nbsp;1&nbsp;sigma&nbsp;Gaussian<br>
+&nbsp;values&nbsp;per&nbsp;second&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-setOdometryErrors">setOdometryErrors</a>(bool,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_DiffDriven-simulateOneTimeStep"><strong>simulateOneTimeStep</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_DiffDriven-simulateOneTimeStep">simulateOneTimeStep</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;dt:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Runs&nbsp;the&nbsp;simulator&nbsp;during&nbsp;"dt"&nbsp;seconds.&nbsp;It&nbsp;will&nbsp;be&nbsp;split&nbsp;into&nbsp;periods&nbsp;of<br>
+&nbsp;"m_firmware_control_period".&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_DiffDriven-simulateOneTimeStep">simulateOneTimeStep</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CVehicleSimul_DiffDriven-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CVehicleSimul_Holo">class <strong>CVehicleSimul_Holo</strong></a>(<a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Kinematic&nbsp;simulator&nbsp;of&nbsp;a&nbsp;holonomic&nbsp;2D&nbsp;robot&nbsp;capable&nbsp;of&nbsp;moving&nbsp;in&nbsp;any<br>
+direction,&nbsp;with&nbsp;"blended"<br>
+velocity&nbsp;profiles.&nbsp;See&nbsp;<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>::<a href="#CVehicleSimul_Holo-sendVelCmd">sendVelCmd</a>()&nbsp;for&nbsp;a&nbsp;description&nbsp;of<br>
+the&nbsp;velocity&nbsp;commands&nbsp;in&nbsp;this&nbsp;kinematic&nbsp;model.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimul_Holo">CVehicleSimul_Holo</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CVehicleSimul_Holo-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleSimul_Holo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleSimul_Holo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleSimul_Holo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>::operator=(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-getVelCmdType"><strong>getVelCmdType</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getVelCmdType">getVelCmdType</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>::<a href="#CVehicleSimul_Holo-getVelCmdType">getVelCmdType</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&gt;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-sendVelCmd"><strong>sendVelCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-sendVelCmd">sendVelCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>,&nbsp;cmd_vel:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>::<a href="#CVehicleSimul_Holo-sendVelCmd">sendVelCmd</a>(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-sendVelRampCmd"><strong>sendVelRampCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-sendVelRampCmd">sendVelRampCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>,&nbsp;vel:&nbsp;float,&nbsp;dir:&nbsp;float,&nbsp;ramp_time:&nbsp;float,&nbsp;rot_speed:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Sends&nbsp;a&nbsp;velocity&nbsp;cmd&nbsp;to&nbsp;the&nbsp;holonomic&nbsp;robot.<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Linear&nbsp;speed&nbsp;(m/s)<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Direction&nbsp;(rad)&nbsp;(In&nbsp;the&nbsp;odometry&nbsp;frame&nbsp;of&nbsp;reference)<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Blend&nbsp;the&nbsp;cmd&nbsp;during&nbsp;this&nbsp;period&nbsp;(seconds)<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Rotational&nbsp;speed&nbsp;while&nbsp;there&nbsp;is&nbsp;heading&nbsp;error&nbsp;and<br>
+&nbsp;to&nbsp;this&nbsp;constant&nbsp;(rad/s)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimul_Holo">CVehicleSimul_Holo</a>::<a href="#CVehicleSimul_Holo-sendVelRampCmd">sendVelRampCmd</a>(double,&nbsp;double,&nbsp;double,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>:<br>
+<dl><dt><a name="CVehicleSimul_Holo-getCurrentGTPose"><strong>getCurrentGTPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getCurrentGTPose">getCurrentGTPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;pose&nbsp;in&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-getCurrentGTPose">getCurrentGTPose</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-getCurrentGTVel"><strong>getCurrentGTVel</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getCurrentGTVel">getCurrentGTVel</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-getCurrentGTVel">getCurrentGTVel</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TTwist2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-getCurrentGTVelLocal"><strong>getCurrentGTVelLocal</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getCurrentGTVelLocal">getCurrentGTVelLocal</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;ground&nbsp;truth&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;the&nbsp;robot&nbsp;local&nbsp;frame&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-getCurrentGTVelLocal">getCurrentGTVelLocal</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::math::TTwist2D</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-getCurrentOdometricPose"><strong>getCurrentOdometricPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getCurrentOdometricPose">getCurrentOdometricPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;current&nbsp;pose&nbsp;according&nbsp;to&nbsp;(noisy)&nbsp;odometry&nbsp;<br>
+&nbsp;<br>
+&nbsp;setOdometryErrors&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-getCurrentOdometricPose">getCurrentOdometricPose</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-getCurrentOdometricVel"><strong>getCurrentOdometricVel</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getCurrentOdometricVel">getCurrentOdometricVel</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;odometric&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;world&nbsp;coordinates&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-getCurrentOdometricVel">getCurrentOdometricVel</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::math::TTwist2D&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-getCurrentOdometricVelLocal"><strong>getCurrentOdometricVelLocal</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getCurrentOdometricVelLocal">getCurrentOdometricVelLocal</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;mrpt::math::TTwist2D<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;instantaneous,&nbsp;odometric&nbsp;velocity&nbsp;vector&nbsp;(vx,vy,omega)&nbsp;in<br>
+&nbsp;the&nbsp;robot&nbsp;local&nbsp;frame&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-getCurrentOdometricVelLocal">getCurrentOdometricVelLocal</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::math::TTwist2D</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-getTime"><strong>getTime</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-getTime">getTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get&nbsp;the&nbsp;current&nbsp;simulation&nbsp;time&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-getTime">getTime</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-resetStatus"><strong>resetStatus</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-resetStatus">resetStatus</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-resetStatus">resetStatus</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-resetTime"><strong>resetTime</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-resetTime">resetTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reset&nbsp;all&nbsp;simulator&nbsp;variables&nbsp;to&nbsp;0&nbsp;(except&nbsp;the<br>
+&nbsp;simulation&nbsp;time).&nbsp;<br>
+&nbsp;<br>
+&nbsp;resetTime<br>
+&nbsp;Reset&nbsp;time&nbsp;counter&nbsp;<br>
+&nbsp;<br>
+&nbsp;resetStatus&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-resetTime">resetTime</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-setCurrentGTPose"><strong>setCurrentGTPose</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-setCurrentGTPose">setCurrentGTPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;pose:&nbsp;mrpt.pymrpt.mrpt.math.TPose2D)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Brute-force&nbsp;move&nbsp;robot&nbsp;to&nbsp;target&nbsp;coordinates&nbsp;("teleport")&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-setCurrentGTPose">setCurrentGTPose</a>(const&nbsp;struct&nbsp;mrpt::math::TPose2D&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-setOdometryErrors"><strong>setOdometryErrors</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+6.&nbsp;<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float,&nbsp;Aphi_err_bias:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7.&nbsp;<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;enabled:&nbsp;bool,&nbsp;Ax_err_bias:&nbsp;float,&nbsp;Ax_err_std:&nbsp;float,&nbsp;Ay_err_bias:&nbsp;float,&nbsp;Ay_err_std:&nbsp;float,&nbsp;Aphi_err_bias:&nbsp;float,&nbsp;Aphi_err_std:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Enable/Disable&nbsp;odometry&nbsp;errors.&nbsp;Errors&nbsp;in&nbsp;odometry&nbsp;are&nbsp;1&nbsp;sigma&nbsp;Gaussian<br>
+&nbsp;values&nbsp;per&nbsp;second&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-setOdometryErrors">setOdometryErrors</a>(bool,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleSimul_Holo-simulateOneTimeStep"><strong>simulateOneTimeStep</strong></a>(...)</dt><dd><tt><a href="#CVehicleSimul_Holo-simulateOneTimeStep">simulateOneTimeStep</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>,&nbsp;dt:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Runs&nbsp;the&nbsp;simulator&nbsp;during&nbsp;"dt"&nbsp;seconds.&nbsp;It&nbsp;will&nbsp;be&nbsp;split&nbsp;into&nbsp;periods&nbsp;of<br>
+&nbsp;"m_firmware_control_period".&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleSimulVirtualBase">CVehicleSimulVirtualBase</a>::<a href="#CVehicleSimul_Holo-simulateOneTimeStep">simulateOneTimeStep</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CVehicleSimul_Holo-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CVehicleVelCmd">class <strong>CVehicleVelCmd</strong></a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a>, <a href="mrpt.pymrpt.mrpt.html#Stringifyable">mrpt.pymrpt.mrpt.Stringifyable</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Virtual&nbsp;base&nbsp;for&nbsp;velocity&nbsp;commands&nbsp;of&nbsp;different&nbsp;kinematic&nbsp;models&nbsp;of&nbsp;planar<br>
+mobile&nbsp;robot.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.html#Stringifyable">mrpt.pymrpt.mrpt.Stringifyable</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CVehicleVelCmd-GetRuntimeClass"><strong>GetRuntimeClass</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-GetRuntimeClass">GetRuntimeClass</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-GetRuntimeClass">GetRuntimeClass</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleVelCmd-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleVelCmd-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-asString"><strong>asString</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-asString">asString</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human&nbsp;readable&nbsp;description&nbsp;of&nbsp;the&nbsp;cmd&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-asString">asString</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;other:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::operator=(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-cmdVel_limits"><strong>cmdVel_limits</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-cmdVel_limits">cmdVel_limits</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;prev_vel_cmd:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;beta:&nbsp;float,&nbsp;params:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::TVelCmdParams)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Updates&nbsp;this&nbsp;command,&nbsp;computing&nbsp;a&nbsp;blended&nbsp;version&nbsp;of&nbsp;`beta`&nbsp;(within<br>
+&nbsp;[0,1])&nbsp;of&nbsp;`vel_cmd`&nbsp;and&nbsp;`1-beta`&nbsp;of&nbsp;`prev_vel_cmd`,&nbsp;simultaneously<br>
+&nbsp;to&nbsp;honoring&nbsp;any&nbsp;user-side&nbsp;maximum&nbsp;velocities.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;[0,1]&nbsp;ratio&nbsp;that&nbsp;the&nbsp;cmdvel&nbsp;had&nbsp;to&nbsp;be&nbsp;scaled&nbsp;down,&nbsp;or&nbsp;1.0&nbsp;if<br>
+&nbsp;none.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-cmdVel_limits">cmdVel_limits</a>(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;,&nbsp;const&nbsp;double,&nbsp;const&nbsp;struct&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::TVelCmdParams&nbsp;&amp;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-cmdVel_scale"><strong>cmdVel_scale</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-cmdVel_scale">cmdVel_scale</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;vel_scale:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Scale&nbsp;the&nbsp;velocity&nbsp;command&nbsp;encoded&nbsp;in&nbsp;this&nbsp;object.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;A&nbsp;scale&nbsp;within&nbsp;[0,1]&nbsp;reflecting&nbsp;how&nbsp;much&nbsp;should&nbsp;be<br>
+&nbsp;the&nbsp;raw&nbsp;velocity&nbsp;command&nbsp;be&nbsp;lessen&nbsp;(e.g.&nbsp;for&nbsp;safety&nbsp;reasons,...).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Users&nbsp;can&nbsp;directly&nbsp;inherit&nbsp;from&nbsp;existing&nbsp;implementations&nbsp;instead&nbsp;of<br>
+&nbsp;manually&nbsp;redefining&nbsp;this&nbsp;method:<br>
+&nbsp;&nbsp;-&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a><br>
+&nbsp;&nbsp;-&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-cmdVel_scale">cmdVel_scale</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-getVelCmdDescription"><strong>getVelCmdDescription</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-getVelCmdDescription">getVelCmdDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Get&nbsp;textual,&nbsp;human-readable&nbsp;description&nbsp;of&nbsp;each&nbsp;velocity&nbsp;command<br>
+&nbsp;component&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-getVelCmdDescription">getVelCmdDescription</a>(const&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-getVelCmdElement"><strong>getVelCmdElement</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-getVelCmdElement">getVelCmdElement</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get&nbsp;each&nbsp;velocity&nbsp;command&nbsp;component&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-getVelCmdElement">getVelCmdElement</a>(const&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-getVelCmdLength"><strong>getVelCmdLength</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-getVelCmdLength">getVelCmdLength</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Get&nbsp;number&nbsp;of&nbsp;components&nbsp;in&nbsp;each&nbsp;velocity&nbsp;command&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-isStopCmd"><strong>isStopCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-isStopCmd">isStopCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;command&nbsp;means&nbsp;"do&nbsp;not&nbsp;move"&nbsp;/&nbsp;"stop".&nbsp;<br>
+&nbsp;setToStop<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-isStopCmd">isStopCmd</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-setToStop"><strong>setToStop</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-setToStop">setToStop</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Set&nbsp;to&nbsp;a&nbsp;command&nbsp;that&nbsp;means&nbsp;"do&nbsp;not&nbsp;move"&nbsp;/&nbsp;"stop".&nbsp;<br>
+&nbsp;isStopCmd&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-setToStop">setToStop</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-setVelCmdElement"><strong>setVelCmdElement</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-setVelCmdElement">setVelCmdElement</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;index:&nbsp;int,&nbsp;val:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Set&nbsp;each&nbsp;velocity&nbsp;command&nbsp;component&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-setVelCmdElement">setVelCmdElement</a>(const&nbsp;int,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="CVehicleVelCmd-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>TVelCmdParams</strong> = &lt;class 'mrpt.pymrpt.mrpt.kinematics.CVehicleVelCmd.TVelCmdParams'&gt;<dd><tt>Parameters&nbsp;that&nbsp;may&nbsp;be&nbsp;used&nbsp;by&nbsp;<a href="#CVehicleVelCmd-cmdVel_limits">cmdVel_limits</a>()&nbsp;in&nbsp;any&nbsp;derived&nbsp;classes.</tt></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
+<dl><dt><a name="CVehicleVelCmd-clone"><strong>clone</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-clone">clone</a>(self:&nbsp;mrpt.pymrpt.mrpt.rtti.CObject)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;deep&nbsp;copy&nbsp;(clone)&nbsp;of&nbsp;the&nbsp;object,&nbsp;indepently&nbsp;of&nbsp;its&nbsp;class.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::rtti::CObject::<a href="#CVehicleVelCmd-clone">clone</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;mrpt::rtti::CObject&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd-duplicateGetSmartPtr"><strong>duplicateGetSmartPtr</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-duplicateGetSmartPtr">duplicateGetSmartPtr</a>(self:&nbsp;mrpt.pymrpt.mrpt.rtti.CObject)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+Makes&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;object&nbsp;and&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;it&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::rtti::CObject::<a href="#CVehicleVelCmd-duplicateGetSmartPtr">duplicateGetSmartPtr</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CVehicleVelCmd-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CVehicleVelCmd_DiffDriven">class <strong>CVehicleVelCmd_DiffDriven</strong></a>(<a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Kinematic&nbsp;model&nbsp;for&nbsp;Ackermann-like&nbsp;or&nbsp;differential-driven&nbsp;vehicles.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.html#Stringifyable">mrpt.pymrpt.mrpt.Stringifyable</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-GetRuntimeClass"><strong>GetRuntimeClass</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-GetRuntimeClass">GetRuntimeClass</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-GetRuntimeClass">GetRuntimeClass</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleVelCmd_DiffDriven-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleVelCmd_DiffDriven-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleVelCmd_DiffDriven-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::operator=(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-clone"><strong>clone</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-clone">clone</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-clone">clone</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;mrpt::rtti::CObject&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-cmdVel_limits"><strong>cmdVel_limits</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-cmdVel_limits">cmdVel_limits</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;prev_vel_cmd:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;beta:&nbsp;float,&nbsp;params:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>.TVelCmdParams)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+See&nbsp;base&nbsp;class&nbsp;docs.<br>
+&nbsp;Tecognizes&nbsp;these&nbsp;parameters:&nbsp;`robotMax_V_mps`,&nbsp;`robotMax_W_degps`&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-cmdVel_limits">cmdVel_limits</a>(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;,&nbsp;const&nbsp;double,&nbsp;const&nbsp;struct&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::TVelCmdParams&nbsp;&amp;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-cmdVel_scale"><strong>cmdVel_scale</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-cmdVel_scale">cmdVel_scale</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;vel_scale:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+See&nbsp;docs&nbsp;of&nbsp;method&nbsp;in&nbsp;base&nbsp;class.&nbsp;The&nbsp;implementation&nbsp;for<br>
+&nbsp;differential-driven&nbsp;robots&nbsp;of&nbsp;this&nbsp;method<br>
+&nbsp;just&nbsp;multiplies&nbsp;all&nbsp;the&nbsp;components&nbsp;of&nbsp;vel_cmd&nbsp;times&nbsp;vel_scale,&nbsp;which&nbsp;is<br>
+&nbsp;appropriate<br>
+&nbsp;&nbsp;for&nbsp;differential-driven&nbsp;kinematic&nbsp;models&nbsp;(v,w).<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-cmdVel_scale">cmdVel_scale</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-getVelCmdDescription"><strong>getVelCmdDescription</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-getVelCmdDescription">getVelCmdDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-getVelCmdDescription">getVelCmdDescription</a>(const&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-getVelCmdElement"><strong>getVelCmdElement</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-getVelCmdElement">getVelCmdElement</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-getVelCmdElement">getVelCmdElement</a>(const&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-getVelCmdLength"><strong>getVelCmdLength</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-getVelCmdLength">getVelCmdLength</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-isStopCmd"><strong>isStopCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-isStopCmd">isStopCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-isStopCmd">isStopCmd</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-setToStop"><strong>setToStop</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-setToStop">setToStop</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-setToStop">setToStop</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-setVelCmdElement"><strong>setVelCmdElement</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-setVelCmdElement">setVelCmdElement</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>,&nbsp;index:&nbsp;int,&nbsp;val:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-setVelCmdElement">setVelCmdElement</a>(const&nbsp;int,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-CreateObject"><strong>CreateObject</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-CreateObject">CreateObject</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-CreateObject">CreateObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_43_t<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;43&gt;</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>ang_vel</strong></dt>
+</dl>
+<dl><dt><strong>lin_vel</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>:<br>
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-asString"><strong>asString</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-asString">asString</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human&nbsp;readable&nbsp;description&nbsp;of&nbsp;the&nbsp;cmd&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd_DiffDriven-asString">asString</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>:<br>
+<dl><dt><strong>TVelCmdParams</strong> = &lt;class 'mrpt.pymrpt.mrpt.kinematics.CVehicleVelCmd.TVelCmdParams'&gt;<dd><tt>Parameters&nbsp;that&nbsp;may&nbsp;be&nbsp;used&nbsp;by&nbsp;<a href="#CVehicleVelCmd_DiffDriven-cmdVel_limits">cmdVel_limits</a>()&nbsp;in&nbsp;any&nbsp;derived&nbsp;classes.</tt></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-duplicateGetSmartPtr"><strong>duplicateGetSmartPtr</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-duplicateGetSmartPtr">duplicateGetSmartPtr</a>(self:&nbsp;mrpt.pymrpt.mrpt.rtti.CObject)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+Makes&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;object&nbsp;and&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;it&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::rtti::CObject::<a href="#CVehicleVelCmd_DiffDriven-duplicateGetSmartPtr">duplicateGetSmartPtr</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CVehicleVelCmd_DiffDriven-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CVehicleVelCmd_Holo">class <strong>CVehicleVelCmd_Holo</strong></a>(<a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Kinematic&nbsp;model&nbsp;for<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.html#Stringifyable">mrpt.pymrpt.mrpt.Stringifyable</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CVehicleVelCmd_Holo-GetRuntimeClass"><strong>GetRuntimeClass</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-GetRuntimeClass">GetRuntimeClass</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-GetRuntimeClass">GetRuntimeClass</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CVehicleVelCmd_Holo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CVehicleVelCmd_Holo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;vel:&nbsp;float,&nbsp;dir_local:&nbsp;float,&nbsp;ramp_time:&nbsp;float,&nbsp;rot_speed:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CVehicleVelCmd_Holo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CVehicleVelCmd_Holo-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::operator=(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-clone"><strong>clone</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-clone">clone</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-clone">clone</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;mrpt::rtti::CObject&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-cmdVel_limits"><strong>cmdVel_limits</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-cmdVel_limits">cmdVel_limits</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;prev_vel_cmd:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>,&nbsp;beta:&nbsp;float,&nbsp;params:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>.TVelCmdParams)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-cmdVel_limits">cmdVel_limits</a>(const&nbsp;class&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>&nbsp;&amp;,&nbsp;const&nbsp;double,&nbsp;const&nbsp;struct&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::TVelCmdParams&nbsp;&amp;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-cmdVel_scale"><strong>cmdVel_scale</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-cmdVel_scale">cmdVel_scale</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;vel_scale:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-cmdVel_scale">cmdVel_scale</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-getVelCmdDescription"><strong>getVelCmdDescription</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-getVelCmdDescription">getVelCmdDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-getVelCmdDescription">getVelCmdDescription</a>(const&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-getVelCmdElement"><strong>getVelCmdElement</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-getVelCmdElement">getVelCmdElement</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-getVelCmdElement">getVelCmdElement</a>(const&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-getVelCmdLength"><strong>getVelCmdLength</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-getVelCmdLength">getVelCmdLength</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-isStopCmd"><strong>isStopCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-isStopCmd">isStopCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-isStopCmd">isStopCmd</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-setToStop"><strong>setToStop</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-setToStop">setToStop</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-setToStop">setToStop</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-setVelCmdElement"><strong>setVelCmdElement</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-setVelCmdElement">setVelCmdElement</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>,&nbsp;index:&nbsp;int,&nbsp;val:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-setVelCmdElement">setVelCmdElement</a>(const&nbsp;int,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="CVehicleVelCmd_Holo-CreateObject"><strong>CreateObject</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_Holo-CreateObject">CreateObject</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-CreateObject">CreateObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_Holo-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CVehicleVelCmd_Holo-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_Holo-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_37_t<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;37&gt;</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>dir_local</strong></dt>
+</dl>
+<dl><dt><strong>ramp_time</strong></dt>
+</dl>
+<dl><dt><strong>rot_speed</strong></dt>
+</dl>
+<dl><dt><strong>vel</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>:<br>
+<dl><dt><a name="CVehicleVelCmd_Holo-asString"><strong>asString</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-asString">asString</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human&nbsp;readable&nbsp;description&nbsp;of&nbsp;the&nbsp;cmd&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd_Holo-asString">asString</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.kinematics.html#CVehicleVelCmd">CVehicleVelCmd</a>:<br>
+<dl><dt><strong>TVelCmdParams</strong> = &lt;class 'mrpt.pymrpt.mrpt.kinematics.CVehicleVelCmd.TVelCmdParams'&gt;<dd><tt>Parameters&nbsp;that&nbsp;may&nbsp;be&nbsp;used&nbsp;by&nbsp;<a href="#CVehicleVelCmd_Holo-cmdVel_limits">cmdVel_limits</a>()&nbsp;in&nbsp;any&nbsp;derived&nbsp;classes.</tt></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
+<dl><dt><a name="CVehicleVelCmd_Holo-duplicateGetSmartPtr"><strong>duplicateGetSmartPtr</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-duplicateGetSmartPtr">duplicateGetSmartPtr</a>(self:&nbsp;mrpt.pymrpt.mrpt.rtti.CObject)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
+&nbsp;<br>
+Makes&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;object&nbsp;and&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;it&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::rtti::CObject::<a href="#CVehicleVelCmd_Holo-duplicateGetSmartPtr">duplicateGetSmartPtr</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CVehicleVelCmd_Holo-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TKinematicLink">class <strong>TKinematicLink</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>An&nbsp;individual&nbsp;kinematic&nbsp;chain&nbsp;element&nbsp;(one&nbsp;link)&nbsp;which&nbsp;builds&nbsp;up&nbsp;a<br>
+<a href="#CKinematicChain">CKinematicChain</a>.<br>
+The&nbsp;parameterization&nbsp;of&nbsp;the&nbsp;SE(3)&nbsp;transformation&nbsp;from&nbsp;the&nbsp;starting&nbsp;point&nbsp;to<br>
+the&nbsp;end&nbsp;point<br>
+follows&nbsp;a&nbsp;Denavit-Hartenberg&nbsp;standard&nbsp;parameterization:&nbsp;[theta,&nbsp;d,&nbsp;a,<br>
+alpha].<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.kinematics.html#TKinematicLink">TKinematicLink</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TKinematicLink-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TKinematicLink-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#TKinematicLink-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#TKinematicLink">TKinematicLink</a>,&nbsp;_theta:&nbsp;float,&nbsp;_d:&nbsp;float,&nbsp;_a:&nbsp;float,&nbsp;_alpha:&nbsp;float,&nbsp;_is_prismatic:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#TKinematicLink-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#TKinematicLink">TKinematicLink</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>a</strong></dt>
+</dl>
+<dl><dt><strong>alpha</strong></dt>
+</dl>
+<dl><dt><strong>d</strong></dt>
+</dl>
+<dl><dt><strong>is_prismatic</strong></dt>
+</dl>
+<dl><dt><strong>theta</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TKinematicLink-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

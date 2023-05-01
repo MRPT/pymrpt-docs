@@ -1,0 +1,2330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.system</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.system</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::system&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="mrpt.pymrpt.mrpt.system.os.html">mrpt.pymrpt.mrpt.system.os</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CConsoleRedirector">CConsoleRedirector</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CControlledRateTimer">CControlledRateTimer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CDirectoryExplorer">CDirectoryExplorer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CFileSystemWatcher">CFileSystemWatcher</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CObservable">CObservable</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CObserver">CObserver</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#COutputLoggerStreamWrapper">COutputLoggerStreamWrapper</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CRateTimer">CRateTimer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CTicTac">CTicTac</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CTimeLogger">CTimeLogger</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CTimeLoggerEntry">CTimeLoggerEntry</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CTimeLoggerSaveAtDtor">CTimeLoggerSaveAtDtor</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#ConsoleBackgroundColor">ConsoleBackgroundColor</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#ConsoleForegroundColor">ConsoleForegroundColor</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#ConsoleTextStyle">ConsoleTextStyle</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#TProcessPriority">TProcessPriority</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#TThreadPriority">TThreadPriority</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#TTimeParts">TTimeParts</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#VerbosityLevel">VerbosityLevel</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#WorkerThreadsPool">WorkerThreadsPool</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#mrptEvent">mrptEvent</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#mrptEventOnDestroy">mrptEventOnDestroy</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CConsoleRedirector">class <strong>CConsoleRedirector</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>By&nbsp;creating&nbsp;an&nbsp;object&nbsp;of&nbsp;this&nbsp;class,&nbsp;all&nbsp;the&nbsp;output&nbsp;to&nbsp;std::cout&nbsp;(and<br>
+std::cerr)&nbsp;will&nbsp;be&nbsp;redirected&nbsp;to&nbsp;a&nbsp;text&nbsp;file,&nbsp;and&nbsp;optionally&nbsp;also&nbsp;shown&nbsp;on<br>
+the&nbsp;console.<br>
+&nbsp;Based&nbsp;on&nbsp;code&nbsp;from&nbsp;<a href="http://www.devmaster.net/forums/showthread.php?t=7037">http://www.devmaster.net/forums/showthread.php?t=7037</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CConsoleRedirector">CConsoleRedirector</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CConsoleRedirector-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CConsoleRedirector-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str,&nbsp;arg1:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str,&nbsp;arg1:&nbsp;bool,&nbsp;arg2:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str,&nbsp;arg1:&nbsp;bool,&nbsp;arg2:&nbsp;bool,&nbsp;arg3:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;out_file:&nbsp;str,&nbsp;also_to_console:&nbsp;bool,&nbsp;also_cerr:&nbsp;bool,&nbsp;append_file:&nbsp;bool,&nbsp;bufferSize:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CConsoleRedirector-flush"><strong>flush</strong></a>(...)</dt><dd><tt><a href="#CConsoleRedirector-flush">flush</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CConsoleRedirector">CConsoleRedirector</a>::<a href="#CConsoleRedirector-flush">flush</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConsoleRedirector-writeString"><strong>writeString</strong></a>(...)</dt><dd><tt><a href="#CConsoleRedirector-writeString">writeString</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CConsoleRedirector">CConsoleRedirector</a>::<a href="#CConsoleRedirector-writeString">writeString</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CConsoleRedirector-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CControlledRateTimer">class <strong>CControlledRateTimer</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;for&nbsp;calling&nbsp;<a href="#CControlledRateTimer-sleep">sleep</a>()&nbsp;in&nbsp;a&nbsp;loop,&nbsp;such&nbsp;that&nbsp;the&nbsp;amount&nbsp;of&nbsp;sleep&nbsp;time<br>
+will&nbsp;be&nbsp;computed&nbsp;to&nbsp;make&nbsp;the&nbsp;loop&nbsp;run&nbsp;at&nbsp;the&nbsp;desired&nbsp;rate&nbsp;(in&nbsp;Hz).<br>
+This&nbsp;class&nbsp;implements&nbsp;a&nbsp;PI&nbsp;controller&nbsp;on&nbsp;top&nbsp;of&nbsp;a&nbsp;vanilla&nbsp;<a href="#CRateTimer">CRateTimer</a>&nbsp;object,<br>
+ensuring&nbsp;a&nbsp;high&nbsp;accuracy&nbsp;in&nbsp;achieved&nbsp;execution&nbsp;rates.&nbsp;Note&nbsp;that&nbsp;this&nbsp;is&nbsp;done<br>
+by&nbsp;setting&nbsp;a&nbsp;slightly-higher&nbsp;rate&nbsp;("control&nbsp;action")&nbsp;to&nbsp;the&nbsp;internal<br>
+<a href="#CRateTimer">CRateTimer</a>,&nbsp;such&nbsp;that&nbsp;the&nbsp;error&nbsp;between&nbsp;the&nbsp;user-provided&nbsp;expected&nbsp;rate&nbsp;and<br>
+the&nbsp;actual&nbsp;measured&nbsp;rate&nbsp;(low-pass&nbsp;filtered)&nbsp;is&nbsp;decreased&nbsp;by&nbsp;means&nbsp;of&nbsp;a&nbsp;PI<br>
+controller.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;rates&nbsp;higher&nbsp;than&nbsp;a&nbsp;few&nbsp;kHz&nbsp;are&nbsp;not&nbsp;attainable&nbsp;in&nbsp;all&nbsp;CPUs&nbsp;and/or<br>
+kernel&nbsp;versions.&nbsp;Find&nbsp;below&nbsp;some&nbsp;graphs&nbsp;illustrating&nbsp;how&nbsp;this&nbsp;class&nbsp;tries&nbsp;to<br>
+achieve&nbsp;a&nbsp;constant&nbsp;setpoint&nbsp;rate&nbsp;(given&nbsp;by&nbsp;the&nbsp;user),&nbsp;reacting&nbsp;to&nbsp;changes&nbsp;in<br>
+the&nbsp;setpoint&nbsp;values:<br>
+&nbsp;<br>
+&nbsp;![controlled&nbsp;rate&nbsp;timer&nbsp;plots](CControlledRateTimer_example.png)<br>
+&nbsp;<br>
+This&nbsp;graphs&nbsp;is&nbsp;generated&nbsp;with&nbsp;the&nbsp;example:<br>
+&nbsp;<br>
+`system_control_rate_timer_example&nbsp;--rate1&nbsp;2000.0&nbsp;--rate2&nbsp;4000.0`<br>
+&nbsp;<br>
+All&nbsp;the&nbsp;parameters&nbsp;for&nbsp;the&nbsp;PI&nbsp;controller&nbsp;and&nbsp;low-pass&nbsp;filter&nbsp;(rate&nbsp;estimator)<br>
+are&nbsp;settable&nbsp;by&nbsp;the&nbsp;user&nbsp;to&nbsp;adapt&nbsp;them&nbsp;to&nbsp;specific&nbsp;needs.<br>
+&nbsp;<br>
+&nbsp;<br>
+Control&nbsp;law&nbsp;by&nbsp;[Francisco&nbsp;Jose&nbsp;Mañas<br>
+Alvarez](<a href="https://github.com/FranciscoJManasAlvarez">https://github.com/FranciscoJManasAlvarez</a>)<br>
+&nbsp;<br>
+&nbsp;<br>
+[New&nbsp;in&nbsp;MRPT&nbsp;2.0.4]<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CControlledRateTimer">CControlledRateTimer</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CControlledRateTimer-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CControlledRateTimer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CControlledRateTimer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;rate_hz:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CControlledRateTimer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-actualControlledRate"><strong>actualControlledRate</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-actualControlledRate">actualControlledRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Gets&nbsp;the&nbsp;actual&nbsp;controller&nbsp;output:&nbsp;the&nbsp;rate&nbsp;(Hz)&nbsp;of&nbsp;the&nbsp;internal<br>
+&nbsp;<a href="#CRateTimer">CRateTimer</a>&nbsp;object.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-actualControlledRate">actualControlledRate</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-controllerParam_Kp"><strong>controllerParam_Kp</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-controllerParam_Kp">controllerParam_Kp</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CControlledRateTimer-controllerParam_Kp">controllerParam_Kp</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+PI&nbsp;controller&nbsp;Kp&nbsp;parameter&nbsp;[default=1.0]&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-controllerParam_Kp">controllerParam_Kp</a>()&nbsp;const&nbsp;--&gt;&nbsp;double<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CControlledRateTimer-controllerParam_Kp">controllerParam_Kp</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;v:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-controllerParam_Kp">controllerParam_Kp</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-controllerParam_Ti"><strong>controllerParam_Ti</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-controllerParam_Ti">controllerParam_Ti</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CControlledRateTimer-controllerParam_Ti">controllerParam_Ti</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+PI&nbsp;controller&nbsp;Ti&nbsp;parameter&nbsp;[default=0.0194]&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-controllerParam_Ti">controllerParam_Ti</a>()&nbsp;const&nbsp;--&gt;&nbsp;double<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CControlledRateTimer-controllerParam_Ti">controllerParam_Ti</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;v:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-controllerParam_Ti">controllerParam_Ti</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-estimatedRate"><strong>estimatedRate</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-estimatedRate">estimatedRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Gets&nbsp;the&nbsp;latest&nbsp;estimated&nbsp;run&nbsp;rate&nbsp;(Hz),&nbsp;which&nbsp;comes&nbsp;from&nbsp;actual&nbsp;period<br>
+&nbsp;measurement,&nbsp;low-pass&nbsp;filtered.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-estimatedRate">estimatedRate</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-estimatedRateRaw"><strong>estimatedRateRaw</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-estimatedRateRaw">estimatedRateRaw</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Last&nbsp;actual&nbsp;execution&nbsp;rate&nbsp;measured&nbsp;(Hz),&nbsp;without&nbsp;low-pass&nbsp;filtering&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-estimatedRateRaw">estimatedRateRaw</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-followErrorRatioToRaiseWarning"><strong>followErrorRatioToRaiseWarning</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-followErrorRatioToRaiseWarning">followErrorRatioToRaiseWarning</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CControlledRateTimer-followErrorRatioToRaiseWarning">followErrorRatioToRaiseWarning</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get/set&nbsp;ratio&nbsp;threshold&nbsp;for&nbsp;issuing&nbsp;a&nbsp;warning&nbsp;(via&nbsp;COutputLogger<br>
+&nbsp;interface)&nbsp;if&nbsp;the&nbsp;achieved&nbsp;rate&nbsp;is&nbsp;not&nbsp;this&nbsp;close&nbsp;to&nbsp;the&nbsp;set-point<br>
+&nbsp;[Default=0.2,&nbsp;=20%]<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-followErrorRatioToRaiseWarning">followErrorRatioToRaiseWarning</a>()&nbsp;const&nbsp;--&gt;&nbsp;double<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CControlledRateTimer-followErrorRatioToRaiseWarning">followErrorRatioToRaiseWarning</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;v:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-followErrorRatioToRaiseWarning">followErrorRatioToRaiseWarning</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-lowPassParam_a0"><strong>lowPassParam_a0</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-lowPassParam_a0">lowPassParam_a0</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CControlledRateTimer-lowPassParam_a0">lowPassParam_a0</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Low-pass&nbsp;filter&nbsp;a0&nbsp;value&nbsp;[default=0.9]:<br>
+&nbsp;estimation&nbsp;=&nbsp;a0*input&nbsp;+&nbsp;(1-a0)*former_estimation&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-lowPassParam_a0">lowPassParam_a0</a>()&nbsp;const&nbsp;--&gt;&nbsp;double<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CControlledRateTimer-lowPassParam_a0">lowPassParam_a0</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;v:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-lowPassParam_a0">lowPassParam_a0</a>(double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-setRate"><strong>setRate</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-setRate">setRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>,&nbsp;rate_hz:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;object&nbsp;loop&nbsp;rate&nbsp;(Hz)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-setRate">setRate</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CControlledRateTimer-sleep"><strong>sleep</strong></a>(...)</dt><dd><tt><a href="#CControlledRateTimer-sleep">sleep</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CControlledRateTimer">CControlledRateTimer</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Sleeps&nbsp;for&nbsp;some&nbsp;time,&nbsp;such&nbsp;as&nbsp;the&nbsp;return&nbsp;of&nbsp;this&nbsp;method&nbsp;is&nbsp;1/rate<br>
+&nbsp;(seconds)<br>
+&nbsp;after&nbsp;the&nbsp;return&nbsp;of&nbsp;the&nbsp;previous&nbsp;call.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;if&nbsp;the&nbsp;rate&nbsp;could&nbsp;not&nbsp;be&nbsp;achieved&nbsp;("we&nbsp;are&nbsp;already&nbsp;late"),<br>
+&nbsp;true&nbsp;if&nbsp;all&nbsp;went&nbsp;right.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CControlledRateTimer">CControlledRateTimer</a>::<a href="#CControlledRateTimer-sleep">sleep</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CControlledRateTimer-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CDirectoryExplorer">class <strong>CDirectoryExplorer</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;allows&nbsp;the&nbsp;enumeration&nbsp;of&nbsp;the&nbsp;files/directories&nbsp;that&nbsp;exist&nbsp;into&nbsp;a<br>
+given&nbsp;path.<br>
+&nbsp;The&nbsp;only&nbsp;existing&nbsp;method&nbsp;is&nbsp;"explore"&nbsp;and&nbsp;returns&nbsp;the&nbsp;list&nbsp;of&nbsp;found&nbsp;files&nbsp;&amp;<br>
+directories.<br>
+&nbsp;Refer&nbsp;to&nbsp;the&nbsp;example&nbsp;in&nbsp;/samples/UTILS/directoryExplorer<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CFileSystemWatcher">CFileSystemWatcher</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CDirectoryExplorer">CDirectoryExplorer</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CDirectoryExplorer-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CDirectoryExplorer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CDirectoryExplorer">CDirectoryExplorer</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>TFileInfo</strong> = &lt;class 'mrpt.pymrpt.mrpt.system.CDirectoryExplorer.TFileInfo'&gt;<dd><tt>This&nbsp;represents&nbsp;the&nbsp;information&nbsp;about&nbsp;each&nbsp;file.</tt></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CDirectoryExplorer-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CFileSystemWatcher">class <strong>CFileSystemWatcher</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;subscribes&nbsp;to&nbsp;notifications&nbsp;of&nbsp;file&nbsp;system&nbsp;changes,&nbsp;thus&nbsp;it&nbsp;can<br>
+be&nbsp;used&nbsp;to&nbsp;efficiently&nbsp;stay&nbsp;informed&nbsp;about&nbsp;changes&nbsp;in&nbsp;a&nbsp;directory&nbsp;tree.<br>
+&nbsp;-&nbsp;Windows:&nbsp;Requires&nbsp;Windows&nbsp;2000&nbsp;or&nbsp;newer.<br>
+&nbsp;-&nbsp;Linux:&nbsp;Requires&nbsp;kernel&nbsp;2.6.13&nbsp;or&nbsp;newer.<br>
+&nbsp;Using&nbsp;this&nbsp;class&nbsp;in&nbsp;an&nbsp;old&nbsp;Linux&nbsp;or&nbsp;other&nbsp;unsoported&nbsp;system&nbsp;(Unix,etc...)<br>
+has&nbsp;no&nbsp;effect,&nbsp;i.e.&nbsp;no&nbsp;notification&nbsp;will&nbsp;be&nbsp;ever&nbsp;received.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CDirectoryExplorer">CDirectoryExplorer</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CFileSystemWatcher">CFileSystemWatcher</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CFileSystemWatcher-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFileSystemWatcher-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileSystemWatcher-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CFileSystemWatcher">CFileSystemWatcher</a>,&nbsp;path:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileSystemWatcher-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CFileSystemWatcher">CFileSystemWatcher</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CFileSystemWatcher">CFileSystemWatcher</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CFileSystemWatcher-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CFileSystemWatcher-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CFileSystemWatcher">CFileSystemWatcher</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CFileSystemWatcher">CFileSystemWatcher</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CFileSystemWatcher">CFileSystemWatcher</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CFileSystemWatcher">CFileSystemWatcher</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#CFileSystemWatcher">CFileSystemWatcher</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CFileSystemWatcher">CFileSystemWatcher</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>TFileSystemChange</strong> = &lt;class 'mrpt.pymrpt.mrpt.system.CFileSystemWatcher.TFileSystemChange'&gt;<dd><tt>Each&nbsp;of&nbsp;the&nbsp;changes&nbsp;detected&nbsp;by&nbsp;mrpt::system::<a href="#CFileSystemWatcher">CFileSystemWatcher</a></tt></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CFileSystemWatcher-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CObservable">class <strong>CObservable</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Inherit&nbsp;from&nbsp;this&nbsp;class&nbsp;for&nbsp;those&nbsp;objects&nbsp;capable&nbsp;of&nbsp;being&nbsp;observed&nbsp;by&nbsp;a<br>
+<a href="#CObserver">CObserver</a>&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;The&nbsp;only&nbsp;thing&nbsp;to&nbsp;do&nbsp;in&nbsp;your&nbsp;child&nbsp;class&nbsp;is&nbsp;to&nbsp;call<br>
+<a href="#CObservable">CObservable</a>::publishEvent()&nbsp;whenever&nbsp;needed&nbsp;and&nbsp;all&nbsp;the<br>
+&nbsp;&nbsp;observer&nbsp;classes&nbsp;will&nbsp;be&nbsp;notified.<br>
+&nbsp;<br>
+&nbsp;<br>
+The&nbsp;pairs&nbsp;<a href="#CObservable">CObservable</a>&nbsp;/&nbsp;<a href="#CObserver">CObserver</a>&nbsp;automatically&nbsp;notify&nbsp;each&nbsp;other&nbsp;the<br>
+destruction&nbsp;of&nbsp;any&nbsp;of&nbsp;them,&nbsp;effectively&nbsp;ending&nbsp;the&nbsp;subscription&nbsp;of&nbsp;events.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CObserver">CObserver</a>,&nbsp;<a href="#mrptEvent">mrptEvent</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CObservable">CObservable</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CObservable-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CObservable-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CObservable-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CObservable-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CObservable-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CObservable-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CObservable">CObservable</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#CObservable">CObservable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CObservable">CObservable</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CObservable-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CObserver">class <strong>CObserver</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Inherit&nbsp;from&nbsp;this&nbsp;class&nbsp;to&nbsp;get&nbsp;notified&nbsp;about&nbsp;events&nbsp;from&nbsp;any&nbsp;<a href="#CObservable">CObservable</a><br>
+object&nbsp;after&nbsp;subscribing&nbsp;to&nbsp;it.<br>
+&nbsp;<br>
+&nbsp;The&nbsp;main&nbsp;methods&nbsp;in&nbsp;this&nbsp;class&nbsp;are:<br>
+&nbsp;&nbsp;-&nbsp;<a href="#CObserver-observeBegin">observeBegin</a>():&nbsp;To&nbsp;be&nbsp;called&nbsp;to&nbsp;start&nbsp;listening&nbsp;at&nbsp;a&nbsp;given&nbsp;object.<br>
+&nbsp;&nbsp;-&nbsp;OnEvent():&nbsp;Virtual&nbsp;functions&nbsp;to&nbsp;be&nbsp;implemented&nbsp;in&nbsp;your&nbsp;child&nbsp;class&nbsp;to<br>
+receive&nbsp;all&nbsp;the&nbsp;notifications.<br>
+&nbsp;<br>
+&nbsp;Note&nbsp;that&nbsp;if&nbsp;custom&nbsp;(child)&nbsp;<a href="#mrptEvent">mrptEvent</a>&nbsp;classes&nbsp;are&nbsp;used,&nbsp;you&nbsp;can&nbsp;tell<br>
+between&nbsp;them&nbsp;in&nbsp;runtime&nbsp;with&nbsp;"dynamic_cast&lt;&gt;()".<br>
+&nbsp;<br>
+&nbsp;<br>
+The&nbsp;pairs&nbsp;<a href="#CObservable">CObservable</a>&nbsp;/&nbsp;<a href="#CObserver">CObserver</a>&nbsp;automatically&nbsp;notify&nbsp;each&nbsp;other&nbsp;the<br>
+destruction&nbsp;of&nbsp;any&nbsp;of&nbsp;them,&nbsp;effectively&nbsp;ending&nbsp;the&nbsp;subscription&nbsp;of&nbsp;events.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CObservable">CObservable</a>,&nbsp;<a href="#mrptEvent">mrptEvent</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CObserver">CObserver</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CObserver-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CObserver-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CObserver-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CObserver-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CObserver-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CObserver-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CObserver">CObserver</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#CObserver">CObserver</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CObserver">CObserver</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CObserver-observeBegin"><strong>observeBegin</strong></a>(...)</dt><dd><tt><a href="#CObserver-observeBegin">observeBegin</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Starts&nbsp;the&nbsp;subscription&nbsp;of&nbsp;this&nbsp;observer&nbsp;to&nbsp;the&nbsp;given&nbsp;object.&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;observeEnd&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CObserver">CObserver</a>::<a href="#CObserver-observeBegin">observeBegin</a>(class&nbsp;mrpt::system::<a href="#CObservable">CObservable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CObserver-observeEnd"><strong>observeEnd</strong></a>(...)</dt><dd><tt><a href="#CObserver-observeEnd">observeEnd</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObserver">CObserver</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CObservable">CObservable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Ends&nbsp;the&nbsp;subscription&nbsp;of&nbsp;this&nbsp;observer&nbsp;to&nbsp;the&nbsp;given&nbsp;object&nbsp;(note&nbsp;that<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;there&nbsp;is&nbsp;no&nbsp;need&nbsp;to&nbsp;call&nbsp;this&nbsp;method,&nbsp;since&nbsp;the&nbsp;destruction&nbsp;of&nbsp;the&nbsp;first<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;observer/observed&nbsp;will&nbsp;put&nbsp;an&nbsp;end&nbsp;to&nbsp;the&nbsp;process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;observeBegin&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CObserver">CObserver</a>::<a href="#CObserver-observeEnd">observeEnd</a>(class&nbsp;mrpt::system::<a href="#CObservable">CObservable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CObserver-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="COutputLoggerStreamWrapper">class <strong>COutputLoggerStreamWrapper</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>For&nbsp;use&nbsp;in&nbsp;MRPT_LOG_DEBUG_STREAM(),&nbsp;etc.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#COutputLoggerStreamWrapper">COutputLoggerStreamWrapper</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="COutputLoggerStreamWrapper-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="COutputLoggerStreamWrapper-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CRateTimer">class <strong>CRateTimer</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;for&nbsp;calling&nbsp;<a href="#CRateTimer-sleep">sleep</a>()&nbsp;in&nbsp;a&nbsp;loop,&nbsp;such&nbsp;that&nbsp;the&nbsp;amount&nbsp;of&nbsp;sleep&nbsp;time<br>
+will&nbsp;be&nbsp;computed&nbsp;to&nbsp;make&nbsp;the&nbsp;loop&nbsp;run&nbsp;at&nbsp;the&nbsp;desired&nbsp;rate&nbsp;(in&nbsp;Hz).<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CRateTimer">CRateTimer</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CRateTimer-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CRateTimer-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CRateTimer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CRateTimer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>,&nbsp;rate_hz:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CRateTimer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CRateTimer-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CRateTimer-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CRateTimer">CRateTimer</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#CRateTimer">CRateTimer</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CRateTimer">CRateTimer</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CRateTimer-rate"><strong>rate</strong></a>(...)</dt><dd><tt><a href="#CRateTimer-rate">rate</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Gets&nbsp;current&nbsp;rate&nbsp;(Hz)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CRateTimer">CRateTimer</a>::<a href="#CRateTimer-rate">rate</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CRateTimer-setRate"><strong>setRate</strong></a>(...)</dt><dd><tt><a href="#CRateTimer-setRate">setRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>,&nbsp;rate_hz:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;object&nbsp;loop&nbsp;rate&nbsp;(Hz)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CRateTimer">CRateTimer</a>::<a href="#CRateTimer-setRate">setRate</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CRateTimer-sleep"><strong>sleep</strong></a>(...)</dt><dd><tt><a href="#CRateTimer-sleep">sleep</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CRateTimer">CRateTimer</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Sleeps&nbsp;for&nbsp;some&nbsp;time,&nbsp;such&nbsp;as&nbsp;the&nbsp;return&nbsp;of&nbsp;this&nbsp;method&nbsp;is&nbsp;1/rate<br>
+&nbsp;(seconds)<br>
+&nbsp;after&nbsp;the&nbsp;return&nbsp;of&nbsp;the&nbsp;previous&nbsp;call.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;if&nbsp;the&nbsp;rate&nbsp;could&nbsp;not&nbsp;be&nbsp;achieved&nbsp;("we&nbsp;are&nbsp;already&nbsp;late"),<br>
+&nbsp;true&nbsp;if&nbsp;all&nbsp;went&nbsp;right.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CRateTimer">CRateTimer</a>::<a href="#CRateTimer-sleep">sleep</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CRateTimer-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CTicTac">class <strong>CTicTac</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;high-performance&nbsp;stopwatch,&nbsp;with&nbsp;typical&nbsp;resolution&nbsp;of&nbsp;nanoseconds.<br>
+&nbsp;<br>
+This&nbsp;always&nbsp;uses&nbsp;the&nbsp;system&nbsp;MONOTONIC&nbsp;clock,&nbsp;despite&nbsp;the&nbsp;setting&nbsp;in<br>
+mrpt::Clock.<br>
+&nbsp;<br>
+&nbsp;<br>
+The&nbsp;class&nbsp;is&nbsp;named&nbsp;after&nbsp;the&nbsp;Spanish&nbsp;equivalent&nbsp;of&nbsp;"Tic-Toc"&nbsp;;-)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CTicTac">CTicTac</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CTicTac-Tac"><strong>Tac</strong></a>(...)</dt><dd><tt><a href="#CTicTac-Tac">Tac</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Stops&nbsp;the&nbsp;stopwatch.&nbsp;&nbsp;<br>
+&nbsp;Returns&nbsp;the&nbsp;ellapsed&nbsp;time&nbsp;in&nbsp;seconds.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CTicTac-Tic">Tic</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTicTac">CTicTac</a>::<a href="#CTicTac-Tac">Tac</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CTicTac-Tic"><strong>Tic</strong></a>(...)</dt><dd><tt><a href="#CTicTac-Tic">Tic</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Starts&nbsp;the&nbsp;stopwatch.&nbsp;<br>
+&nbsp;<a href="#CTicTac-Tac">Tac</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTicTac">CTicTac</a>::<a href="#CTicTac-Tic">Tic</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTicTac-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CTicTac-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTicTac-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTicTac-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CTicTac-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CTicTac-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTicTac">CTicTac</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTicTac">CTicTac</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#CTicTac">CTicTac</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CTicTac">CTicTac</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CTicTac-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CTimeLogger">class <strong>CTimeLogger</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;versatile&nbsp;"profiler"&nbsp;that&nbsp;logs&nbsp;the&nbsp;time&nbsp;spent&nbsp;within&nbsp;each&nbsp;pair&nbsp;of&nbsp;calls&nbsp;to<br>
+enter(X)-leave(X),&nbsp;among&nbsp;other&nbsp;stats.<br>
+&nbsp;The&nbsp;results&nbsp;can&nbsp;be&nbsp;dumped&nbsp;to&nbsp;cout&nbsp;or&nbsp;to&nbsp;Visual&nbsp;Studio's&nbsp;output&nbsp;panel.<br>
+This&nbsp;class&nbsp;can&nbsp;be&nbsp;also&nbsp;used&nbsp;to&nbsp;monitorize&nbsp;min/mean/max/total&nbsp;stats&nbsp;of&nbsp;any<br>
+user-provided&nbsp;parameters&nbsp;via&nbsp;the&nbsp;method&nbsp;<a href="#CTimeLogger">CTimeLogger</a>::registerUserMeasure().<br>
+&nbsp;<br>
+Optional&nbsp;recording&nbsp;of&nbsp;**all**&nbsp;data&nbsp;can&nbsp;be&nbsp;enabled&nbsp;via<br>
+<a href="#CTimeLogger-enableKeepWholeHistory">enableKeepWholeHistory</a>()&nbsp;(use&nbsp;with&nbsp;caution!).<br>
+&nbsp;<br>
+Cost&nbsp;of&nbsp;the&nbsp;profiler&nbsp;itself&nbsp;(measured&nbsp;on&nbsp;MSVC2015,&nbsp;Windows&nbsp;10,&nbsp;Intel&nbsp;i5-2310<br>
+2.9GHz):<br>
+-&nbsp;`enter()`:&nbsp;average&nbsp;445&nbsp;ns<br>
+-&nbsp;`leave()`:&nbsp;average&nbsp;316&nbsp;ns<br>
+&nbsp;<br>
+&nbsp;Recursive&nbsp;methods&nbsp;are&nbsp;supported&nbsp;with&nbsp;no&nbsp;problems,&nbsp;that&nbsp;is,&nbsp;calling&nbsp;"enter(X)<br>
+enter(X)&nbsp;...&nbsp;leave(X)&nbsp;leave(X)".<br>
+&nbsp;`enter()`/`leave()`&nbsp;are&nbsp;thread-safe,&nbsp;in&nbsp;the&nbsp;sense&nbsp;of&nbsp;they&nbsp;being&nbsp;safe&nbsp;to&nbsp;be<br>
+called&nbsp;from&nbsp;different&nbsp;threads.&nbsp;However,&nbsp;calling&nbsp;`enter()`/`leave()`&nbsp;for&nbsp;the<br>
+same&nbsp;user-supplied&nbsp;"section&nbsp;name",&nbsp;from&nbsp;different&nbsp;threads,&nbsp;is&nbsp;not&nbsp;allowed.&nbsp;In<br>
+the&nbsp;latter&nbsp;case&nbsp;(and,&nbsp;actually,&nbsp;in&nbsp;general&nbsp;since&nbsp;it's&nbsp;safer&nbsp;against<br>
+exceptions),&nbsp;use&nbsp;the&nbsp;RAII&nbsp;helper&nbsp;class&nbsp;<a href="#CTimeLoggerEntry">CTimeLoggerEntry</a>.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CTimeLoggerEntry">CTimeLoggerEntry</a><br>
+&nbsp;<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;behavior&nbsp;is&nbsp;dumping&nbsp;all&nbsp;the&nbsp;information&nbsp;at&nbsp;destruction.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CTimeLogger">CTimeLogger</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CTimeLogger-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTimeLogger-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTimeLogger-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;enabled:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CTimeLogger-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;enabled:&nbsp;bool,&nbsp;name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CTimeLogger-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;enabled:&nbsp;bool,&nbsp;name:&nbsp;str,&nbsp;keep_whole_history:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CTimeLogger-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-clear">clear</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTimeLogger-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTimeLogger-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;deep_clear:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Resets&nbsp;all&nbsp;stats.&nbsp;By&nbsp;default&nbsp;(deep_clear=false),&nbsp;all&nbsp;section&nbsp;names&nbsp;are<br>
+&nbsp;remembered&nbsp;(not&nbsp;freed)&nbsp;so&nbsp;the&nbsp;cost&nbsp;of&nbsp;creating&nbsp;upon&nbsp;the&nbsp;first&nbsp;next&nbsp;call<br>
+&nbsp;is&nbsp;avoided.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;By&nbsp;design,&nbsp;calling&nbsp;this&nbsp;method&nbsp;is&nbsp;the&nbsp;only&nbsp;one&nbsp;which&nbsp;is&nbsp;not&nbsp;thread<br>
+&nbsp;safe.&nbsp;It's&nbsp;not&nbsp;made&nbsp;thread-safe&nbsp;to&nbsp;save&nbsp;the&nbsp;performance&nbsp;cost.&nbsp;Please,<br>
+&nbsp;ensure&nbsp;that&nbsp;you&nbsp;call&nbsp;`<a href="#CTimeLogger-clear">clear</a>()`&nbsp;only&nbsp;while&nbsp;there&nbsp;are&nbsp;no&nbsp;other&nbsp;threads<br>
+&nbsp;registering&nbsp;annotations&nbsp;in&nbsp;the&nbsp;object.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-clear">clear</a>(bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-disable"><strong>disable</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-disable">disable</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-disable">disable</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-dumpAllStats"><strong>dumpAllStats</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-dumpAllStats">dumpAllStats</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTimeLogger-dumpAllStats">dumpAllStats</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTimeLogger-dumpAllStats">dumpAllStats</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;column_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Dump&nbsp;all&nbsp;stats&nbsp;through&nbsp;the&nbsp;COutputLogger&nbsp;interface.&nbsp;<br>
+&nbsp;getStatsAsText,<br>
+&nbsp;saveToCVSFile&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-dumpAllStats">dumpAllStats</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-enable"><strong>enable</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-enable">enable</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTimeLogger-enable">enable</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTimeLogger-enable">enable</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;enabled:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-enable">enable</a>(bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-enableKeepWholeHistory"><strong>enableKeepWholeHistory</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-enableKeepWholeHistory">enableKeepWholeHistory</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTimeLogger-enableKeepWholeHistory">enableKeepWholeHistory</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTimeLogger-enableKeepWholeHistory">enableKeepWholeHistory</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;enable:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-enableKeepWholeHistory">enableKeepWholeHistory</a>(bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-getLastTime"><strong>getLastTime</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-getLastTime">getLastTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;name:&nbsp;str)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;last&nbsp;execution&nbsp;time&nbsp;of&nbsp;the&nbsp;given&nbsp;"section",&nbsp;or&nbsp;0&nbsp;if&nbsp;it&nbsp;hasn't<br>
+&nbsp;ever&nbsp;been&nbsp;called&nbsp;"enter"&nbsp;with&nbsp;that&nbsp;section&nbsp;name&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-getLastTime">getLastTime</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-getMeanTime"><strong>getMeanTime</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-getMeanTime">getMeanTime</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;name:&nbsp;str)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;mean&nbsp;execution&nbsp;time&nbsp;of&nbsp;the&nbsp;given&nbsp;"section",&nbsp;or&nbsp;0&nbsp;if&nbsp;it&nbsp;hasn't<br>
+&nbsp;ever&nbsp;been&nbsp;called&nbsp;"enter"&nbsp;with&nbsp;that&nbsp;section&nbsp;name&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-getMeanTime">getMeanTime</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-getName"><strong>getName</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-getName">getName</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-getName">getName</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;std::string&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-getStatsAsText"><strong>getStatsAsText</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-getStatsAsText">getStatsAsText</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTimeLogger-getStatsAsText">getStatsAsText</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTimeLogger-getStatsAsText">getStatsAsText</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;column_width:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Dump&nbsp;all&nbsp;stats&nbsp;to&nbsp;a&nbsp;multi-line&nbsp;text&nbsp;string.&nbsp;<br>
+&nbsp;dumpAllStats,<br>
+&nbsp;saveToCVSFile&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-getStatsAsText">getStatsAsText</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-isEnabled"><strong>isEnabled</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-isEnabled">isEnabled</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-isEnabled">isEnabled</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-isEnabledKeepWholeHistory"><strong>isEnabledKeepWholeHistory</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-isEnabledKeepWholeHistory">isEnabledKeepWholeHistory</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-isEnabledKeepWholeHistory">isEnabledKeepWholeHistory</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-saveToCSVFile"><strong>saveToCSVFile</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-saveToCSVFile">saveToCSVFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;csv_file:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Dump&nbsp;all&nbsp;stats&nbsp;to&nbsp;a&nbsp;Comma&nbsp;Separated&nbsp;Values&nbsp;(CSV)&nbsp;file.&nbsp;<br>
+&nbsp;dumpAllStats<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-saveToCSVFile">saveToCSVFile</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-saveToMFile"><strong>saveToMFile</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-saveToMFile">saveToMFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;m_file:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Dump&nbsp;all&nbsp;stats&nbsp;to&nbsp;a&nbsp;Matlab/Octave&nbsp;(.m)&nbsp;file.&nbsp;<br>
+&nbsp;dumpAllStats&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-saveToMFile">saveToMFile</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTimeLogger-setName"><strong>setName</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-setName">setName</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>,&nbsp;name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-setName">setName</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>TCallStats</strong> = &lt;class 'mrpt.pymrpt.mrpt.system.CTimeLogger.TCallStats'&gt;<dd><tt>Data&nbsp;of&nbsp;each&nbsp;call&nbsp;section:&nbsp;#&nbsp;of&nbsp;calls,&nbsp;minimum,&nbsp;maximum,&nbsp;average&nbsp;and<br>
+overall&nbsp;execution&nbsp;time&nbsp;(in&nbsp;seconds)&nbsp;<br>
+&nbsp;<br>
+getStats</tt></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CTimeLogger-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CTimeLoggerEntry">class <strong>CTimeLoggerEntry</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;safe&nbsp;way&nbsp;to&nbsp;call&nbsp;enter()&nbsp;and&nbsp;leave()&nbsp;of&nbsp;a&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>&nbsp;upon<br>
+construction&nbsp;and&nbsp;destruction&nbsp;of<br>
+this&nbsp;auxiliary&nbsp;object,&nbsp;making&nbsp;sure&nbsp;that&nbsp;leave()&nbsp;will&nbsp;be&nbsp;called&nbsp;upon<br>
+exceptions,&nbsp;etc.<br>
+Usage&nbsp;mode&nbsp;#1&nbsp;(scoped):<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+Usage&nbsp;mode&nbsp;#2&nbsp;(unscoped):<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CTimeLoggerEntry">CTimeLoggerEntry</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CTimeLoggerEntry-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CTimeLoggerEntry-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLoggerEntry">CTimeLoggerEntry</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLoggerEntry">CTimeLoggerEntry</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CTimeLoggerEntry-stop"><strong>stop</strong></a>(...)</dt><dd><tt><a href="#CTimeLoggerEntry-stop">stop</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLoggerEntry">CTimeLoggerEntry</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CTimeLoggerEntry">CTimeLoggerEntry</a>::<a href="#CTimeLoggerEntry-stop">stop</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CTimeLoggerEntry-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CTimeLoggerSaveAtDtor">class <strong>CTimeLoggerSaveAtDtor</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;helper&nbsp;class&nbsp;to&nbsp;save&nbsp;CSV&nbsp;stats&nbsp;upon&nbsp;self&nbsp;destruction,&nbsp;for&nbsp;example,&nbsp;at&nbsp;the<br>
+end&nbsp;of&nbsp;a&nbsp;program&nbsp;run.&nbsp;The&nbsp;target&nbsp;file&nbsp;will&nbsp;be&nbsp;named&nbsp;after&nbsp;timelogger's&nbsp;name.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#CTimeLoggerSaveAtDtor">CTimeLoggerSaveAtDtor</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CTimeLoggerSaveAtDtor-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CTimeLoggerSaveAtDtor-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLoggerSaveAtDtor">CTimeLoggerSaveAtDtor</a>,&nbsp;tm:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CTimeLoggerSaveAtDtor-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ConsoleBackgroundColor">class <strong>ConsoleBackgroundColor</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#ConsoleBackgroundColor">ConsoleBackgroundColor</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ConsoleBackgroundColor-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__getstate__">__getstate__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__hash__">__hash__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__index__"><strong>__index__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__index__">__index__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__int__"><strong>__int__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__int__">__int__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__repr__">__repr__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-__setstate__">__setstate__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>,&nbsp;state:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="ConsoleBackgroundColor-__str__"><strong>__str__</strong></a> = name(...)</dt><dd><tt><a href="#ConsoleBackgroundColor-name">name</a>(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>name(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>BLACK</strong> = &lt;ConsoleBackgroundColor.BLACK: 40&gt;</dl>
+
+<dl><dt><strong>BLUE</strong> = &lt;ConsoleBackgroundColor.BLUE: 44&gt;</dl>
+
+<dl><dt><strong>BRIGHT_BLACK</strong> = &lt;ConsoleBackgroundColor.BRIGHT_BLACK: 100&gt;</dl>
+
+<dl><dt><strong>BRIGHT_BLUE</strong> = &lt;ConsoleBackgroundColor.BRIGHT_BLUE: 104&gt;</dl>
+
+<dl><dt><strong>BRIGHT_CYAN</strong> = &lt;ConsoleBackgroundColor.BRIGHT_CYAN: 106&gt;</dl>
+
+<dl><dt><strong>BRIGHT_GREEN</strong> = &lt;ConsoleBackgroundColor.BRIGHT_GREEN: 102&gt;</dl>
+
+<dl><dt><strong>BRIGHT_MAGENTA</strong> = &lt;ConsoleBackgroundColor.BRIGHT_MAGENTA: 105&gt;</dl>
+
+<dl><dt><strong>BRIGHT_RED</strong> = &lt;ConsoleBackgroundColor.BRIGHT_RED: 101&gt;</dl>
+
+<dl><dt><strong>BRIGHT_WHITE</strong> = &lt;ConsoleBackgroundColor.BRIGHT_WHITE: 107&gt;</dl>
+
+<dl><dt><strong>BRIGHT_YELLOW</strong> = &lt;ConsoleBackgroundColor.BRIGHT_YELLOW: 103&gt;</dl>
+
+<dl><dt><strong>CYAN</strong> = &lt;ConsoleBackgroundColor.CYAN: 46&gt;</dl>
+
+<dl><dt><strong>DEFAULT</strong> = &lt;ConsoleBackgroundColor.DEFAULT: 0&gt;</dl>
+
+<dl><dt><strong>GREEN</strong> = &lt;ConsoleBackgroundColor.GREEN: 42&gt;</dl>
+
+<dl><dt><strong>MAGENTA</strong> = &lt;ConsoleBackgroundColor.MAGENTA: 45&gt;</dl>
+
+<dl><dt><strong>RED</strong> = &lt;ConsoleBackgroundColor.RED: 41&gt;</dl>
+
+<dl><dt><strong>WHITE</strong> = &lt;ConsoleBackgroundColor.WHITE: 34&gt;</dl>
+
+<dl><dt><strong>YELLOW</strong> = &lt;ConsoleBackgroundColor.YELLOW: 43&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ConsoleBackgroundColor-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ConsoleForegroundColor">class <strong>ConsoleForegroundColor</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#ConsoleForegroundColor">ConsoleForegroundColor</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ConsoleForegroundColor-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__getstate__">__getstate__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__hash__">__hash__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__index__"><strong>__index__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__index__">__index__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__int__"><strong>__int__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__int__">__int__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__repr__">__repr__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><tt><a href="#ConsoleForegroundColor-__setstate__">__setstate__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>,&nbsp;state:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="ConsoleForegroundColor-__str__"><strong>__str__</strong></a> = name(...)</dt><dd><tt><a href="#ConsoleForegroundColor-name">name</a>(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>name(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>BLACK</strong> = &lt;ConsoleForegroundColor.BLACK: 30&gt;</dl>
+
+<dl><dt><strong>BLUE</strong> = &lt;ConsoleForegroundColor.BLUE: 34&gt;</dl>
+
+<dl><dt><strong>BRIGHT_BLACK</strong> = &lt;ConsoleForegroundColor.BRIGHT_BLACK: 90&gt;</dl>
+
+<dl><dt><strong>BRIGHT_BLUE</strong> = &lt;ConsoleForegroundColor.BRIGHT_BLUE: 94&gt;</dl>
+
+<dl><dt><strong>BRIGHT_CYAN</strong> = &lt;ConsoleForegroundColor.BRIGHT_CYAN: 96&gt;</dl>
+
+<dl><dt><strong>BRIGHT_GREEN</strong> = &lt;ConsoleForegroundColor.BRIGHT_GREEN: 92&gt;</dl>
+
+<dl><dt><strong>BRIGHT_MAGENTA</strong> = &lt;ConsoleForegroundColor.BRIGHT_MAGENTA: 95&gt;</dl>
+
+<dl><dt><strong>BRIGHT_RED</strong> = &lt;ConsoleForegroundColor.BRIGHT_RED: 91&gt;</dl>
+
+<dl><dt><strong>BRIGHT_WHITE</strong> = &lt;ConsoleForegroundColor.BRIGHT_WHITE: 97&gt;</dl>
+
+<dl><dt><strong>BRIGHT_YELLOW</strong> = &lt;ConsoleForegroundColor.BRIGHT_YELLOW: 93&gt;</dl>
+
+<dl><dt><strong>CYAN</strong> = &lt;ConsoleForegroundColor.CYAN: 36&gt;</dl>
+
+<dl><dt><strong>DEFAULT</strong> = &lt;ConsoleForegroundColor.DEFAULT: 0&gt;</dl>
+
+<dl><dt><strong>GREEN</strong> = &lt;ConsoleForegroundColor.GREEN: 32&gt;</dl>
+
+<dl><dt><strong>MAGENTA</strong> = &lt;ConsoleForegroundColor.MAGENTA: 35&gt;</dl>
+
+<dl><dt><strong>RED</strong> = &lt;ConsoleForegroundColor.RED: 31&gt;</dl>
+
+<dl><dt><strong>WHITE</strong> = &lt;ConsoleForegroundColor.WHITE: 37&gt;</dl>
+
+<dl><dt><strong>YELLOW</strong> = &lt;ConsoleForegroundColor.YELLOW: 33&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ConsoleForegroundColor-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ConsoleTextStyle">class <strong>ConsoleTextStyle</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#ConsoleTextStyle">ConsoleTextStyle</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ConsoleTextStyle-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__getstate__">__getstate__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__hash__">__hash__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__index__"><strong>__index__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__index__">__index__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleTextStyle">ConsoleTextStyle</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleTextStyle">ConsoleTextStyle</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__int__"><strong>__int__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__int__">__int__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleTextStyle">ConsoleTextStyle</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__repr__">__repr__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><tt><a href="#ConsoleTextStyle-__setstate__">__setstate__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleTextStyle">ConsoleTextStyle</a>,&nbsp;state:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="ConsoleTextStyle-__str__"><strong>__str__</strong></a> = name(...)</dt><dd><tt><a href="#ConsoleTextStyle-name">name</a>(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>name(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>BLINKING</strong> = &lt;ConsoleTextStyle.BLINKING: 5&gt;</dl>
+
+<dl><dt><strong>BOLD</strong> = &lt;ConsoleTextStyle.BOLD: 1&gt;</dl>
+
+<dl><dt><strong>DIM</strong> = &lt;ConsoleTextStyle.DIM: 2&gt;</dl>
+
+<dl><dt><strong>INVISIBLE</strong> = &lt;ConsoleTextStyle.INVISIBLE: 8&gt;</dl>
+
+<dl><dt><strong>ITALIC</strong> = &lt;ConsoleTextStyle.ITALIC: 3&gt;</dl>
+
+<dl><dt><strong>REGULAR</strong> = &lt;ConsoleTextStyle.REGULAR: 0&gt;</dl>
+
+<dl><dt><strong>REVERSE</strong> = &lt;ConsoleTextStyle.REVERSE: 7&gt;</dl>
+
+<dl><dt><strong>UNDERLINED</strong> = &lt;ConsoleTextStyle.UNDERLINED: 4&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ConsoleTextStyle-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TProcessPriority">class <strong>TProcessPriority</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#TProcessPriority">TProcessPriority</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TProcessPriority-__and__"><strong>__and__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__and__">__and__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__ge__"><strong>__ge__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__ge__">__ge__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__getstate__">__getstate__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__gt__"><strong>__gt__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__gt__">__gt__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__hash__">__hash__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__index__"><strong>__index__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__index__">__index__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TProcessPriority">TProcessPriority</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TProcessPriority">TProcessPriority</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__int__"><strong>__int__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__int__">__int__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TProcessPriority">TProcessPriority</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__invert__"><strong>__invert__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__invert__">__invert__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__le__"><strong>__le__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__le__">__le__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__lt__"><strong>__lt__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__lt__">__lt__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__or__"><strong>__or__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__or__">__or__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__rand__"><strong>__rand__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__rand__">__rand__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__repr__">__repr__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__ror__"><strong>__ror__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__ror__">__ror__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__rxor__"><strong>__rxor__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__rxor__">__rxor__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__setstate__">__setstate__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TProcessPriority">TProcessPriority</a>,&nbsp;state:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__str__"><strong>__str__</strong></a> = name(...)</dt><dd><tt><a href="#TProcessPriority-name">name</a>(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="TProcessPriority-__xor__"><strong>__xor__</strong></a>(...)</dt><dd><tt><a href="#TProcessPriority-__xor__">__xor__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>name(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>ppHigh</strong> = &lt;TProcessPriority.ppHigh: 2&gt;</dl>
+
+<dl><dt><strong>ppIdle</strong> = &lt;TProcessPriority.ppIdle: 0&gt;</dl>
+
+<dl><dt><strong>ppNormal</strong> = &lt;TProcessPriority.ppNormal: 1&gt;</dl>
+
+<dl><dt><strong>ppVeryHigh</strong> = &lt;TProcessPriority.ppVeryHigh: 3&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TProcessPriority-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TThreadPriority">class <strong>TThreadPriority</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#TThreadPriority">TThreadPriority</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TThreadPriority-__and__"><strong>__and__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__and__">__and__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__ge__"><strong>__ge__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__ge__">__ge__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__getstate__">__getstate__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__gt__"><strong>__gt__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__gt__">__gt__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__hash__">__hash__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__index__"><strong>__index__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__index__">__index__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TThreadPriority">TThreadPriority</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TThreadPriority">TThreadPriority</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__int__"><strong>__int__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__int__">__int__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TThreadPriority">TThreadPriority</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__invert__"><strong>__invert__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__invert__">__invert__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__le__"><strong>__le__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__le__">__le__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__lt__"><strong>__lt__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__lt__">__lt__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__or__"><strong>__or__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__or__">__or__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__rand__"><strong>__rand__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__rand__">__rand__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__repr__">__repr__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__ror__"><strong>__ror__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__ror__">__ror__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__rxor__"><strong>__rxor__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__rxor__">__rxor__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__setstate__">__setstate__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TThreadPriority">TThreadPriority</a>,&nbsp;state:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__str__"><strong>__str__</strong></a> = name(...)</dt><dd><tt><a href="#TThreadPriority-name">name</a>(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="TThreadPriority-__xor__"><strong>__xor__</strong></a>(...)</dt><dd><tt><a href="#TThreadPriority-__xor__">__xor__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>name(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>tpHigh</strong> = &lt;TThreadPriority.tpHigh: 1&gt;</dl>
+
+<dl><dt><strong>tpHigher</strong> = &lt;TThreadPriority.tpHigher: 2&gt;</dl>
+
+<dl><dt><strong>tpHighest</strong> = &lt;TThreadPriority.tpHighest: 15&gt;</dl>
+
+<dl><dt><strong>tpLow</strong> = &lt;TThreadPriority.tpLow: -1&gt;</dl>
+
+<dl><dt><strong>tpLower</strong> = &lt;TThreadPriority.tpLower: -2&gt;</dl>
+
+<dl><dt><strong>tpLowests</strong> = &lt;TThreadPriority.tpLowests: -15&gt;</dl>
+
+<dl><dt><strong>tpNormal</strong> = &lt;TThreadPriority.tpNormal: 0&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TThreadPriority-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TTimeParts">class <strong>TTimeParts</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;parts&nbsp;of&nbsp;a&nbsp;date/time,&nbsp;like&nbsp;the&nbsp;standard&nbsp;`tm`&nbsp;but&nbsp;with&nbsp;fractional<br>
+(`double`)&nbsp;seconds.&nbsp;<br>
+&nbsp;<br>
+TTimeStamp,&nbsp;timestampToParts,&nbsp;buildTimestampFromParts<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#TTimeParts">TTimeParts</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TTimeParts-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TTimeParts-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TTimeParts">TTimeParts</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>day</strong></dt>
+</dl>
+<dl><dt><strong>day_of_week</strong></dt>
+</dl>
+<dl><dt><strong>daylight_saving</strong></dt>
+</dl>
+<dl><dt><strong>hour</strong></dt>
+</dl>
+<dl><dt><strong>minute</strong></dt>
+</dl>
+<dl><dt><strong>month</strong></dt>
+</dl>
+<dl><dt><strong>second</strong></dt>
+</dl>
+<dl><dt><strong>year</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TTimeParts-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="VerbosityLevel">class <strong>VerbosityLevel</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#VerbosityLevel">VerbosityLevel</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="VerbosityLevel-__and__"><strong>__and__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__and__">__and__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__ge__"><strong>__ge__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__ge__">__ge__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__getstate__">__getstate__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__gt__"><strong>__gt__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__gt__">__gt__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__hash__">__hash__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__index__"><strong>__index__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__index__">__index__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#VerbosityLevel">VerbosityLevel</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#VerbosityLevel">VerbosityLevel</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__int__"><strong>__int__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__int__">__int__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#VerbosityLevel">VerbosityLevel</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__invert__"><strong>__invert__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__invert__">__invert__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__le__"><strong>__le__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__le__">__le__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__lt__"><strong>__lt__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__lt__">__lt__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__or__"><strong>__or__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__or__">__or__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__rand__"><strong>__rand__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__rand__">__rand__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__repr__">__repr__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__ror__"><strong>__ror__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__ror__">__ror__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__rxor__"><strong>__rxor__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__rxor__">__rxor__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__setstate__">__setstate__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#VerbosityLevel">VerbosityLevel</a>,&nbsp;state:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__str__"><strong>__str__</strong></a> = name(...)</dt><dd><tt><a href="#VerbosityLevel-name">name</a>(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="VerbosityLevel-__xor__"><strong>__xor__</strong></a>(...)</dt><dd><tt><a href="#VerbosityLevel-__xor__">__xor__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>name(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>LVL_DEBUG</strong> = &lt;VerbosityLevel.LVL_DEBUG: 0&gt;</dl>
+
+<dl><dt><strong>LVL_ERROR</strong> = &lt;VerbosityLevel.LVL_ERROR: 3&gt;</dl>
+
+<dl><dt><strong>LVL_INFO</strong> = &lt;VerbosityLevel.LVL_INFO: 1&gt;</dl>
+
+<dl><dt><strong>LVL_WARN</strong> = &lt;VerbosityLevel.LVL_WARN: 2&gt;</dl>
+
+<dl><dt><strong>NUMBER_OF_VERBOSITY_LEVELS</strong> = &lt;VerbosityLevel.NUMBER_OF_VERBOSITY_LEVELS: 4&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="VerbosityLevel-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="WorkerThreadsPool">class <strong>WorkerThreadsPool</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;simple&nbsp;thread&nbsp;pool<br>
+&nbsp;<br>
+&nbsp;<br>
+Partly&nbsp;based&nbsp;on:&nbsp;<a href="https://github.com/progschj/ThreadPool">https://github.com/progschj/ThreadPool</a>&nbsp;(ZLib&nbsp;license)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#WorkerThreadsPool">WorkerThreadsPool</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="WorkerThreadsPool-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#WorkerThreadsPool-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#WorkerThreadsPool-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#WorkerThreadsPool">WorkerThreadsPool</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#WorkerThreadsPool-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#WorkerThreadsPool">WorkerThreadsPool</a>,&nbsp;num_threads:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+3.&nbsp;<a href="#WorkerThreadsPool-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#WorkerThreadsPool">WorkerThreadsPool</a>,&nbsp;num_threads:&nbsp;int,&nbsp;p:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::queue_policy_t)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="WorkerThreadsPool-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#WorkerThreadsPool-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#WorkerThreadsPool">WorkerThreadsPool</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a href="#WorkerThreadsPool-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="WorkerThreadsPool-pendingTasks"><strong>pendingTasks</strong></a>(...)</dt><dd><tt><a href="#WorkerThreadsPool-pendingTasks">pendingTasks</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#WorkerThreadsPool">WorkerThreadsPool</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;enqueued&nbsp;tasks,&nbsp;currently&nbsp;waiting&nbsp;for&nbsp;a&nbsp;free<br>
+&nbsp;working&nbsp;thread&nbsp;to&nbsp;process&nbsp;them.&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a href="#WorkerThreadsPool-pendingTasks">pendingTasks</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="WorkerThreadsPool-resize"><strong>resize</strong></a>(...)</dt><dd><tt><a href="#WorkerThreadsPool-resize">resize</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#WorkerThreadsPool">WorkerThreadsPool</a>,&nbsp;num_threads:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a href="#WorkerThreadsPool-resize">resize</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>POLICY_DROP_OLD</strong> = &lt;queue_policy_t.POLICY_DROP_OLD: 1&gt;</dl>
+
+<dl><dt><strong>POLICY_FIFO</strong> = &lt;queue_policy_t.POLICY_FIFO: 0&gt;</dl>
+
+<dl><dt><strong>queue_policy_t</strong> = &lt;class 'mrpt.pymrpt.mrpt.system.WorkerThreadsPool.queue_policy_t'&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="WorkerThreadsPool-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="mrptEvent">class <strong>mrptEvent</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;basic&nbsp;event&nbsp;type&nbsp;for&nbsp;the&nbsp;observer-observable&nbsp;pattern&nbsp;in&nbsp;MRPT.<br>
+&nbsp;&nbsp;You&nbsp;can&nbsp;sub-class&nbsp;this&nbsp;base&nbsp;class&nbsp;to&nbsp;create&nbsp;custom&nbsp;event&nbsp;types,&nbsp;then<br>
+&nbsp;&nbsp;&nbsp;tell&nbsp;between&nbsp;them&nbsp;in&nbsp;runtime&nbsp;with&nbsp;isOfType&lt;T&gt;(),&nbsp;for&nbsp;example:<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CObserver">CObserver</a>,&nbsp;<a href="#CObservable">CObservable</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#mrptEvent">mrptEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="mrptEvent-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#mrptEvent-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#mrptEvent-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#mrptEvent-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#mrptEvent-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="mrptEvent-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#mrptEvent-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEvent">mrptEvent</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#mrptEvent">mrptEvent</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#mrptEvent">mrptEvent</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#mrptEvent">mrptEvent</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>timestamp</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="mrptEvent-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="mrptEventOnDestroy">class <strong>mrptEventOnDestroy</strong></a>(<a href="mrpt.pymrpt.mrpt.system.html#mrptEvent">mrptEvent</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>An&nbsp;event&nbsp;sent&nbsp;by&nbsp;any&nbsp;<a href="#CObservable">CObservable</a>&nbsp;object&nbsp;(automatically)&nbsp;just&nbsp;before&nbsp;being<br>
+destroyed&nbsp;and&nbsp;telling&nbsp;its&nbsp;observers&nbsp;to&nbsp;unsubscribe.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#mrptEventOnDestroy">mrptEventOnDestroy</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.system.html#mrptEvent">mrptEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="mrptEventOnDestroy-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#mrptEventOnDestroy-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEventOnDestroy">mrptEventOnDestroy</a>,&nbsp;obj:&nbsp;mrpt::system::<a href="#CObservable">CObservable</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="mrptEventOnDestroy-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#mrptEventOnDestroy-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEventOnDestroy">mrptEventOnDestroy</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEventOnDestroy">mrptEventOnDestroy</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#mrptEventOnDestroy">mrptEventOnDestroy</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#mrptEventOnDestroy">mrptEventOnDestroy</a>::operator=(const&nbsp;class&nbsp;mrpt::system::<a href="#mrptEventOnDestroy">mrptEventOnDestroy</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#mrptEventOnDestroy">mrptEventOnDestroy</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.system.html#mrptEvent">mrptEvent</a>:<br>
+<dl><dt><strong>timestamp</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="mrptEventOnDestroy-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-InvalidTimeStamp"><strong>InvalidTimeStamp</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-InvalidTimeStamp">InvalidTimeStamp</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+Required&nbsp;to&nbsp;ensure&nbsp;INVALID_TIMESTAMP&nbsp;returns&nbsp;a&nbsp;"const&nbsp;T&amp;"<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.3.3)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-InvalidTimeStamp">InvalidTimeStamp</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;</tt></dd></dl>
+ <dl><dt><a name="-MRPT_getCompilationDate"><strong>MRPT_getCompilationDate</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-MRPT_getCompilationDate">MRPT_getCompilationDate</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;MRPT&nbsp;source&nbsp;code&nbsp;timestamp,&nbsp;according&nbsp;to&nbsp;the&nbsp;Reproducible-Builds<br>
+&nbsp;specifications:&nbsp;<a href="https://reproducible-builds.org/specs/source-date-epoch/">https://reproducible-builds.org/specs/source-date-epoch/</a>&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-MRPT_getCompilationDate">MRPT_getCompilationDate</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-MRPT_getVersion"><strong>MRPT_getVersion</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-MRPT_getVersion">MRPT_getVersion</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;string&nbsp;describing&nbsp;the&nbsp;MRPT&nbsp;version&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-MRPT_getVersion">MRPT_getVersion</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-buildTimestampFromParts"><strong>buildTimestampFromParts</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-buildTimestampFromParts">buildTimestampFromParts</a>(p:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TTimeParts">TTimeParts</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+Builds&nbsp;a&nbsp;timestamp&nbsp;from&nbsp;the&nbsp;parts&nbsp;(Parts&nbsp;are&nbsp;in&nbsp;UTC)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;timestampToParts<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-buildTimestampFromParts">buildTimestampFromParts</a>(const&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+ <dl><dt><a name="-buildTimestampFromPartsLocalTime"><strong>buildTimestampFromPartsLocalTime</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-buildTimestampFromPartsLocalTime">buildTimestampFromPartsLocalTime</a>(p:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TTimeParts">TTimeParts</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+Builds&nbsp;a&nbsp;timestamp&nbsp;from&nbsp;the&nbsp;parts&nbsp;(Parts&nbsp;are&nbsp;in&nbsp;local&nbsp;time)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;timestampToParts,&nbsp;buildTimestampFromParts<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-buildTimestampFromPartsLocalTime">buildTimestampFromPartsLocalTime</a>(const&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+ <dl><dt><a name="-changeCurrentProcessPriority"><strong>changeCurrentProcessPriority</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-changeCurrentProcessPriority">changeCurrentProcessPriority</a>(priority:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TProcessPriority">TProcessPriority</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Change&nbsp;the&nbsp;priority&nbsp;of&nbsp;the&nbsp;given&nbsp;process&nbsp;(it&nbsp;applies&nbsp;to&nbsp;all&nbsp;the&nbsp;threads,<br>
+&nbsp;&nbsp;plus&nbsp;independent&nbsp;modifiers&nbsp;for&nbsp;each&nbsp;thread).<br>
+&nbsp;&nbsp;-&nbsp;Windows:&nbsp;See<br>
+&nbsp;&nbsp;[SetPriorityClass](<a href="https://msdn.microsoft.com/es-es/library/windows/desktop/ms686219(v=vs.85).aspx">https://msdn.microsoft.com/es-es/library/windows/desktop/ms686219(v=vs.85).aspx</a>)<br>
+&nbsp;&nbsp;-&nbsp;Linux&nbsp;(pthreads):&nbsp;Requires&nbsp;`root`&nbsp;permissions&nbsp;to&nbsp;increase&nbsp;process<br>
+&nbsp;&nbsp;priority!&nbsp;Internally&nbsp;it&nbsp;calls&nbsp;[nice()](<a href="http://linux.die.net/man/3/nice">http://linux.die.net/man/3/nice</a>),&nbsp;so&nbsp;it<br>
+&nbsp;&nbsp;has&nbsp;no&nbsp;effect&nbsp;if<br>
+&nbsp;&nbsp;()&nbsp;was&nbsp;called&nbsp;and&nbsp;a&nbsp;SCHED_RR&nbsp;is&nbsp;already&nbsp;active.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;createThread,&nbsp;changeThreadPriority<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-changeCurrentProcessPriority">changeCurrentProcessPriority</a>(enum&nbsp;mrpt::system::<a href="#TProcessPriority">TProcessPriority</a>)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-changeCurrentThreadPriority"><strong>changeCurrentThreadPriority</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-changeCurrentThreadPriority">changeCurrentThreadPriority</a>(priority:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TThreadPriority">TThreadPriority</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Change&nbsp;the&nbsp;priority&nbsp;of&nbsp;the&nbsp;current&nbsp;thread&nbsp;-&nbsp;for&nbsp;Windows,&nbsp;see&nbsp;also<br>
+&nbsp;<a href="#-changeCurrentProcessPriority">changeCurrentProcessPriority</a>()<br>
+&nbsp;-&nbsp;Windows:&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to<br>
+&nbsp;[SetThreadPriority()](<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms686277(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/windows/desktop/ms686277(v=vs.85).aspx</a>)<br>
+&nbsp;(read&nbsp;the&nbsp;docs&nbsp;there)<br>
+&nbsp;-&nbsp;Linux&nbsp;(pthreads):&nbsp;May&nbsp;require&nbsp;`root`&nbsp;permissions!&nbsp;This&nbsp;sets&nbsp;the&nbsp;Round&nbsp;Robin<br>
+&nbsp;scheduler&nbsp;with&nbsp;the&nbsp;given&nbsp;priority&nbsp;level.&nbsp;Read<br>
+&nbsp;[sched_setscheduler](<a href="http://linux.die.net/man/2/sched_setscheduler">http://linux.die.net/man/2/sched_setscheduler</a>).&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;createThread,&nbsp;changeCurrentProcessPriority,&nbsp;changeCurrentThreadPriority<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-changeCurrentThreadPriority">changeCurrentThreadPriority</a>(enum&nbsp;mrpt::system::<a href="#TThreadPriority">TThreadPriority</a>)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-clearConsole"><strong>clearConsole</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-clearConsole">clearConsole</a>()&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Clears&nbsp;the&nbsp;console&nbsp;window&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-clearConsole">clearConsole</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-compute_CRC16"><strong>compute_CRC16</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-compute_CRC16">compute_CRC16</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-compute_CRC16">compute_CRC16</a>(data:&nbsp;int,&nbsp;len:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-compute_CRC16">compute_CRC16</a>(data:&nbsp;int,&nbsp;len:&nbsp;int,&nbsp;gen_pol:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-compute_CRC16">compute_CRC16</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;unsigned&nbsp;short)&nbsp;--&gt;&nbsp;unsigned&nbsp;short</tt></dd></dl>
+ <dl><dt><a name="-compute_CRC32"><strong>compute_CRC32</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-compute_CRC32">compute_CRC32</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-compute_CRC32">compute_CRC32</a>(data:&nbsp;int,&nbsp;len:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-compute_CRC32">compute_CRC32</a>(data:&nbsp;int,&nbsp;len:&nbsp;int,&nbsp;gen_pol:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-compute_CRC32">compute_CRC32</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+ <dl><dt><a name="-consoleColorAndStyle"><strong>consoleColorAndStyle</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-consoleColorAndStyle">consoleColorAndStyle</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-consoleColorAndStyle">consoleColorAndStyle</a>(fg:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-consoleColorAndStyle">consoleColorAndStyle</a>(fg:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>,&nbsp;bg:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-consoleColorAndStyle">consoleColorAndStyle</a>(fg:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>,&nbsp;bg:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>,&nbsp;style:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleTextStyle">ConsoleTextStyle</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#-consoleColorAndStyle">consoleColorAndStyle</a>(fg:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>,&nbsp;bg:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>,&nbsp;style:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#ConsoleTextStyle">ConsoleTextStyle</a>,&nbsp;applyToStdErr:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;text&nbsp;color&nbsp;and&nbsp;style&nbsp;in&nbsp;the&nbsp;console&nbsp;for&nbsp;the&nbsp;text&nbsp;written&nbsp;from<br>
+&nbsp;now&nbsp;on.&nbsp;See&nbsp;available&nbsp;colors&nbsp;in&nbsp;<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>&nbsp;and<br>
+&nbsp;<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>.<br>
+&nbsp;<br>
+&nbsp;By&nbsp;default&nbsp;the&nbsp;color&nbsp;of&nbsp;"cout"&nbsp;is&nbsp;changed,&nbsp;unless&nbsp;changeStdErr=true,&nbsp;in<br>
+&nbsp;which&nbsp;case&nbsp;"cerr"&nbsp;is&nbsp;changed.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;GNU/Linux:&nbsp;If&nbsp;stdout/stderr&nbsp;is&nbsp;not&nbsp;a&nbsp;real&nbsp;terminal&nbsp;with&nbsp;color&nbsp;support,<br>
+&nbsp;calling&nbsp;this&nbsp;function&nbsp;will&nbsp;have&nbsp;no&nbsp;effect&nbsp;(i.e.&nbsp;no&nbsp;escape&nbsp;characters&nbsp;will&nbsp;be<br>
+&nbsp;emitted).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;current&nbsp;implementation&nbsp;only&nbsp;supports&nbsp;a&nbsp;subset&nbsp;of&nbsp;all&nbsp;colors&nbsp;for<br>
+&nbsp;Windows&nbsp;terminals.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.3.3)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-consoleColorAndStyle">consoleColorAndStyle</a>(enum&nbsp;mrpt::system::<a href="#ConsoleForegroundColor">ConsoleForegroundColor</a>,&nbsp;enum&nbsp;mrpt::system::<a href="#ConsoleBackgroundColor">ConsoleBackgroundColor</a>,&nbsp;enum&nbsp;mrpt::system::<a href="#ConsoleTextStyle">ConsoleTextStyle</a>,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-copyFile"><strong>copyFile</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-copyFile">copyFile</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-copyFile">copyFile</a>(sourceFile:&nbsp;str,&nbsp;targetFile:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-copyFile">copyFile</a>(sourceFile:&nbsp;str,&nbsp;targetFile:&nbsp;str,&nbsp;outErrStr:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Copies&nbsp;file&nbsp;&nbsp;to&nbsp;&nbsp;If&nbsp;the&nbsp;target&nbsp;file&nbsp;exists,&nbsp;it<br>
+&nbsp;will&nbsp;be&nbsp;overwritten.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;true&nbsp;on&nbsp;success,&nbsp;false&nbsp;on&nbsp;any&nbsp;error,&nbsp;whose&nbsp;description&nbsp;can&nbsp;be<br>
+&nbsp;optionally&nbsp;get&nbsp;in&nbsp;outErrStr<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;(In&nbsp;MRPT&nbsp;2.5.0,&nbsp;the&nbsp;copyAttributes&nbsp;param&nbsp;was&nbsp;removed)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-copyFile">copyFile</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;std::string&nbsp;*)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-createDirectory"><strong>createDirectory</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-createDirectory">createDirectory</a>(dirName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;directory<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Returns&nbsp;false&nbsp;on&nbsp;any&nbsp;error,&nbsp;true&nbsp;on&nbsp;directory&nbsp;created&nbsp;or&nbsp;already<br>
+&nbsp;existed.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-createDirectory">createDirectory</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-dateTimeLocalToString"><strong>dateTimeLocalToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-dateTimeLocalToString">dateTimeLocalToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(in&nbsp;local&nbsp;time):<br>
+&nbsp;YEAR/MONTH/DAY,HH:MM:SS.MMM<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;dateTimeToString<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-dateTimeLocalToString">dateTimeLocalToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-dateTimeToString"><strong>dateTimeToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-dateTimeToString">dateTimeToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(UTC&nbsp;time):<br>
+&nbsp;YEAR/MONTH/DAY,HH:MM:SS.MMM<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;dateTimeLocalToString<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-dateTimeToString">dateTimeToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-dateToString"><strong>dateToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-dateToString">dateToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form:&nbsp;YEAR/MONTH/DAY<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-dateToString">dateToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-deleteFile"><strong>deleteFile</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-deleteFile">deleteFile</a>(fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Deletes&nbsp;a&nbsp;single&nbsp;file.&nbsp;For&nbsp;multiple&nbsp;files&nbsp;see&nbsp;deleteFiles<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Returns&nbsp;false&nbsp;on&nbsp;any&nbsp;error,&nbsp;true&nbsp;on&nbsp;everything&nbsp;OK.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;deleteFiles<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-deleteFile">deleteFile</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-deleteFiles"><strong>deleteFiles</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-deleteFiles">deleteFiles</a>(s:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Delete&nbsp;one&nbsp;or&nbsp;more&nbsp;files,&nbsp;especified&nbsp;by&nbsp;the&nbsp;(optional)&nbsp;path&nbsp;and&nbsp;the&nbsp;file<br>
+&nbsp;name&nbsp;(including&nbsp;'?'&nbsp;or&nbsp;'*')&nbsp;-&nbsp;Use&nbsp;forward&nbsp;slash&nbsp;('/')&nbsp;for&nbsp;directories&nbsp;for<br>
+&nbsp;compatibility&nbsp;between&nbsp;Windows&nbsp;and&nbsp;Linux,&nbsp;since&nbsp;they&nbsp;will&nbsp;be&nbsp;internally<br>
+&nbsp;traslated&nbsp;into&nbsp;backward&nbsp;slashes&nbsp;('\')&nbsp;if&nbsp;MRPT&nbsp;is&nbsp;compiled&nbsp;under&nbsp;Windows.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;deleteFile<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-deleteFiles">deleteFiles</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-deleteFilesInDirectory"><strong>deleteFilesInDirectory</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-deleteFilesInDirectory">deleteFilesInDirectory</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-deleteFilesInDirectory">deleteFilesInDirectory</a>(s:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-deleteFilesInDirectory">deleteFilesInDirectory</a>(s:&nbsp;str,&nbsp;deleteDirectoryAsWell:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Delete&nbsp;all&nbsp;the&nbsp;files&nbsp;in&nbsp;a&nbsp;given&nbsp;directory&nbsp;(nothing&nbsp;done&nbsp;if&nbsp;directory&nbsp;does<br>
+&nbsp;not&nbsp;exists,&nbsp;or&nbsp;path&nbsp;is&nbsp;a&nbsp;file).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;deleteFile<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;true&nbsp;on&nbsp;success<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-deleteFilesInDirectory">deleteFilesInDirectory</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-directoryExists"><strong>directoryExists</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-directoryExists">directoryExists</a>(fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Test&nbsp;if&nbsp;a&nbsp;given&nbsp;directory&nbsp;exists&nbsp;(it&nbsp;fails&nbsp;if&nbsp;the&nbsp;given&nbsp;path&nbsp;refers&nbsp;to&nbsp;an<br>
+&nbsp;existing&nbsp;file).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;fileExists<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-directoryExists">directoryExists</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-executeCommand"><strong>executeCommand</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-executeCommand">executeCommand</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-executeCommand">executeCommand</a>(command:&nbsp;str)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-executeCommand">executeCommand</a>(command:&nbsp;str,&nbsp;output:&nbsp;str)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-executeCommand">executeCommand</a>(command:&nbsp;str,&nbsp;output:&nbsp;str,&nbsp;mode:&nbsp;str)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Execute&nbsp;Generic&nbsp;Shell&nbsp;Command<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Command&nbsp;to&nbsp;execute<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;Pointer&nbsp;to&nbsp;string&nbsp;containing&nbsp;the&nbsp;shell&nbsp;output<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;read/write&nbsp;access<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;0&nbsp;for&nbsp;success,&nbsp;-1&nbsp;otherwise.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Original&nbsp;code&nbsp;snippet&nbsp;found&nbsp;in&nbsp;<a href="http://stackoverflow.com/a/30357710">http://stackoverflow.com/a/30357710</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-executeCommand">executeCommand</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;std::string&nbsp;*,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+ <dl><dt><a name="-extractDayTimeFromTimestamp"><strong>extractDayTimeFromTimestamp</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-extractDayTimeFromTimestamp">extractDayTimeFromTimestamp</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;seconds&nbsp;ellapsed&nbsp;from&nbsp;midnight&nbsp;in&nbsp;the&nbsp;given&nbsp;timestamp<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-extractDayTimeFromTimestamp">extractDayTimeFromTimestamp</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+ <dl><dt><a name="-extractFileDirectory"><strong>extractFileDirectory</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-extractFileDirectory">extractFileDirectory</a>(filePath:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Extract&nbsp;the&nbsp;whole&nbsp;path&nbsp;(the&nbsp;directory)&nbsp;of&nbsp;a&nbsp;filename&nbsp;from&nbsp;a&nbsp;complete&nbsp;path<br>
+&nbsp;plus&nbsp;name&nbsp;plus&nbsp;extension.<br>
+&nbsp;&nbsp;This&nbsp;function&nbsp;works&nbsp;for&nbsp;either&nbsp;"/"&nbsp;or&nbsp;""&nbsp;directory&nbsp;separators.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;extractFileName,extractFileExtension<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-extractFileDirectory">extractFileDirectory</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-extractFileExtension"><strong>extractFileExtension</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-extractFileExtension">extractFileExtension</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-extractFileExtension">extractFileExtension</a>(filePath:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-extractFileExtension">extractFileExtension</a>(filePath:&nbsp;str,&nbsp;ignore_gz:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Extract&nbsp;the&nbsp;extension&nbsp;of&nbsp;a&nbsp;filename.<br>
+&nbsp;&nbsp;For&nbsp;example,&nbsp;for&nbsp;"dummy.cpp",&nbsp;it&nbsp;will&nbsp;return&nbsp;"cpp".<br>
+&nbsp;&nbsp;If&nbsp;"ignore_gz"&nbsp;is&nbsp;true,&nbsp;the&nbsp;second&nbsp;extension&nbsp;will&nbsp;be&nbsp;returned&nbsp;if&nbsp;the&nbsp;file<br>
+&nbsp;name<br>
+&nbsp;&nbsp;&nbsp;ends&nbsp;in&nbsp;".gz",&nbsp;for&nbsp;example,&nbsp;for&nbsp;"foo.map.gz",&nbsp;this&nbsp;will&nbsp;return&nbsp;"map".<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;extractFileName,extractFileDirectory<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-extractFileExtension">extractFileExtension</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-extractFileName"><strong>extractFileName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-extractFileName">extractFileName</a>(filePath:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Extract&nbsp;just&nbsp;the&nbsp;name&nbsp;(without&nbsp;extension)&nbsp;of&nbsp;a&nbsp;filename&nbsp;from&nbsp;a&nbsp;complete&nbsp;path<br>
+&nbsp;plus&nbsp;name&nbsp;plus&nbsp;extension.<br>
+&nbsp;&nbsp;This&nbsp;function&nbsp;works&nbsp;for&nbsp;either&nbsp;"/"&nbsp;or&nbsp;""&nbsp;directory&nbsp;separators.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;extractFileExtension,extractFileDirectory<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-extractFileName">extractFileName</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-fileExists"><strong>fileExists</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-fileExists">fileExists</a>(fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Test&nbsp;if&nbsp;a&nbsp;given&nbsp;file&nbsp;(or&nbsp;directory)&nbsp;exists.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;directoryExists<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-fileExists">fileExists</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-fileNameChangeExtension"><strong>fileNameChangeExtension</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-fileNameChangeExtension">fileNameChangeExtension</a>(filename:&nbsp;str,&nbsp;newExtension:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Replace&nbsp;the&nbsp;filename&nbsp;extension&nbsp;by&nbsp;another&nbsp;one.<br>
+&nbsp;&nbsp;Example:<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-fileNameChangeExtension">fileNameChangeExtension</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-fileNameStripInvalidChars"><strong>fileNameStripInvalidChars</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-fileNameStripInvalidChars">fileNameStripInvalidChars</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-fileNameStripInvalidChars">fileNameStripInvalidChars</a>(filename:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-fileNameStripInvalidChars">fileNameStripInvalidChars</a>(filename:&nbsp;str,&nbsp;replacement_to_invalid_chars:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Replace&nbsp;invalid&nbsp;filename&nbsp;chars&nbsp;by&nbsp;underscores&nbsp;('_')&nbsp;or&nbsp;any&nbsp;other&nbsp;user-given<br>
+&nbsp;char.<br>
+&nbsp;&nbsp;Invalid&nbsp;chars&nbsp;are:&nbsp;'&lt;','&gt;',':','"','/','\','|','?','*'<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-fileNameStripInvalidChars">fileNameStripInvalidChars</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;char)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-filePathSeparatorsToNative"><strong>filePathSeparatorsToNative</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-filePathSeparatorsToNative">filePathSeparatorsToNative</a>(filePath:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Windows:&nbsp;replace&nbsp;all&nbsp;'/'-&gt;'\'&nbsp;,&nbsp;in&nbsp;Linux/MacOS:&nbsp;replace&nbsp;all&nbsp;'\'-&gt;'/'&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-filePathSeparatorsToNative">filePathSeparatorsToNative</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-find_mrpt_shared_dir"><strong>find_mrpt_shared_dir</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-find_mrpt_shared_dir">find_mrpt_shared_dir</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Finds&nbsp;the&nbsp;"[MRPT]/share/mrpt/"&nbsp;directory,&nbsp;if&nbsp;available&nbsp;in&nbsp;the&nbsp;system.&nbsp;This<br>
+&nbsp;searches&nbsp;in&nbsp;(1)&nbsp;source&nbsp;code&nbsp;tree,&nbsp;(2)&nbsp;install&nbsp;target&nbsp;paths.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-find_mrpt_shared_dir">find_mrpt_shared_dir</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-firstNLines"><strong>firstNLines</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-firstNLines">firstNLines</a>(str:&nbsp;str,&nbsp;n:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;first&nbsp;`n`&nbsp;lines&nbsp;(splitted&nbsp;by&nbsp;''&nbsp;chars)&nbsp;of&nbsp;the&nbsp;given&nbsp;text.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.3.2<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-firstNLines">firstNLines</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-formatTimeInterval"><strong>formatTimeInterval</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-formatTimeInterval">formatTimeInterval</a>(timeSeconds:&nbsp;float)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;formated&nbsp;string&nbsp;with&nbsp;the&nbsp;given&nbsp;time&nbsp;difference&nbsp;(passed&nbsp;as&nbsp;the<br>
+&nbsp;number&nbsp;of&nbsp;seconds),&nbsp;as&nbsp;a&nbsp;string&nbsp;[H]H:MM:SS.MILLISECONDS<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;unitsFormat<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-formatTimeInterval">formatTimeInterval</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-getCurrentTime"><strong>getCurrentTime</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getCurrentTime">getCurrentTime</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;current&nbsp;(UTC)&nbsp;system&nbsp;time.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;now<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getCurrentTime">getCurrentTime</a>()&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+ <dl><dt><a name="-getFileModificationTime"><strong>getFileModificationTime</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getFileModificationTime">getFileModificationTime</a>(filename:&nbsp;str)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;time&nbsp;of&nbsp;the&nbsp;file&nbsp;last&nbsp;modification,&nbsp;or&nbsp;"0"&nbsp;if&nbsp;the&nbsp;file&nbsp;doesn't<br>
+&nbsp;exist.&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getFileModificationTime">getFileModificationTime</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;long</tt></dd></dl>
+ <dl><dt><a name="-getFileSize"><strong>getFileSize</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getFileSize">getFileSize</a>(fileName:&nbsp;str)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;given&nbsp;file,&nbsp;or&nbsp;size_t(-1)&nbsp;if&nbsp;some&nbsp;error&nbsp;is&nbsp;found<br>
+&nbsp;accessing&nbsp;that&nbsp;file.&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getFileSize">getFileSize</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+ <dl><dt><a name="-getMRPTLicense"><strong>getMRPTLicense</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getMRPTLicense">getMRPTLicense</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;const&nbsp;ref&nbsp;to&nbsp;a&nbsp;text&nbsp;with&nbsp;the&nbsp;same&nbsp;text&nbsp;that&nbsp;appears&nbsp;at&nbsp;the<br>
+&nbsp;beginning&nbsp;of&nbsp;each&nbsp;MRPT&nbsp;file&nbsp;(useful&nbsp;for&nbsp;displaying&nbsp;the&nbsp;License&nbsp;text&nbsp;in&nbsp;GUIs)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getMRPTLicense">getMRPTLicense</a>()&nbsp;--&gt;&nbsp;const&nbsp;std::string&nbsp;&amp;</tt></dd></dl>
+ <dl><dt><a name="-getMemoryUsage"><strong>getMemoryUsage</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getMemoryUsage">getMemoryUsage</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;memory&nbsp;occupied&nbsp;by&nbsp;this&nbsp;process,&nbsp;in&nbsp;bytes&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getMemoryUsage">getMemoryUsage</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+ <dl><dt><a name="-getShareMRPTDir"><strong>getShareMRPTDir</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getShareMRPTDir">getShareMRPTDir</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Attempts&nbsp;to&nbsp;find&nbsp;the&nbsp;directory&nbsp;`[PREFIX/]share/mrpt/`&nbsp;and&nbsp;returns&nbsp;its<br>
+&nbsp;absolute&nbsp;path,&nbsp;or&nbsp;empty&nbsp;string&nbsp;if&nbsp;not&nbsp;found.<br>
+&nbsp;Example&nbsp;return&nbsp;paths:&nbsp;Linux&nbsp;after&nbsp;installing&nbsp;=&nbsp;`/usr/share/mrpt/`;<br>
+&nbsp;manually-built&nbsp;system&nbsp;=&nbsp;`[MRPT_SOURCE_DIR]/share/mrpt/`,&nbsp;etc.&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getShareMRPTDir">getShareMRPTDir</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-getTempFileName"><strong>getTempFileName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getTempFileName">getTempFileName</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;proposed&nbsp;temporary&nbsp;file&nbsp;name&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getTempFileName">getTempFileName</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-getcwd"><strong>getcwd</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getcwd">getcwd</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;current&nbsp;working&nbsp;directory&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-getcwd">getcwd</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-global_profiler_enter"><strong>global_profiler_enter</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-global_profiler_enter">global_profiler_enter</a>(func_name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+macros.<br>
+&nbsp;&nbsp;@{&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-global_profiler_enter">global_profiler_enter</a>(const&nbsp;char&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-global_profiler_getref"><strong>global_profiler_getref</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-global_profiler_getref">global_profiler_getref</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-global_profiler_getref">global_profiler_getref</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>&nbsp;&amp;</tt></dd></dl>
+ <dl><dt><a name="-global_profiler_leave"><strong>global_profiler_leave</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-global_profiler_leave">global_profiler_leave</a>(func_name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-global_profiler_leave">global_profiler_leave</a>(const&nbsp;char&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-intervalFormat"><strong>intervalFormat</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-intervalFormat">intervalFormat</a>(seconds:&nbsp;float)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;implements&nbsp;time&nbsp;interval&nbsp;formatting:&nbsp;Given&nbsp;a&nbsp;time&nbsp;in&nbsp;seconds,<br>
+&nbsp;it&nbsp;will&nbsp;return&nbsp;a&nbsp;string&nbsp;describing&nbsp;the&nbsp;interval&nbsp;with&nbsp;the&nbsp;most&nbsp;appropriate<br>
+&nbsp;unit.<br>
+&nbsp;E.g.:<br>
+&nbsp;&nbsp;-&nbsp;"1&nbsp;year,&nbsp;3&nbsp;days,&nbsp;4&nbsp;minutes"<br>
+&nbsp;&nbsp;-&nbsp;"3&nbsp;days,&nbsp;8&nbsp;hours"<br>
+&nbsp;&nbsp;-&nbsp;"9&nbsp;hours,&nbsp;4&nbsp;minutes,&nbsp;4.3&nbsp;sec",<br>
+&nbsp;&nbsp;-&nbsp;"3.34&nbsp;sec"<br>
+&nbsp;&nbsp;-&nbsp;"178.1&nbsp;ms"<br>
+&nbsp;&nbsp;-&nbsp;"87.1&nbsp;us"<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;unitsFormat<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-intervalFormat">intervalFormat</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-launchProcess"><strong>launchProcess</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-launchProcess">launchProcess</a>(command:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Executes&nbsp;the&nbsp;given&nbsp;command&nbsp;(which&nbsp;may&nbsp;contain&nbsp;a&nbsp;program&nbsp;+&nbsp;arguments),&nbsp;and<br>
+waits&nbsp;until&nbsp;it&nbsp;finishes.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;any&nbsp;error,&nbsp;true&nbsp;otherwise<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-launchProcess">launchProcess</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-lowerCase"><strong>lowerCase</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-lowerCase">lowerCase</a>(str:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;an&nbsp;lower-case&nbsp;version&nbsp;of&nbsp;a&nbsp;string.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;upperCase&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-lowerCase">lowerCase</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-md5"><strong>md5</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-md5">md5</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-md5">md5</a>(str:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Header:&nbsp;`#include&nbsp;&lt;mrpt/system/md5.h&gt;`.<br>
+&nbsp;Library:&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Computes&nbsp;the&nbsp;md5&nbsp;of&nbsp;a&nbsp;block&nbsp;of&nbsp;data.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-md5">md5</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-md5">md5</a>(data:&nbsp;int,&nbsp;len:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Computes&nbsp;the&nbsp;md5&nbsp;of&nbsp;a&nbsp;block&nbsp;of&nbsp;data.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-md5">md5</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-now"><strong>now</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-now">now</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+A&nbsp;shortcut&nbsp;for&nbsp;system::getCurrentTime<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;getCurrentTime<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-now">now</a>()&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+ <dl><dt><a name="-now_double"><strong>now_double</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-now_double">now_double</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;current&nbsp;time,&nbsp;as&nbsp;a&nbsp;`double`&nbsp;(fractional&nbsp;version&nbsp;of&nbsp;time_t)<br>
+&nbsp;instead&nbsp;of&nbsp;a&nbsp;`TTimeStamp`.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#-now">now</a>(),&nbsp;<a href="#-timestampTotime_t">timestampTotime_t</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-now_double">now_double</a>()&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+ <dl><dt><a name="-nthOccurrence"><strong>nthOccurrence</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-nthOccurrence">nthOccurrence</a>(str:&nbsp;str,&nbsp;strToFind:&nbsp;str,&nbsp;nth:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Finds&nbsp;the&nbsp;position&nbsp;of&nbsp;the&nbsp;n-th&nbsp;occurence&nbsp;of&nbsp;the&nbsp;given&nbsp;substring,&nbsp;or<br>
+&nbsp;std::string::npos&nbsp;if&nbsp;it&nbsp;does&nbsp;not&nbsp;happen.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.3.2<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-nthOccurrence">nthOccurrence</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+ <dl><dt><a name="-pathJoin"><strong>pathJoin</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-pathJoin">pathJoin</a>(paths:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Portable&nbsp;version&nbsp;of&nbsp;std::filesystem::path::append(),&nbsp;with&nbsp;Python-like&nbsp;name.<br>
+&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.0)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-pathJoin">pathJoin</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-pause"><strong>pause</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-pause">pause</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-pause">pause</a>()&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-pause">pause</a>(msg:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Shows&nbsp;the&nbsp;message&nbsp;"Press&nbsp;any&nbsp;key&nbsp;to&nbsp;continue"&nbsp;(or&nbsp;other&nbsp;custom&nbsp;message)&nbsp;to<br>
+&nbsp;the&nbsp;current&nbsp;standard&nbsp;output&nbsp;and&nbsp;returns&nbsp;when&nbsp;a&nbsp;key&nbsp;is&nbsp;pressed&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-pause">pause</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-progress"><strong>progress</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-progress">progress</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-progress">progress</a>(progressRatio0to1:&nbsp;float,&nbsp;barLength:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-progress">progress</a>(progressRatio0to1:&nbsp;float,&nbsp;barLength:&nbsp;int,&nbsp;encloseInSquareBrackets:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Build&nbsp;an&nbsp;text&nbsp;incremental&nbsp;progress&nbsp;bar&nbsp;with<br>
+&nbsp;[UNICODE&nbsp;block&nbsp;elements](<a href="https://en.wikipedia.org/wiki/Block_Elements">https://en.wikipedia.org/wiki/Block_Elements</a>),<br>
+&nbsp;for&nbsp;example:<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;See&nbsp;example:&nbsp;<br>
+&nbsp;&nbsp;system_progress_bar/test.cpp&nbsp;example-system-progress-bar<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.3.0)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-progress">progress</a>(const&nbsp;double,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-renameFile"><strong>renameFile</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-renameFile">renameFile</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-renameFile">renameFile</a>(oldFileName:&nbsp;str,&nbsp;newFileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-renameFile">renameFile</a>(oldFileName:&nbsp;str,&nbsp;newFileName:&nbsp;str,&nbsp;error_msg:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Renames&nbsp;a&nbsp;file&nbsp;-&nbsp;If&nbsp;the&nbsp;target&nbsp;path&nbsp;is&nbsp;different&nbsp;and&nbsp;the&nbsp;filesystem&nbsp;allows<br>
+&nbsp;it,&nbsp;it&nbsp;will&nbsp;be&nbsp;moved&nbsp;to&nbsp;the&nbsp;new&nbsp;location.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;any&nbsp;error.&nbsp;In&nbsp;that&nbsp;case,&nbsp;if&nbsp;a&nbsp;pointer&nbsp;to&nbsp;a&nbsp;receiver&nbsp;string<br>
+&nbsp;is&nbsp;passed&nbsp;in&nbsp;error_msg,&nbsp;a&nbsp;description&nbsp;of&nbsp;the&nbsp;error&nbsp;is&nbsp;saved&nbsp;there.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-renameFile">renameFile</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;std::string&nbsp;*)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-rightPad"><strong>rightPad</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-rightPad">rightPad</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-rightPad">rightPad</a>(str:&nbsp;str,&nbsp;total_len:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-rightPad">rightPad</a>(str:&nbsp;str,&nbsp;total_len:&nbsp;int,&nbsp;truncate_if_larger:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Enlarge&nbsp;the&nbsp;string&nbsp;with&nbsp;spaces&nbsp;up&nbsp;to&nbsp;the&nbsp;given&nbsp;length.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-rightPad">rightPad</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-strCmp"><strong>strCmp</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-strCmp">strCmp</a>(s1:&nbsp;str,&nbsp;s2:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Return&nbsp;true&nbsp;if&nbsp;the&nbsp;two&nbsp;strings&nbsp;are&nbsp;equal&nbsp;(case&nbsp;sensitive)&nbsp;&nbsp;<br>
+&nbsp;strCmpI&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-strCmp">strCmp</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-strCmpI"><strong>strCmpI</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-strCmpI">strCmpI</a>(s1:&nbsp;str,&nbsp;s2:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Return&nbsp;true&nbsp;if&nbsp;the&nbsp;two&nbsp;strings&nbsp;are&nbsp;equal&nbsp;(case&nbsp;insensitive)&nbsp;&nbsp;<br>
+&nbsp;strCmp&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-strCmpI">strCmpI</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-strStarts"><strong>strStarts</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-strStarts">strStarts</a>(str:&nbsp;str,&nbsp;subStr:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Return&nbsp;true&nbsp;if&nbsp;"str"&nbsp;starts&nbsp;with&nbsp;"subStr"&nbsp;(case&nbsp;sensitive)&nbsp;&nbsp;<br>
+&nbsp;strStartsI<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-strStarts">strStarts</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-strStartsI"><strong>strStartsI</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-strStartsI">strStartsI</a>(str:&nbsp;str,&nbsp;subStr:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Return&nbsp;true&nbsp;if&nbsp;"str"&nbsp;starts&nbsp;with&nbsp;"subStr"&nbsp;(case&nbsp;insensitive)&nbsp;&nbsp;<br>
+&nbsp;strStarts<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-strStartsI">strStartsI</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-stringListAsString"><strong>stringListAsString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-stringListAsString">stringListAsString</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-stringListAsString">stringListAsString</a>(lst:&nbsp;mrpt.pymrpt.std.vector_std_string,&nbsp;out:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-stringListAsString">stringListAsString</a>(lst:&nbsp;mrpt.pymrpt.std.vector_std_string,&nbsp;out:&nbsp;str,&nbsp;newline:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;string&nbsp;list&nbsp;to&nbsp;one&nbsp;single&nbsp;string&nbsp;with&nbsp;new-lines.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-stringListAsString">stringListAsString</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-thread_name"><strong>thread_name</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-thread_name">thread_name</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-thread_name">thread_name</a>(name:&nbsp;str,&nbsp;theThread:&nbsp;mrpt.pymrpt.std.thread)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Sets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;given&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.0.4<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::thread&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-thread_name">thread_name</a>(name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Sets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;current&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.0.4<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-thread_name">thread_name</a>(theThread:&nbsp;mrpt.pymrpt.std.thread)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Gets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;given&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.0.4<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>(class&nbsp;std::thread&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string<br>
+&nbsp;<br>
+4.&nbsp;<a href="#-thread_name">thread_name</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Gets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;current&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.0.4<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-timeDifference"><strong>timeDifference</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timeDifference">timeDifference</a>(t_first:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t,&nbsp;t_later:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;time&nbsp;difference&nbsp;from&nbsp;t1&nbsp;to&nbsp;t2&nbsp;(positive&nbsp;if&nbsp;t2&nbsp;is&nbsp;posterior&nbsp;to<br>
+&nbsp;t1),&nbsp;in&nbsp;seconds&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-timeDifference">timeDifference</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+ <dl><dt><a name="-timeLocalToString"><strong>timeLocalToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timeLocalToString">timeLocalToString</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-timeLocalToString">timeLocalToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-timeLocalToString">timeLocalToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t,&nbsp;secondFractionDigits:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(in&nbsp;local&nbsp;time):&nbsp;HH:MM:SS.MMMMMM<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-timeLocalToString">timeLocalToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-timeToString"><strong>timeToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timeToString">timeToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(UTC):&nbsp;HH:MM:SS.MMMMMM<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-timeToString">timeToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-time_tToTimestamp"><strong>time_tToTimestamp</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-time_tToTimestamp">time_tToTimestamp</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-time_tToTimestamp">time_tToTimestamp</a>(t:&nbsp;float)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+Transform&nbsp;from&nbsp;standard&nbsp;"time_t"&nbsp;(actually&nbsp;a&nbsp;double&nbsp;number,&nbsp;it&nbsp;can&nbsp;contain<br>
+&nbsp;fractions&nbsp;of&nbsp;seconds)&nbsp;to&nbsp;TTimeStamp.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;timestampTotime_t<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-time_tToTimestamp">time_tToTimestamp</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-time_tToTimestamp">time_tToTimestamp</a>(t:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+Transform&nbsp;from&nbsp;standard&nbsp;"time_t"&nbsp;to&nbsp;TTimeStamp.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;timestampTotime_t<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-time_tToTimestamp">time_tToTimestamp</a>(const&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+ <dl><dt><a name="-timestampAdd"><strong>timestampAdd</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampAdd">timestampAdd</a>(tim:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t,&nbsp;num_seconds:&nbsp;float)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
+&nbsp;<br>
+Shifts&nbsp;a&nbsp;timestamp&nbsp;the&nbsp;given&nbsp;amount&nbsp;of&nbsp;seconds&nbsp;(&gt;0:&nbsp;forwards&nbsp;in&nbsp;time,&nbsp;&lt;0:<br>
+&nbsp;backwards)&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-timestampAdd">timestampAdd</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+ <dl><dt><a name="-timestampToDouble"><strong>timestampToDouble</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampToDouble">timestampToDouble</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Transform&nbsp;from&nbsp;TTimeStamp&nbsp;to&nbsp;standard&nbsp;"time_t"&nbsp;(actually&nbsp;a&nbsp;double&nbsp;number,&nbsp;it<br>
+&nbsp;can&nbsp;contain&nbsp;fractions&nbsp;of&nbsp;seconds).<br>
+&nbsp;This&nbsp;function&nbsp;is&nbsp;just&nbsp;an&nbsp;(inline)&nbsp;alias&nbsp;of&nbsp;<a href="#-timestampTotime_t">timestampTotime_t</a>(),&nbsp;with&nbsp;a&nbsp;more<br>
+&nbsp;significant&nbsp;name.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;time_tToTimestamp<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-timestampToDouble">timestampToDouble</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+ <dl><dt><a name="-timestampToParts"><strong>timestampToParts</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampToParts">timestampToParts</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-timestampToParts">timestampToParts</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TTimeParts">TTimeParts</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-timestampToParts">timestampToParts</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TTimeParts">TTimeParts</a>,&nbsp;localTime:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Gets&nbsp;the&nbsp;individual&nbsp;parts&nbsp;of&nbsp;a&nbsp;date/time&nbsp;(days,&nbsp;hours,&nbsp;minutes,&nbsp;seconds)&nbsp;-<br>
+&nbsp;UTC&nbsp;time&nbsp;or&nbsp;local&nbsp;time<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;buildTimestampFromParts<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-timestampToParts">timestampToParts</a>(struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-timestampTotime_t"><strong>timestampTotime_t</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampTotime_t">timestampTotime_t</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Transform&nbsp;from&nbsp;TTimeStamp&nbsp;to&nbsp;standard&nbsp;"time_t"&nbsp;(actually&nbsp;a&nbsp;double&nbsp;number,&nbsp;it<br>
+&nbsp;can&nbsp;contain&nbsp;fractions&nbsp;of&nbsp;seconds).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;time_tToTimestamp<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-timestampTotime_t">timestampTotime_t</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+ <dl><dt><a name="-toAbsolutePath"><strong>toAbsolutePath</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-toAbsolutePath">toAbsolutePath</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-toAbsolutePath">toAbsolutePath</a>(path:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-toAbsolutePath">toAbsolutePath</a>(path:&nbsp;str,&nbsp;resolveToCanonical:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Portable&nbsp;version&nbsp;of&nbsp;std::filesystem::absolute()&nbsp;and&nbsp;canonical()<br>
+&nbsp;<br>
+&nbsp;If&nbsp;`canonical==true`&nbsp;relative&nbsp;paths,&nbsp;symlinks,&nbsp;etc.&nbsp;will&nbsp;be&nbsp;resolved&nbsp;too,<br>
+&nbsp;but&nbsp;an&nbsp;exception&nbsp;will&nbsp;be&nbsp;thrown&nbsp;if&nbsp;the&nbsp;referenced&nbsp;file/path&nbsp;does&nbsp;not&nbsp;exist.<br>
+&nbsp;If&nbsp;`canonical==true`,&nbsp;an&nbsp;absolute&nbsp;path&nbsp;will&nbsp;be&nbsp;always&nbsp;returned,&nbsp;even&nbsp;if&nbsp;does<br>
+&nbsp;not&nbsp;actually&nbsp;exist.<br>
+&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.0)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-toAbsolutePath">toAbsolutePath</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-tokenize"><strong>tokenize</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-tokenize">tokenize</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-tokenize">tokenize</a>(inString:&nbsp;str,&nbsp;inDelimiters:&nbsp;str,&nbsp;outTokens:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-tokenize">tokenize</a>(inString:&nbsp;str,&nbsp;inDelimiters:&nbsp;str,&nbsp;outTokens:&nbsp;mrpt.pymrpt.std.vector_std_string,&nbsp;skipBlankTokens:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Tokenizes&nbsp;a&nbsp;string&nbsp;according&nbsp;to&nbsp;a&nbsp;set&nbsp;of&nbsp;delimiting&nbsp;characters.<br>
+&nbsp;Example:<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;Will&nbsp;generate&nbsp;3&nbsp;tokens:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;"Pepe"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;"Er"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;"Muo"<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;If&nbsp;`true`,&nbsp;consecutive&nbsp;"delimiters"&nbsp;will&nbsp;be<br>
+&nbsp;considered&nbsp;one&nbsp;single&nbsp;delimiters.&nbsp;If&nbsp;`false`,&nbsp;a&nbsp;blank&nbsp;token&nbsp;will&nbsp;be&nbsp;returned<br>
+&nbsp;between&nbsp;each&nbsp;pair&nbsp;of&nbsp;delimiters.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Can&nbsp;be&nbsp;a&nbsp;std::vector&nbsp;or&nbsp;std::deque&nbsp;of&nbsp;std::string's.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-tokenize">tokenize</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-trim"><strong>trim</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-trim">trim</a>(str:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Removes&nbsp;leading&nbsp;and&nbsp;trailing&nbsp;spaces&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-trim">trim</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-unitsFormat"><strong>unitsFormat</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-unitsFormat">unitsFormat</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-unitsFormat">unitsFormat</a>(val:&nbsp;float)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-unitsFormat">unitsFormat</a>(val:&nbsp;float,&nbsp;nDecimalDigits:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-unitsFormat">unitsFormat</a>(val:&nbsp;float,&nbsp;nDecimalDigits:&nbsp;int,&nbsp;middle_space:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;implements&nbsp;formatting&nbsp;with&nbsp;the&nbsp;appropriate&nbsp;SI&nbsp;metric&nbsp;unit<br>
+&nbsp;prefix:&nbsp;1e-12-&gt;'p',&nbsp;1e-9-&gt;'n',&nbsp;1e-6-&gt;'u',&nbsp;1e-3-&gt;'m',&nbsp;1-&gt;'',&nbsp;1e3-&gt;'K',<br>
+&nbsp;1e6-&gt;'M',&nbsp;1e9-&gt;'G',&nbsp;1e12-&gt;'T'&nbsp;<br>
+&nbsp;<br>
+&nbsp;intervalFormat&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-unitsFormat">unitsFormat</a>(const&nbsp;double,&nbsp;int,&nbsp;bool)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-upperCase"><strong>upperCase</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-upperCase">upperCase</a>(str:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;upper-case&nbsp;version&nbsp;of&nbsp;a&nbsp;string.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;lowerCase&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#-upperCase">upperCase</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>LVL_DEBUG</strong> = &lt;VerbosityLevel.LVL_DEBUG: 0&gt;<br>
+<strong>LVL_ERROR</strong> = &lt;VerbosityLevel.LVL_ERROR: 3&gt;<br>
+<strong>LVL_INFO</strong> = &lt;VerbosityLevel.LVL_INFO: 1&gt;<br>
+<strong>LVL_WARN</strong> = &lt;VerbosityLevel.LVL_WARN: 2&gt;<br>
+<strong>NUMBER_OF_VERBOSITY_LEVELS</strong> = &lt;VerbosityLevel.NUMBER_OF_VERBOSITY_LEVELS: 4&gt;<br>
+<strong>ppHigh</strong> = &lt;TProcessPriority.ppHigh: 2&gt;<br>
+<strong>ppIdle</strong> = &lt;TProcessPriority.ppIdle: 0&gt;<br>
+<strong>ppNormal</strong> = &lt;TProcessPriority.ppNormal: 1&gt;<br>
+<strong>ppVeryHigh</strong> = &lt;TProcessPriority.ppVeryHigh: 3&gt;<br>
+<strong>tpHigh</strong> = &lt;TThreadPriority.tpHigh: 1&gt;<br>
+<strong>tpHigher</strong> = &lt;TThreadPriority.tpHigher: 2&gt;<br>
+<strong>tpHighest</strong> = &lt;TThreadPriority.tpHighest: 15&gt;<br>
+<strong>tpLow</strong> = &lt;TThreadPriority.tpLow: -1&gt;<br>
+<strong>tpLower</strong> = &lt;TThreadPriority.tpLower: -2&gt;<br>
+<strong>tpLowests</strong> = &lt;TThreadPriority.tpLowests: -15&gt;<br>
+<strong>tpNormal</strong> = &lt;TThreadPriority.tpNormal: 0&gt;</td></tr></table>
+</body></html>

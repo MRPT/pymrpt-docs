@@ -1,0 +1,716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.comms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.comms</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::comms&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="mrpt.pymrpt.mrpt.comms.net.html">mrpt.pymrpt.mrpt.comms.net</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>(pybind11_builtins.pybind11_object)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.comms.html#CClientTCPSocket">CClientTCPSocket</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.comms.html#CSerialPort">CSerialPort</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.comms.html#CServerTCPSocket">CServerTCPSocket</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.comms.html#TFTDIDevice">TFTDIDevice</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CClientTCPSocket">class <strong>CClientTCPSocket</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;TCP&nbsp;socket&nbsp;that&nbsp;can&nbsp;be&nbsp;connected&nbsp;to&nbsp;a&nbsp;TCP&nbsp;server,&nbsp;implementing&nbsp;MRPT's<br>
+<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>&nbsp;interface&nbsp;for&nbsp;passing&nbsp;objects&nbsp;as&nbsp;well&nbsp;as&nbsp;generic&nbsp;read/write&nbsp;methods.<br>
+&nbsp;Unless&nbsp;otherwise&nbsp;noticed,&nbsp;operations&nbsp;are&nbsp;blocking.<br>
+&nbsp;<br>
+&nbsp;Note&nbsp;that&nbsp;for&nbsp;convenience,&nbsp;DNS&nbsp;lookup&nbsp;is&nbsp;performed&nbsp;with&nbsp;a&nbsp;timeout<br>
+(default=3000ms),&nbsp;which&nbsp;can&nbsp;be&nbsp;changed&nbsp;by&nbsp;the&nbsp;static&nbsp;member<br>
+<a href="#CClientTCPSocket">CClientTCPSocket</a>::DNS_LOOKUP_TIMEOUT_MS<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.comms.html#CClientTCPSocket">CClientTCPSocket</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CClientTCPSocket-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CClientTCPSocket-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;off:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CClientTCPSocket-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;off:&nbsp;int,&nbsp;org:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+This&nbsp;virtual&nbsp;method&nbsp;has&nbsp;no&nbsp;effect&nbsp;in&nbsp;this&nbsp;implementation&nbsp;over&nbsp;a&nbsp;TCP<br>
+&nbsp;socket,&nbsp;and&nbsp;its&nbsp;use&nbsp;raises&nbsp;an&nbsp;exception&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CClientTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CClientTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CClientTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::operator=(const&nbsp;class&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Closes&nbsp;the&nbsp;connection&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-connect"><strong>connect</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-connect">connect</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CClientTCPSocket-connect">connect</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;remotePartAddress:&nbsp;str,&nbsp;remotePartTCPPort:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CClientTCPSocket-connect">connect</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;remotePartAddress:&nbsp;str,&nbsp;remotePartTCPPort:&nbsp;int,&nbsp;timeout_ms:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Establishes&nbsp;a&nbsp;connection&nbsp;with&nbsp;a&nbsp;remote&nbsp;part.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;string&nbsp;can&nbsp;be&nbsp;a&nbsp;host&nbsp;name,&nbsp;like&nbsp;"server"<br>
+&nbsp;or&nbsp;"www.mydomain.org",&nbsp;or&nbsp;an&nbsp;IP&nbsp;address&nbsp;"11.22.33.44".<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;port&nbsp;on&nbsp;the&nbsp;remote&nbsp;machine&nbsp;to&nbsp;connect&nbsp;to.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;The&nbsp;timeout&nbsp;to&nbsp;wait&nbsp;for&nbsp;the&nbsp;connection&nbsp;(0:&nbsp;NO<br>
+&nbsp;TIMEOUT)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;raises&nbsp;an&nbsp;exception&nbsp;if&nbsp;an&nbsp;error&nbsp;is&nbsp;found&nbsp;with&nbsp;a<br>
+&nbsp;textual&nbsp;description&nbsp;of&nbsp;the&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-connect">connect</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;short,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+This&nbsp;virtual&nbsp;method&nbsp;has&nbsp;no&nbsp;effect&nbsp;in&nbsp;this&nbsp;implementation&nbsp;over&nbsp;a&nbsp;TCP<br>
+&nbsp;socket,&nbsp;and&nbsp;its&nbsp;use&nbsp;raises&nbsp;an&nbsp;exception&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-getReadPendingBytes"><strong>getReadPendingBytes</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getReadPendingBytes">getReadPendingBytes</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;number&nbsp;of&nbsp;bytes&nbsp;already&nbsp;in&nbsp;the&nbsp;receive&nbsp;queue&nbsp;(they&nbsp;can&nbsp;be<br>
+&nbsp;read&nbsp;without&nbsp;waiting)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getReadPendingBytes">getReadPendingBytes</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-getSOSendBufffer"><strong>getSOSendBufffer</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getSOSendBufffer">getSOSendBufffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;current&nbsp;size&nbsp;of&nbsp;the&nbsp;SO&nbsp;send&nbsp;buffer.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getSOSendBufffer">getSOSendBufffer</a>()&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-getTCPNoDelay"><strong>getTCPNoDelay</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getTCPNoDelay">getTCPNoDelay</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;TCPNoDelay&nbsp;option.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getTCPNoDelay">getTCPNoDelay</a>()&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+This&nbsp;virtual&nbsp;method&nbsp;has&nbsp;no&nbsp;effect&nbsp;in&nbsp;this&nbsp;implementation&nbsp;over&nbsp;a&nbsp;TCP<br>
+&nbsp;socket,&nbsp;and&nbsp;its&nbsp;use&nbsp;raises&nbsp;an&nbsp;exception&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-isConnected"><strong>isConnected</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-isConnected">isConnected</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;this&nbsp;objects&nbsp;represents&nbsp;a&nbsp;successfully&nbsp;connected&nbsp;socket<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-isConnected">isConnected</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-readAsync"><strong>readAsync</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-readAsync">readAsync</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CClientTCPSocket-readAsync">readAsync</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CClientTCPSocket-readAsync">readAsync</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int,&nbsp;timeoutStart_ms:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CClientTCPSocket-readAsync">readAsync</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int,&nbsp;timeoutStart_ms:&nbsp;int,&nbsp;timeoutBetween_ms:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+A&nbsp;method&nbsp;for&nbsp;reading&nbsp;from&nbsp;the&nbsp;socket&nbsp;with&nbsp;an&nbsp;optional&nbsp;timeout.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;destination&nbsp;of&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;number&nbsp;of&nbsp;bytes&nbsp;to&nbsp;read.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;maximum&nbsp;timeout&nbsp;(in&nbsp;milliseconds)&nbsp;to&nbsp;wait&nbsp;for<br>
+&nbsp;the&nbsp;starting&nbsp;of&nbsp;data&nbsp;from&nbsp;the&nbsp;other&nbsp;side.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;maximum&nbsp;timeout&nbsp;(in&nbsp;milliseconds)&nbsp;to&nbsp;wait<br>
+&nbsp;for&nbsp;a&nbsp;chunk&nbsp;of&nbsp;data&nbsp;after&nbsp;a&nbsp;previous&nbsp;one.<br>
+&nbsp;&nbsp;Set&nbsp;timeout's&nbsp;to&nbsp;-1&nbsp;to&nbsp;block&nbsp;until&nbsp;the&nbsp;desired&nbsp;number&nbsp;of&nbsp;bytes&nbsp;are<br>
+&nbsp;read,&nbsp;or&nbsp;an&nbsp;error&nbsp;happens.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;number&nbsp;of&nbsp;actually&nbsp;read&nbsp;bytes.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-readAsync">readAsync</a>(void&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-sendString"><strong>sendString</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-sendString">sendString</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;a&nbsp;string&nbsp;to&nbsp;the&nbsp;socket.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-sendString">sendString</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-setSOSendBufffer"><strong>setSOSendBufffer</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-setSOSendBufffer">setSOSendBufffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;newValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Set&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;SO&nbsp;send&nbsp;buffer.&nbsp;This&nbsp;buffer&nbsp;is&nbsp;used&nbsp;to&nbsp;store&nbsp;data,<br>
+&nbsp;and&nbsp;is&nbsp;sended&nbsp;when&nbsp;is&nbsp;full.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;size&nbsp;of&nbsp;the&nbsp;SO&nbsp;send&nbsp;buffer.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Return&nbsp;a&nbsp;number&nbsp;lower&nbsp;than&nbsp;0&nbsp;if&nbsp;any&nbsp;error&nbsp;occurred.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-setSOSendBufffer">setSOSendBufffer</a>(int)&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-setTCPNoDelay"><strong>setTCPNoDelay</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-setTCPNoDelay">setTCPNoDelay</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;newValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Set&nbsp;the&nbsp;TCP&nbsp;no&nbsp;delay&nbsp;option&nbsp;of&nbsp;the&nbsp;protocol&nbsp;(Nagle&nbsp;algorithm).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;New&nbsp;value&nbsp;(0&nbsp;enable&nbsp;Nagle&nbsp;algorithm,&nbsp;1&nbsp;disable).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Return&nbsp;a&nbsp;number&nbsp;lower&nbsp;than&nbsp;0&nbsp;if&nbsp;any&nbsp;error&nbsp;occurred.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-setTCPNoDelay">setTCPNoDelay</a>(int)&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-writeAsync"><strong>writeAsync</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-writeAsync">writeAsync</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CClientTCPSocket-writeAsync">writeAsync</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CClientTCPSocket-writeAsync">writeAsync</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int,&nbsp;timeout_ms:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+A&nbsp;method&nbsp;for&nbsp;writing&nbsp;to&nbsp;the&nbsp;socket&nbsp;with&nbsp;optional&nbsp;timeouts.<br>
+&nbsp;&nbsp;The&nbsp;method&nbsp;supports&nbsp;writing&nbsp;block&nbsp;by&nbsp;block&nbsp;as&nbsp;the&nbsp;socket&nbsp;allows&nbsp;us&nbsp;to<br>
+&nbsp;write&nbsp;more&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;number&nbsp;of&nbsp;bytes&nbsp;to&nbsp;write.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;maximum&nbsp;timeout&nbsp;(in&nbsp;milliseconds)&nbsp;to&nbsp;wait&nbsp;for&nbsp;the<br>
+&nbsp;socket&nbsp;to&nbsp;be&nbsp;available&nbsp;for&nbsp;writing&nbsp;(for&nbsp;each&nbsp;block).<br>
+&nbsp;&nbsp;Set&nbsp;timeout's&nbsp;to&nbsp;-1&nbsp;to&nbsp;block&nbsp;until&nbsp;the&nbsp;desired&nbsp;number&nbsp;of&nbsp;bytes&nbsp;are<br>
+&nbsp;written,&nbsp;or&nbsp;an&nbsp;error&nbsp;happens.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;number&nbsp;of&nbsp;actually&nbsp;written&nbsp;bytes.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-writeAsync">writeAsync</a>(const&nbsp;void&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>:<br>
+<dl><dt><a name="CClientTCPSocket-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Introduces&nbsp;a&nbsp;pure&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&nbsp;reading&nbsp;from&nbsp;the<br>
+&nbsp;stream.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Introduces&nbsp;a&nbsp;pure&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&nbsp;writing&nbsp;to&nbsp;the&nbsp;stream.<br>
+&nbsp;&nbsp;Write&nbsp;attempts&nbsp;to&nbsp;write&nbsp;up&nbsp;to&nbsp;Count&nbsp;bytes&nbsp;to&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+&nbsp;number&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;written.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human-friendly&nbsp;description&nbsp;of&nbsp;the&nbsp;stream,&nbsp;e.g.&nbsp;a&nbsp;filename.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CClientTCPSocket-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CClientTCPSocket-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CSerialPort">class <strong>CSerialPort</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;communications&nbsp;serial&nbsp;port&nbsp;implementing&nbsp;the&nbsp;interface&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>.<br>
+On&nbsp;communication&nbsp;errors&nbsp;(eg.&nbsp;the&nbsp;given&nbsp;port&nbsp;number&nbsp;does&nbsp;not&nbsp;exist,<br>
+timeouts,...),&nbsp;most&nbsp;of&nbsp;the&nbsp;methods&nbsp;will<br>
+raise&nbsp;an&nbsp;exception&nbsp;of&nbsp;the&nbsp;class&nbsp;`std::exception`<br>
+&nbsp;<br>
+&nbsp;The&nbsp;serial&nbsp;port&nbsp;to&nbsp;open&nbsp;is&nbsp;passed&nbsp;in&nbsp;the&nbsp;constructor&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;a&nbsp;string<br>
+description,&nbsp;which&nbsp;is&nbsp;platform&nbsp;dependent.<br>
+&nbsp;<br>
+&nbsp;In&nbsp;Windows&nbsp;they&nbsp;are&nbsp;numbered&nbsp;"COM1"-"COM4"&nbsp;and&nbsp;"\."&nbsp;for&nbsp;numbers<br>
+above.&nbsp;It&nbsp;is&nbsp;recomended&nbsp;to&nbsp;always&nbsp;use&nbsp;the&nbsp;prefix&nbsp;"\."&nbsp;despite&nbsp;the&nbsp;actual<br>
+port&nbsp;number.<br>
+&nbsp;<br>
+&nbsp;In&nbsp;Linux&nbsp;the&nbsp;name&nbsp;must&nbsp;refer&nbsp;to&nbsp;the&nbsp;device,&nbsp;for&nbsp;example:&nbsp;"ttyUSB0","ttyS0".<br>
+If&nbsp;the&nbsp;name&nbsp;string&nbsp;does&nbsp;not&nbsp;start&nbsp;with&nbsp;"/"&nbsp;(an&nbsp;absolute&nbsp;path),&nbsp;the<br>
+constructor&nbsp;will&nbsp;assume&nbsp;the&nbsp;prefix&nbsp;"/dev/".<br>
+&nbsp;<br>
+&nbsp;History:<br>
+&nbsp;&nbsp;&nbsp;-&nbsp;1/DEC/2005:&nbsp;&nbsp;(JLBC)&nbsp;First&nbsp;version<br>
+&nbsp;&nbsp;&nbsp;-&nbsp;20/DEC/2006:&nbsp;(JLBC)&nbsp;Integration&nbsp;into&nbsp;the&nbsp;MRPT&nbsp;framework<br>
+&nbsp;&nbsp;&nbsp;-&nbsp;12/DEC/2007:&nbsp;(JLBC)&nbsp;Added&nbsp;support&nbsp;for&nbsp;Linux.<br>
+&nbsp;&nbsp;&nbsp;-&nbsp;22/AUG/2017:&nbsp;(JLBC)&nbsp;Moved&nbsp;to&nbsp;new&nbsp;module&nbsp;mrpt-comms<br>
+&nbsp;<br>
+&nbsp;<br>
+Add&nbsp;the&nbsp;internal&nbsp;buffer&nbsp;to&nbsp;the&nbsp;Windows&nbsp;implementation&nbsp;also<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.comms.html#CSerialPort">CSerialPort</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CSerialPort-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Implements&nbsp;the&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&nbsp;reading&nbsp;from&nbsp;the&nbsp;stream&nbsp;-<br>
+&nbsp;Unlike&nbsp;<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::ReadBuffer,&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;raise&nbsp;an&nbsp;exception&nbsp;on<br>
+&nbsp;zero&nbsp;bytes&nbsp;read,&nbsp;as&nbsp;long&nbsp;as&nbsp;there&nbsp;is&nbsp;not&nbsp;any&nbsp;fatal&nbsp;error&nbsp;in&nbsp;the<br>
+&nbsp;communications.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-ReadString"><strong>ReadString</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-ReadString">ReadString</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CSerialPort-ReadString">ReadString</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CSerialPort-ReadString">ReadString</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;total_timeout_ms:&nbsp;int)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CSerialPort-ReadString">ReadString</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;total_timeout_ms:&nbsp;int,&nbsp;out_timeout:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CSerialPort-ReadString">ReadString</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;total_timeout_ms:&nbsp;int,&nbsp;out_timeout:&nbsp;bool,&nbsp;eol_chars:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Reads&nbsp;one&nbsp;text&nbsp;line&nbsp;from&nbsp;the&nbsp;serial&nbsp;port&nbsp;in&nbsp;POSIX&nbsp;"canonical&nbsp;mode".<br>
+&nbsp;&nbsp;This&nbsp;method&nbsp;reads&nbsp;from&nbsp;the&nbsp;serial&nbsp;port&nbsp;until&nbsp;one&nbsp;of&nbsp;the&nbsp;characters&nbsp;in<br>
+&nbsp;&nbsp;are&nbsp;found.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;A&nbsp;line&nbsp;reception&nbsp;is&nbsp;finished&nbsp;when&nbsp;one&nbsp;of&nbsp;these<br>
+&nbsp;characters&nbsp;is&nbsp;found.&nbsp;Default:&nbsp;LF&nbsp;(10),&nbsp;CR&nbsp;(13).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;If&nbsp;&gt;0,&nbsp;the&nbsp;maximum&nbsp;number&nbsp;of&nbsp;milliseconds&nbsp;to<br>
+&nbsp;wait.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;If&nbsp;provided,&nbsp;will&nbsp;hold&nbsp;true&nbsp;on&nbsp;return&nbsp;if&nbsp;a&nbsp;timeout<br>
+&nbsp;ocurred,&nbsp;false&nbsp;on&nbsp;a&nbsp;valid&nbsp;read.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;read&nbsp;string,&nbsp;without&nbsp;the&nbsp;final<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-ReadString">ReadString</a>(const&nbsp;int,&nbsp;bool&nbsp;*,&nbsp;const&nbsp;char&nbsp;*)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CSerialPort-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;off:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CSerialPort-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;off:&nbsp;int,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+not&nbsp;applicable&nbsp;in&nbsp;a&nbsp;serial&nbsp;port&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CSerialPort-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;arg0:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CSerialPort-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;portName:&nbsp;str,&nbsp;openNow:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CSerialPort-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CSerialPort-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CSerialPort-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::operator=(const&nbsp;class&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Close&nbsp;the&nbsp;port.&nbsp;If&nbsp;is&nbsp;already&nbsp;closed,&nbsp;results&nbsp;in&nbsp;no&nbsp;action.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+not&nbsp;applicable&nbsp;in&nbsp;a&nbsp;serial&nbsp;port&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+not&nbsp;applicable&nbsp;in&nbsp;a&nbsp;serial&nbsp;port&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-isOpen"><strong>isOpen</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-isOpen">isOpen</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;if&nbsp;port&nbsp;has&nbsp;been&nbsp;correctly&nbsp;open.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-isOpen">isOpen</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-open"><strong>open</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-open">open</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CSerialPort-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Open&nbsp;the&nbsp;port.&nbsp;If&nbsp;is&nbsp;already&nbsp;open&nbsp;results&nbsp;in&nbsp;no&nbsp;action.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-open">open</a>()&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CSerialPort-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;COM_name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Open&nbsp;the&nbsp;given&nbsp;serial&nbsp;port.&nbsp;If&nbsp;it&nbsp;is&nbsp;already&nbsp;open&nbsp;and&nbsp;the&nbsp;name&nbsp;does&nbsp;not<br>
+&nbsp;match,&nbsp;an&nbsp;exception&nbsp;is&nbsp;raised.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors&nbsp;or&nbsp;a&nbsp;different&nbsp;serial<br>
+&nbsp;port&nbsp;already&nbsp;open.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-open">open</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-purgeBuffers"><strong>purgeBuffers</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-purgeBuffers">purgeBuffers</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Purge&nbsp;tx&nbsp;and&nbsp;rx&nbsp;buffers.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-purgeBuffers">purgeBuffers</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-setConfig"><strong>setConfig</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-setConfig">setConfig</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CSerialPort-setConfig">setConfig</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;baudRate:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CSerialPort-setConfig">setConfig</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;baudRate:&nbsp;int,&nbsp;parity:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CSerialPort-setConfig">setConfig</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;baudRate:&nbsp;int,&nbsp;parity:&nbsp;int,&nbsp;bits:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CSerialPort-setConfig">setConfig</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;baudRate:&nbsp;int,&nbsp;parity:&nbsp;int,&nbsp;bits:&nbsp;int,&nbsp;nStopBits:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CSerialPort-setConfig">setConfig</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;baudRate:&nbsp;int,&nbsp;parity:&nbsp;int,&nbsp;bits:&nbsp;int,&nbsp;nStopBits:&nbsp;int,&nbsp;enableFlowControl:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;configuration&nbsp;of&nbsp;the&nbsp;port.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;0:No&nbsp;parity,&nbsp;1:Odd,&nbsp;2:Even&nbsp;(WINDOWS&nbsp;ONLY:&nbsp;3:Mark,<br>
+&nbsp;4:Space)&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;desired&nbsp;baud&nbsp;rate&nbsp;Accepted&nbsp;values:&nbsp;50&nbsp;-<br>
+&nbsp;230400&nbsp;<br>
+&nbsp;<br>
+&nbsp;Bits&nbsp;per&nbsp;word&nbsp;(typ.&nbsp;8)&nbsp;Accepted&nbsp;values:&nbsp;5,6,7,8.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Stop&nbsp;bits&nbsp;(typ.&nbsp;1)&nbsp;Accepted&nbsp;values:&nbsp;1,2<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Whether&nbsp;to&nbsp;enable&nbsp;the&nbsp;hardware&nbsp;flow&nbsp;control<br>
+&nbsp;(RTS/CTS)&nbsp;(default=no)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-setConfig">setConfig</a>(int,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-setSerialPortName"><strong>setSerialPortName</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-setSerialPortName">setSerialPortName</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;COM_name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Sets&nbsp;the&nbsp;serial&nbsp;port&nbsp;to&nbsp;open&nbsp;(it&nbsp;is&nbsp;an&nbsp;error&nbsp;to&nbsp;try&nbsp;to&nbsp;change&nbsp;this&nbsp;while<br>
+&nbsp;open&nbsp;yet).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;open,&nbsp;close<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-setSerialPortName">setSerialPortName</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-setTimeouts"><strong>setTimeouts</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-setTimeouts">setTimeouts</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;ReadIntervalTimeout:&nbsp;int,&nbsp;ReadTotalTimeoutMultiplier:&nbsp;int,&nbsp;ReadTotalTimeoutConstant:&nbsp;int,&nbsp;WriteTotalTimeoutMultiplier:&nbsp;int,&nbsp;WriteTotalTimeoutConstant:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;timeouts&nbsp;of&nbsp;the&nbsp;port,&nbsp;in&nbsp;milliseconds.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-setTimeouts">setTimeouts</a>(int,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>:<br>
+<dl><dt><a name="CSerialPort-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CSerialPort-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human-friendly&nbsp;description&nbsp;of&nbsp;the&nbsp;stream,&nbsp;e.g.&nbsp;a&nbsp;filename.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CSerialPort-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CSerialPort-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CSerialPort-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CSerialPort-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CServerTCPSocket">class <strong>CServerTCPSocket</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;TCP&nbsp;socket&nbsp;that&nbsp;can&nbsp;be&nbsp;wait&nbsp;for&nbsp;client&nbsp;connections&nbsp;to&nbsp;enter.<br>
+Unless&nbsp;otherwise&nbsp;noticed,&nbsp;operations&nbsp;are&nbsp;blocking.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.comms.html#CServerTCPSocket">CServerTCPSocket</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CServerTCPSocket-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CServerTCPSocket-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CServerTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;listenPort:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CServerTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;listenPort:&nbsp;int,&nbsp;IPaddress:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CServerTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;listenPort:&nbsp;int,&nbsp;IPaddress:&nbsp;str,&nbsp;maxConnectionsWaiting:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CServerTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;listenPort:&nbsp;int,&nbsp;IPaddress:&nbsp;str,&nbsp;maxConnectionsWaiting:&nbsp;int,&nbsp;verbosityLevel:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CServerTCPSocket-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CServerTCPSocket-accept"><strong>accept</strong></a>(...)</dt><dd><tt><a href="#CServerTCPSocket-accept">accept</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CServerTCPSocket-accept">accept</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a><br>
+&nbsp;<br>
+2.&nbsp;<a href="#CServerTCPSocket-accept">accept</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;timeout_ms:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a><br>
+&nbsp;<br>
+Waits&nbsp;for&nbsp;an&nbsp;incoming&nbsp;connection&nbsp;(indefinitely,&nbsp;or&nbsp;with&nbsp;a&nbsp;given&nbsp;timeout)<br>
+&nbsp;The&nbsp;returned&nbsp;object&nbsp;represents&nbsp;the&nbsp;new&nbsp;connection,&nbsp;and&nbsp;MUST&nbsp;BE&nbsp;deleted<br>
+&nbsp;by&nbsp;the&nbsp;user&nbsp;when&nbsp;no&nbsp;longer&nbsp;needed.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;timeout&nbsp;for&nbsp;the&nbsp;waiting,&nbsp;in&nbsp;milliseconds.&nbsp;Set&nbsp;this<br>
+&nbsp;to&nbsp;"-1"&nbsp;to&nbsp;disable&nbsp;timeout&nbsp;(i.e.&nbsp;timeout=infinite)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;incoming&nbsp;connection,&nbsp;or&nbsp;nullptr&nbsp;on&nbsp;timeout&nbsp;or&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CServerTCPSocket">CServerTCPSocket</a>::<a href="#CServerTCPSocket-accept">accept</a>(int)&nbsp;--&gt;&nbsp;class&nbsp;std::unique_ptr&lt;class&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;struct&nbsp;std::default_delete&lt;class&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>&gt;&nbsp;&gt;</tt></dd></dl>
+
+<dl><dt><a name="CServerTCPSocket-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CServerTCPSocket-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CServerTCPSocket">CServerTCPSocket</a>::operator=(const&nbsp;class&nbsp;mrpt::comms::<a href="#CServerTCPSocket">CServerTCPSocket</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::comms::<a href="#CServerTCPSocket">CServerTCPSocket</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CServerTCPSocket-isListening"><strong>isListening</strong></a>(...)</dt><dd><tt><a href="#CServerTCPSocket-isListening">isListening</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;socket&nbsp;was&nbsp;successfully&nbsp;open&nbsp;and&nbsp;it's&nbsp;bound&nbsp;to&nbsp;the<br>
+&nbsp;desired&nbsp;port.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#CServerTCPSocket">CServerTCPSocket</a>::<a href="#CServerTCPSocket-isListening">isListening</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CServerTCPSocket-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TFTDIDevice">class <strong>TFTDIDevice</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;list&nbsp;of&nbsp;FTDI&nbsp;devices&nbsp;and&nbsp;their&nbsp;descriptors.<br>
+&nbsp;<br>
+&nbsp;<br>
+CInterfaceFTDI::ListAllDevices<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.comms.html#TFTDIDevice">TFTDIDevice</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TFTDIDevice-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#TFTDIDevice-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#TFTDIDevice-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#TFTDIDevice">TFTDIDevice</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#TFTDIDevice-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#TFTDIDevice">TFTDIDevice</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#TFTDIDevice">TFTDIDevice</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="TFTDIDevice-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt><a href="#TFTDIDevice-__str__">__str__</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#TFTDIDevice">TFTDIDevice</a>)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="TFTDIDevice-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#TFTDIDevice-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#TFTDIDevice">TFTDIDevice</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#TFTDIDevice">TFTDIDevice</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#TFTDIDevice">TFTDIDevice</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::comms::<a href="#TFTDIDevice">TFTDIDevice</a>::operator=(const&nbsp;struct&nbsp;mrpt::comms::<a href="#TFTDIDevice">TFTDIDevice</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::comms::<a href="#TFTDIDevice">TFTDIDevice</a>&nbsp;&amp;</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>ftdi_description</strong></dt>
+</dl>
+<dl><dt><strong>ftdi_manufacturer</strong></dt>
+</dl>
+<dl><dt><strong>ftdi_serial</strong></dt>
+</dl>
+<dl><dt><strong>usb_idProduct</strong></dt>
+</dl>
+<dl><dt><strong>usb_idVendor</strong></dt>
+</dl>
+<dl><dt><strong>usb_serialNumber</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TFTDIDevice-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

@@ -1,0 +1,1096 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.config</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.config</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::config&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.config.html#CConfigFile">CConfigFile</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.config.html#CConfigFileMemory">CConfigFileMemory</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.config.html#CConfigFilePrefixer">CConfigFilePrefixer</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.config.html#CLoadableOptions">CLoadableOptions</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CConfigFile">class <strong>CConfigFile</strong></a>(<a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;allows&nbsp;loading&nbsp;and&nbsp;storing&nbsp;values&nbsp;and&nbsp;vectors&nbsp;of&nbsp;different&nbsp;types<br>
+from&nbsp;".ini"&nbsp;files&nbsp;easily.<br>
+&nbsp;The&nbsp;contents&nbsp;of&nbsp;the&nbsp;file&nbsp;will&nbsp;be&nbsp;modified&nbsp;by&nbsp;"write"&nbsp;operations&nbsp;in&nbsp;memory,<br>
+and&nbsp;will&nbsp;be&nbsp;saved&nbsp;back<br>
+&nbsp;&nbsp;to&nbsp;the&nbsp;file&nbsp;at&nbsp;the&nbsp;destructor,&nbsp;and&nbsp;only&nbsp;if&nbsp;at&nbsp;least&nbsp;one&nbsp;write&nbsp;operation<br>
+has&nbsp;been&nbsp;applied.<br>
+&nbsp;<br>
+Use&nbsp;base&nbsp;class&nbsp;`<a href="#CConfigFileBase">CConfigFileBase</a>`'s&nbsp;methods<br>
+`read_{int,float,double,string,...}()`&nbsp;and&nbsp;`<a href="#CConfigFile-write">write</a>()`&nbsp;to&nbsp;actually&nbsp;read&nbsp;and<br>
+write&nbsp;values.<br>
+&nbsp;<br>
+See:<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CConfigFile">CConfigFile</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CConfigFile-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFile-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFile-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::operator=(const&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Empties&nbsp;the&nbsp;"config&nbsp;file"&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-discardSavingChanges"><strong>discardSavingChanges</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-discardSavingChanges">discardSavingChanges</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Discard&nbsp;saving&nbsp;(current)&nbsp;changes&nbsp;to&nbsp;physical&nbsp;file&nbsp;upon&nbsp;destruction&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-discardSavingChanges">discardSavingChanges</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returs&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;keys&nbsp;into&nbsp;a&nbsp;section.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;section&nbsp;names.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-getAssociatedFile"><strong>getAssociatedFile</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAssociatedFile">getAssociatedFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;file&nbsp;currently&nbsp;open&nbsp;by&nbsp;this&nbsp;object.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-getAssociatedFile">getAssociatedFile</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-setFileName"><strong>setFileName</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-setFileName">setFileName</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;fil_path:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Associate&nbsp;this&nbsp;object&nbsp;with&nbsp;the&nbsp;given&nbsp;file,&nbsp;reading&nbsp;its&nbsp;contents&nbsp;right<br>
+&nbsp;now.&nbsp;Upon&nbsp;destruction,&nbsp;the&nbsp;updated&nbsp;contents&nbsp;will&nbsp;be&nbsp;written&nbsp;to&nbsp;that&nbsp;file.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-setFileName">setFileName</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-writeNow"><strong>writeNow</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-writeNow">writeNow</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Dumps&nbsp;the&nbsp;changes&nbsp;to&nbsp;the&nbsp;physical&nbsp;configuration&nbsp;file&nbsp;now,&nbsp;not&nbsp;waiting<br>
+&nbsp;until&nbsp;destruction.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::runtime_error&nbsp;Upon&nbsp;error&nbsp;writing.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-writeNow">writeNow</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a>:<br>
+<dl><dt><a name="CConfigFile-getContentAsYAML"><strong>getContentAsYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getContentAsYAML">getContentAsYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;text&nbsp;block&nbsp;representing&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;config&nbsp;file&nbsp;in<br>
+&nbsp;YAML&nbsp;format.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFile-setContentFromYAML">setContentFromYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-getContentAsYAML">getContentAsYAML</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-keyExists"><strong>keyExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-keyExists">keyExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;key:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;key&nbsp;exists&nbsp;inside&nbsp;a&nbsp;section&nbsp;(case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFile-sectionExists">sectionExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-keyExists">keyExists</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_bool"><strong>read_bool</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_bool">read_bool</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_bool">read_bool</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_double"><strong>read_double</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_double">read_double</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+not&nbsp;found&nbsp;and&nbsp;`failIfNotFound`=true<br>
+&nbsp;@{&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_double">read_double</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_enum"><strong>read_enum</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_enum">read_enum</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::bayes::TKFMethod&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFile-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFile-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::system::VerbosityLevel&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::system::VerbosityLevel</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_float"><strong>read_float</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_float">read_float</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_float">read_float</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_int"><strong>read_int</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_int">read_int</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_int">read_int</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;int,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_string"><strong>read_string</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_string">read_string</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_string">read_string</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_string_first_word"><strong>read_string_first_word</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_string_first_word">read_string_first_word</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;configuration&nbsp;parameter&nbsp;of&nbsp;type&nbsp;"string",&nbsp;and&nbsp;keeps&nbsp;only&nbsp;the<br>
+&nbsp;first&nbsp;word&nbsp;(this&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;eliminate&nbsp;possible&nbsp;comments&nbsp;at&nbsp;the&nbsp;end&nbsp;of<br>
+&nbsp;the&nbsp;line)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_string_first_word">read_string_first_word</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-read_uint64_t"><strong>read_uint64_t</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-read_uint64_t">read_uint64_t</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;section&nbsp;exists&nbsp;(name&nbsp;is&nbsp;case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFile-keyExists">keyExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-sectionExists">sectionExists</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-setContentFromYAML"><strong>setContentFromYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-setContentFromYAML">setContentFromYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;yaml_block:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;from&nbsp;a&nbsp;text&nbsp;block<br>
+&nbsp;containing&nbsp;a&nbsp;YAML&nbsp;configuration&nbsp;text.&nbsp;Refer&nbsp;to&nbsp;unit&nbsp;test<br>
+&nbsp;yaml2config_unittest.cpp&nbsp;for&nbsp;examples&nbsp;of&nbsp;use.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFile-getContentAsYAML">getContentAsYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-setContentFromYAML">setContentFromYAML</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFile-write"><strong>write</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-write">write</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+6.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+8.&nbsp;<a href="#CConfigFile-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CConfigFile-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CConfigFileBase">class <strong>CConfigFileBase</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;allows&nbsp;loading&nbsp;and&nbsp;storing&nbsp;values&nbsp;and&nbsp;vectors&nbsp;of&nbsp;different&nbsp;types<br>
+from&nbsp;a&nbsp;configuration&nbsp;text,&nbsp;which&nbsp;can&nbsp;be&nbsp;implemented&nbsp;as&nbsp;a&nbsp;".ini"&nbsp;file,&nbsp;a<br>
+memory-stored&nbsp;string,&nbsp;etc...<br>
+&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;virtual&nbsp;class,&nbsp;use&nbsp;only&nbsp;as&nbsp;a&nbsp;pointer&nbsp;to&nbsp;an&nbsp;implementation&nbsp;of&nbsp;one<br>
+of&nbsp;the&nbsp;derived&nbsp;classes.<br>
+&nbsp;<br>
+See:<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CConfigFileBase-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::operator=(const&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Empties&nbsp;the&nbsp;"config&nbsp;file"&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returs&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;keys&nbsp;into&nbsp;a&nbsp;section&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;section&nbsp;names.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-getContentAsYAML"><strong>getContentAsYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getContentAsYAML">getContentAsYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;text&nbsp;block&nbsp;representing&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;config&nbsp;file&nbsp;in<br>
+&nbsp;YAML&nbsp;format.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileBase-setContentFromYAML">setContentFromYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-getContentAsYAML">getContentAsYAML</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-keyExists"><strong>keyExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-keyExists">keyExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;key:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;key&nbsp;exists&nbsp;inside&nbsp;a&nbsp;section&nbsp;(case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileBase-sectionExists">sectionExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-keyExists">keyExists</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_bool"><strong>read_bool</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_bool">read_bool</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_bool">read_bool</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_double"><strong>read_double</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_double">read_double</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+not&nbsp;found&nbsp;and&nbsp;`failIfNotFound`=true<br>
+&nbsp;@{&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_double">read_double</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_enum"><strong>read_enum</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_enum">read_enum</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::bayes::TKFMethod&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFileBase-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFileBase-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::system::VerbosityLevel&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::system::VerbosityLevel</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_float"><strong>read_float</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_float">read_float</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_float">read_float</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_int"><strong>read_int</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_int">read_int</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_int">read_int</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;int,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_string"><strong>read_string</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_string">read_string</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_string">read_string</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_string_first_word"><strong>read_string_first_word</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_string_first_word">read_string_first_word</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;configuration&nbsp;parameter&nbsp;of&nbsp;type&nbsp;"string",&nbsp;and&nbsp;keeps&nbsp;only&nbsp;the<br>
+&nbsp;first&nbsp;word&nbsp;(this&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;eliminate&nbsp;possible&nbsp;comments&nbsp;at&nbsp;the&nbsp;end&nbsp;of<br>
+&nbsp;the&nbsp;line)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_string_first_word">read_string_first_word</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-read_uint64_t"><strong>read_uint64_t</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-read_uint64_t">read_uint64_t</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;section&nbsp;exists&nbsp;(name&nbsp;is&nbsp;case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileBase-keyExists">keyExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-sectionExists">sectionExists</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-setContentFromYAML"><strong>setContentFromYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-setContentFromYAML">setContentFromYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;yaml_block:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;from&nbsp;a&nbsp;text&nbsp;block<br>
+&nbsp;containing&nbsp;a&nbsp;YAML&nbsp;configuration&nbsp;text.&nbsp;Refer&nbsp;to&nbsp;unit&nbsp;test<br>
+&nbsp;yaml2config_unittest.cpp&nbsp;for&nbsp;examples&nbsp;of&nbsp;use.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileBase-getContentAsYAML">getContentAsYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-setContentFromYAML">setContentFromYAML</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileBase-write"><strong>write</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-write">write</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+6.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+8.&nbsp;<a href="#CConfigFileBase-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CConfigFileBase-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CConfigFileMemory">class <strong>CConfigFileMemory</strong></a>(<a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;implements&nbsp;a&nbsp;config&nbsp;file-like&nbsp;interface&nbsp;over&nbsp;a&nbsp;memory-stored<br>
+string&nbsp;list.<br>
+&nbsp;<br>
+Use&nbsp;base&nbsp;class&nbsp;`<a href="#CConfigFileBase">CConfigFileBase</a>`'s&nbsp;methods<br>
+`read_{int,float,double,string,...}()`&nbsp;and&nbsp;`<a href="#CConfigFileMemory-write">write</a>()`&nbsp;to&nbsp;actually&nbsp;read&nbsp;and<br>
+write&nbsp;values.<br>
+&nbsp;<br>
+It&nbsp;can&nbsp;also&nbsp;parse&nbsp;a&nbsp;YAML&nbsp;text&nbsp;block&nbsp;and&nbsp;expose&nbsp;its&nbsp;fields&nbsp;(up&nbsp;to&nbsp;the&nbsp;first<br>
+level&nbsp;of&nbsp;hierarchy,&nbsp;as&nbsp;allowed&nbsp;by&nbsp;INI-like&nbsp;files).&nbsp;This&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;port<br>
+MRPT&nbsp;classes&nbsp;relying&nbsp;on&nbsp;INI&nbsp;files&nbsp;to&nbsp;using&nbsp;YAML&nbsp;files&nbsp;transparently.<br>
+This&nbsp;feature&nbsp;required&nbsp;building&nbsp;MRPT&nbsp;with&nbsp;yaml-cpp,&nbsp;and&nbsp;is&nbsp;provided&nbsp;by<br>
+<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-setContentFromYAML">setContentFromYAML</a>().<br>
+&nbsp;<br>
+See:&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+YAML&nbsp;support&nbsp;was&nbsp;introduced&nbsp;in&nbsp;MRPT&nbsp;1.9.9<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CConfigFileMemory">CConfigFileMemory</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CConfigFileMemory-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;stringList:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::operator=(const&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Empties&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returs&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;keys&nbsp;into&nbsp;a&nbsp;section&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;section&nbsp;names&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-getContent"><strong>getContent</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getContent">getContent</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-getContent">getContent</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;current&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getContent">getContent</a>(std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-getContent">getContent</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getContent">getContent</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-setContent"><strong>setContent</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-setContent">setContent</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-setContent">setContent</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;stringList:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-setContent">setContent</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-setContent">setContent</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-setContent">setContent</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a>:<br>
+<dl><dt><a name="CConfigFileMemory-getContentAsYAML"><strong>getContentAsYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getContentAsYAML">getContentAsYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;text&nbsp;block&nbsp;representing&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;config&nbsp;file&nbsp;in<br>
+&nbsp;YAML&nbsp;format.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileMemory-setContentFromYAML">setContentFromYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-getContentAsYAML">getContentAsYAML</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-keyExists"><strong>keyExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-keyExists">keyExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;key:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;key&nbsp;exists&nbsp;inside&nbsp;a&nbsp;section&nbsp;(case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileMemory-sectionExists">sectionExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-keyExists">keyExists</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_bool"><strong>read_bool</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_bool">read_bool</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_bool">read_bool</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_double"><strong>read_double</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_double">read_double</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+not&nbsp;found&nbsp;and&nbsp;`failIfNotFound`=true<br>
+&nbsp;@{&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_double">read_double</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_enum"><strong>read_enum</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_enum">read_enum</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::bayes::TKFMethod&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFileMemory-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFileMemory-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::system::VerbosityLevel&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::system::VerbosityLevel</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_float"><strong>read_float</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_float">read_float</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_float">read_float</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_int"><strong>read_int</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_int">read_int</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_int">read_int</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;int,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_string"><strong>read_string</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_string">read_string</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_string">read_string</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_string_first_word"><strong>read_string_first_word</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_string_first_word">read_string_first_word</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;configuration&nbsp;parameter&nbsp;of&nbsp;type&nbsp;"string",&nbsp;and&nbsp;keeps&nbsp;only&nbsp;the<br>
+&nbsp;first&nbsp;word&nbsp;(this&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;eliminate&nbsp;possible&nbsp;comments&nbsp;at&nbsp;the&nbsp;end&nbsp;of<br>
+&nbsp;the&nbsp;line)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_string_first_word">read_string_first_word</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-read_uint64_t"><strong>read_uint64_t</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-read_uint64_t">read_uint64_t</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;section&nbsp;exists&nbsp;(name&nbsp;is&nbsp;case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileMemory-keyExists">keyExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-sectionExists">sectionExists</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-setContentFromYAML"><strong>setContentFromYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-setContentFromYAML">setContentFromYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;yaml_block:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;from&nbsp;a&nbsp;text&nbsp;block<br>
+&nbsp;containing&nbsp;a&nbsp;YAML&nbsp;configuration&nbsp;text.&nbsp;Refer&nbsp;to&nbsp;unit&nbsp;test<br>
+&nbsp;yaml2config_unittest.cpp&nbsp;for&nbsp;examples&nbsp;of&nbsp;use.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFileMemory-getContentAsYAML">getContentAsYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-setContentFromYAML">setContentFromYAML</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFileMemory-write"><strong>write</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-write">write</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+6.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+8.&nbsp;<a href="#CConfigFileMemory-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CConfigFileMemory-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CConfigFilePrefixer">class <strong>CConfigFilePrefixer</strong></a>(<a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;wrapper&nbsp;for&nbsp;other&nbsp;<a href="#CConfigFileBase">CConfigFileBase</a>-based&nbsp;objects&nbsp;that&nbsp;prefixes&nbsp;a&nbsp;given<br>
+token&nbsp;to&nbsp;every&nbsp;key&nbsp;and/or&nbsp;section.<br>
+&nbsp;If,&nbsp;for&nbsp;example,&nbsp;your&nbsp;code&nbsp;expect:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Using&nbsp;this&nbsp;class&nbsp;with&nbsp;key&nbsp;entries&nbsp;prefix&nbsp;`s1_`&nbsp;will&nbsp;enable&nbsp;the&nbsp;same<br>
+existing&nbsp;code&nbsp;to&nbsp;transparently&nbsp;parse&nbsp;this&nbsp;file&nbsp;content:<br>
+&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+See:&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CConfigFileBase">CConfigFileBase</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CConfigFilePrefixer">CConfigFilePrefixer</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CConfigFilePrefixer-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;prefix_sections:&nbsp;str,&nbsp;prefix_keys:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFilePrefixer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFilePrefixer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::operator=(const&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-bind"><strong>bind</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-bind">bind</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Make&nbsp;this&nbsp;object&nbsp;to&nbsp;wrap&nbsp;the&nbsp;given&nbsp;existing&nbsp;<a href="#CConfigFileBase">CConfigFileBase</a>&nbsp;object.&nbsp;Can<br>
+&nbsp;be&nbsp;changed&nbsp;at&nbsp;any&nbsp;moment&nbsp;after&nbsp;construction&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-bind">bind</a>(const&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-getBoundConfigFileBase"><strong>getBoundConfigFileBase</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getBoundConfigFileBase">getBoundConfigFileBase</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a><br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;currently-bounded&nbsp;config&nbsp;source,&nbsp;or&nbsp;nullptr&nbsp;if&nbsp;none.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getBoundConfigFileBase">getBoundConfigFileBase</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-getKeyPrefix"><strong>getKeyPrefix</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getKeyPrefix">getKeyPrefix</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getKeyPrefix">getKeyPrefix</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-getSectionPrefix"><strong>getSectionPrefix</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getSectionPrefix">getSectionPrefix</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getSectionPrefix">getSectionPrefix</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-setPrefixes"><strong>setPrefixes</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-setPrefixes">setPrefixes</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;prefix_sections:&nbsp;str,&nbsp;prefix_keys:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Change&nbsp;the&nbsp;prefix&nbsp;for&nbsp;sections&nbsp;and&nbsp;keys.&nbsp;Can&nbsp;be&nbsp;called&nbsp;at&nbsp;any&nbsp;moment.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-setPrefixes">setPrefixes</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.config.html#CConfigFileBase">CConfigFileBase</a>:<br>
+<dl><dt><a name="CConfigFilePrefixer-getContentAsYAML"><strong>getContentAsYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getContentAsYAML">getContentAsYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;text&nbsp;block&nbsp;representing&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;config&nbsp;file&nbsp;in<br>
+&nbsp;YAML&nbsp;format.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFilePrefixer-setContentFromYAML">setContentFromYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-getContentAsYAML">getContentAsYAML</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-keyExists"><strong>keyExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-keyExists">keyExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;key:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;key&nbsp;exists&nbsp;inside&nbsp;a&nbsp;section&nbsp;(case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFilePrefixer-sectionExists">sectionExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-keyExists">keyExists</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_bool"><strong>read_bool</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_bool">read_bool</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_bool">read_bool</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;bool,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_bool">read_bool</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_double"><strong>read_double</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_double">read_double</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_double">read_double</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+not&nbsp;found&nbsp;and&nbsp;`failIfNotFound`=true<br>
+&nbsp;@{&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_double">read_double</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_enum"><strong>read_enum</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_enum">read_enum</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt::bayes::TKFMethod,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::bayes::TKFMethod&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::bayes::TKFMethod<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFilePrefixer-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFilePrefixer-read_enum">read_enum</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.system.VerbosityLevel<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_enum">read_enum</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::system::VerbosityLevel&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::system::VerbosityLevel</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_float"><strong>read_float</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_float">read_float</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_float">read_float</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;float,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_float">read_float</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_int"><strong>read_int</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_int">read_int</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_int">read_int</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_int">read_int</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;int,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_string"><strong>read_string</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_string">read_string</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_string">read_string</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_string">read_string</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_string_first_word"><strong>read_string_first_word</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_string_first_word">read_string_first_word</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_string_first_word">read_string_first_word</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;str,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;configuration&nbsp;parameter&nbsp;of&nbsp;type&nbsp;"string",&nbsp;and&nbsp;keeps&nbsp;only&nbsp;the<br>
+&nbsp;first&nbsp;word&nbsp;(this&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;eliminate&nbsp;possible&nbsp;comments&nbsp;at&nbsp;the&nbsp;end&nbsp;of<br>
+&nbsp;the&nbsp;line)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_string_first_word">read_string_first_word</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-read_uint64_t"><strong>read_uint64_t</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-read_uint64_t">read_uint64_t</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;section&nbsp;exists&nbsp;(name&nbsp;is&nbsp;case&nbsp;insensitive)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFilePrefixer-keyExists">keyExists</a>()&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-sectionExists">sectionExists</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-setContentFromYAML"><strong>setContentFromYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-setContentFromYAML">setContentFromYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;yaml_block:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;from&nbsp;a&nbsp;text&nbsp;block<br>
+&nbsp;containing&nbsp;a&nbsp;YAML&nbsp;configuration&nbsp;text.&nbsp;Refer&nbsp;to&nbsp;unit&nbsp;test<br>
+&nbsp;yaml2config_unittest.cpp&nbsp;for&nbsp;examples&nbsp;of&nbsp;use.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CConfigFilePrefixer-getContentAsYAML">getContentAsYAML</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-setContentFromYAML">setContentFromYAML</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CConfigFilePrefixer-write"><strong>write</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-write">write</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+6.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+7.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+8.&nbsp;<a href="#CConfigFilePrefixer-write">write</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;value:&nbsp;float,&nbsp;name_padding_width:&nbsp;int,&nbsp;value_padding_width:&nbsp;int,&nbsp;comment:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-write">write</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;float,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CConfigFilePrefixer-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CLoadableOptions">class <strong>CLoadableOptions</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;is&nbsp;a&nbsp;virtual&nbsp;base&nbsp;class&nbsp;for&nbsp;sets&nbsp;of&nbsp;options&nbsp;than&nbsp;can&nbsp;be&nbsp;loaded&nbsp;from<br>
+and/or&nbsp;saved&nbsp;to&nbsp;configuration&nbsp;plain-text&nbsp;files.<br>
+&nbsp;<br>
+&nbsp;<br>
+Automatize&nbsp;this&nbsp;class&nbsp;thru&nbsp;a&nbsp;proxy&nbsp;auxiliary&nbsp;class&nbsp;where&nbsp;variables&nbsp;are<br>
+registered&nbsp;from&nbsp;pointers,&nbsp;etc...<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.config.html#CLoadableOptions">CLoadableOptions</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CLoadableOptions-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CLoadableOptions-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CLoadableOptions-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CLoadableOptions-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CLoadableOptions-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CLoadableOptions-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>::operator=(const&nbsp;class&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CLoadableOptions-dumpToConsole"><strong>dumpToConsole</strong></a>(...)</dt><dd><tt><a href="#CLoadableOptions-dumpToConsole">dumpToConsole</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Just&nbsp;like&nbsp;&nbsp;but&nbsp;sending&nbsp;the&nbsp;text&nbsp;to&nbsp;the&nbsp;console<br>
+&nbsp;(std::cout)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>::<a href="#CLoadableOptions-dumpToConsole">dumpToConsole</a>()&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CLoadableOptions-loadFromConfigFile"><strong>loadFromConfigFile</strong></a>(...)</dt><dd><tt><a href="#CLoadableOptions-loadFromConfigFile">loadFromConfigFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>,&nbsp;source:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;load&nbsp;the&nbsp;options&nbsp;from&nbsp;a&nbsp;".ini"-like&nbsp;file&nbsp;or&nbsp;memory-stored<br>
+&nbsp;string&nbsp;list.<br>
+&nbsp;&nbsp;&nbsp;Only&nbsp;those&nbsp;parameters&nbsp;found&nbsp;in&nbsp;the&nbsp;given&nbsp;"section"&nbsp;and&nbsp;having<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;same&nbsp;name&nbsp;that&nbsp;the&nbsp;variable&nbsp;are&nbsp;loaded.&nbsp;Those&nbsp;not&nbsp;found&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;file&nbsp;will&nbsp;stay&nbsp;with&nbsp;their&nbsp;previous&nbsp;values&nbsp;(usually&nbsp;the&nbsp;default<br>
+&nbsp;&nbsp;&nbsp;values&nbsp;loaded&nbsp;at&nbsp;initialization).&nbsp;An&nbsp;example&nbsp;of&nbsp;an&nbsp;".ini"&nbsp;file:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;loadFromConfigFileName,&nbsp;saveToConfigFile<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>::<a href="#CLoadableOptions-loadFromConfigFile">loadFromConfigFile</a>(const&nbsp;class&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CLoadableOptions-loadFromConfigFileName"><strong>loadFromConfigFileName</strong></a>(...)</dt><dd><tt><a href="#CLoadableOptions-loadFromConfigFileName">loadFromConfigFileName</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>,&nbsp;config_file:&nbsp;str,&nbsp;section:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Behaves&nbsp;like&nbsp;loadFromConfigFile,&nbsp;but&nbsp;you&nbsp;can&nbsp;pass&nbsp;directly&nbsp;a&nbsp;file&nbsp;name<br>
+&nbsp;and&nbsp;a&nbsp;temporary&nbsp;<a href="#CConfigFile">CConfigFile</a>&nbsp;object&nbsp;will&nbsp;be&nbsp;created&nbsp;automatically&nbsp;to&nbsp;load<br>
+&nbsp;the&nbsp;file.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;loadFromConfigFile<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>::<a href="#CLoadableOptions-loadFromConfigFileName">loadFromConfigFileName</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CLoadableOptions-saveToConfigFile"><strong>saveToConfigFile</strong></a>(...)</dt><dd><tt><a href="#CLoadableOptions-saveToConfigFile">saveToConfigFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>,&nbsp;target:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;saves&nbsp;the&nbsp;options&nbsp;to&nbsp;a&nbsp;".ini"-like&nbsp;file&nbsp;or&nbsp;memory-stored<br>
+&nbsp;string&nbsp;list.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;loadFromConfigFile,&nbsp;saveToConfigFileName<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>::<a href="#CLoadableOptions-saveToConfigFile">saveToConfigFile</a>(class&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CLoadableOptions-saveToConfigFileName"><strong>saveToConfigFileName</strong></a>(...)</dt><dd><tt><a href="#CLoadableOptions-saveToConfigFileName">saveToConfigFileName</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CLoadableOptions">CLoadableOptions</a>,&nbsp;config_file:&nbsp;str,&nbsp;section:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Behaves&nbsp;like&nbsp;saveToConfigFile,&nbsp;but&nbsp;you&nbsp;can&nbsp;pass&nbsp;directly&nbsp;a&nbsp;file&nbsp;name&nbsp;and<br>
+&nbsp;a&nbsp;temporary&nbsp;<a href="#CConfigFile">CConfigFile</a>&nbsp;object&nbsp;will&nbsp;be&nbsp;created&nbsp;automatically&nbsp;to&nbsp;save&nbsp;the<br>
+&nbsp;file.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;saveToConfigFile,&nbsp;loadFromConfigFileName<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#CLoadableOptions">CLoadableOptions</a>::<a href="#CLoadableOptions-saveToConfigFileName">saveToConfigFileName</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CLoadableOptions-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-MRPT_SAVE_NAME_PADDING"><strong>MRPT_SAVE_NAME_PADDING</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-MRPT_SAVE_NAME_PADDING">MRPT_SAVE_NAME_PADDING</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Default&nbsp;padding&nbsp;sizes&nbsp;for&nbsp;macros&nbsp;MRPT_SAVE_CONFIG_VAR_COMMENT(),&nbsp;etc.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#-MRPT_SAVE_NAME_PADDING">MRPT_SAVE_NAME_PADDING</a>()&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+ <dl><dt><a name="-MRPT_SAVE_VALUE_PADDING"><strong>MRPT_SAVE_VALUE_PADDING</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-MRPT_SAVE_VALUE_PADDING">MRPT_SAVE_VALUE_PADDING</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#-MRPT_SAVE_VALUE_PADDING">MRPT_SAVE_VALUE_PADDING</a>()&nbsp;--&gt;&nbsp;int</tt></dd></dl>
+ <dl><dt><a name="-config_parser"><strong>config_parser</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-config_parser">config_parser</a>(input:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Parses&nbsp;a&nbsp;document&nbsp;and&nbsp;replaces&nbsp;all&nbsp;formulas,&nbsp;variables,&nbsp;etc.&nbsp;as&nbsp;defined<br>
+&nbsp;in&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::config::<a href="#-config_parser">config_parser</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+</td></tr></table>
+</body></html>

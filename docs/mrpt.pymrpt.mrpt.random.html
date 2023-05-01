@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.random</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.random</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::random&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.random.html#CRandomGenerator">CRandomGenerator</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.random.html#Generator_MT19937">Generator_MT19937</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CRandomGenerator">class <strong>CRandomGenerator</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;thred-safe&nbsp;pseudo&nbsp;random&nbsp;number&nbsp;generator,&nbsp;based&nbsp;on&nbsp;an&nbsp;internal&nbsp;MT19937<br>
+randomness&nbsp;generator.<br>
+The&nbsp;base&nbsp;algorithm&nbsp;for&nbsp;randomness&nbsp;is&nbsp;platform-independent.&nbsp;See<br>
+<a href="http://en.wikipedia.org/wiki/Mersenne_twister">http://en.wikipedia.org/wiki/Mersenne_twister</a><br>
+&nbsp;<br>
+For&nbsp;real&nbsp;thread-safety,&nbsp;each&nbsp;thread&nbsp;must&nbsp;create&nbsp;and&nbsp;use&nbsp;its&nbsp;own&nbsp;instance&nbsp;of<br>
+this&nbsp;class.<br>
+&nbsp;<br>
+Single-thread&nbsp;programs&nbsp;can&nbsp;use&nbsp;the&nbsp;static&nbsp;object<br>
+mrpt::random::randomGenerator<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.random.html#CRandomGenerator">CRandomGenerator</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CRandomGenerator-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CRandomGenerator-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CRandomGenerator-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;seed:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CRandomGenerator-drawGaussian1D"><strong>drawGaussian1D</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawGaussian1D">drawGaussian1D</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;mean:&nbsp;float,&nbsp;std:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawGaussian1D">drawGaussian1D</a>(const&nbsp;double,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CRandomGenerator-drawGaussian1D_normalized"><strong>drawGaussian1D_normalized</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawGaussian1D_normalized">drawGaussian1D_normalized</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Generate&nbsp;a&nbsp;normalized&nbsp;(mean=0,&nbsp;std=1)&nbsp;normally&nbsp;distributed&nbsp;sample.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;If&nbsp;desired,&nbsp;pass&nbsp;a&nbsp;pointer&nbsp;to&nbsp;a&nbsp;double&nbsp;which&nbsp;will<br>
+&nbsp;receive&nbsp;the&nbsp;likelihood&nbsp;of&nbsp;the&nbsp;given&nbsp;sample&nbsp;to&nbsp;have&nbsp;been&nbsp;obtained,&nbsp;that<br>
+&nbsp;is,&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;normal&nbsp;pdf&nbsp;at&nbsp;the&nbsp;sample&nbsp;value.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawGaussian1D_normalized">drawGaussian1D_normalized</a>()&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CRandomGenerator-drawUniform"><strong>drawUniform</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawUniform">drawUniform</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;Min:&nbsp;float,&nbsp;Max:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniform">drawUniform</a>(const&nbsp;double,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+
+<dl><dt><a name="CRandomGenerator-drawUniform32bit"><strong>drawUniform32bit</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawUniform32bit">drawUniform32bit</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Generate&nbsp;a&nbsp;uniformly&nbsp;distributed&nbsp;pseudo-random&nbsp;number&nbsp;using&nbsp;the&nbsp;MT19937<br>
+&nbsp;algorithm,&nbsp;in&nbsp;the&nbsp;whole&nbsp;range&nbsp;of&nbsp;32-bit&nbsp;integers.<br>
+&nbsp;&nbsp;See:&nbsp;<a href="http://en.wikipedia.org/wiki/Mersenne_twister">http://en.wikipedia.org/wiki/Mersenne_twister</a>&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniform32bit">drawUniform32bit</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CRandomGenerator-drawUniform64bit"><strong>drawUniform64bit</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawUniform64bit">drawUniform64bit</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;uniformly&nbsp;distributed&nbsp;pseudo-random&nbsp;number&nbsp;by&nbsp;joining&nbsp;two<br>
+&nbsp;32bit&nbsp;numbers&nbsp;from&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniform64bit">drawUniform64bit</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CRandomGenerator-drawUniformUnsignedInt"><strong>drawUniformUnsignedInt</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;ret_number:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+You&nbsp;can&nbsp;call&nbsp;this&nbsp;overloaded&nbsp;method&nbsp;with&nbsp;either&nbsp;32&nbsp;or&nbsp;64bit&nbsp;unsigned<br>
+&nbsp;ints&nbsp;for&nbsp;the&nbsp;sake&nbsp;of&nbsp;general&nbsp;coding.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(unsigned&nbsp;int&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;ret_number:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(unsigned&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CRandomGenerator-randomize"><strong>randomize</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-randomize">randomize</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CRandomGenerator-randomize">randomize</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;seed:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Initialize&nbsp;the&nbsp;PRNG&nbsp;from&nbsp;the&nbsp;given&nbsp;random&nbsp;seed&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-randomize">randomize</a>(const&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CRandomGenerator-randomize">randomize</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Randomize&nbsp;the&nbsp;generators,&nbsp;based&nbsp;on&nbsp;std::random_device&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-randomize">randomize</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CRandomGenerator-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Generator_MT19937">class <strong>Generator_MT19937</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Portable&nbsp;MT19937&nbsp;random&nbsp;generator,&nbsp;C++11&nbsp;UniformRandomBitGenerator<br>
+compliant.<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;ensured&nbsp;to&nbsp;generate&nbsp;the&nbsp;same&nbsp;numbers&nbsp;on&nbsp;any&nbsp;compiler&nbsp;and&nbsp;system.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.random.html#Generator_MT19937">Generator_MT19937</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Generator_MT19937-__call__"><strong>__call__</strong></a>(...)</dt><dd><tt><a href="#Generator_MT19937-__call__">__call__</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#Generator_MT19937">Generator_MT19937</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#Generator_MT19937">Generator_MT19937</a>::operator()()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Generator_MT19937-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#Generator_MT19937-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#Generator_MT19937-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#Generator_MT19937">Generator_MT19937</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#Generator_MT19937-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#Generator_MT19937">Generator_MT19937</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#Generator_MT19937">Generator_MT19937</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Generator_MT19937-seed"><strong>seed</strong></a>(...)</dt><dd><tt><a href="#Generator_MT19937-seed">seed</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#Generator_MT19937">Generator_MT19937</a>,&nbsp;seed:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#Generator_MT19937">Generator_MT19937</a>::<a href="#Generator_MT19937-seed">seed</a>(const&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="Generator_MT19937-max"><strong>max</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#Generator_MT19937-max">max</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#Generator_MT19937">Generator_MT19937</a>::<a href="#Generator_MT19937-max">max</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Generator_MT19937-min"><strong>min</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#Generator_MT19937-min">min</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#Generator_MT19937">Generator_MT19937</a>::<a href="#Generator_MT19937-min">min</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Generator_MT19937-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-Randomize"><strong>Randomize</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-Randomize">Randomize</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-Randomize">Randomize</a>(seed:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Randomize&nbsp;the&nbsp;generators.<br>
+&nbsp;&nbsp;&nbsp;A&nbsp;seed&nbsp;can&nbsp;be&nbsp;providen,&nbsp;or&nbsp;a&nbsp;current-time&nbsp;based&nbsp;seed&nbsp;can&nbsp;be&nbsp;used&nbsp;(default)<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#-Randomize">Randomize</a>(const&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-Randomize">Randomize</a>()&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#-Randomize">Randomize</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-getRandomGenerator"><strong>getRandomGenerator</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getRandomGenerator">getRandomGenerator</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a><br>
+&nbsp;<br>
+A&nbsp;static&nbsp;instance&nbsp;of&nbsp;a&nbsp;<a href="#CRandomGenerator">CRandomGenerator</a>&nbsp;class,&nbsp;for&nbsp;use&nbsp;in&nbsp;single-thread<br>
+&nbsp;applications&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#-getRandomGenerator">getRandomGenerator</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>&nbsp;&amp;</tt></dd></dl>
+ <dl><dt><a name="-random_generator_for_STL"><strong>random_generator_for_STL</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-random_generator_for_STL">random_generator_for_STL</a>(i:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+A&nbsp;random&nbsp;number&nbsp;generator&nbsp;for&nbsp;usage&nbsp;in&nbsp;STL&nbsp;algorithms&nbsp;expecting&nbsp;a&nbsp;function<br>
+&nbsp;like&nbsp;this&nbsp;(eg,&nbsp;random_shuffle):<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::random::<a href="#-random_generator_for_STL">random_generator_for_STL</a>(long)&nbsp;--&gt;&nbsp;long</tt></dd></dl>
+</td></tr></table>
+</body></html>

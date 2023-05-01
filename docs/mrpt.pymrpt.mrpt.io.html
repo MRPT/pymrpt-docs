@@ -1,0 +1,1684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mrpt.pymrpt.mrpt.io</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="mrpt.html"><font color="#ffffff">mrpt</font></a>.<a href="mrpt.pymrpt.html"><font color="#ffffff">pymrpt</font></a>.<a href="mrpt.pymrpt.mrpt.html"><font color="#ffffff">mrpt</font></a>.io</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Bindings&nbsp;for&nbsp;mrpt::io&nbsp;namespace</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="mrpt.pymrpt.mrpt.io.zip.html">mrpt.pymrpt.mrpt.io.zip</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CFileGZInputStream">CFileGZInputStream</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CFileGZOutputStream">CFileGZOutputStream</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CFileInputStream">CFileInputStream</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CFileOutputStream">CFileOutputStream</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CFileStream">CFileStream</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CMemoryStream">CMemoryStream</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CPipeReadEndPoint">CPipeReadEndPoint</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CPipeWriteEndPoint">CPipeWriteEndPoint</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#CTextFileLinesParser">CTextFileLinesParser</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.io.html#OpenMode">OpenMode</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CFileGZInputStream">class <strong>CFileGZInputStream</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Transparently&nbsp;opens&nbsp;a&nbsp;compressed&nbsp;"gz"&nbsp;file&nbsp;and&nbsp;reads&nbsp;uncompressed&nbsp;data&nbsp;from<br>
+it.<br>
+If&nbsp;the&nbsp;file&nbsp;is&nbsp;not&nbsp;a&nbsp;.gz&nbsp;file,&nbsp;it&nbsp;silently&nbsp;reads&nbsp;data&nbsp;from&nbsp;the&nbsp;file.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CFileInputStream">CFileInputStream</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CFileGZInputStream">CFileGZInputStream</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CFileGZInputStream-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileGZInputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>,&nbsp;:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileGZInputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>,&nbsp;:&nbsp;int,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;is&nbsp;not&nbsp;implemented&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileGZInputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileGZInputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-checkEOF"><strong>checkEOF</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-checkEOF">checkEOF</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Will&nbsp;be&nbsp;true&nbsp;if&nbsp;EOF&nbsp;has&nbsp;been&nbsp;already&nbsp;reached.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-checkEOF">checkEOF</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Closes&nbsp;the&nbsp;file&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-fileOpenCorrectly"><strong>fileOpenCorrectly</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-fileOpenCorrectly">fileOpenCorrectly</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-fileOpenCorrectly">fileOpenCorrectly</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-filePathAtUse"><strong>filePathAtUse</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-filePathAtUse">filePathAtUse</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;path&nbsp;of&nbsp;the&nbsp;filename&nbsp;passed&nbsp;to&nbsp;open(),&nbsp;or&nbsp;empty&nbsp;if&nbsp;none.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-filePathAtUse">filePathAtUse</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;the&nbsp;current&nbsp;cursor&nbsp;position&nbsp;in&nbsp;the&nbsp;compressed,<br>
+&nbsp;where&nbsp;0&nbsp;is&nbsp;the&nbsp;first&nbsp;byte&nbsp;and&nbsp;TotalBytesCount-1&nbsp;the&nbsp;last&nbsp;one.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;the&nbsp;total&nbsp;number&nbsp;of&nbsp;compressed&nbsp;bytes&nbsp;of&nbsp;in&nbsp;the<br>
+&nbsp;file&nbsp;(the&nbsp;physical&nbsp;size&nbsp;of&nbsp;the&nbsp;compressed&nbsp;file).&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-is_open"><strong>is_open</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-is_open">is_open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZInputStream">CFileGZInputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZInputStream">CFileGZInputStream</a>::<a href="#CFileGZInputStream-is_open">is_open</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CFileGZInputStream-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileGZInputStream-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CFileGZInputStream-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CFileGZInputStream-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileGZInputStream-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CFileGZInputStream-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CFileGZOutputStream">class <strong>CFileGZOutputStream</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Saves&nbsp;data&nbsp;to&nbsp;a&nbsp;file&nbsp;and&nbsp;transparently&nbsp;compress&nbsp;the&nbsp;data&nbsp;using&nbsp;the&nbsp;given<br>
+compression&nbsp;level.<br>
+The&nbsp;generated&nbsp;files&nbsp;are&nbsp;in&nbsp;gzip&nbsp;format&nbsp;("file.gz").<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CFileOutputStream">CFileOutputStream</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CFileGZOutputStream">CFileGZOutputStream</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CFileGZOutputStream-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileGZOutputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>,&nbsp;:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileGZOutputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>,&nbsp;:&nbsp;int,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;is&nbsp;not&nbsp;implemented&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileGZOutputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>,&nbsp;arg0:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileGZOutputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>,&nbsp;arg0:&nbsp;str,&nbsp;arg1:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CFileGZOutputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>,&nbsp;fileName:&nbsp;str,&nbsp;mode:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>,&nbsp;compressionLevel:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CFileGZOutputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Close&nbsp;the&nbsp;file&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-fileOpenCorrectly"><strong>fileOpenCorrectly</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-fileOpenCorrectly">fileOpenCorrectly</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-fileOpenCorrectly">fileOpenCorrectly</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-filePathAtUse"><strong>filePathAtUse</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-filePathAtUse">filePathAtUse</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;path&nbsp;of&nbsp;the&nbsp;filename&nbsp;passed&nbsp;to&nbsp;open(),&nbsp;or&nbsp;empty&nbsp;if&nbsp;none.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-filePathAtUse">filePathAtUse</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;the&nbsp;current&nbsp;cursor&nbsp;position,&nbsp;where&nbsp;0&nbsp;is&nbsp;the&nbsp;first<br>
+&nbsp;byte&nbsp;and&nbsp;TotalBytesCount-1&nbsp;the&nbsp;last&nbsp;one.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;is&nbsp;not&nbsp;implemented&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-is_open"><strong>is_open</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-is_open">is_open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileGZOutputStream">CFileGZOutputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileGZOutputStream">CFileGZOutputStream</a>::<a href="#CFileGZOutputStream-is_open">is_open</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CFileGZOutputStream-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileGZOutputStream-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CFileGZOutputStream-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CFileGZOutputStream-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileGZOutputStream-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CFileGZOutputStream-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CFileInputStream">class <strong>CFileInputStream</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;<a href="#CStream">CStream</a>&nbsp;derived&nbsp;class&nbsp;allow&nbsp;using&nbsp;a&nbsp;file&nbsp;as&nbsp;a&nbsp;read-only,&nbsp;binary&nbsp;stream.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CStream">CStream</a>,&nbsp;<a href="#CFileStream">CFileStream</a>,&nbsp;<a href="#CFileGZInputStream">CFileGZInputStream</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CFileInputStream">CFileInputStream</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CFileInputStream-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileInputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;off:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileInputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;off:&nbsp;int,&nbsp;Origin:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileInputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileInputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-checkEOF"><strong>checkEOF</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-checkEOF">checkEOF</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Will&nbsp;be&nbsp;true&nbsp;if&nbsp;EOF&nbsp;has&nbsp;been&nbsp;already&nbsp;reached.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-checkEOF">checkEOF</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-clearError"><strong>clearError</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-clearError">clearError</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Resets&nbsp;stream&nbsp;error&nbsp;status&nbsp;bits&nbsp;(e.g.&nbsp;after&nbsp;an&nbsp;EOF)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-clearError">clearError</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Close&nbsp;the&nbsp;stream&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-fileOpenCorrectly"><strong>fileOpenCorrectly</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-fileOpenCorrectly">fileOpenCorrectly</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-fileOpenCorrectly">fileOpenCorrectly</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-is_open"><strong>is_open</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-is_open">is_open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-is_open">is_open</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-open"><strong>open</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Open&nbsp;a&nbsp;file&nbsp;for&nbsp;reading<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;file&nbsp;to&nbsp;be&nbsp;open&nbsp;in&nbsp;this&nbsp;stream<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;true&nbsp;on&nbsp;success.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-open">open</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-readLine"><strong>readLine</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-readLine">readLine</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;one&nbsp;string&nbsp;line&nbsp;from&nbsp;the&nbsp;file&nbsp;(until&nbsp;a&nbsp;new-line&nbsp;character)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;true&nbsp;if&nbsp;a&nbsp;line&nbsp;has&nbsp;been&nbsp;read,&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;error.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileInputStream">CFileInputStream</a>::<a href="#CFileInputStream-readLine">readLine</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CFileInputStream-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileInputStream-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CFileInputStream-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CFileInputStream-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileInputStream-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CFileInputStream-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CFileOutputStream">class <strong>CFileOutputStream</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;<a href="#CStream">CStream</a>&nbsp;derived&nbsp;class&nbsp;allow&nbsp;using&nbsp;a&nbsp;file&nbsp;as&nbsp;a&nbsp;write-only,&nbsp;binary<br>
+stream.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CStream">CStream</a>,&nbsp;<a href="#CFileStream">CFileStream</a>,&nbsp;<a href="#CFileGZOutputStream">CFileGZOutputStream</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CFileOutputStream">CFileOutputStream</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CFileOutputStream-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileOutputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;Offset:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileOutputStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;Offset:&nbsp;int,&nbsp;Origin:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileOutputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;arg0:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileOutputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;fileName:&nbsp;str,&nbsp;mode:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CFileOutputStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Close&nbsp;the&nbsp;stream.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-fileOpenCorrectly"><strong>fileOpenCorrectly</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-fileOpenCorrectly">fileOpenCorrectly</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-fileOpenCorrectly">fileOpenCorrectly</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;the&nbsp;current&nbsp;cursor&nbsp;position,&nbsp;where&nbsp;0&nbsp;is&nbsp;the&nbsp;first<br>
+&nbsp;byte&nbsp;and&nbsp;TotalBytesCount-1&nbsp;the&nbsp;last&nbsp;one&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;the&nbsp;total&nbsp;number&nbsp;of&nbsp;bytes&nbsp;written&nbsp;to&nbsp;buffer&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-is_open"><strong>is_open</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-is_open">is_open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-is_open">is_open</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-open"><strong>open</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-open">open</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileOutputStream-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileOutputStream-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileOutputStream">CFileOutputStream</a>,&nbsp;fileName:&nbsp;str,&nbsp;mode:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileOutputStream">CFileOutputStream</a>::<a href="#CFileOutputStream-open">open</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::io::<a href="#OpenMode">OpenMode</a>)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CFileOutputStream-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileOutputStream-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CFileOutputStream-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CFileOutputStream-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileOutputStream-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CFileOutputStream-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CFileStream">class <strong>CFileStream</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;<a href="#CStream">CStream</a>&nbsp;derived&nbsp;class&nbsp;allow&nbsp;using&nbsp;a&nbsp;file&nbsp;as&nbsp;a&nbsp;read/write&nbsp;binary&nbsp;stream,<br>
+creating&nbsp;it&nbsp;if&nbsp;the&nbsp;file&nbsp;didn't&nbsp;exist.<br>
+&nbsp;&nbsp;The&nbsp;default&nbsp;behavior&nbsp;can&nbsp;be&nbsp;change&nbsp;to&nbsp;open&nbsp;as&nbsp;read,&nbsp;write,&nbsp;read&nbsp;and<br>
+write,...&nbsp;in&nbsp;the&nbsp;constructor.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CStream">CStream</a>,&nbsp;<a href="#CFileInputStream">CFileInputStream</a>,&nbsp;CFileOutputStrea,&nbsp;<a href="#CFileGZInputStream">CFileGZInputStream</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CFileStream">CFileStream</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CFileStream-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CFileStream-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CFileStream-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;off:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;off:&nbsp;int,&nbsp;org:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CFileStream-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFileStream-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;arg0:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+doc<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;fileName:&nbsp;str,&nbsp;mode:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CFileStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-checkEOF"><strong>checkEOF</strong></a>(...)</dt><dd><tt><a href="#CFileStream-checkEOF">checkEOF</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Will&nbsp;be&nbsp;true&nbsp;if&nbsp;EOF&nbsp;has&nbsp;been&nbsp;already&nbsp;reached.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-checkEOF">checkEOF</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-clearError"><strong>clearError</strong></a>(...)</dt><dd><tt><a href="#CFileStream-clearError">clearError</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Resets&nbsp;stream&nbsp;error&nbsp;status&nbsp;bits&nbsp;(e.g.&nbsp;after&nbsp;an&nbsp;EOF)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-clearError">clearError</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CFileStream-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Closes&nbsp;the&nbsp;file&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-fileOpenCorrectly"><strong>fileOpenCorrectly</strong></a>(...)</dt><dd><tt><a href="#CFileStream-fileOpenCorrectly">fileOpenCorrectly</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-fileOpenCorrectly">fileOpenCorrectly</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CFileStream-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-getPositionI"><strong>getPositionI</strong></a>(...)</dt><dd><tt><a href="#CFileStream-getPositionI">getPositionI</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;Input&nbsp;cursor&nbsp;position,&nbsp;where&nbsp;0&nbsp;is&nbsp;the&nbsp;first&nbsp;byte&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-getPositionI">getPositionI</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-getPositionO"><strong>getPositionO</strong></a>(...)</dt><dd><tt><a href="#CFileStream-getPositionO">getPositionO</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;Input&nbsp;cursor&nbsp;position,&nbsp;where&nbsp;0&nbsp;is&nbsp;the&nbsp;first&nbsp;byte&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-getPositionO">getPositionO</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CFileStream-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-is_open"><strong>is_open</strong></a>(...)</dt><dd><tt><a href="#CFileStream-is_open">is_open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;was&nbsp;open&nbsp;without&nbsp;errors.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-is_open">is_open</a>()&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-open"><strong>open</strong></a>(...)</dt><dd><tt><a href="#CFileStream-open">open</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CFileStream-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CFileStream-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;fileName:&nbsp;str,&nbsp;mode:&nbsp;int)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Opens&nbsp;the&nbsp;file,&nbsp;returning&nbsp;true&nbsp;on&nbsp;success.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;file&nbsp;to&nbsp;be&nbsp;open&nbsp;in&nbsp;this&nbsp;stream<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;open&nbsp;mode:&nbsp;can&nbsp;be&nbsp;an&nbsp;or'd&nbsp;conbination&nbsp;of&nbsp;different<br>
+&nbsp;values.<br>
+&nbsp;&nbsp;By&nbsp;default&nbsp;the&nbsp;file&nbsp;is&nbsp;opened&nbsp;for&nbsp;open&nbsp;and&nbsp;write&nbsp;and&nbsp;created&nbsp;if&nbsp;not<br>
+&nbsp;found.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-open">open</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;int)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-readLine"><strong>readLine</strong></a>(...)</dt><dd><tt><a href="#CFileStream-readLine">readLine</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CFileStream">CFileStream</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;one&nbsp;string&nbsp;line&nbsp;from&nbsp;the&nbsp;file&nbsp;(until&nbsp;a&nbsp;new-line&nbsp;character)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;true&nbsp;if&nbsp;a&nbsp;line&nbsp;has&nbsp;been&nbsp;read,&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;error&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CFileStream">CFileStream</a>::<a href="#CFileStream-readLine">readLine</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CFileStream-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CFileStream-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileStream-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CFileStream-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CFileStream-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human-friendly&nbsp;description&nbsp;of&nbsp;the&nbsp;stream,&nbsp;e.g.&nbsp;a&nbsp;filename.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileStream-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CFileStream-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CFileStream-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CFileStream-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CFileStream-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CMemoryStream">class <strong>CMemoryStream</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;<a href="#CStream">CStream</a>&nbsp;derived&nbsp;class&nbsp;allow&nbsp;using&nbsp;a&nbsp;memory&nbsp;buffer&nbsp;as&nbsp;a&nbsp;<a href="#CStream">CStream</a>.<br>
+&nbsp;This&nbsp;class&nbsp;is&nbsp;useful&nbsp;for&nbsp;storing&nbsp;any&nbsp;required&nbsp;set&nbsp;of&nbsp;variables&nbsp;or&nbsp;objects,<br>
+&nbsp;&nbsp;and&nbsp;then&nbsp;read&nbsp;them&nbsp;to&nbsp;other&nbsp;objects,&nbsp;or&nbsp;storing&nbsp;them&nbsp;to&nbsp;a&nbsp;file,&nbsp;for<br>
+example.<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CStream">CStream</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CMemoryStream">CMemoryStream</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CMemoryStream-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CMemoryStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;Offset:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CMemoryStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;Offset:&nbsp;int,&nbsp;Origin:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CMemoryStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CMemoryStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;data:&nbsp;capsule,&nbsp;nBytesInData:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CMemoryStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CMemoryStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-assignMemoryNotOwn"><strong>assignMemoryNotOwn</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-assignMemoryNotOwn">assignMemoryNotOwn</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;data:&nbsp;capsule,&nbsp;nBytesInData:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Initilize&nbsp;the&nbsp;data&nbsp;in&nbsp;the&nbsp;stream&nbsp;from&nbsp;a&nbsp;block&nbsp;of&nbsp;memory&nbsp;which&nbsp;is&nbsp;NEITHER<br>
+&nbsp;OWNED&nbsp;NOR&nbsp;COPIED&nbsp;by&nbsp;the&nbsp;object,&nbsp;so&nbsp;it&nbsp;must&nbsp;exist&nbsp;during&nbsp;the&nbsp;whole&nbsp;live&nbsp;of<br>
+&nbsp;the&nbsp;object.<br>
+&nbsp;&nbsp;After&nbsp;assigning&nbsp;a&nbsp;block&nbsp;of&nbsp;data&nbsp;with&nbsp;this&nbsp;method,&nbsp;the&nbsp;object&nbsp;becomes<br>
+&nbsp;"read-only",&nbsp;so&nbsp;further&nbsp;attempts&nbsp;to&nbsp;change&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;buffer&nbsp;will<br>
+&nbsp;raise&nbsp;an&nbsp;exception.<br>
+&nbsp;&nbsp;This&nbsp;method&nbsp;resets&nbsp;the&nbsp;write&nbsp;and&nbsp;read&nbsp;positions&nbsp;to&nbsp;the&nbsp;beginning.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-assignMemoryNotOwn">assignMemoryNotOwn</a>(const&nbsp;void&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Clears&nbsp;the&nbsp;memory&nbsp;buffer.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;the&nbsp;current&nbsp;cursor&nbsp;position,&nbsp;where&nbsp;0&nbsp;is&nbsp;the&nbsp;first<br>
+&nbsp;byte&nbsp;and&nbsp;TotalBytesCount-1&nbsp;the&nbsp;last&nbsp;one&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-getRawBufferData"><strong>getRawBufferData</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-getRawBufferData">getRawBufferData</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;capsule<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;a&nbsp;pointer&nbsp;to&nbsp;the&nbsp;raw&nbsp;stored&nbsp;data.&nbsp;The&nbsp;lenght&nbsp;in&nbsp;bytes<br>
+&nbsp;is&nbsp;given&nbsp;by&nbsp;getTotalBytesCount&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-getRawBufferData">getRawBufferData</a>()&nbsp;--&gt;&nbsp;void&nbsp;*</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;total&nbsp;size&nbsp;of&nbsp;the&nbsp;internal&nbsp;buffer&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-loadBufferFromFile"><strong>loadBufferFromFile</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-loadBufferFromFile">loadBufferFromFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;file_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Loads&nbsp;the&nbsp;entire&nbsp;buffer&nbsp;from&nbsp;a&nbsp;file&nbsp;<br>
+&nbsp;true&nbsp;on&nbsp;success&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-loadBufferFromFile">loadBufferFromFile</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-saveBufferToFile"><strong>saveBufferToFile</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-saveBufferToFile">saveBufferToFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;file_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Saves&nbsp;the&nbsp;entire&nbsp;buffer&nbsp;to&nbsp;a&nbsp;file&nbsp;<br>
+&nbsp;true&nbsp;on&nbsp;success&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-saveBufferToFile">saveBufferToFile</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-setAllocBlockSize"><strong>setAllocBlockSize</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-setAllocBlockSize">setAllocBlockSize</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CMemoryStream">CMemoryStream</a>,&nbsp;alloc_block_size:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Change&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;additional&nbsp;memory&nbsp;block&nbsp;that&nbsp;is&nbsp;reserved&nbsp;whenever<br>
+&nbsp;the&nbsp;current&nbsp;block&nbsp;runs&nbsp;too&nbsp;short&nbsp;(default=0x10000&nbsp;bytes)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CMemoryStream">CMemoryStream</a>::<a href="#CMemoryStream-setAllocBlockSize">setAllocBlockSize</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CMemoryStream-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CMemoryStream-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CMemoryStream-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CMemoryStream-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CMemoryStream-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CMemoryStream-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CPipeBaseEndPoint">class <strong>CPipeBaseEndPoint</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Common&nbsp;interface&nbsp;of&nbsp;read&nbsp;&amp;&nbsp;write&nbsp;pipe&nbsp;end-points<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CPipeBaseEndPoint-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CPipeBaseEndPoint-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;of:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CPipeBaseEndPoint-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;of:&nbsp;int,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CPipeBaseEndPoint-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CPipeBaseEndPoint-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;serialized:&nbsp;str)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Closes&nbsp;the&nbsp;pipe&nbsp;(normally&nbsp;not&nbsp;needed&nbsp;to&nbsp;be&nbsp;called&nbsp;by&nbsp;users,<br>
+&nbsp;automatically&nbsp;done&nbsp;at&nbsp;destructor)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-isOpen"><strong>isOpen</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-isOpen">isOpen</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;false&nbsp;if&nbsp;the&nbsp;pipe&nbsp;was&nbsp;closed&nbsp;due&nbsp;to&nbsp;some&nbsp;error.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-isOpen">isOpen</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-serialize"><strong>serialize</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-serialize">serialize</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Converts&nbsp;the&nbsp;end-point&nbsp;into&nbsp;a&nbsp;string&nbsp;suitable&nbsp;for&nbsp;reconstruction&nbsp;at&nbsp;a<br>
+&nbsp;child&nbsp;process.<br>
+&nbsp;This&nbsp;*invalidates*&nbsp;this&nbsp;object,&nbsp;since&nbsp;only&nbsp;one&nbsp;real&nbsp;end-point&nbsp;can&nbsp;exist<br>
+&nbsp;at&nbsp;once.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeBaseEndPoint-serialize">serialize</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>timeout_read_between_us</strong></dt>
+</dl>
+<dl><dt><strong>timeout_read_start_us</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CPipeBaseEndPoint-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeBaseEndPoint-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human-friendly&nbsp;description&nbsp;of&nbsp;the&nbsp;stream,&nbsp;e.g.&nbsp;a&nbsp;filename.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeBaseEndPoint-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CPipeBaseEndPoint-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CPipeBaseEndPoint-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeBaseEndPoint-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CPipeBaseEndPoint-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CPipeReadEndPoint">class <strong>CPipeReadEndPoint</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;read&nbsp;end-point&nbsp;in&nbsp;a&nbsp;pipe&nbsp;created&nbsp;with&nbsp;mrpt::synch::CPipe.<br>
+Use&nbsp;the&nbsp;method&nbsp;<a href="#CStream">CStream</a>::<a href="#CPipeReadEndPoint-Read">Read</a>()&nbsp;of&nbsp;the&nbsp;base&nbsp;class&nbsp;<a href="#CStream">CStream</a><br>
+for&nbsp;blocking&nbsp;reading.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CPipeReadEndPoint">CPipeReadEndPoint</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CPipeReadEndPoint-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeReadEndPoint">CPipeReadEndPoint</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Read-only&nbsp;pipe,&nbsp;don't&nbsp;call&nbsp;this&nbsp;method&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeReadEndPoint">CPipeReadEndPoint</a>::<a href="#CPipeReadEndPoint-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeReadEndPoint">CPipeReadEndPoint</a>,&nbsp;serialized:&nbsp;str)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a>:<br>
+<dl><dt><a name="CPipeReadEndPoint-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeReadEndPoint-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CPipeReadEndPoint-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;of:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CPipeReadEndPoint-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;of:&nbsp;int,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeReadEndPoint-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Closes&nbsp;the&nbsp;pipe&nbsp;(normally&nbsp;not&nbsp;needed&nbsp;to&nbsp;be&nbsp;called&nbsp;by&nbsp;users,<br>
+&nbsp;automatically&nbsp;done&nbsp;at&nbsp;destructor)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeReadEndPoint-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeReadEndPoint-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeReadEndPoint-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-isOpen"><strong>isOpen</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-isOpen">isOpen</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;false&nbsp;if&nbsp;the&nbsp;pipe&nbsp;was&nbsp;closed&nbsp;due&nbsp;to&nbsp;some&nbsp;error.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeReadEndPoint-isOpen">isOpen</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-serialize"><strong>serialize</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-serialize">serialize</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Converts&nbsp;the&nbsp;end-point&nbsp;into&nbsp;a&nbsp;string&nbsp;suitable&nbsp;for&nbsp;reconstruction&nbsp;at&nbsp;a<br>
+&nbsp;child&nbsp;process.<br>
+&nbsp;This&nbsp;*invalidates*&nbsp;this&nbsp;object,&nbsp;since&nbsp;only&nbsp;one&nbsp;real&nbsp;end-point&nbsp;can&nbsp;exist<br>
+&nbsp;at&nbsp;once.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeReadEndPoint-serialize">serialize</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a>:<br>
+<dl><dt><strong>timeout_read_between_us</strong></dt>
+</dl>
+<dl><dt><strong>timeout_read_start_us</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CPipeReadEndPoint-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeReadEndPoint-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human-friendly&nbsp;description&nbsp;of&nbsp;the&nbsp;stream,&nbsp;e.g.&nbsp;a&nbsp;filename.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeReadEndPoint-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CPipeReadEndPoint-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CPipeReadEndPoint-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeReadEndPoint-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CPipeReadEndPoint-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CPipeWriteEndPoint">class <strong>CPipeWriteEndPoint</strong></a>(<a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;write&nbsp;end-point&nbsp;in&nbsp;a&nbsp;pipe&nbsp;created&nbsp;with&nbsp;mrpt::synch::CPipe.<br>
+Use&nbsp;the&nbsp;method&nbsp;<a href="#CStream">CStream</a>::<a href="#CPipeWriteEndPoint-Write">Write</a>()&nbsp;of&nbsp;the&nbsp;base&nbsp;class&nbsp;<a href="#CStream">CStream</a><br>
+for&nbsp;blocking&nbsp;writing.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CPipeWriteEndPoint">CPipeWriteEndPoint</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CPipeWriteEndPoint-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeWriteEndPoint">CPipeWriteEndPoint</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Write-only&nbsp;pipe:&nbsp;read&nbsp;launches&nbsp;exception&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeWriteEndPoint">CPipeWriteEndPoint</a>::<a href="#CPipeWriteEndPoint-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeWriteEndPoint">CPipeWriteEndPoint</a>,&nbsp;serialized:&nbsp;str)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a>:<br>
+<dl><dt><a name="CPipeWriteEndPoint-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CPipeWriteEndPoint-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;of:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CPipeWriteEndPoint-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;of:&nbsp;int,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeWriteEndPoint-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeWriteEndPoint-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Closes&nbsp;the&nbsp;pipe&nbsp;(normally&nbsp;not&nbsp;needed&nbsp;to&nbsp;be&nbsp;called&nbsp;by&nbsp;users,<br>
+&nbsp;automatically&nbsp;done&nbsp;at&nbsp;destructor)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeWriteEndPoint-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeWriteEndPoint-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Without&nbsp;effect&nbsp;in&nbsp;this&nbsp;class&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeWriteEndPoint-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-isOpen"><strong>isOpen</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-isOpen">isOpen</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;false&nbsp;if&nbsp;the&nbsp;pipe&nbsp;was&nbsp;closed&nbsp;due&nbsp;to&nbsp;some&nbsp;error.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeWriteEndPoint-isOpen">isOpen</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-serialize"><strong>serialize</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-serialize">serialize</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Converts&nbsp;the&nbsp;end-point&nbsp;into&nbsp;a&nbsp;string&nbsp;suitable&nbsp;for&nbsp;reconstruction&nbsp;at&nbsp;a<br>
+&nbsp;child&nbsp;process.<br>
+&nbsp;This&nbsp;*invalidates*&nbsp;this&nbsp;object,&nbsp;since&nbsp;only&nbsp;one&nbsp;real&nbsp;end-point&nbsp;can&nbsp;exist<br>
+&nbsp;at&nbsp;once.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CPipeBaseEndPoint">CPipeBaseEndPoint</a>::<a href="#CPipeWriteEndPoint-serialize">serialize</a>()&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.io.html#CPipeBaseEndPoint">CPipeBaseEndPoint</a>:<br>
+<dl><dt><strong>timeout_read_between_us</strong></dt>
+</dl>
+<dl><dt><strong>timeout_read_start_us</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><a name="CPipeWriteEndPoint-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeWriteEndPoint-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human-friendly&nbsp;description&nbsp;of&nbsp;the&nbsp;stream,&nbsp;e.g.&nbsp;a&nbsp;filename.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeWriteEndPoint-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CPipeWriteEndPoint-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CPipeWriteEndPoint-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CPipeWriteEndPoint-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CPipeWriteEndPoint-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CStream">class <strong>CStream</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;base&nbsp;class&nbsp;is&nbsp;used&nbsp;to&nbsp;provide&nbsp;a&nbsp;unified&nbsp;interface&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;files,memory&nbsp;buffers,..Please&nbsp;see&nbsp;the&nbsp;derived&nbsp;classes.&nbsp;This&nbsp;class&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;largely&nbsp;inspired&nbsp;by&nbsp;Borland&nbsp;VCL&nbsp;"TStream"&nbsp;class.&nbsp;<br>
+&nbsp;Apart&nbsp;of&nbsp;the&nbsp;"VCL&nbsp;like"&nbsp;methods,&nbsp;operators&nbsp;"&gt;&gt;"&nbsp;and&nbsp;"&lt;&lt;"&nbsp;have&nbsp;been<br>
+&nbsp;&nbsp;&nbsp;defined&nbsp;so&nbsp;that&nbsp;simple&nbsp;types&nbsp;(int,bool,char,float,char&nbsp;*,std::string,...)<br>
+&nbsp;&nbsp;&nbsp;can&nbsp;be&nbsp;directly&nbsp;written&nbsp;and&nbsp;read&nbsp;to&nbsp;and&nbsp;from&nbsp;any&nbsp;<a href="#CStream">CStream</a>&nbsp;easily.<br>
+&nbsp;Please,&nbsp;it&nbsp;is&nbsp;recomendable&nbsp;to&nbsp;read&nbsp;CSerializable&nbsp;documentation&nbsp;also.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<a href="#CFileStream">CFileStream</a>,&nbsp;<a href="#CMemoryStream">CMemoryStream</a>,CSerializable<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CStream-Read"><strong>Read</strong></a>(...)</dt><dd><tt><a href="#CStream-Read">Read</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Introduces&nbsp;a&nbsp;pure&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&nbsp;reading&nbsp;from&nbsp;the<br>
+&nbsp;stream.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CStream-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CStream-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read,&nbsp;without&nbsp;waiting&nbsp;for&nbsp;more&nbsp;extra&nbsp;bytes&nbsp;to<br>
+arrive&nbsp;(just&nbsp;those&nbsp;already&nbsp;enqued&nbsp;in&nbsp;the&nbsp;stream).<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;this&nbsp;method&nbsp;will&nbsp;fallback&nbsp;to&nbsp;ReadBuffer()&nbsp;in&nbsp;most&nbsp;<a href="#CStream">CStream</a><br>
+classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CStream-Seek"><strong>Seek</strong></a>(...)</dt><dd><tt><a href="#CStream-Seek">Seek</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Offset:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CStream-Seek">Seek</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Offset:&nbsp;int,&nbsp;Origin:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>.TSeekOrigin)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Introduces&nbsp;a&nbsp;pure&nbsp;virtual&nbsp;method&nbsp;for&nbsp;moving&nbsp;to&nbsp;a&nbsp;specified&nbsp;position&nbsp;in<br>
+the&nbsp;streamed&nbsp;resource.<br>
+&nbsp;&nbsp;&nbsp;he&nbsp;Origin&nbsp;parameter&nbsp;indicates&nbsp;how&nbsp;to&nbsp;interpret&nbsp;the&nbsp;Offset&nbsp;parameter.<br>
+Origin&nbsp;should&nbsp;be&nbsp;one&nbsp;of&nbsp;the&nbsp;following&nbsp;values:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;sFromBeginning&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default)&nbsp;Offset&nbsp;is&nbsp;from&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the<br>
+resource.&nbsp;Seek&nbsp;moves&nbsp;to&nbsp;the&nbsp;position&nbsp;Offset.&nbsp;Offset&nbsp;must&nbsp;be&nbsp;&gt;=&nbsp;0.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;sFromCurrent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Offset&nbsp;is&nbsp;from&nbsp;the&nbsp;current&nbsp;position&nbsp;in&nbsp;the&nbsp;resource.<br>
+Seek&nbsp;moves&nbsp;to&nbsp;Position&nbsp;+&nbsp;Offset.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;sFromEnd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Offset&nbsp;is&nbsp;from&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;resource.&nbsp;Offset&nbsp;must<br>
+be<br>
+&lt;=&nbsp;0&nbsp;to&nbsp;indicate&nbsp;a&nbsp;number&nbsp;of&nbsp;bytes&nbsp;before&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;file.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Seek&nbsp;returns&nbsp;the&nbsp;new&nbsp;value&nbsp;of&nbsp;the&nbsp;Position&nbsp;property.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CStream-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CStream-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Introduces&nbsp;a&nbsp;pure&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&nbsp;writing&nbsp;to&nbsp;the&nbsp;stream.<br>
+&nbsp;&nbsp;Write&nbsp;attempts&nbsp;to&nbsp;write&nbsp;up&nbsp;to&nbsp;Count&nbsp;bytes&nbsp;to&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
+&nbsp;number&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;written.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CStream-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CStream-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CStream-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CStream-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CStream-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CStream">CStream</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CStream-getPosition"><strong>getPosition</strong></a>(...)</dt><dd><tt><a href="#CStream-getPosition">getPosition</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Method&nbsp;for&nbsp;getting&nbsp;the&nbsp;current&nbsp;cursor&nbsp;position,&nbsp;where&nbsp;0&nbsp;is&nbsp;the&nbsp;first<br>
+&nbsp;byte&nbsp;and&nbsp;TotalBytesCount-1&nbsp;the&nbsp;last&nbsp;one.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CStream-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CStream-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;human-friendly&nbsp;description&nbsp;of&nbsp;the&nbsp;stream,&nbsp;e.g.&nbsp;a&nbsp;filename.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-getStreamDescription">getStreamDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CStream-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CStream-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Returns&nbsp;the&nbsp;total&nbsp;amount&nbsp;of&nbsp;bytes&nbsp;in&nbsp;the&nbsp;stream.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CStream-getline"><strong>getline</strong></a>(...)</dt><dd><tt><a href="#CStream-getline">getline</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CStream">CStream</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;stream&nbsp;until&nbsp;a&nbsp;``&nbsp;character&nbsp;is&nbsp;found&nbsp;(``&nbsp;characters<br>
+&nbsp;are&nbsp;ignored).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CStream">CStream</a>::<a href="#CStream-getline">getline</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>TSeekOrigin</strong> = &lt;class 'mrpt.pymrpt.mrpt.io.CStream.TSeekOrigin'&gt;</dl>
+
+<dl><dt><strong>sFromBeginning</strong> = &lt;TSeekOrigin.sFromBeginning: 0&gt;</dl>
+
+<dl><dt><strong>sFromCurrent</strong> = &lt;TSeekOrigin.sFromCurrent: 1&gt;</dl>
+
+<dl><dt><strong>sFromEnd</strong> = &lt;TSeekOrigin.sFromEnd: 2&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CStream-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CTextFileLinesParser">class <strong>CTextFileLinesParser</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;for&nbsp;parsing&nbsp;text&nbsp;files,&nbsp;returning&nbsp;each&nbsp;non-empty&nbsp;and&nbsp;non-comment<br>
+line,&nbsp;along&nbsp;its&nbsp;line&nbsp;number.&nbsp;Lines&nbsp;are&nbsp;strip&nbsp;out&nbsp;of&nbsp;leading&nbsp;and&nbsp;trailing<br>
+whitespaces.&nbsp;By&nbsp;default,&nbsp;lines&nbsp;starting&nbsp;with&nbsp;either&nbsp;"#",&nbsp;"//"&nbsp;or&nbsp;"%"&nbsp;are<br>
+skipped&nbsp;as&nbsp;comment&nbsp;lines,&nbsp;unless&nbsp;this&nbsp;behavior&nbsp;is&nbsp;explicitly&nbsp;disabled&nbsp;with<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#CTextFileLinesParser">CTextFileLinesParser</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CTextFileLinesParser-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CTextFileLinesParser-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CTextFileLinesParser-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>,&nbsp;filename:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CTextFileLinesParser-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CTextFileLinesParser-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>::operator=(const&nbsp;class&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CTextFileLinesParser-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-close">close</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Close&nbsp;the&nbsp;file&nbsp;(no&nbsp;need&nbsp;to&nbsp;call&nbsp;it&nbsp;normally,&nbsp;the&nbsp;file&nbsp;is&nbsp;closed&nbsp;upon<br>
+&nbsp;destruction)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>::<a href="#CTextFileLinesParser-close">close</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTextFileLinesParser-enableCommentFilters"><strong>enableCommentFilters</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-enableCommentFilters">enableCommentFilters</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>,&nbsp;filter_MATLAB_comments:&nbsp;bool,&nbsp;filter_C_comments:&nbsp;bool,&nbsp;filter_SH_comments:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Enable/disable&nbsp;filtering&nbsp;of&nbsp;lines&nbsp;starting&nbsp;with&nbsp;"%",&nbsp;"//"&nbsp;or&nbsp;"#",<br>
+&nbsp;respectively.&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>::<a href="#CTextFileLinesParser-enableCommentFilters">enableCommentFilters</a>(bool,&nbsp;bool,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTextFileLinesParser-getCurrentLineNumber"><strong>getCurrentLineNumber</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-getCurrentLineNumber">getCurrentLineNumber</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;line&nbsp;number&nbsp;of&nbsp;the&nbsp;last&nbsp;line&nbsp;returned&nbsp;with&nbsp;&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>::<a href="#CTextFileLinesParser-getCurrentLineNumber">getCurrentLineNumber</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+
+<dl><dt><a name="CTextFileLinesParser-getNextLine"><strong>getNextLine</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-getNextLine">getNextLine</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>,&nbsp;out_str:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Reads&nbsp;from&nbsp;the&nbsp;file&nbsp;and&nbsp;return&nbsp;the&nbsp;next&nbsp;(non-comment)&nbsp;line,&nbsp;as&nbsp;a<br>
+&nbsp;std::string<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;false&nbsp;on&nbsp;EOF.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>::<a href="#CTextFileLinesParser-getNextLine">getNextLine</a>(std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CTextFileLinesParser-open"><strong>open</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-open">open</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>,&nbsp;fil:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Open&nbsp;a&nbsp;file&nbsp;(an&nbsp;alternative&nbsp;to&nbsp;the&nbsp;constructor&nbsp;with&nbsp;a&nbsp;file&nbsp;name)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>::<a href="#CTextFileLinesParser-open">open</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CTextFileLinesParser-rewind"><strong>rewind</strong></a>(...)</dt><dd><tt><a href="#CTextFileLinesParser-rewind">rewind</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#CTextFileLinesParser">CTextFileLinesParser</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reset&nbsp;the&nbsp;read&nbsp;pointer&nbsp;to&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;file&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#CTextFileLinesParser">CTextFileLinesParser</a>::<a href="#CTextFileLinesParser-rewind">rewind</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CTextFileLinesParser-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="OpenMode">class <strong>OpenMode</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.io.html#OpenMode">OpenMode</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="OpenMode-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__getstate__">__getstate__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__hash__">__hash__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__index__"><strong>__index__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__index__">__index__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__int__"><strong>__int__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__int__">__int__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__repr__">__repr__</a>(self:&nbsp;object)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><tt><a href="#OpenMode-__setstate__">__setstate__</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="#OpenMode">OpenMode</a>,&nbsp;state:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="OpenMode-__str__"><strong>__str__</strong></a> = name(...)</dt><dd><tt><a href="#OpenMode-name">name</a>(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>name(self:&nbsp;handle)&nbsp;-&gt;&nbsp;str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>APPEND</strong> = &lt;OpenMode.APPEND: 1&gt;</dl>
+
+<dl><dt><strong>TRUNCATE</strong> = &lt;OpenMode.TRUNCATE: 0&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="OpenMode-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-file_get_contents"><strong>file_get_contents</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-file_get_contents">file_get_contents</a>(fileName:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Loads&nbsp;an&nbsp;entire&nbsp;text&nbsp;file&nbsp;and&nbsp;return&nbsp;its&nbsp;contents&nbsp;as&nbsp;a&nbsp;single&nbsp;std::string.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::runtime_error&nbsp;On&nbsp;any&nbsp;read&nbsp;error.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;loadBinaryFile(),&nbsp;<a href="#-loadTextFile">loadTextFile</a>()<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Relying&nbsp;on&nbsp;C++17&nbsp;RVO&nbsp;to&nbsp;return&nbsp;a&nbsp;string&nbsp;without&nbsp;worring&nbsp;on<br>
+&nbsp;return-by-value&nbsp;of&nbsp;big&nbsp;objects.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#-file_get_contents">file_get_contents</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-getLazyLoadPathBase"><strong>getLazyLoadPathBase</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getLazyLoadPathBase">getLazyLoadPathBase</a>()&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Gets&nbsp;the&nbsp;current&nbsp;path&nbsp;to&nbsp;be&nbsp;used&nbsp;to&nbsp;locate&nbsp;relative&nbsp;lazy-load&nbsp;externally<br>
+&nbsp;stored&nbsp;objects&nbsp;via&nbsp;<a href="#-lazy_load_absolute_path">lazy_load_absolute_path</a>().&nbsp;Default&nbsp;is&nbsp;`"."`.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#-getLazyLoadPathBase">getLazyLoadPathBase</a>()&nbsp;--&gt;&nbsp;const&nbsp;std::string&nbsp;&amp;</tt></dd></dl>
+ <dl><dt><a name="-lazy_load_absolute_path"><strong>lazy_load_absolute_path</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-lazy_load_absolute_path">lazy_load_absolute_path</a>(relativeOrAbsolutePath:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Makes&nbsp;sure&nbsp;of&nbsp;building&nbsp;an&nbsp;absolute&nbsp;path&nbsp;for&nbsp;the&nbsp;given&nbsp;relative&nbsp;(or&nbsp;possibly<br>
+&nbsp;absolute)&nbsp;lazy-load&nbsp;object.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#-lazy_load_absolute_path">lazy_load_absolute_path</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+ <dl><dt><a name="-loadTextFile"><strong>loadTextFile</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-loadTextFile">loadTextFile</a>(o:&nbsp;mrpt.pymrpt.std.vector_std_string,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Loads&nbsp;a&nbsp;text&nbsp;file&nbsp;as&nbsp;a&nbsp;vector&nbsp;of&nbsp;string&nbsp;lines.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;Returns&nbsp;false&nbsp;on&nbsp;any&nbsp;error,&nbsp;true&nbsp;on&nbsp;everything&nbsp;OK.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#-file_get_contents">file_get_contents</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#-loadTextFile">loadTextFile</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+ <dl><dt><a name="-setLazyLoadPathBase"><strong>setLazyLoadPathBase</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-setLazyLoadPathBase">setLazyLoadPathBase</a>(path:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;base&nbsp;path&nbsp;to&nbsp;be&nbsp;used&nbsp;to&nbsp;locate&nbsp;relative&nbsp;lazy-load&nbsp;externally<br>
+&nbsp;stored&nbsp;objects&nbsp;via&nbsp;<a href="#-lazy_load_absolute_path">lazy_load_absolute_path</a>().<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::io::<a href="#-setLazyLoadPathBase">setLazyLoadPathBase</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+</td></tr></table>
+</body></html>

@@ -236,7 +236,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#C2DRangeFinderAbstract-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#C2DRangeFinderAbstract-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="C2DRangeFinderAbstract-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#C2DRangeFinderAbstract-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -493,7 +493,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CBoardENoses-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CBoardENoses-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CBoardENoses-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CBoardENoses-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -794,7 +794,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CCANBusReader-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CCANBusReader-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CCANBusReader-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CCANBusReader-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -1356,7 +1356,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CCameraSensor-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CCameraSensor-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CCameraSensor-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CCameraSensor-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -1557,7 +1557,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CEnoseModular-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CEnoseModular-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CEnoseModular-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CEnoseModular-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -1761,11 +1761,11 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 3.&nbsp;<a href="#CFFMPEG_InputStream-openURL">openURL</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CFFMPEG_InputStream">CFFMPEG_InputStream</a>,&nbsp;url:&nbsp;str,&nbsp;grab_as_grayscale:&nbsp;bool,&nbsp;verbose:&nbsp;bool)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
-4.&nbsp;<a href="#CFFMPEG_InputStream-openURL">openURL</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CFFMPEG_InputStream">CFFMPEG_InputStream</a>,&nbsp;url:&nbsp;str,&nbsp;grab_as_grayscale:&nbsp;bool,&nbsp;verbose:&nbsp;bool,&nbsp;options:&nbsp;mrpt.pymrpt.std.map_std_string_std_string)&nbsp;-&gt;&nbsp;bool<br>
+4.&nbsp;<a href="#CFFMPEG_InputStream-openURL">openURL</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CFFMPEG_InputStream">CFFMPEG_InputStream</a>,&nbsp;url:&nbsp;str,&nbsp;grab_as_grayscale:&nbsp;bool,&nbsp;verbose:&nbsp;bool,&nbsp;options:&nbsp;Dict[str,&nbsp;str])&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
 Open&nbsp;a&nbsp;video&nbsp;file&nbsp;or&nbsp;a&nbsp;video&nbsp;stream&nbsp;(rtsp://)<br>
 &nbsp;&nbsp;This&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;open&nbsp;local&nbsp;video&nbsp;files&nbsp;(eg.&nbsp;"myVideo.avi",<br>
-&nbsp;"c:&nbsp;and&nbsp;also&nbsp;IP&nbsp;cameras&nbsp;(e.g&nbsp;`rtsp://a.b.c.d/live.sdp`).<br>
+&nbsp;"c:\a.mpeg")&nbsp;and&nbsp;also&nbsp;IP&nbsp;cameras&nbsp;(e.g&nbsp;`rtsp://a.b.c.d/live.sdp`).<br>
 &nbsp;&nbsp;User/password&nbsp;can&nbsp;be&nbsp;used&nbsp;like&nbsp;`rtsp://USER:PASSWORD/PATH`.<br>
 &nbsp;<br>
 &nbsp;[ffmpeg&nbsp;options](<a href="https://www.ffmpeg.org/ffmpeg-protocols.html">https://www.ffmpeg.org/ffmpeg-protocols.html</a>)<br>
@@ -1781,7 +1781,7 @@ Open&nbsp;a&nbsp;video&nbsp;file&nbsp;or&nbsp;a&nbsp;video&nbsp;stream&nbsp;(rts
 &nbsp;false&nbsp;on&nbsp;any&nbsp;error&nbsp;(and&nbsp;error&nbsp;info&nbsp;dumped&nbsp;to&nbsp;cerr),&nbsp;true&nbsp;on<br>
 &nbsp;success.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CFFMPEG_InputStream">CFFMPEG_InputStream</a>::<a href="#CFFMPEG_InputStream-openURL">openURL</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;bool,&nbsp;bool,&nbsp;const&nbsp;class&nbsp;std::map&lt;std::string,&nbsp;std::string,&nbsp;struct&nbsp;std::less&lt;std::string&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;std::string,&nbsp;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CFFMPEG_InputStream">CFFMPEG_InputStream</a>::<a href="#CFFMPEG_InputStream-openURL">openURL</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;bool,&nbsp;bool,&nbsp;const&nbsp;class&nbsp;std::map&lt;std::string,&nbsp;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="CFFMPEG_InputStream-retrieveFrame"><strong>retrieveFrame</strong></a>(...)</dt><dd><tt><a href="#CFFMPEG_InputStream-retrieveFrame">retrieveFrame</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CFFMPEG_InputStream">CFFMPEG_InputStream</a>,&nbsp;out_img:&nbsp;mrpt.pymrpt.mrpt.img.CImage)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -1988,17 +1988,17 @@ Get&nbsp;the&nbsp;serial&nbsp;port&nbsp;to&nbsp;use&nbsp;(COM1,&nbsp;ttyUSB0,&nb
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-getSerialPortName">getSerialPortName</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
 
-<dl><dt><a name="CGPSInterface-getSetupCommands"><strong>getSetupCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-getSetupCommands">getSetupCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.vector_std_string<br>
+<dl><dt><a name="CGPSInterface-getSetupCommands"><strong>getSetupCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-getSetupCommands">getSetupCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>)&nbsp;-&gt;&nbsp;List[str]<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-getSetupCommands">getSetupCommands</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-getSetupCommands">getSetupCommands</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CGPSInterface-getSetupCommandsDelay"><strong>getSetupCommandsDelay</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-getSetupCommandsDelay">getSetupCommandsDelay</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-getSetupCommandsDelay">getSetupCommandsDelay</a>()&nbsp;const&nbsp;--&gt;&nbsp;double</tt></dd></dl>
 
-<dl><dt><a name="CGPSInterface-getShutdownCommands"><strong>getShutdownCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-getShutdownCommands">getShutdownCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.vector_std_string<br>
+<dl><dt><a name="CGPSInterface-getShutdownCommands"><strong>getShutdownCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-getShutdownCommands">getShutdownCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>)&nbsp;-&gt;&nbsp;List[str]<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-getShutdownCommands">getShutdownCommands</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-getShutdownCommands">getShutdownCommands</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CGPSInterface-implement_parser_NMEA"><strong>implement_parser_NMEA</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-implement_parser_NMEA">implement_parser_NMEA</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>,&nbsp;out_minimum_rx_buf_to_decide:&nbsp;int)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -2038,7 +2038,7 @@ Send&nbsp;a&nbsp;custom&nbsp;data&nbsp;block&nbsp;to&nbsp;the&nbsp;GNSS&nbsp;dev
 &nbsp;<br>
 &nbsp;false&nbsp;on&nbsp;communication&nbsp;error&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-sendCustomCommand">sendCustomCommand</a>(const&nbsp;void&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-sendCustomCommand">sendCustomCommand</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="CGPSInterface-setParser"><strong>setParser</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-setParser">setParser</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>,&nbsp;parser:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>.PARSERS)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2062,17 +2062,17 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-setSerialPortName">setSerialPortName</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CGPSInterface-setSetupCommands"><strong>setSetupCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-setSetupCommands">setSetupCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>,&nbsp;cmds:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CGPSInterface-setSetupCommands"><strong>setSetupCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-setSetupCommands">setSetupCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>,&nbsp;cmds:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-setSetupCommands">setSetupCommands</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-setSetupCommands">setSetupCommands</a>(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CGPSInterface-setSetupCommandsDelay"><strong>setSetupCommandsDelay</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-setSetupCommandsDelay">setSetupCommandsDelay</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>,&nbsp;delay_secs:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-setSetupCommandsDelay">setSetupCommandsDelay</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CGPSInterface-setShutdownCommands"><strong>setShutdownCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-setShutdownCommands">setShutdownCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>,&nbsp;cmds:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CGPSInterface-setShutdownCommands"><strong>setShutdownCommands</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-setShutdownCommands">setShutdownCommands</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>,&nbsp;cmds:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-setShutdownCommands">setShutdownCommands</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGPSInterface">CGPSInterface</a>::<a href="#CGPSInterface-setShutdownCommands">setShutdownCommands</a>(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CGPSInterface-useExternalStream"><strong>useExternalStream</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-useExternalStream">useExternalStream</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGPSInterface">CGPSInterface</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -2142,7 +2142,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGPSInterface-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGPSInterface-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CGPSInterface-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CGPSInterface-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -2392,7 +2392,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGPS_NTRIP-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGPS_NTRIP-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CGPS_NTRIP-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CGPS_NTRIP-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -2592,7 +2592,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGenericSensor-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGenericSensor-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CGenericSensor-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CGenericSensor-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -2794,7 +2794,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGillAnemometer-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGillAnemometer-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CGillAnemometer-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CGillAnemometer-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -3043,7 +3043,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGyroKVHDSP3000-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CGyroKVHDSP3000-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CGyroKVHDSP3000-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CGyroKVHDSP3000-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -3378,7 +3378,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CHokuyoURG-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CHokuyoURG-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CHokuyoURG-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CHokuyoURG-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -3631,7 +3631,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CIMUIntersense-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CIMUIntersense-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CIMUIntersense-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CIMUIntersense-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -3859,7 +3859,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CIMUXSens_MT4-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CIMUXSens_MT4-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CIMUXSens_MT4-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CIMUXSens_MT4-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -4100,7 +4100,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CIbeoLuxETH-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CIbeoLuxETH-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CIbeoLuxETH-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CIbeoLuxETH-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -4661,7 +4661,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CImpinjRFID-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CImpinjRFID-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CImpinjRFID-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CImpinjRFID-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -5093,7 +5093,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-clo
 Get&nbsp;the&nbsp;col&nbsp;count&nbsp;in&nbsp;the&nbsp;camera&nbsp;images,&nbsp;loaded&nbsp;automatically&nbsp;upon&nbsp;camera<br>
 &nbsp;<a href="#CKinect-open">open</a>().&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-cols">cols</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-cols">cols</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CKinect-disablePreviewRGB"><strong>disablePreviewRGB</strong></a>(...)</dt><dd><tt><a href="#CKinect-disablePreviewRGB">disablePreviewRGB</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5226,7 +5226,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-get
 
 <dl><dt><a name="CKinect-getPreviewDecimation"><strong>getPreviewDecimation</strong></a>(...)</dt><dd><tt><a href="#CKinect-getPreviewDecimation">getPreviewDecimation</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-getPreviewDecimation">getPreviewDecimation</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-getPreviewDecimation">getPreviewDecimation</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CKinect-getRelativePoseIntensityWrtDepth"><strong>getRelativePoseIntensityWrtDepth</strong></a>(...)</dt><dd><tt><a href="#CKinect-getRelativePoseIntensityWrtDepth">getRelativePoseIntensityWrtDepth</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D<br>
 &nbsp;<br>
@@ -5253,18 +5253,6 @@ Initializes&nbsp;the&nbsp;3D&nbsp;camera&nbsp;-&nbsp;should&nbsp;be&nbsp;invoked
 &nbsp;message&nbsp;if&nbsp;some&nbsp;critical&nbsp;error&nbsp;is&nbsp;found.<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-initialize">initialize</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
-<dl><dt><a name="CKinect-internal_latest_obs"><strong>internal_latest_obs</strong></a>(...)</dt><dd><tt><a href="#CKinect-internal_latest_obs">internal_latest_obs</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.obs.CObservation3DRangeScan<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-internal_latest_obs">internal_latest_obs</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::obs::CObservation3DRangeScan&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CKinect-internal_tim_latest_depth"><strong>internal_tim_latest_depth</strong></a>(...)</dt><dd><tt><a href="#CKinect-internal_tim_latest_depth">internal_tim_latest_depth</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>)&nbsp;-&gt;&nbsp;int<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-internal_tim_latest_depth">internal_tim_latest_depth</a>()&nbsp;--&gt;&nbsp;volatile&nbsp;unsigned&nbsp;int&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CKinect-internal_tim_latest_rgb"><strong>internal_tim_latest_rgb</strong></a>(...)</dt><dd><tt><a href="#CKinect-internal_tim_latest_rgb">internal_tim_latest_rgb</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>)&nbsp;-&gt;&nbsp;int<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-internal_tim_latest_rgb">internal_tim_latest_rgb</a>()&nbsp;--&gt;&nbsp;volatile&nbsp;unsigned&nbsp;int&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CKinect-isGrab3DPointsEnabled"><strong>isGrab3DPointsEnabled</strong></a>(...)</dt><dd><tt><a href="#CKinect-isGrab3DPointsEnabled">isGrab3DPointsEnabled</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -5308,7 +5296,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-ope
 Get&nbsp;the&nbsp;row&nbsp;count&nbsp;in&nbsp;the&nbsp;camera&nbsp;images,&nbsp;loaded&nbsp;automatically&nbsp;upon&nbsp;camera<br>
 &nbsp;<a href="#CKinect-open">open</a>().&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-rows">rows</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-rows">rows</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CKinect-setCameraParamsDepth"><strong>setCameraParamsDepth</strong></a>(...)</dt><dd><tt><a href="#CKinect-setCameraParamsDepth">setCameraParamsDepth</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.img.TCamera)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5343,7 +5331,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-set
 If&nbsp;preview&nbsp;is&nbsp;enabled,&nbsp;show&nbsp;only&nbsp;one&nbsp;image&nbsp;out&nbsp;of&nbsp;N&nbsp;(default:&nbsp;1=show<br>
 &nbsp;all)&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-setPreviewDecimation">setPreviewDecimation</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CKinect">CKinect</a>::<a href="#CKinect-setPreviewDecimation">setPreviewDecimation</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CKinect-setRelativePoseIntensityWrtDepth"><strong>setRelativePoseIntensityWrtDepth</strong></a>(...)</dt><dd><tt><a href="#CKinect-setRelativePoseIntensityWrtDepth">setRelativePoseIntensityWrtDepth</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CKinect">CKinect</a>,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5411,7 +5399,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CKinect-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CKinect-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CKinect-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CKinect-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -5731,7 +5719,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CLMS100Eth-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CLMS100Eth-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CLMS100Eth-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CLMS100Eth-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -6117,7 +6105,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CNTRIPEmitter-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CNTRIPEmitter-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CNTRIPEmitter-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CNTRIPEmitter-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -6476,7 +6464,7 @@ Set&nbsp;voltage&nbsp;outputs&nbsp;to&nbsp;all&nbsp;the&nbsp;outputs&nbsp;in&nbs
 &nbsp;The&nbsp;number&nbsp;of&nbsp;samples&nbsp;in&nbsp;&nbsp;must&nbsp;match&nbsp;the&nbsp;number&nbsp;of<br>
 &nbsp;channels&nbsp;in&nbsp;the&nbsp;task&nbsp;when&nbsp;it&nbsp;was&nbsp;initiated.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CNationalInstrumentsDAQ">CNationalInstrumentsDAQ</a>::<a href="#CNationalInstrumentsDAQ-writeAnalogOutputTask">writeAnalogOutputTask</a>(unsigned&nbsp;long,&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;double&nbsp;*,&nbsp;double,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CNationalInstrumentsDAQ">CNationalInstrumentsDAQ</a>::<a href="#CNationalInstrumentsDAQ-writeAnalogOutputTask">writeAnalogOutputTask</a>(size_t,&nbsp;size_t,&nbsp;const&nbsp;double&nbsp;*,&nbsp;double,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CNationalInstrumentsDAQ-writeDigitalOutputTask"><strong>writeDigitalOutputTask</strong></a>(...)</dt><dd><tt><a href="#CNationalInstrumentsDAQ-writeDigitalOutputTask">writeDigitalOutputTask</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CNationalInstrumentsDAQ">CNationalInstrumentsDAQ</a>,&nbsp;task_index:&nbsp;int,&nbsp;line_value:&nbsp;bool,&nbsp;timeout:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -6488,7 +6476,7 @@ Changes&nbsp;the&nbsp;boolean&nbsp;state&nbsp;of&nbsp;one&nbsp;digital&nbsp;outp
 &nbsp;The&nbsp;number&nbsp;of&nbsp;samples&nbsp;in&nbsp;&nbsp;must&nbsp;match&nbsp;the&nbsp;number&nbsp;of<br>
 &nbsp;channels&nbsp;in&nbsp;the&nbsp;task&nbsp;when&nbsp;it&nbsp;was&nbsp;initiated.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CNationalInstrumentsDAQ">CNationalInstrumentsDAQ</a>::<a href="#CNationalInstrumentsDAQ-writeDigitalOutputTask">writeDigitalOutputTask</a>(unsigned&nbsp;long,&nbsp;bool,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CNationalInstrumentsDAQ">CNationalInstrumentsDAQ</a>::<a href="#CNationalInstrumentsDAQ-writeDigitalOutputTask">writeDigitalOutputTask</a>(size_t,&nbsp;bool,&nbsp;double)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <hr>
 Static methods defined here:<br>
@@ -6535,7 +6523,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CNationalInstrumentsDAQ-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CNationalInstrumentsDAQ-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CNationalInstrumentsDAQ-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CNationalInstrumentsDAQ-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -6764,7 +6752,7 @@ The&nbsp;main&nbsp;data&nbsp;retrieving&nbsp;function,&nbsp;to&nbsp;be&nbsp;call
 &nbsp;<br>
 &nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;sensor&nbsp;accessed.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Generic-getNextFrameD">getNextFrameD</a>(class&nbsp;mrpt::math::CMatrixDynamic&lt;unsigned&nbsp;short&gt;&nbsp;&amp;,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Generic-getNextFrameD">getNextFrameD</a>(class&nbsp;mrpt::math::CMatrixDynamic&lt;unsigned&nbsp;short&gt;&nbsp;&amp;,&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2Generic-getNextFrameRGB"><strong>getNextFrameRGB</strong></a>(...)</dt><dd><tt><a href="#COpenNI2Generic-getNextFrameRGB">getNextFrameRGB</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -6793,7 +6781,7 @@ The&nbsp;main&nbsp;data&nbsp;retrieving&nbsp;function,&nbsp;to&nbsp;be&nbsp;call
 &nbsp;<br>
 &nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;sensor&nbsp;accessed.&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Generic-getNextFrameRGB">getNextFrameRGB</a>(class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Generic-getNextFrameRGB">getNextFrameRGB</a>(class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2Generic-getNextFrameRGBD"><strong>getNextFrameRGBD</strong></a>(...)</dt><dd><tt><a href="#COpenNI2Generic-getNextFrameRGBD">getNextFrameRGBD</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -7121,7 +7109,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Sensor">COpenNI2Sensor</a>::<a href
 Get&nbsp;the&nbsp;col&nbsp;count&nbsp;in&nbsp;the&nbsp;camera&nbsp;images,&nbsp;loaded&nbsp;automatically&nbsp;upon&nbsp;camera<br>
 &nbsp;<a href="#COpenNI2Sensor-open">open</a>().&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Sensor">COpenNI2Sensor</a>::<a href="#COpenNI2Sensor-cols">cols</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Sensor">COpenNI2Sensor</a>::<a href="#COpenNI2Sensor-cols">cols</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2Sensor-doProcess"><strong>doProcess</strong></a>(...)</dt><dd><tt><a href="#COpenNI2Sensor-doProcess">doProcess</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#COpenNI2Sensor">COpenNI2Sensor</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7244,7 +7232,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Sensor">COpenNI2Sensor</a>::<a href
 Get&nbsp;the&nbsp;row&nbsp;count&nbsp;in&nbsp;the&nbsp;camera&nbsp;images,&nbsp;loaded&nbsp;automatically&nbsp;upon&nbsp;camera<br>
 &nbsp;<a href="#COpenNI2Sensor-open">open</a>().&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Sensor">COpenNI2Sensor</a>::<a href="#COpenNI2Sensor-rows">rows</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Sensor">COpenNI2Sensor</a>::<a href="#COpenNI2Sensor-rows">rows</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2Sensor-setCameraParamsDepth"><strong>setCameraParamsDepth</strong></a>(...)</dt><dd><tt><a href="#COpenNI2Sensor-setCameraParamsDepth">setCameraParamsDepth</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#COpenNI2Sensor">COpenNI2Sensor</a>,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.img.TCamera)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7329,7 +7317,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#COpenNI2Sensor-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#COpenNI2Sensor-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2Sensor-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#COpenNI2Sensor-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -7505,7 +7493,7 @@ The&nbsp;main&nbsp;data&nbsp;retrieving&nbsp;function,&nbsp;to&nbsp;be&nbsp;call
 &nbsp;<br>
 &nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;sensor&nbsp;accessed.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Sensor-getNextFrameD">getNextFrameD</a>(class&nbsp;mrpt::math::CMatrixDynamic&lt;unsigned&nbsp;short&gt;&nbsp;&amp;,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Sensor-getNextFrameD">getNextFrameD</a>(class&nbsp;mrpt::math::CMatrixDynamic&lt;unsigned&nbsp;short&gt;&nbsp;&amp;,&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2Sensor-getNextFrameRGB"><strong>getNextFrameRGB</strong></a>(...)</dt><dd><tt><a href="#COpenNI2Sensor-getNextFrameRGB">getNextFrameRGB</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -7534,7 +7522,7 @@ The&nbsp;main&nbsp;data&nbsp;retrieving&nbsp;function,&nbsp;to&nbsp;be&nbsp;call
 &nbsp;<br>
 &nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;sensor&nbsp;accessed.&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Sensor-getNextFrameRGB">getNextFrameRGB</a>(class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2Sensor-getNextFrameRGB">getNextFrameRGB</a>(class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2Sensor-getNextFrameRGBD"><strong>getNextFrameRGBD</strong></a>(...)</dt><dd><tt><a href="#COpenNI2Sensor-getNextFrameRGBD">getNextFrameRGBD</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -7994,7 +7982,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#COpenNI2_RGBD360-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#COpenNI2_RGBD360-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2_RGBD360-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#COpenNI2_RGBD360-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -8170,7 +8158,7 @@ The&nbsp;main&nbsp;data&nbsp;retrieving&nbsp;function,&nbsp;to&nbsp;be&nbsp;call
 &nbsp;<br>
 &nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;sensor&nbsp;accessed.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2_RGBD360-getNextFrameD">getNextFrameD</a>(class&nbsp;mrpt::math::CMatrixDynamic&lt;unsigned&nbsp;short&gt;&nbsp;&amp;,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2_RGBD360-getNextFrameD">getNextFrameD</a>(class&nbsp;mrpt::math::CMatrixDynamic&lt;unsigned&nbsp;short&gt;&nbsp;&amp;,&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2_RGBD360-getNextFrameRGB"><strong>getNextFrameRGB</strong></a>(...)</dt><dd><tt><a href="#COpenNI2_RGBD360-getNextFrameRGB">getNextFrameRGB</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -8199,7 +8187,7 @@ The&nbsp;main&nbsp;data&nbsp;retrieving&nbsp;function,&nbsp;to&nbsp;be&nbsp;call
 &nbsp;<br>
 &nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;sensor&nbsp;accessed.&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2_RGBD360-getNextFrameRGB">getNextFrameRGB</a>(class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#COpenNI2Generic">COpenNI2Generic</a>::<a href="#COpenNI2_RGBD360-getNextFrameRGB">getNextFrameRGB</a>(class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;bool&nbsp;&amp;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="COpenNI2_RGBD360-getNextFrameRGBD"><strong>getNextFrameRGBD</strong></a>(...)</dt><dd><tt><a href="#COpenNI2_RGBD360-getNextFrameRGBD">getNextFrameRGBD</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -8396,7 +8384,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CPhidgetInterfaceKitProximitySensors-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CPhidgetInterfaceKitProximitySensors-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CPhidgetInterfaceKitProximitySensors-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CPhidgetInterfaceKitProximitySensors-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -8863,15 +8851,13 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CPtuBase">CPtuBase</a>::<a href="#CPtuBase-
 &nbsp;<br>
 Set&nbsp;verbose.&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;of&nbsp;response&nbsp;with&nbsp;FV&nbsp;(verbose)&nbsp;active:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FV&nbsp;*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PP&nbsp;*&nbsp;Current&nbsp;pan&nbsp;position&nbsp;is&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;of&nbsp;response&nbsp;with&nbsp;FT&nbsp;(terse)&nbsp;active:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FT&nbsp;*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PP&nbsp;*&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CPtuBase">CPtuBase</a>::<a href="#CPtuBase-verbose">verbose</a>(bool)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
@@ -9316,15 +9302,13 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CPtuDPerception">CPtuDPerception</a>::<a hr
 &nbsp;<br>
 Set&nbsp;verbose.&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;of&nbsp;response&nbsp;with&nbsp;FV&nbsp;(verbose)&nbsp;active:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FV&nbsp;*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PP&nbsp;*&nbsp;Current&nbsp;pan&nbsp;position&nbsp;is&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;of&nbsp;response&nbsp;with&nbsp;FT&nbsp;(terse)&nbsp;active:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FT&nbsp;*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PP&nbsp;*&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CPtuDPerception">CPtuDPerception</a>::<a href="#CPtuDPerception-verbose">verbose</a>(bool)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
@@ -9477,7 +9461,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CRaePID-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CRaePID-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRaePID-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CRaePID-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -9794,7 +9778,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CRoboPeakLidar-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CRoboPeakLidar-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRoboPeakLidar-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CRoboPeakLidar-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -10075,7 +10059,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSICKTim561Eth-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSICKTim561Eth-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CSICKTim561Eth-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CSICKTim561Eth-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -10462,7 +10446,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSickLaserSerial-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSickLaserSerial-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CSickLaserSerial-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CSickLaserSerial-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -10739,7 +10723,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSickLaserUSB-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSickLaserUSB-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CSickLaserUSB-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CSickLaserUSB-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -10958,7 +10942,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSkeletonTracker-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSkeletonTracker-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CSkeletonTracker-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CSkeletonTracker-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -11255,7 +11239,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera<
 Get&nbsp;the&nbsp;col&nbsp;count&nbsp;in&nbsp;the&nbsp;camera&nbsp;images,&nbsp;loaded&nbsp;automatically&nbsp;upon&nbsp;camera<br>
 &nbsp;<a href="#CSwissRanger3DCamera-open">open</a>().&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera</a>::<a href="#CSwissRanger3DCamera-cols">cols</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera</a>::<a href="#CSwissRanger3DCamera-cols">cols</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CSwissRanger3DCamera-doProcess"><strong>doProcess</strong></a>(...)</dt><dd><tt><a href="#CSwissRanger3DCamera-doProcess">doProcess</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -11406,7 +11390,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera<
 Get&nbsp;the&nbsp;row&nbsp;count&nbsp;in&nbsp;the&nbsp;camera&nbsp;images,&nbsp;loaded&nbsp;automatically&nbsp;upon&nbsp;camera<br>
 &nbsp;<a href="#CSwissRanger3DCamera-open">open</a>().&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera</a>::<a href="#CSwissRanger3DCamera-rows">rows</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera</a>::<a href="#CSwissRanger3DCamera-rows">rows</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CSwissRanger3DCamera-setOpenFromUSB"><strong>setOpenFromUSB</strong></a>(...)</dt><dd><tt><a href="#CSwissRanger3DCamera-setOpenFromUSB">setOpenFromUSB</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CSwissRanger3DCamera">CSwissRanger3DCamera</a>,&nbsp;USB:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -11481,7 +11465,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSwissRanger3DCamera-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CSwissRanger3DCamera-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CSwissRanger3DCamera-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CSwissRanger3DCamera-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -11728,7 +11712,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CTaoboticsIMU-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CTaoboticsIMU-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CTaoboticsIMU-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CTaoboticsIMU-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -12208,15 +12192,13 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CTuMicos">CTuMicos</a>::<a href="#CTuMicos-
 &nbsp;<br>
 Set&nbsp;verbose.&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;of&nbsp;response&nbsp;with&nbsp;FV&nbsp;(verbose)&nbsp;active:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FV&nbsp;*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PP&nbsp;*&nbsp;Current&nbsp;pan&nbsp;position&nbsp;is&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;of&nbsp;response&nbsp;with&nbsp;FT&nbsp;(terse)&nbsp;active:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FT&nbsp;*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PP&nbsp;*&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CTuMicos">CTuMicos</a>::<a href="#CTuMicos-verbose">verbose</a>(bool)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
@@ -12509,7 +12491,7 @@ Users&nbsp;normally&nbsp;would&nbsp;prefer&nbsp;calling&nbsp;&nbsp;instead.<br>
 &nbsp;<br>
 &nbsp;true&nbsp;on&nbsp;all&nbsp;ok.&nbsp;false&nbsp;only&nbsp;for&nbsp;pcap&nbsp;reading&nbsp;EOF<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CVelodyneScanner">CVelodyneScanner</a>::<a href="#CVelodyneScanner-receivePackets">receivePackets</a>(struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::obs::CObservationVelodyneScan::TVelodyneRawPacket&nbsp;&amp;,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::obs::CObservationVelodyneScan::TVelodynePositionPacket&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CVelodyneScanner">CVelodyneScanner</a>::<a href="#CVelodyneScanner-receivePackets">receivePackets</a>(mrpt::Clock::time_point&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::obs::CObservationVelodyneScan::TVelodyneRawPacket&nbsp;&amp;,&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::obs::CObservationVelodyneScan::TVelodynePositionPacket&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="CVelodyneScanner-setCalibration"><strong>setCalibration</strong></a>(...)</dt><dd><tt><a href="#CVelodyneScanner-setCalibration">setCalibration</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CVelodyneScanner">CVelodyneScanner</a>,&nbsp;calib:&nbsp;mrpt.pymrpt.mrpt.obs.VelodyneCalibration)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -12674,7 +12656,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CVelodyneScanner-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CVelodyneScanner-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CVelodyneScanner-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CVelodyneScanner-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -12829,7 +12811,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CWirelessPower">CWirelessPower</a>::<a href
 &nbsp;<br>
 C++:&nbsp;mrpt::hwdrivers::<a href="#CWirelessPower">CWirelessPower</a>::<a href="#CWirelessPower-GetRuntimeClass">GetRuntimeClass</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::hwdrivers::<a href="#TSensorClassId">TSensorClassId</a>&nbsp;*</tt></dd></dl>
 
-<dl><dt><a name="CWirelessPower-ListInterfaces"><strong>ListInterfaces</strong></a>(...)</dt><dd><tt><a href="#CWirelessPower-ListInterfaces">ListInterfaces</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CWirelessPower">CWirelessPower</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.vector_std_string<br>
+<dl><dt><a name="CWirelessPower-ListInterfaces"><strong>ListInterfaces</strong></a>(...)</dt><dd><tt><a href="#CWirelessPower-ListInterfaces">ListInterfaces</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CWirelessPower">CWirelessPower</a>)&nbsp;-&gt;&nbsp;List[str]<br>
 &nbsp;<br>
 Gets&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;interfaces<br>
 &nbsp;<br>
@@ -12840,9 +12822,9 @@ Gets&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;interfaces<br>
 &nbsp;std::vector&nbsp;returns&nbsp;the&nbsp;identifiers&nbsp;(GUID)&nbsp;of&nbsp;the&nbsp;available<br>
 &nbsp;interfaces<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CWirelessPower">CWirelessPower</a>::<a href="#CWirelessPower-ListInterfaces">ListInterfaces</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CWirelessPower">CWirelessPower</a>::<a href="#CWirelessPower-ListInterfaces">ListInterfaces</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;</tt></dd></dl>
 
-<dl><dt><a name="CWirelessPower-ListNetworks"><strong>ListNetworks</strong></a>(...)</dt><dd><tt><a href="#CWirelessPower-ListNetworks">ListNetworks</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CWirelessPower">CWirelessPower</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.vector_std_string<br>
+<dl><dt><a name="CWirelessPower-ListNetworks"><strong>ListNetworks</strong></a>(...)</dt><dd><tt><a href="#CWirelessPower-ListNetworks">ListNetworks</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CWirelessPower">CWirelessPower</a>)&nbsp;-&gt;&nbsp;List[str]<br>
 &nbsp;<br>
 Gets&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;networks&nbsp;available&nbsp;for&nbsp;an&nbsp;interface<br>
 &nbsp;<br>
@@ -12853,7 +12835,7 @@ Gets&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;networks&nbsp;available&nbsp;for&nbs
 &nbsp;std::vector&nbsp;returns&nbsp;handles&nbsp;to&nbsp;the&nbsp;available&nbsp;networks&nbsp;of&nbsp;a&nbsp;given<br>
 &nbsp;interface<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CWirelessPower">CWirelessPower</a>::<a href="#CWirelessPower-ListNetworks">ListNetworks</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CWirelessPower">CWirelessPower</a>::<a href="#CWirelessPower-ListNetworks">ListNetworks</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CWirelessPower-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CWirelessPower-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CWirelessPower">CWirelessPower</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
 
@@ -12928,7 +12910,7 @@ C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;enqueued&nbsp;objects,&nbsp;emptying&nbsp;it&nbsp;(thread-safe).<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CWirelessPower-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;,&nbsp;struct&nbsp;std::less&lt;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::hwdrivers::<a href="#CGenericSensor">CGenericSensor</a>::<a href="#CWirelessPower-getObservations">getObservations</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::multimap&lt;mrpt::Clock::time_point,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::CSerializable&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CWirelessPower-getProcessRate"><strong>getProcessRate</strong></a>(...)</dt><dd><tt><a href="#CWirelessPower-getProcessRate">getProcessRate</a>(self:&nbsp;mrpt.pymrpt.mrpt.hwdrivers.<a href="#CGenericSensor">CGenericSensor</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>

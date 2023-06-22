@@ -624,7 +624,7 @@ A&nbsp;shortcut&nbsp;for&nbsp;calling&nbsp;mrpt::opengl::Viewport::<a href="#CDi
 &nbsp;<br>
 &nbsp;clearTextMessages,&nbsp;mrpt::opengl::Viewport::<a href="#CDisplayWindow3D-addTextMessage">addTextMessage</a>()<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindow3D">CDisplayWindow3D</a>::<a href="#CDisplayWindow3D-addTextMessage">addTextMessage</a>(const&nbsp;double,&nbsp;const&nbsp;double,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;struct&nbsp;mrpt::opengl::TFontParams&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindow3D">CDisplayWindow3D</a>::<a href="#CDisplayWindow3D-addTextMessage">addTextMessage</a>(const&nbsp;double,&nbsp;const&nbsp;double,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;size_t,&nbsp;const&nbsp;struct&nbsp;mrpt::opengl::TFontParams&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindow3D-captureImagesStart"><strong>captureImagesStart</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindow3D-captureImagesStart">captureImagesStart</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindow3D">CDisplayWindow3D</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1229,7 +1229,7 @@ Handles&nbsp;drag-and&nbsp;drop&nbsp;events&nbsp;of&nbsp;files&nbsp;into&nbsp;th
 &nbsp;<br>
 &nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.3.2)<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-addDropFilesCallback">addDropFilesCallback</a>(const&nbsp;class&nbsp;std::function&lt;bool&nbsp;(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-addDropFilesCallback">addDropFilesCallback</a>(const&nbsp;class&nbsp;std::function&lt;bool&nbsp;(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-addKeyboardCallback"><strong>addKeyboardCallback</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-addKeyboardCallback">addKeyboardCallback</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>,&nbsp;callback:&nbsp;std::function&lt;bool&nbsp;(int,&nbsp;int,&nbsp;int,&nbsp;int)&gt;)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1287,7 +1287,7 @@ C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href
 &nbsp;<br>
 In&nbsp;MRPT&nbsp;2.3.2,&nbsp;replaced&nbsp;by&nbsp;dropFilesCallbacks()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-dropFilesCallback">dropFilesCallback</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::function&lt;bool&nbsp;(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-dropFilesCallback">dropFilesCallback</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::function&lt;bool&nbsp;(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&gt;</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-getSubWindowsUI"><strong>getSubWindowsUI</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-getSubWindowsUI">getSubWindowsUI</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.nanogui.Window<br>
 &nbsp;<br>
@@ -1304,7 +1304,7 @@ Direct&nbsp;(read-only)&nbsp;access&nbsp;to&nbsp;managed&nbsp;subwindows&nbsp;by
 &nbsp;<br>
 &nbsp;[New&nbsp;in&nbsp;MRPT&nbsp;2.3.1]<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-getSubwindow">getSubwindow</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;nanogui::Window&nbsp;*</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-getSubwindow">getSubwindow</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;nanogui::Window&nbsp;*</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-getSubwindowCount"><strong>getSubwindowCount</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-getSubwindowCount">getSubwindowCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
@@ -1314,7 +1314,7 @@ Get&nbsp;the&nbsp;number&nbsp;of&nbsp;managed&nbsp;subwindows.&nbsp;<br>
 &nbsp;<br>
 &nbsp;[New&nbsp;in&nbsp;MRPT&nbsp;2.3.1]<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-getSubwindowCount">getSubwindowCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-getSubwindowCount">getSubwindowCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-keyboardCallback"><strong>keyboardCallback</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-keyboardCallback">keyboardCallback</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>)&nbsp;-&gt;&nbsp;std::function&lt;bool&nbsp;(int,&nbsp;int,&nbsp;int,&nbsp;int)&gt;<br>
 &nbsp;<br>
@@ -1352,7 +1352,7 @@ This&nbsp;call&nbsp;replaces&nbsp;*all*&nbsp;existing&nbsp;drop&nbsp;file&nbsp;c
 &nbsp;<br>
 &nbsp;In&nbsp;MRPT&nbsp;2.3.2,&nbsp;replaced&nbsp;by&nbsp;<a href="#CDisplayWindowGUI-addDropFilesCallback">addDropFilesCallback</a>()<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-setDropFilesCallback">setDropFilesCallback</a>(const&nbsp;class&nbsp;std::function&lt;bool&nbsp;(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-setDropFilesCallback">setDropFilesCallback</a>(const&nbsp;class&nbsp;std::function&lt;bool&nbsp;(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-setIcon"><strong>setIcon</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-setIcon">setIcon</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>,&nbsp;img:&nbsp;mrpt.pymrpt.mrpt.img.CImage)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1414,21 +1414,21 @@ C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href
 Minimize&nbsp;a&nbsp;subwindow.&nbsp;<br>
 &nbsp;[New&nbsp;in&nbsp;MRPT&nbsp;2.3.1]&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-subwindowMinimize">subwindowMinimize</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-subwindowMinimize">subwindowMinimize</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-subwindowRestore"><strong>subwindowRestore</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-subwindowRestore">subwindowRestore</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Restore&nbsp;a&nbsp;minimized&nbsp;subwindow.&nbsp;<br>
 &nbsp;[New&nbsp;in&nbsp;MRPT&nbsp;2.3.1]&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-subwindowRestore">subwindowRestore</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-subwindowRestore">subwindowRestore</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-subwindowSetFocused"><strong>subwindowSetFocused</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-subwindowSetFocused">subwindowSetFocused</a>(self:&nbsp;mrpt.pymrpt.mrpt.gui.<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Forces&nbsp;focus&nbsp;on&nbsp;a&nbsp;subwindow.&nbsp;<br>
 &nbsp;[New&nbsp;in&nbsp;MRPT&nbsp;2.3.1]&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-subwindowSetFocused">subwindowSetFocused</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::gui::<a href="#CDisplayWindowGUI">CDisplayWindowGUI</a>::<a href="#CDisplayWindowGUI-subwindowSetFocused">subwindowSetFocused</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -1474,11 +1474,11 @@ C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href
 &nbsp;<br>
 C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href="#CDisplayWindowGUI-drawWidgets">drawWidgets</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CDisplayWindowGUI-dropEvent"><strong>dropEvent</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-dropEvent">dropEvent</a>(self:&nbsp;mrpt.pymrpt.nanogui.<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>,&nbsp;:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;bool<br>
+<dl><dt><a name="CDisplayWindowGUI-dropEvent"><strong>dropEvent</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-dropEvent">dropEvent</a>(self:&nbsp;mrpt.pymrpt.nanogui.<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>,&nbsp;:&nbsp;List[str])&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
 Handle&nbsp;a&nbsp;file&nbsp;drop&nbsp;event<br>
 &nbsp;<br>
-C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href="#CDisplayWindowGUI-dropEvent">dropEvent</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href="#CDisplayWindowGUI-dropEvent">dropEvent</a>(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-glfwWindow"><strong>glfwWindow</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-glfwWindow">glfwWindow</a>(self:&nbsp;mrpt.pymrpt.nanogui.<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.GLFWwindow<br>
 &nbsp;<br>
@@ -1557,7 +1557,7 @@ C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href
 &nbsp;<br>
 Set&nbsp;the&nbsp;resize&nbsp;callback<br>
 &nbsp;<br>
-C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href="#CDisplayWindowGUI-resizeCallback">resizeCallback</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::function&lt;void&nbsp;(class&nbsp;Eigen::Matrix&lt;int,&nbsp;2,&nbsp;1,&nbsp;0,&nbsp;2,&nbsp;1&gt;)&gt;</tt></dd></dl>
+C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href="#CDisplayWindowGUI-resizeCallback">resizeCallback</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::function&lt;void&nbsp;(class&nbsp;Eigen::Matrix&lt;int,&nbsp;2,&nbsp;1,&nbsp;0&gt;)&gt;</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-resizeCallbackEvent"><strong>resizeCallbackEvent</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-resizeCallbackEvent">resizeCallbackEvent</a>(self:&nbsp;mrpt.pymrpt.nanogui.<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>,&nbsp;width:&nbsp;int,&nbsp;height:&nbsp;int)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -1581,7 +1581,7 @@ C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href
 
 <dl><dt><a name="CDisplayWindowGUI-setResizeCallback"><strong>setResizeCallback</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-setResizeCallback">setResizeCallback</a>(self:&nbsp;mrpt.pymrpt.nanogui.<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>,&nbsp;callback:&nbsp;std::function&lt;void&nbsp;(Eigen::Matrix&lt;int,&nbsp;2,&nbsp;1,&nbsp;0,&nbsp;2,&nbsp;1&gt;)&gt;)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href="#CDisplayWindowGUI-setResizeCallback">setResizeCallback</a>(const&nbsp;class&nbsp;std::function&lt;void&nbsp;(class&nbsp;Eigen::Matrix&lt;int,&nbsp;2,&nbsp;1,&nbsp;0,&nbsp;2,&nbsp;1&gt;)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;nanogui::<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>::<a href="#CDisplayWindowGUI-setResizeCallback">setResizeCallback</a>(const&nbsp;class&nbsp;std::function&lt;void&nbsp;(class&nbsp;Eigen::Matrix&lt;int,&nbsp;2,&nbsp;1,&nbsp;0&gt;)&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CDisplayWindowGUI-setShutdownGLFWOnDestruct"><strong>setShutdownGLFWOnDestruct</strong></a>(...)</dt><dd><tt><a href="#CDisplayWindowGUI-setShutdownGLFWOnDestruct">setShutdownGLFWOnDestruct</a>(self:&nbsp;mrpt.pymrpt.nanogui.<a href="mrpt.pymrpt.nanogui.html#Screen">Screen</a>,&nbsp;v:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>

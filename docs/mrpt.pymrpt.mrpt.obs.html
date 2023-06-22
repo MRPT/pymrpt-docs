@@ -263,7 +263,7 @@ Remove&nbsp;an&nbsp;action&nbsp;from&nbsp;the&nbsp;list&nbsp;by&nbsp;its&nbsp;in
 &nbsp;<br>
 &nbsp;std::exception&nbsp;On&nbsp;index&nbsp;out&nbsp;of&nbsp;bounds.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-eraseByIndex">eraseByIndex</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-eraseByIndex">eraseByIndex</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CActionCollection-get"><strong>get</strong></a>(...)</dt><dd><tt><a href="#CActionCollection-get">get</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CActionCollection">CActionCollection</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CAction">CAction</a><br>
 &nbsp;<br>
@@ -274,7 +274,7 @@ Access&nbsp;the&nbsp;i'th&nbsp;action.DO&nbsp;NOT&nbsp;MODIFY&nbsp;the&nbsp;retu
 &nbsp;<br>
 &nbsp;std::exception&nbsp;On&nbsp;index&nbsp;out&nbsp;of&nbsp;bounds.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-get">get</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CAction">CAction</a>&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-get">get</a>(size_t)&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CAction">CAction</a>&gt;</tt></dd></dl>
 
 <dl><dt><a name="CActionCollection-getBestMovementEstimation"><strong>getBestMovementEstimation</strong></a>(...)</dt><dd><tt><a href="#CActionCollection-getBestMovementEstimation">getBestMovementEstimation</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CActionCollection">CActionCollection</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CActionRobotMovement2D">CActionRobotMovement2D</a><br>
 &nbsp;<br>
@@ -336,7 +336,7 @@ C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href
 &nbsp;<br>
 Returns&nbsp;the&nbsp;actions&nbsp;count&nbsp;in&nbsp;the&nbsp;collection.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <hr>
 Static methods defined here:<br>
@@ -347,10 +347,6 @@ C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href
 <dl><dt><a name="CActionCollection-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CActionCollection-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CActionCollection-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CActionCollection-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_28_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>::<a href="#CActionCollection-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;28&gt;</tt></dd></dl>
 
 <hr>
 Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
@@ -487,10 +483,6 @@ C++:&nbsp;mrpt::obs::<a href="#CActionRobotMovement2D">CActionRobotMovement2D</a
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CActionRobotMovement2D">CActionRobotMovement2D</a>::<a href="#CActionRobotMovement2D-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CActionRobotMovement2D-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CActionRobotMovement2D-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CActionRobotMovement2D">CActionRobotMovement2D</a>::<a href="#CActionRobotMovement2D-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>encoderLeftTicks</strong></dt>
@@ -564,7 +556,7 @@ Odometry&nbsp;increments&nbsp;might&nbsp;be&nbsp;determined&nbsp;from&nbsp;visua
 from&nbsp;wheel&nbsp;encoders&nbsp;for&nbsp;2D&nbsp;movements&nbsp;only.<br>
 &nbsp;<br>
 The&nbsp;implemented&nbsp;model&nbsp;for&nbsp;creating&nbsp;a&nbsp;SE(3)&nbsp;Gaussian&nbsp;from&nbsp;an&nbsp;odometry<br>
-increment&nbsp;is&nbsp;based&nbsp;on&nbsp;&nbsp;ballardini2012effective<br>
+increment&nbsp;is&nbsp;based&nbsp;on&nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
@@ -620,7 +612,7 @@ C++:&nbsp;mrpt::obs::<a href="#CActionRobotMovement3D">CActionRobotMovement3D</a
 Computes&nbsp;the&nbsp;PDF&nbsp;of&nbsp;the&nbsp;pose&nbsp;increment&nbsp;from&nbsp;an&nbsp;odometry&nbsp;reading,&nbsp;using<br>
 &nbsp;the&nbsp;motion&nbsp;model&nbsp;for&nbsp;6&nbsp;DOF.<br>
 &nbsp;<br>
-&nbsp;Based&nbsp;on:&nbsp;&nbsp;ballardini2012effective<br>
+&nbsp;Based&nbsp;on:&nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;computeFromOdometry<br>
@@ -636,10 +628,6 @@ C++:&nbsp;mrpt::obs::<a href="#CActionRobotMovement3D">CActionRobotMovement3D</a
 <dl><dt><a name="CActionRobotMovement3D-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CActionRobotMovement3D-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CActionRobotMovement3D">CActionRobotMovement3D</a>::<a href="#CActionRobotMovement3D-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CActionRobotMovement3D-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CActionRobotMovement3D-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CActionRobotMovement3D">CActionRobotMovement3D</a>::<a href="#CActionRobotMovement3D-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -662,7 +650,7 @@ Data and other attributes defined here:<br>
 <dl><dt><strong>TEstimationMethod</strong> = &lt;class 'mrpt.pymrpt.mrpt.obs.CActionRobotMovement3D.TEstimationMethod'&gt;</dl>
 
 <dl><dt><strong>TMotionModelOptions</strong> = &lt;class 'mrpt.pymrpt.mrpt.obs.CActionRobotMovement3D.TMotionModelOptions'&gt;<dd><tt>The&nbsp;parameter&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;"computeFromOdometry".<br>
-See:&nbsp;&nbsp;ballardini2012effective</tt></dl>
+See:</tt></dl>
 
 <dl><dt><strong>emOdometry</strong> = &lt;TEstimationMethod.emOdometry: 0&gt;</dl>
 
@@ -786,7 +774,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservation-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservation-getSensorPose">getSensorPose</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -819,7 +807,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservation-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservation-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1015,11 +1003,11 @@ Returns&nbsp;the&nbsp;computed&nbsp;direction&nbsp;(relative&nbsp;heading&nbsp;i
 &nbsp;<br>
 &nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.3.1)<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanAngle">getScanAngle</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanAngle">getScanAngle</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-getScanIntensity"><strong>getScanIntensity</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-getScanIntensity">getScanIntensity</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanIntensity">getScanIntensity</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;int&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanIntensity">getScanIntensity</a>(size_t)&nbsp;--&gt;&nbsp;int&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-getScanProperties"><strong>getScanProperties</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-getScanProperties">getScanProperties</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#T2DScanProperties">T2DScanProperties</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1029,20 +1017,20 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan<
 
 <dl><dt><a name="CObservation2DRangeScan-getScanRange"><strong>getScanRange</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-getScanRange">getScanRange</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanRange">getScanRange</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;float&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanRange">getScanRange</a>(size_t)&nbsp;--&gt;&nbsp;float&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-getScanRangeValidity"><strong>getScanRangeValidity</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-getScanRangeValidity">getScanRangeValidity</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
 It's&nbsp;false&nbsp;(=0)&nbsp;on&nbsp;no&nbsp;reflected&nbsp;rays,&nbsp;referenced&nbsp;to&nbsp;elements&nbsp;in&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanRangeValidity">getScanRangeValidity</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanRangeValidity">getScanRangeValidity</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-getScanSize"><strong>getScanSize</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-getScanSize">getScanSize</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
 Get&nbsp;number&nbsp;of&nbsp;scan&nbsp;rays&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanSize">getScanSize</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getScanSize">getScanSize</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-getSensorPose">getSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;out_sensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1071,7 +1059,7 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan<
 &nbsp;<br>
 @}&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-loadFromVectors">loadFromVectors</a>(unsigned&nbsp;long,&nbsp;const&nbsp;float&nbsp;*,&nbsp;const&nbsp;char&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-loadFromVectors">loadFromVectors</a>(size_t,&nbsp;const&nbsp;float&nbsp;*,&nbsp;const&nbsp;char&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-resizeScan"><strong>resizeScan</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-resizeScan">resizeScan</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;len:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1079,7 +1067,7 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan<
 &nbsp;<br>
 &nbsp;Resizes&nbsp;all&nbsp;data&nbsp;vectors&nbsp;to&nbsp;allocate&nbsp;a&nbsp;given&nbsp;number&nbsp;of&nbsp;scan&nbsp;rays&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-resizeScan">resizeScan</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-resizeScan">resizeScan</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-resizeScanAndAssign"><strong>resizeScanAndAssign</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-resizeScanAndAssign">resizeScanAndAssign</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -1091,7 +1079,7 @@ Overloaded&nbsp;function.<br>
 Resizes&nbsp;all&nbsp;data&nbsp;vectors&nbsp;to&nbsp;allocate&nbsp;a&nbsp;given&nbsp;number&nbsp;of&nbsp;scan&nbsp;rays&nbsp;and<br>
 &nbsp;assign&nbsp;default&nbsp;values.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-resizeScanAndAssign">resizeScanAndAssign</a>(const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;float,&nbsp;const&nbsp;bool,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-resizeScanAndAssign">resizeScanAndAssign</a>(size_t,&nbsp;const&nbsp;float,&nbsp;const&nbsp;bool,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-setScanHasIntensity"><strong>setScanHasIntensity</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-setScanHasIntensity">setScanHasIntensity</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;setHasIntensityFlag:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1101,15 +1089,15 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan<
 
 <dl><dt><a name="CObservation2DRangeScan-setScanIntensity"><strong>setScanIntensity</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-setScanIntensity">setScanIntensity</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;i:&nbsp;int,&nbsp;val:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-setScanIntensity">setScanIntensity</a>(const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-setScanIntensity">setScanIntensity</a>(size_t,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-setScanRange"><strong>setScanRange</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-setScanRange">setScanRange</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;i:&nbsp;int,&nbsp;val:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-setScanRange">setScanRange</a>(const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-setScanRange">setScanRange</a>(size_t,&nbsp;const&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-setScanRangeValidity"><strong>setScanRangeValidity</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-setScanRangeValidity">setScanRangeValidity</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;i:&nbsp;int,&nbsp;val:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-setScanRangeValidity">setScanRangeValidity</a>(const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-setScanRangeValidity">setScanRangeValidity</a>(size_t,&nbsp;const&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-setSensorPose"><strong>setSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-setSensorPose">setSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>,&nbsp;newSensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1141,10 +1129,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan<
 <dl><dt><a name="CObservation2DRangeScan-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservation2DRangeScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CObservation2DRangeScan-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservation2DRangeScan-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_34_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>::<a href="#CObservation2DRangeScan-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;34&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -1179,7 +1163,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservation2DRangeScan-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation2DRangeScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation2DRangeScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -1187,7 +1171,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservation2DRangeScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation2DRangeScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation2DRangeScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation2DRangeScan-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservation2DRangeScan-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1496,7 +1480,7 @@ Get&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;scan&nbsp;pointcloud.&nbsp;<br>
 &nbsp;Method&nbsp;is&nbsp;added&nbsp;for<br>
 &nbsp;compatibility&nbsp;with&nbsp;its&nbsp;<a href="#CObservation2DRangeScan">CObservation2DRangeScan</a>&nbsp;counterpart&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>::<a href="#CObservation3DRangeScan-getScanSize">getScanSize</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>::<a href="#CObservation3DRangeScan-getScanSize">getScanSize</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CObservation3DRangeScan-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservation3DRangeScan-getSensorPose">getSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>,&nbsp;out_sensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1641,7 +1625,7 @@ Use&nbsp;this&nbsp;method&nbsp;instead&nbsp;of&nbsp;resizing&nbsp;all&nbsp;three
 &nbsp;&amp;&nbsp;&nbsp;to&nbsp;allow&nbsp;the&nbsp;usage&nbsp;of&nbsp;the&nbsp;internal&nbsp;memory<br>
 &nbsp;pool.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>::<a href="#CObservation3DRangeScan-resizePoints3DVectors">resizePoints3DVectors</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>::<a href="#CObservation3DRangeScan-resizePoints3DVectors">resizePoints3DVectors</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CObservation3DRangeScan-setSensorPose"><strong>setSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservation3DRangeScan-setSensorPose">setSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>,&nbsp;newSensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1698,10 +1682,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation3DRangeScan">CObservation3DRangeScan<
 <dl><dt><a name="CObservation3DRangeScan-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservation3DRangeScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>::<a href="#CObservation3DRangeScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CObservation3DRangeScan-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservation3DRangeScan-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_34_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation3DRangeScan">CObservation3DRangeScan</a>::<a href="#CObservation3DRangeScan-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;34&gt;</tt></dd></dl>
 
 <dl><dt><a name="CObservation3DRangeScan-recoverCameraCalibrationParameters"><strong>recoverCameraCalibrationParameters</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservation3DRangeScan-recoverCameraCalibrationParameters">recoverCameraCalibrationParameters</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -1823,7 +1803,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservation3DRangeScan-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DRangeScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DRangeScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation3DRangeScan-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservation3DRangeScan-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -1831,7 +1811,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservation3DRangeScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DRangeScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DRangeScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <hr>
 Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.obs.html#CObservation">CObservation</a>:<br>
@@ -1926,10 +1906,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation3DScene">CObservation3DScene</a>::<a 
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservation3DScene">CObservation3DScene</a>::<a href="#CObservation3DScene-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservation3DScene-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservation3DScene-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_30_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation3DScene">CObservation3DScene</a>::<a href="#CObservation3DScene-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;30&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>scene</strong></dt>
@@ -1978,7 +1954,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservation3DScene-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DScene-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DScene-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation3DScene-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservation3DScene-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -1986,7 +1962,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservation3DScene-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DScene-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation3DScene-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation3DScene-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservation3DScene-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2109,10 +2085,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservation6DFeatures">CObservation6DFeatures</a
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservation6DFeatures">CObservation6DFeatures</a>::<a href="#CObservation6DFeatures-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservation6DFeatures-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservation6DFeatures-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation6DFeatures">CObservation6DFeatures</a>::<a href="#CObservation6DFeatures-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>maxSensorDistance</strong></dt>
@@ -2169,7 +2141,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservation6DFeatures-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation6DFeatures-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation6DFeatures-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation6DFeatures-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservation6DFeatures-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -2177,7 +2149,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservation6DFeatures-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation6DFeatures-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservation6DFeatures-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservation6DFeatures-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservation6DFeatures-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2303,10 +2275,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationBatteryState">CObservationBatteryStat
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationBatteryState">CObservationBatteryState</a>::<a href="#CObservationBatteryState-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationBatteryState-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationBatteryState-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_35_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationBatteryState">CObservationBatteryState</a>::<a href="#CObservationBatteryState-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;35&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>voltageMainRobotBattery</strong></dt>
@@ -2338,7 +2306,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationBatteryState-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBatteryState-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBatteryState-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationBatteryState-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationBatteryState-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -2346,7 +2314,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationBatteryState-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBatteryState-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBatteryState-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationBatteryState-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationBatteryState-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2471,7 +2439,7 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationBeaconRanges">CObservationBeaconRange
 Easy&nbsp;look-up&nbsp;into&nbsp;the&nbsp;vector&nbsp;sensedData,&nbsp;returns&nbsp;the&nbsp;range&nbsp;for&nbsp;a&nbsp;given<br>
 &nbsp;beacon,&nbsp;or&nbsp;0&nbsp;if&nbsp;the&nbsp;beacon&nbsp;is&nbsp;not&nbsp;observed&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationBeaconRanges">CObservationBeaconRanges</a>::<a href="#CObservationBeaconRanges-getSensedRangeByBeaconID">getSensedRangeByBeaconID</a>(int)&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservationBeaconRanges">CObservationBeaconRanges</a>::<a href="#CObservationBeaconRanges-getSensedRangeByBeaconID">getSensedRangeByBeaconID</a>(int32_t)&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CObservationBeaconRanges-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservationBeaconRanges-getSensorPose">getSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationBeaconRanges">CObservationBeaconRanges</a>,&nbsp;out_sensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2490,10 +2458,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationBeaconRanges">CObservationBeaconRange
 <dl><dt><a name="CObservationBeaconRanges-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationBeaconRanges-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationBeaconRanges">CObservationBeaconRanges</a>::<a href="#CObservationBeaconRanges-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CObservationBeaconRanges-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationBeaconRanges-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_35_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationBeaconRanges">CObservationBeaconRanges</a>::<a href="#CObservationBeaconRanges-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;35&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -2528,7 +2492,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationBeaconRanges-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBeaconRanges-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBeaconRanges-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationBeaconRanges-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationBeaconRanges-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -2536,7 +2500,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationBeaconRanges-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBeaconRanges-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBeaconRanges-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationBeaconRanges-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationBeaconRanges-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2668,10 +2632,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationBearingRange">CObservationBearingRang
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationBearingRange">CObservationBearingRange</a>::<a href="#CObservationBearingRange-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationBearingRange-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationBearingRange-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_35_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationBearingRange">CObservationBearingRange</a>::<a href="#CObservationBearingRange-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;35&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>fieldOfView_pitch</strong></dt>
@@ -2740,7 +2700,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationBearingRange-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBearingRange-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBearingRange-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationBearingRange-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationBearingRange-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -2748,7 +2708,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationBearingRange-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBearingRange-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationBearingRange-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationBearingRange-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationBearingRange-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2869,10 +2829,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationCANBusJ1939">CObservationCANBusJ1939<
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationCANBusJ1939">CObservationCANBusJ1939</a>::<a href="#CObservationCANBusJ1939-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationCANBusJ1939-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationCANBusJ1939-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_34_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationCANBusJ1939">CObservationCANBusJ1939</a>::<a href="#CObservationCANBusJ1939-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;34&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>m_data</strong></dt>
@@ -2933,7 +2889,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationCANBusJ1939-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationCANBusJ1939-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationCANBusJ1939-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationCANBusJ1939-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationCANBusJ1939-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -2941,7 +2897,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationCANBusJ1939-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationCANBusJ1939-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationCANBusJ1939-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationCANBusJ1939-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationCANBusJ1939-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -3063,10 +3019,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationComment">CObservationComment</a>::<a 
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationComment">CObservationComment</a>::<a href="#CObservationComment-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationComment-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationComment-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_30_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationComment">CObservationComment</a>::<a href="#CObservationComment-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;30&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>text</strong></dt>
@@ -3113,7 +3065,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationComment-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationComment-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationComment-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationComment-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationComment-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -3121,7 +3073,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationComment-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationComment-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationComment-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationComment-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationComment-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -3293,7 +3245,7 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#C
 
 <dl><dt><a name="CObservationGPS-getOriginalReceivedTimeStamp"><strong>getOriginalReceivedTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationGPS-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationGPS">CObservationGPS</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationGPS-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservationGPS-getSensorPose">getSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationGPS">CObservationGPS</a>,&nbsp;out_sensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -3342,19 +3294,15 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 @{&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-GPS_time_to_UTC">GPS_time_to_UTC</a>(unsigned&nbsp;short,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool<br>
+C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-GPS_time_to_UTC">GPS_time_to_UTC</a>(uint16_t,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;mrpt::Clock::time_point&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool<br>
 &nbsp;<br>
 2.&nbsp;<a href="#CObservationGPS-GPS_time_to_UTC">GPS_time_to_UTC</a>(gps_week:&nbsp;int,&nbsp;gps_sec:&nbsp;float,&nbsp;leap_seconds_count:&nbsp;int,&nbsp;utc_out:&nbsp;mrpt.pymrpt.mrpt.system.TTimeParts)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-GPS_time_to_UTC">GPS_time_to_UTC</a>(unsigned&nbsp;short,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;struct&nbsp;mrpt::system::TTimeParts&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-GPS_time_to_UTC">GPS_time_to_UTC</a>(uint16_t,&nbsp;double,&nbsp;const&nbsp;int,&nbsp;struct&nbsp;mrpt::system::TTimeParts&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="CObservationGPS-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationGPS-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CObservationGPS-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationGPS-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_26_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationGPS">CObservationGPS</a>::<a href="#CObservationGPS-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;26&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -3405,7 +3353,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationGPS-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationGPS-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationGPS-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationGPS-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationGPS-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -3513,10 +3461,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationGasSensors">CObservationGasSensors</a
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationGasSensors">CObservationGasSensors</a>::<a href="#CObservationGasSensors-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationGasSensors-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationGasSensors-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationGasSensors">CObservationGasSensors</a>::<a href="#CObservationGasSensors-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>m_readings</strong></dt>
@@ -3576,7 +3520,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationGasSensors-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationGasSensors-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationGasSensors-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationGasSensors-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationGasSensors-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -3584,7 +3528,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationGasSensors-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationGasSensors-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationGasSensors-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationGasSensors-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationGasSensors-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -3737,10 +3681,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationIMU">CObservationIMU</a>::<a href="#C
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationIMU">CObservationIMU</a>::<a href="#CObservationIMU-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationIMU-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationIMU-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_26_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationIMU">CObservationIMU</a>::<a href="#CObservationIMU-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;26&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>dataIsPresent</strong></dt>
@@ -3766,7 +3706,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationIMU-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationIMU-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationIMU-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationIMU-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationIMU-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -3774,7 +3714,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationIMU-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationIMU-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationIMU-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationIMU-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationIMU-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -3906,10 +3846,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationImage">CObservationImage</a>::<a href
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationImage">CObservationImage</a>::<a href="#CObservationImage-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationImage-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationImage-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_28_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationImage">CObservationImage</a>::<a href="#CObservationImage-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;28&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>cameraParams</strong></dt>
@@ -3960,7 +3896,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationImage-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationImage-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationImage-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationImage-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationImage-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -3968,7 +3904,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationImage-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationImage-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationImage-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationImage-sensorPose"><strong>sensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservationImage-sensorPose">sensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose3D<br>
 &nbsp;<br>
@@ -4074,10 +4010,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationOdometry">CObservationOdometry</a>::<
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationOdometry">CObservationOdometry</a>::<a href="#CObservationOdometry-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationOdometry-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationOdometry-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_31_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationOdometry">CObservationOdometry</a>::<a href="#CObservationOdometry-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;31&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>encoderLeftTicks</strong></dt>
@@ -4109,7 +4041,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationOdometry-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationOdometry-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationOdometry-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationOdometry-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationOdometry-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -4117,7 +4049,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationOdometry-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationOdometry-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationOdometry-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationOdometry-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationOdometry-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -4276,10 +4208,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationPointCloud">CObservationPointCloud</a
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationPointCloud">CObservationPointCloud</a>::<a href="#CObservationPointCloud-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationPointCloud-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationPointCloud-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationPointCloud">CObservationPointCloud</a>::<a href="#CObservationPointCloud-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>pointcloud</strong></dt>
@@ -4332,7 +4260,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationPointCloud-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationPointCloud-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationPointCloud-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationPointCloud-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationPointCloud-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -4340,7 +4268,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationPointCloud-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationPointCloud-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationPointCloud-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <hr>
 Data descriptors inherited from <a href="mrpt.pymrpt.mrpt.obs.html#CObservation">CObservation</a>:<br>
@@ -4407,7 +4335,7 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRFID">CObservationRFID</a>::<a href="
 
 <dl><dt><a name="CObservationRFID-getNtags"><strong>getNtags</strong></a>(...)</dt><dd><tt><a href="#CObservationRFID-getNtags">getNtags</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationRFID">CObservationRFID</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRFID">CObservationRFID</a>::<a href="#CObservationRFID-getNtags">getNtags</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservationRFID">CObservationRFID</a>::<a href="#CObservationRFID-getNtags">getNtags</a>()&nbsp;const&nbsp;--&gt;&nbsp;uint32_t</tt></dd></dl>
 
 <dl><dt><a name="CObservationRFID-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservationRFID-getSensorPose">getSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationRFID">CObservationRFID</a>,&nbsp;out_sensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -4434,10 +4362,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRFID">CObservationRFID</a>::<a href="
 <dl><dt><a name="CObservationRFID-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRFID-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationRFID">CObservationRFID</a>::<a href="#CObservationRFID-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CObservationRFID-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRFID-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_27_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRFID">CObservationRFID</a>::<a href="#CObservationRFID-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;27&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -4491,7 +4415,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationRFID-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRFID-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRFID-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRFID-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationRFID-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -4499,7 +4423,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationRFID-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRFID-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRFID-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRFID-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationRFID-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -4672,10 +4596,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRGBD360">CObservationRGBD360</a>::<a 
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationRGBD360">CObservationRGBD360</a>::<a href="#CObservationRGBD360-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationRGBD360-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRGBD360-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_30_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRGBD360">CObservationRGBD360</a>::<a href="#CObservationRGBD360-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;30&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>hasIntensityImage</strong></dt>
@@ -4732,7 +4652,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationRGBD360-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRGBD360-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRGBD360-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRGBD360-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationRGBD360-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -4740,7 +4660,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationRGBD360-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRGBD360-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRGBD360-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRGBD360-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationRGBD360-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -4851,10 +4771,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRange">CObservationRange</a>::<a href
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationRange">CObservationRange</a>::<a href="#CObservationRange-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationRange-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRange-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_28_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRange">CObservationRange</a>::<a href="#CObservationRange-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;28&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>maxSensorDistance</strong></dt>
@@ -4911,7 +4827,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationRange-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRange-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRange-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRange-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationRange-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -4919,7 +4835,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationRange-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRange-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRange-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRange-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationRange-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5050,10 +4966,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRawDAQ">CObservationRawDAQ</a>::<a hr
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationRawDAQ">CObservationRawDAQ</a>::<a href="#CObservationRawDAQ-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationRawDAQ-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRawDAQ-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_29_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRawDAQ">CObservationRawDAQ</a>::<a href="#CObservationRawDAQ-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;29&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>AIN_16bits</strong></dt>
@@ -5130,7 +5042,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationRawDAQ-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRawDAQ-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRawDAQ-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRawDAQ-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationRawDAQ-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -5138,7 +5050,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationRawDAQ-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRawDAQ-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRawDAQ-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRawDAQ-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationRawDAQ-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5265,10 +5177,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationReflectivity">CObservationReflectivit
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationReflectivity">CObservationReflectivity</a>::<a href="#CObservationReflectivity-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationReflectivity-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationReflectivity-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_35_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationReflectivity">CObservationReflectivity</a>::<a href="#CObservationReflectivity-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;35&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>channel</strong></dt>
@@ -5296,7 +5204,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationReflectivity-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationReflectivity-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationReflectivity-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationReflectivity-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationReflectivity-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -5304,7 +5212,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationReflectivity-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationReflectivity-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationReflectivity-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationReflectivity-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationReflectivity-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5416,10 +5324,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRobotPose">CObservationRobotPose</a>:
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationRobotPose">CObservationRobotPose</a>::<a href="#CObservationRobotPose-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationRobotPose-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRobotPose-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_32_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRobotPose">CObservationRobotPose</a>::<a href="#CObservationRobotPose-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;32&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>pose</strong></dt>
@@ -5443,7 +5347,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationRobotPose-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRobotPose-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRobotPose-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRobotPose-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationRobotPose-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -5451,7 +5355,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationRobotPose-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRobotPose-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRobotPose-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRobotPose-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationRobotPose-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5597,7 +5501,7 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRotatingScan">CObservationRotatingSca
 &nbsp;<br>
 @}&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRotatingScan">CObservationRotatingScan</a>::<a href="#CObservationRotatingScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservationRotatingScan">CObservationRotatingScan</a>::<a href="#CObservationRotatingScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRotatingScan-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservationRotatingScan-getSensorPose">getSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationRotatingScan">CObservationRotatingScan</a>,&nbsp;out_sensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5616,10 +5520,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationRotatingScan">CObservationRotatingSca
 <dl><dt><a name="CObservationRotatingScan-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRotatingScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationRotatingScan">CObservationRotatingScan</a>::<a href="#CObservationRotatingScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CObservationRotatingScan-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationRotatingScan-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_35_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationRotatingScan">CObservationRotatingScan</a>::<a href="#CObservationRotatingScan-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;35&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -5692,7 +5592,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationRotatingScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRotatingScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationRotatingScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationRotatingScan-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationRotatingScan-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -5796,10 +5696,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationSkeleton">CObservationSkeleton</a>::<
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationSkeleton">CObservationSkeleton</a>::<a href="#CObservationSkeleton-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationSkeleton-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationSkeleton-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_31_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationSkeleton">CObservationSkeleton</a>::<a href="#CObservationSkeleton-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;31&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>head</strong></dt>
@@ -5880,7 +5776,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationSkeleton-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationSkeleton-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationSkeleton-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationSkeleton-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationSkeleton-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -5888,7 +5784,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationSkeleton-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationSkeleton-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationSkeleton-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationSkeleton-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationSkeleton-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -6054,10 +5950,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationStereoImages">CObservationStereoImage
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationStereoImages">CObservationStereoImages</a>::<a href="#CObservationStereoImages-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationStereoImages-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationStereoImages-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_35_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationStereoImages">CObservationStereoImages</a>::<a href="#CObservationStereoImages-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;35&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>cameraPose</strong></dt>
@@ -6120,7 +6012,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationStereoImages-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImages-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImages-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationStereoImages-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationStereoImages-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -6128,7 +6020,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationStereoImages-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImages-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImages-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationStereoImages-sensorPose"><strong>sensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservationStereoImages-sensorPose">sensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.TPose3D<br>
 &nbsp;<br>
@@ -6279,10 +6171,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationStereoImagesFeatures">CObservationSte
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationStereoImagesFeatures">CObservationStereoImagesFeatures</a>::<a href="#CObservationStereoImagesFeatures-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationStereoImagesFeatures-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationStereoImagesFeatures-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_43_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationStereoImagesFeatures">CObservationStereoImagesFeatures</a>::<a href="#CObservationStereoImagesFeatures-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;43&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>cameraLeft</strong></dt>
@@ -6337,7 +6225,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationStereoImagesFeatures-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImagesFeatures-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImagesFeatures-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationStereoImagesFeatures-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationStereoImagesFeatures-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -6345,7 +6233,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationStereoImagesFeatures-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImagesFeatures-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationStereoImagesFeatures-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationStereoImagesFeatures-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationStereoImagesFeatures-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -6529,7 +6417,7 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationVelodyneScan">CObservationVelodyneSca
 
 <dl><dt><a name="CObservationVelodyneScan-getOriginalReceivedTimeStamp"><strong>getOriginalReceivedTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationVelodyneScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationVelodyneScan">CObservationVelodyneScan</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationVelodyneScan">CObservationVelodyneScan</a>::<a href="#CObservationVelodyneScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservationVelodyneScan">CObservationVelodyneScan</a>::<a href="#CObservationVelodyneScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationVelodyneScan-getSensorPose"><strong>getSensorPose</strong></a>(...)</dt><dd><tt><a href="#CObservationVelodyneScan-getSensorPose">getSensorPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservationVelodyneScan">CObservationVelodyneScan</a>,&nbsp;out_sensorPose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -6550,10 +6438,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationVelodyneScan">CObservationVelodyneSca
 <dl><dt><a name="CObservationVelodyneScan-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationVelodyneScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationVelodyneScan">CObservationVelodyneScan</a>::<a href="#CObservationVelodyneScan-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CObservationVelodyneScan-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationVelodyneScan-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_35_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationVelodyneScan">CObservationVelodyneScan</a>::<a href="#CObservationVelodyneScan-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;35&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -6635,7 +6519,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationVelodyneScan-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationVelodyneScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationVelodyneScan-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationVelodyneScan-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationVelodyneScan-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -6753,10 +6637,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationWindSensor">CObservationWindSensor</a
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationWindSensor">CObservationWindSensor</a>::<a href="#CObservationWindSensor-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationWindSensor-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationWindSensor-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationWindSensor">CObservationWindSensor</a>::<a href="#CObservationWindSensor-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>direction</strong></dt>
@@ -6782,7 +6662,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationWindSensor-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWindSensor-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWindSensor-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationWindSensor-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationWindSensor-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -6790,7 +6670,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationWindSensor-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWindSensor-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWindSensor-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationWindSensor-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationWindSensor-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -6919,10 +6799,6 @@ C++:&nbsp;mrpt::obs::<a href="#CObservationWirelessPower">CObservationWirelessPo
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CObservationWirelessPower">CObservationWirelessPower</a>::<a href="#CObservationWirelessPower-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CObservationWirelessPower-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CObservationWirelessPower-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_36_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservationWirelessPower">CObservationWirelessPower</a>::<a href="#CObservationWirelessPower-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;36&gt;</tt></dd></dl>
-
 <hr>
 Data descriptors defined here:<br>
 <dl><dt><strong>power</strong></dt>
@@ -6946,7 +6822,7 @@ By&nbsp;default,&nbsp;returns&nbsp;<a href="#CObservation">CObservation</a>::tim
 &nbsp;<br>
 &nbsp;<a href="#CObservationWirelessPower-getTimeStamp">getTimeStamp</a>()&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWirelessPower-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWirelessPower-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationWirelessPower-getTimeStamp"><strong>getTimeStamp</strong></a>(...)</dt><dd><tt><a href="#CObservationWirelessPower-getTimeStamp">getTimeStamp</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -6954,7 +6830,7 @@ Returns&nbsp;<a href="#CObservation">CObservation</a>::timestamp&nbsp;for&nbsp;a
 &nbsp;<br>
 &nbsp;<a href="#CObservationWirelessPower-getOriginalReceivedTimeStamp">getOriginalReceivedTimeStamp</a>()&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWirelessPower-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>::<a href="#CObservationWirelessPower-getTimeStamp">getTimeStamp</a>()&nbsp;const&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
 
 <dl><dt><a name="CObservationWirelessPower-load"><strong>load</strong></a>(...)</dt><dd><tt><a href="#CObservationWirelessPower-load">load</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7078,10 +6954,6 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::operator=(const&nbsp;class&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="CRawlog-begin"><strong>begin</strong></a>(...)</dt><dd><tt><a href="#CRawlog-begin">begin</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>)&nbsp;-&gt;&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-begin">begin</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator</tt></dd></dl>
-
 <dl><dt><a name="CRawlog-clear"><strong>clear</strong></a>(...)</dt><dd><tt><a href="#CRawlog-clear">clear</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Clear&nbsp;the&nbsp;sequence&nbsp;of&nbsp;actions/observations.&nbsp;Smart&nbsp;pointers&nbsp;to&nbsp;objects<br>
@@ -7098,14 +6970,6 @@ C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-clone">cl
 Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;rawlog&nbsp;is&nbsp;empty&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-empty">empty</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
-
-<dl><dt><a name="CRawlog-end"><strong>end</strong></a>(...)</dt><dd><tt><a href="#CRawlog-end">end</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>)&nbsp;-&gt;&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-end">end</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator</tt></dd></dl>
-
-<dl><dt><a name="CRawlog-erase"><strong>erase</strong></a>(...)</dt><dd><tt><a href="#CRawlog-erase">erase</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;it:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator)&nbsp;-&gt;&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-erase">erase</a>(const&nbsp;class&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::iterator</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-getActionObservationPair"><strong>getActionObservationPair</strong></a>(...)</dt><dd><tt><a href="#CRawlog-getActionObservationPair">getActionObservationPair</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;action:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CActionCollection">CActionCollection</a>,&nbsp;observations:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;rawlogEntry:&nbsp;int)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -7138,7 +7002,7 @@ Returns&nbsp;the&nbsp;i'th&nbsp;element&nbsp;in&nbsp;the&nbsp;sequence,&nbsp;as&
 &nbsp;<br>
 &nbsp;std::exception&nbsp;If&nbsp;index&nbsp;is&nbsp;out&nbsp;of&nbsp;bounds<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsAction">getAsAction</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsAction">getAsAction</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-getAsGeneric"><strong>getAsGeneric</strong></a>(...)</dt><dd><tt><a href="#CRawlog-getAsGeneric">getAsGeneric</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">CSerializable</a><br>
 &nbsp;<br>
@@ -7150,7 +7014,7 @@ Returns&nbsp;the&nbsp;i'th&nbsp;element&nbsp;in&nbsp;the&nbsp;sequence,&nbsp;bei
 &nbsp;<br>
 &nbsp;std::exception&nbsp;If&nbsp;index&nbsp;is&nbsp;out&nbsp;of&nbsp;bounds<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsGeneric">getAsGeneric</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">CSerializable</a>&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsGeneric">getAsGeneric</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">CSerializable</a>&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-getAsObservation"><strong>getAsObservation</strong></a>(...)</dt><dd><tt><a href="#CRawlog-getAsObservation">getAsObservation</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a><br>
 &nbsp;<br>
@@ -7167,7 +7031,7 @@ Returns&nbsp;the&nbsp;i'th&nbsp;element&nbsp;in&nbsp;the&nbsp;sequence,&nbsp;as&
 &nbsp;<br>
 &nbsp;std::exception&nbsp;If&nbsp;index&nbsp;is&nbsp;out&nbsp;of&nbsp;bounds<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsObservation">getAsObservation</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsObservation">getAsObservation</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-getAsObservations"><strong>getAsObservations</strong></a>(...)</dt><dd><tt><a href="#CRawlog-getAsObservations">getAsObservations</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a><br>
 &nbsp;<br>
@@ -7181,7 +7045,7 @@ Returns&nbsp;the&nbsp;i'th&nbsp;element&nbsp;in&nbsp;the&nbsp;sequence,&nbsp;as&
 &nbsp;<br>
 &nbsp;std::exception&nbsp;If&nbsp;index&nbsp;is&nbsp;out&nbsp;of&nbsp;bounds<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsObservations">getAsObservations</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getAsObservations">getAsObservations</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-getCommentText"><strong>getCommentText</strong></a>(...)</dt><dd><tt><a href="#CRawlog-getCommentText">getCommentText</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -7212,7 +7076,7 @@ Returns&nbsp;the&nbsp;type&nbsp;of&nbsp;a&nbsp;given&nbsp;element.<br>
 &nbsp;<br>
 &nbsp;isAction,&nbsp;isObservation<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getType">getType</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::TEntryType</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getType">getType</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::TEntryType</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-insert"><strong>insert</strong></a>(...)</dt><dd><tt><a href="#CRawlog-insert">insert</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -7279,7 +7143,7 @@ Delete&nbsp;the&nbsp;action&nbsp;or&nbsp;observation&nbsp;stored&nbsp;in&nbsp;th
 &nbsp;<br>
 &nbsp;std::exception&nbsp;If&nbsp;index&nbsp;is&nbsp;out&nbsp;of&nbsp;bounds<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-remove">remove</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void<br>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-remove">remove</a>(size_t)&nbsp;--&gt;&nbsp;void<br>
 &nbsp;<br>
 2.&nbsp;<a href="#CRawlog-remove">remove</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;first_index:&nbsp;int,&nbsp;last_index:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7289,7 +7153,7 @@ Delete&nbsp;the&nbsp;elements&nbsp;stored&nbsp;in&nbsp;the&nbsp;given&nbsp;range
 &nbsp;<br>
 &nbsp;std::exception&nbsp;If&nbsp;any&nbsp;index&nbsp;is&nbsp;out&nbsp;of&nbsp;bounds<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-remove">remove</a>(unsigned&nbsp;long,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-remove">remove</a>(size_t,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-saveToRawLogFile"><strong>saveToRawLogFile</strong></a>(...)</dt><dd><tt><a href="#CRawlog-saveToRawLogFile">saveToRawLogFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -7313,7 +7177,7 @@ C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-setCommen
 &nbsp;<br>
 Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;actions&nbsp;/&nbsp;observations&nbsp;object&nbsp;in&nbsp;the&nbsp;sequence.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-swap"><strong>swap</strong></a>(...)</dt><dd><tt><a href="#CRawlog-swap">swap</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CRawlog">CRawlog</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7330,6 +7194,15 @@ C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-CreateObj
 <dl><dt><a name="CRawlog-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CRawlog-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CRawlog-ReadFromArchive"><strong>ReadFromArchive</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CRawlog-ReadFromArchive">ReadFromArchive</a>(inStream:&nbsp;mrpt.pymrpt.mrpt.serialization.CArchive,&nbsp;rawlogEntryIndex:&nbsp;int)&nbsp;-&gt;&nbsp;Tuple[bool,&nbsp;int,&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CActionCollection">CActionCollection</a>,&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>]<br>
+&nbsp;<br>
+Alternative&nbsp;to&nbsp;<a href="#CRawlog-getActionObservationPairOrObservation">getActionObservationPairOrObservation</a>()&nbsp;returning&nbsp;the<br>
+&nbsp;tuple&nbsp;[readOk,&nbsp;rawlogEntryIndex,&nbsp;action,sf,&nbsp;obs],&nbsp;with&nbsp;either&nbsp;(action,sf)<br>
+&nbsp;or&nbsp;(obs)&nbsp;as&nbsp;empty&nbsp;smart&nbsp;pointers&nbsp;depending&nbsp;on&nbsp;the&nbsp;rawlog&nbsp;file&nbsp;format.<br>
+&nbsp;readOk&nbsp;is&nbsp;false&nbsp;on&nbsp;EOF&nbsp;or&nbsp;any&nbsp;other&nbsp;error.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-ReadFromArchive">ReadFromArchive</a>(class&nbsp;mrpt::serialization::CArchive&nbsp;&amp;,&nbsp;const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;class&nbsp;std::tuple&lt;bool,&nbsp;unsigned&nbsp;long,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>&gt;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;&nbsp;&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-detectImagesDirectory"><strong>detectImagesDirectory</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CRawlog-detectImagesDirectory">detectImagesDirectory</a>(rawlogFilename:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
@@ -7371,10 +7244,6 @@ Reads&nbsp;a&nbsp;consecutive&nbsp;pair&nbsp;action/sensory_frame&nbsp;OR&nbsp;a
 &nbsp;getActionObservationPair<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getActionObservationPairOrObservation">getActionObservationPairOrObservation</a>(class&nbsp;mrpt::serialization::CArchive&nbsp;&amp;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CActionCollection">CActionCollection</a>&gt;&nbsp;&amp;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>&gt;&nbsp;&amp;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;&nbsp;&amp;,&nbsp;unsigned&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
-
-<dl><dt><a name="CRawlog-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CRawlog-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_18_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CRawlog">CRawlog</a>::<a href="#CRawlog-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;18&gt;</tt></dd></dl>
 
 <dl><dt><a name="CRawlog-readActionObservationPair"><strong>readActionObservationPair</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CRawlog-readActionObservationPair">readActionObservationPair</a>(inStream:&nbsp;mrpt.pymrpt.mrpt.serialization.CArchive,&nbsp;action:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CActionCollection">CActionCollection</a>,&nbsp;observations:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;rawlogEntry:&nbsp;int)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -7525,7 +7394,7 @@ C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSens
 &nbsp;<br>
 Removes&nbsp;the&nbsp;i'th&nbsp;observation&nbsp;in&nbsp;the&nbsp;list&nbsp;(0=first).&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-eraseByIndex">eraseByIndex</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-eraseByIndex">eraseByIndex</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CSensoryFrame-eraseByLabel"><strong>eraseByLabel</strong></a>(...)</dt><dd><tt><a href="#CSensoryFrame-eraseByLabel">eraseByLabel</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;label:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7535,7 +7404,7 @@ C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSens
 
 <dl><dt><a name="CSensoryFrame-getObservationByIndex"><strong>getObservationByIndex</strong></a>(...)</dt><dd><tt><a href="#CSensoryFrame-getObservationByIndex">getObservationByIndex</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;idx:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a><br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-getObservationByIndex">getObservationByIndex</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-getObservationByIndex">getObservationByIndex</a>(size_t)&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CSensoryFrame-getObservationBySensorLabel"><strong>getObservationBySensorLabel</strong></a>(...)</dt><dd><tt><a href="#CSensoryFrame-getObservationBySensorLabel">getObservationBySensorLabel</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -7553,7 +7422,7 @@ Returns&nbsp;the&nbsp;i'th&nbsp;observation&nbsp;in&nbsp;the&nbsp;list&nbsp;with
 &nbsp;<br>
 &nbsp;begin,&nbsp;size<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-getObservationBySensorLabel">getObservationBySensorLabel</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-getObservationBySensorLabel">getObservationBySensorLabel</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;size_t)&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;</tt></dd></dl>
 
 <dl><dt><a name="CSensoryFrame-insert"><strong>insert</strong></a>(...)</dt><dd><tt><a href="#CSensoryFrame-insert">insert</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;obs:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7571,7 +7440,7 @@ C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSens
 &nbsp;<br>
 Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;observations&nbsp;in&nbsp;the&nbsp;list.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CSensoryFrame-swap"><strong>swap</strong></a>(...)</dt><dd><tt><a href="#CSensoryFrame-swap">swap</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;sf:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -7588,10 +7457,6 @@ C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSens
 <dl><dt><a name="CSensoryFrame-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CSensoryFrame-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CSensoryFrame-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CSensoryFrame-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_24_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>::<a href="#CSensoryFrame-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;24&gt;</tt></dd></dl>
 
 <hr>
 Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
@@ -7980,7 +7845,7 @@ Checks&nbsp;whether&nbsp;pixel(row,col)&nbsp;has&nbsp;been&nbsp;clasified&nbsp;i
 &nbsp;<br>
 &nbsp;unsetLabel,&nbsp;unsetAll&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-checkLabel">checkLabel</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;unsigned&nbsp;char)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-checkLabel">checkLabel</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;uint8_t)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="TPixelLabelInfoBase-checkLabelNameExistence"><strong>checkLabelNameExistence</strong></a>(...)</dt><dd><tt><a href="#TPixelLabelInfoBase-checkLabelNameExistence">checkLabelNameExistence</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>,&nbsp;name:&nbsp;str)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
@@ -8006,7 +7871,7 @@ Mark&nbsp;the&nbsp;pixel(row,col)&nbsp;as&nbsp;classified&nbsp;in&nbsp;the&nbsp;
 &nbsp;<br>
 &nbsp;unsetLabel,&nbsp;unsetAll&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-setLabel">setLabel</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;unsigned&nbsp;char)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-setLabel">setLabel</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;uint8_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="TPixelLabelInfoBase-setLabelName"><strong>setLabelName</strong></a>(...)</dt><dd><tt><a href="#TPixelLabelInfoBase-setLabelName">setLabelName</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>,&nbsp;label_idx:&nbsp;int,&nbsp;name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -8024,7 +7889,7 @@ C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a 
 Removes&nbsp;all&nbsp;categories&nbsp;for&nbsp;pixel(row,col)&nbsp;&nbsp;<br>
 &nbsp;setLabel,&nbsp;unsetLabel<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-unsetAll">unsetAll</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;unsigned&nbsp;char)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-unsetAll">unsetAll</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;uint8_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="TPixelLabelInfoBase-unsetLabel"><strong>unsetLabel</strong></a>(...)</dt><dd><tt><a href="#TPixelLabelInfoBase-unsetLabel">unsetLabel</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>,&nbsp;row:&nbsp;int,&nbsp;col:&nbsp;int,&nbsp;label_idx:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -8035,7 +7900,7 @@ For&nbsp;the&nbsp;pixel(row,col),&nbsp;removes&nbsp;its&nbsp;classification&nbsp
 &nbsp;<br>
 &nbsp;setLabel,&nbsp;unsetAll&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-unsetLabel">unsetLabel</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;unsigned&nbsp;char)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>::<a href="#TPixelLabelInfoBase-unsetLabel">unsetLabel</a>(const&nbsp;int,&nbsp;const&nbsp;int,&nbsp;uint8_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="TPixelLabelInfoBase-writeToStream"><strong>writeToStream</strong></a>(...)</dt><dd><tt><a href="#TPixelLabelInfoBase-writeToStream">writeToStream</a>(self:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#TPixelLabelInfoBase">TPixelLabelInfoBase</a>,&nbsp;out:&nbsp;mrpt.pymrpt.mrpt.serialization.CArchive)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -8089,7 +7954,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;point&nbsp;(r,c)&nbsp;with&nbsp;depth&nbsp;D&nbsp;passes&nbsp;all&nbsp;filters.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#TRangeImageFilter">TRangeImageFilter</a>::<a href="#TRangeImageFilter-do_range_filter">do_range_filter</a>(unsigned&nbsp;long,&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;float)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#TRangeImageFilter">TRangeImageFilter</a>::<a href="#TRangeImageFilter-do_range_filter">do_range_filter</a>(size_t,&nbsp;size_t,&nbsp;const&nbsp;float)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -8425,7 +8290,10 @@ C++:&nbsp;mrpt::obs::<a href="#-obsPointCloud_to_viz">obsPointCloud_to_viz</a>(c
 Clears&nbsp;`out`&nbsp;and&nbsp;creates&nbsp;a&nbsp;visualization&nbsp;of&nbsp;the&nbsp;given&nbsp;observation.<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::obs::<a href="#-obsVelodyne_to_viz">obsVelodyne_to_viz</a>(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservationVelodyneScan">CObservationVelodyneScan</a>&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::obs::<a href="#VisualizationParameters">VisualizationParameters</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::opengl::CSetOfObjects&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
- <dl><dt><a name="-obs_to_viz"><strong>obs_to_viz</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-obs_to_viz">obs_to_viz</a>(obs:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#VisualizationParameters">VisualizationParameters</a>,&nbsp;out:&nbsp;mrpt.pymrpt.mrpt.opengl.CSetOfObjects)&nbsp;-&gt;&nbsp;bool<br>
+ <dl><dt><a name="-obs_to_viz"><strong>obs_to_viz</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-obs_to_viz">obs_to_viz</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-obs_to_viz">obs_to_viz</a>(obs:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CObservation">CObservation</a>,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#VisualizationParameters">VisualizationParameters</a>,&nbsp;out:&nbsp;mrpt.pymrpt.mrpt.opengl.CSetOfObjects)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
 Clears&nbsp;`out`&nbsp;and&nbsp;creates&nbsp;a&nbsp;visualization&nbsp;of&nbsp;the&nbsp;given&nbsp;observation,<br>
 &nbsp;&nbsp;dispatching&nbsp;the&nbsp;call&nbsp;according&nbsp;to&nbsp;the&nbsp;actual&nbsp;observation&nbsp;class.<br>
@@ -8439,7 +8307,24 @@ Clears&nbsp;`out`&nbsp;and&nbsp;creates&nbsp;a&nbsp;visualization&nbsp;of&nbsp;t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mrpt::obs,&nbsp;but&nbsp;you&nbsp;must&nbsp;link&nbsp;against&nbsp;mrpt::maps&nbsp;too&nbsp;to&nbsp;have&nbsp;their<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;definitions.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::obs::<a href="#-obs_to_viz">obs_to_viz</a>(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::obs::<a href="#VisualizationParameters">VisualizationParameters</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::opengl::CSetOfObjects&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::obs::<a href="#-obs_to_viz">obs_to_viz</a>(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::obs::<a href="#CObservation">CObservation</a>&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::obs::<a href="#VisualizationParameters">VisualizationParameters</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::opengl::CSetOfObjects&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-obs_to_viz">obs_to_viz</a>(sf:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#CSensoryFrame">CSensoryFrame</a>,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#VisualizationParameters">VisualizationParameters</a>,&nbsp;out:&nbsp;mrpt.pymrpt.mrpt.opengl.CSetOfObjects)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Clears&nbsp;`out`&nbsp;and&nbsp;creates&nbsp;a&nbsp;visualization&nbsp;of&nbsp;the&nbsp;given&nbsp;sensory-frame,<br>
+&nbsp;&nbsp;dispatching&nbsp;the&nbsp;call&nbsp;according&nbsp;to&nbsp;the&nbsp;actual&nbsp;observation&nbsp;classes&nbsp;inside&nbsp;the<br>
+&nbsp;SF.<br>
+&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;true&nbsp;if&nbsp;type&nbsp;has&nbsp;known&nbsp;visualizer,&nbsp;false&nbsp;if&nbsp;it&nbsp;does&nbsp;not&nbsp;(then,&nbsp;`out`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;empty)<br>
+&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;This&nbsp;and&nbsp;the&nbsp;accompanying&nbsp;functions&nbsp;are&nbsp;defined&nbsp;in&nbsp;namespace<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mrpt::obs,&nbsp;but&nbsp;you&nbsp;must&nbsp;link&nbsp;against&nbsp;mrpt::maps&nbsp;too&nbsp;to&nbsp;have&nbsp;their<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;definitions.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::obs::<a href="#-obs_to_viz">obs_to_viz</a>(const&nbsp;class&nbsp;mrpt::obs::<a href="#CSensoryFrame">CSensoryFrame</a>&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::obs::<a href="#VisualizationParameters">VisualizationParameters</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::opengl::CSetOfObjects&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
  <dl><dt><a name="-recolorize3Dpc"><strong>recolorize3Dpc</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-recolorize3Dpc">recolorize3Dpc</a>(pnts:&nbsp;mrpt.pymrpt.mrpt.opengl.CPointCloudColoured,&nbsp;p:&nbsp;mrpt.pymrpt.mrpt.obs.<a href="#VisualizationParameters">VisualizationParameters</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Recolorize&nbsp;a&nbsp;pointcloud&nbsp;according&nbsp;to&nbsp;the&nbsp;given&nbsp;parameters<br>

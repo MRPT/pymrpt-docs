@@ -27,12 +27,6 @@
 </font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.vision.html#TStereoSystemParams">TStereoSystemParams</a>
 </font></dt></dl>
 </dd>
-<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a>(<a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>)
-</font></dt><dd>
-<dl>
-<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.vision.html#CFeature">CFeature</a>
-</font></dt></dl>
-</dd>
 <dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
 </font></dt><dd>
 <dl>
@@ -61,308 +55,6 @@
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="CFeature">class <strong>CFeature</strong></a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a>)</font></td></tr>
-    
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>A&nbsp;generic&nbsp;2D&nbsp;feature&nbsp;from&nbsp;an&nbsp;image,&nbsp;extracted&nbsp;with&nbsp;<br>
-Each&nbsp;feature&nbsp;may&nbsp;have&nbsp;one&nbsp;or&nbsp;more&nbsp;descriptors&nbsp;(see&nbsp;&nbsp;in<br>
-addition&nbsp;to&nbsp;an&nbsp;image&nbsp;patch.<br>
-The&nbsp;(Euclidean)&nbsp;distance&nbsp;between&nbsp;descriptors&nbsp;in&nbsp;a&nbsp;pair&nbsp;of&nbsp;features&nbsp;can&nbsp;be<br>
-computed&nbsp;with&nbsp;&nbsp;descriptorDistanceTo,<br>
-&nbsp;while&nbsp;the&nbsp;similarity&nbsp;of&nbsp;the&nbsp;patches&nbsp;is&nbsp;given&nbsp;by&nbsp;patchCorrelationTo.<br>
-&nbsp;<br>
-&nbsp;<br>
-<a href="#CFeatureList">CFeatureList</a>,&nbsp;TKeyPoint,&nbsp;TKeyPointList<br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;</td>
-<td width="100%"><dl><dt>Method resolution order:</dt>
-<dd><a href="mrpt.pymrpt.mrpt.vision.html#CFeature">CFeature</a></dd>
-<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CSerializable">mrpt.pymrpt.mrpt.serialization.CSerializable</a></dd>
-<dd><a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a></dd>
-<dd>pybind11_builtins.pybind11_object</dd>
-<dd><a href="builtins.html#object">builtins.object</a></dd>
-</dl>
-<hr>
-Methods defined here:<br>
-<dl><dt><a name="CFeature-GetRuntimeClass"><strong>GetRuntimeClass</strong></a>(...)</dt><dd><tt><a href="#CFeature-GetRuntimeClass">GetRuntimeClass</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-GetRuntimeClass">GetRuntimeClass</a>()&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;*</tt></dd></dl>
-
-<dl><dt><a name="CFeature-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFeature-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-3.&nbsp;<a href="#CFeature-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
-
-<dl><dt><a name="CFeature-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CFeature-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a><br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::operator=(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CFeature-clone"><strong>clone</strong></a>(...)</dt><dd><tt><a href="#CFeature-clone">clone</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-clone">clone</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;mrpt::rtti::CObject&nbsp;*</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorBLDDistanceTo"><strong>descriptorBLDDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorBLDDistanceTo">descriptorBLDDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorBLDDistanceTo">descriptorBLDDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorBLDDistanceTo">descriptorBLDDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"<br>
-&nbsp;descriptors&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorBLDDistanceTo">descriptorBLDDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorDistanceTo"><strong>descriptorDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorDistanceTo">descriptorDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorDistanceTo">descriptorDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorDistanceTo">descriptorDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;descriptorToUse:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TDescriptorType">TDescriptorType</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-3.&nbsp;<a href="#CFeature-descriptorDistanceTo">descriptorDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;descriptorToUse:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TDescriptorType">TDescriptorType</a>,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;this&nbsp;feature's&nbsp;and&nbsp;other<br>
-&nbsp;feature's&nbsp;descriptors,&nbsp;using&nbsp;the&nbsp;given&nbsp;descriptor&nbsp;or&nbsp;the&nbsp;first&nbsp;present<br>
-&nbsp;one.<br>
-&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;If&nbsp;descriptorToUse&nbsp;is&nbsp;not&nbsp;descAny&nbsp;and&nbsp;that&nbsp;descriptor&nbsp;is&nbsp;not<br>
-&nbsp;present&nbsp;in&nbsp;one&nbsp;of&nbsp;the&nbsp;features,&nbsp;an&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;patchCorrelationTo<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorDistanceTo">descriptorDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;enum&nbsp;mrpt::vision::<a href="#TDescriptorType">TDescriptorType</a>,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorLATCHDistanceTo"><strong>descriptorLATCHDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorLATCHDistanceTo">descriptorLATCHDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorLATCHDistanceTo">descriptorLATCHDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorLATCHDistanceTo">descriptorLATCHDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"<br>
-&nbsp;descriptors&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorLATCHDistanceTo">descriptorLATCHDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorLogPolarImgDistanceTo"><strong>descriptorLogPolarImgDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorLogPolarImgDistanceTo">descriptorLogPolarImgDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorLogPolarImgDistanceTo">descriptorLogPolarImgDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;minDistAngle:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorLogPolarImgDistanceTo">descriptorLogPolarImgDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;minDistAngle:&nbsp;float,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Returns&nbsp;the&nbsp;minimum&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"<br>
-&nbsp;log-polar&nbsp;image&nbsp;descriptor,&nbsp;for&nbsp;the&nbsp;best&nbsp;shift&nbsp;in&nbsp;orientation.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;The&nbsp;other&nbsp;feature&nbsp;to&nbsp;compare&nbsp;with.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;The&nbsp;placeholder&nbsp;for&nbsp;the&nbsp;angle&nbsp;at&nbsp;which&nbsp;the&nbsp;smallest<br>
-&nbsp;distance&nbsp;is&nbsp;found.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;The&nbsp;distance&nbsp;for&nbsp;the&nbsp;best&nbsp;orientation&nbsp;(minimum&nbsp;distance).<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorLogPolarImgDistanceTo">descriptorLogPolarImgDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;float&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorORBDistanceTo"><strong>descriptorORBDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorORBDistanceTo">descriptorORBDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;int<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;Hamming&nbsp;distance&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"&nbsp;descriptor&nbsp;ORB<br>
-&nbsp;descriptor&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorORBDistanceTo">descriptorORBDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;char</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorPolarImgDistanceTo"><strong>descriptorPolarImgDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorPolarImgDistanceTo">descriptorPolarImgDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorPolarImgDistanceTo">descriptorPolarImgDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;minDistAngle:&nbsp;float)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorPolarImgDistanceTo">descriptorPolarImgDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;minDistAngle:&nbsp;float,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Returns&nbsp;the&nbsp;minimum&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"<br>
-&nbsp;polar&nbsp;image&nbsp;descriptor,&nbsp;for&nbsp;the&nbsp;best&nbsp;shift&nbsp;in&nbsp;orientation.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;The&nbsp;other&nbsp;feature&nbsp;to&nbsp;compare&nbsp;with.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;The&nbsp;placeholder&nbsp;for&nbsp;the&nbsp;angle&nbsp;at&nbsp;which&nbsp;the&nbsp;smallest<br>
-&nbsp;distance&nbsp;is&nbsp;found.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;The&nbsp;distance&nbsp;for&nbsp;the&nbsp;best&nbsp;orientation&nbsp;(minimum&nbsp;distance).<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorPolarImgDistanceTo">descriptorPolarImgDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;float&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorSIFTDistanceTo"><strong>descriptorSIFTDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorSIFTDistanceTo">descriptorSIFTDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorSIFTDistanceTo">descriptorSIFTDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorSIFTDistanceTo">descriptorSIFTDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"<br>
-&nbsp;descriptors&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorSIFTDistanceTo">descriptorSIFTDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorSURFDistanceTo"><strong>descriptorSURFDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorSURFDistanceTo">descriptorSURFDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorSURFDistanceTo">descriptorSURFDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorSURFDistanceTo">descriptorSURFDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"<br>
-&nbsp;descriptors&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorSURFDistanceTo">descriptorSURFDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-descriptorSpinImgDistanceTo"><strong>descriptorSpinImgDistanceTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-descriptorSpinImgDistanceTo">descriptorSpinImgDistanceTo</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-descriptorSpinImgDistanceTo">descriptorSpinImgDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-descriptorSpinImgDistanceTo">descriptorSpinImgDistanceTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;normalize_distances:&nbsp;bool)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;Euclidean&nbsp;Distance&nbsp;between&nbsp;"this"&nbsp;and&nbsp;the&nbsp;"other"<br>
-&nbsp;descriptors&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-descriptorSpinImgDistanceTo">descriptorSpinImgDistanceTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-dumpToConsole"><strong>dumpToConsole</strong></a>(...)</dt><dd><tt><a href="#CFeature-dumpToConsole">dumpToConsole</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-dumpToConsole">dumpToConsole</a>()&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
-<dl><dt><a name="CFeature-getFirstDescriptorAsMatrix"><strong>getFirstDescriptorAsMatrix</strong></a>(...)</dt><dd><tt><a href="#CFeature-getFirstDescriptorAsMatrix">getFirstDescriptorAsMatrix</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;desc:&nbsp;mrpt.pymrpt.mrpt.math.CMatrixDynamic_float_t)&nbsp;-&gt;&nbsp;bool<br>
-&nbsp;<br>
-Return&nbsp;the&nbsp;first&nbsp;found&nbsp;descriptor,&nbsp;as&nbsp;a&nbsp;matrix.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;false&nbsp;on&nbsp;error,&nbsp;i.e.&nbsp;there&nbsp;is&nbsp;no&nbsp;valid&nbsp;descriptor.<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-getFirstDescriptorAsMatrix">getFirstDescriptorAsMatrix</a>(class&nbsp;mrpt::math::CMatrixDynamic&lt;float&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
-
-<dl><dt><a name="CFeature-get_type"><strong>get_type</strong></a>(...)</dt><dd><tt><a href="#CFeature-get_type">get_type</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TKeyPointMethod">TKeyPointMethod</a><br>
-&nbsp;<br>
-Get&nbsp;the&nbsp;type&nbsp;of&nbsp;the&nbsp;feature<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-get_type">get_type</a>()&nbsp;const&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::vision::<a href="#TKeyPointMethod">TKeyPointMethod</a></tt></dd></dl>
-
-<dl><dt><a name="CFeature-isPointFeature"><strong>isPointFeature</strong></a>(...)</dt><dd><tt><a href="#CFeature-isPointFeature">isPointFeature</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;bool<br>
-&nbsp;<br>
-Return&nbsp;false&nbsp;only&nbsp;for&nbsp;Blob&nbsp;detectors&nbsp;(SIFT,&nbsp;SURF)&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-isPointFeature">isPointFeature</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
-
-<dl><dt><a name="CFeature-patchCorrelationTo"><strong>patchCorrelationTo</strong></a>(...)</dt><dd><tt><a href="#CFeature-patchCorrelationTo">patchCorrelationTo</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;oFeature:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;float<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;normalized&nbsp;cross-correlation&nbsp;between&nbsp;the&nbsp;patches&nbsp;of&nbsp;this<br>
-&nbsp;and&nbsp;another&nbsp;feature&nbsp;(normalized&nbsp;in&nbsp;the&nbsp;range&nbsp;[0,1],&nbsp;such&nbsp;as&nbsp;0=best,<br>
-&nbsp;1=worst).<br>
-&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;If&nbsp;this&nbsp;or&nbsp;the&nbsp;other&nbsp;features&nbsp;does&nbsp;not&nbsp;have&nbsp;patches&nbsp;or&nbsp;they&nbsp;are<br>
-&nbsp;of&nbsp;different&nbsp;sizes,&nbsp;an&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;descriptorDistanceTo<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-patchCorrelationTo">patchCorrelationTo</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
-
-<dl><dt><a name="CFeature-saveToTextFile"><strong>saveToTextFile</strong></a>(...)</dt><dd><tt><a href="#CFeature-saveToTextFile">saveToTextFile</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeature-saveToTextFile">saveToTextFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;filename:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeature-saveToTextFile">saveToTextFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;filename:&nbsp;str,&nbsp;APPEND:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-Save&nbsp;the&nbsp;feature&nbsp;to&nbsp;a&nbsp;text&nbsp;file&nbsp;in&nbsp;this&nbsp;format:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;Dump&nbsp;of&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>.&nbsp;Each&nbsp;line&nbsp;format&nbsp;is:"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;ID&nbsp;TYPE&nbsp;X&nbsp;Y&nbsp;ORIENTATION&nbsp;SCALE&nbsp;TRACK_STATUS&nbsp;RESPONSE&nbsp;HAS_SIFT<br>
-[SIFT]&nbsp;HAS_SURF&nbsp;[SURF]&nbsp;HAS_MULTI&nbsp;[MULTI_i]&nbsp;HAS_ORB&nbsp;[ORB]"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;|----------------------&nbsp;feature&nbsp;------------------|<br>
-|----------------------&nbsp;descriptors&nbsp;------------------------|"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;with:"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;&nbsp;TYPE&nbsp;&nbsp;:&nbsp;The&nbsp;used&nbsp;detector:&nbsp;0:KLT,&nbsp;1:&nbsp;Harris,&nbsp;2:&nbsp;BCD,&nbsp;3:&nbsp;SIFT,&nbsp;4:<br>
-SURF,&nbsp;5:&nbsp;Beacon,&nbsp;6:&nbsp;FAST,&nbsp;7:&nbsp;ORB"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;&nbsp;HAS_*&nbsp;:&nbsp;1&nbsp;if&nbsp;a&nbsp;descriptor&nbsp;of&nbsp;that&nbsp;type&nbsp;is&nbsp;associated&nbsp;to&nbsp;the<br>
-feature."<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;&nbsp;SIFT&nbsp;&nbsp;:&nbsp;Present&nbsp;if&nbsp;HAS_SIFT=1:&nbsp;N&nbsp;DESC_0&nbsp;...&nbsp;DESC_N-1"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;&nbsp;SURF&nbsp;&nbsp;:&nbsp;Present&nbsp;if&nbsp;HAS_SURF=1:&nbsp;N&nbsp;DESC_0&nbsp;...&nbsp;DESC_N-1"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;&nbsp;MULTI&nbsp;:&nbsp;Present&nbsp;if&nbsp;HAS_MULTI=1:&nbsp;SCALE&nbsp;ORI&nbsp;N&nbsp;DESC_0&nbsp;...&nbsp;DESC_N-1"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"%%&nbsp;&nbsp;ORB&nbsp;&nbsp;&nbsp;:&nbsp;Present&nbsp;if&nbsp;HAS_ORB=1:&nbsp;DESC_0&nbsp;...&nbsp;DESC_31<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"%%-----------------------------------------------------------------------------");<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-saveToTextFile">saveToTextFile</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
-<hr>
-Static methods defined here:<br>
-<dl><dt><a name="CFeature-CreateObject"><strong>CreateObject</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CFeature-CreateObject">CreateObject</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-CreateObject">CreateObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
-
-<dl><dt><a name="CFeature-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CFeature-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CFeature-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CFeature-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_22_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>::<a href="#CFeature-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;22&gt;</tt></dd></dl>
-
-<hr>
-Data descriptors defined here:<br>
-<dl><dt><strong>depth</strong></dt>
-</dl>
-<dl><dt><strong>descriptors</strong></dt>
-</dl>
-<dl><dt><strong>initialDepth</strong></dt>
-</dl>
-<dl><dt><strong>keypoint</strong></dt>
-</dl>
-<dl><dt><strong>orientation</strong></dt>
-</dl>
-<dl><dt><strong>p3D</strong></dt>
-</dl>
-<dl><dt><strong>patch</strong></dt>
-</dl>
-<dl><dt><strong>patchSize</strong></dt>
-</dl>
-<dl><dt><strong>response</strong></dt>
-</dl>
-<dl><dt><strong>track_status</strong></dt>
-</dl>
-<dl><dt><strong>type</strong></dt>
-</dl>
-<dl><dt><strong>user_flags</strong></dt>
-</dl>
-<hr>
-Data and other attributes defined here:<br>
-<dl><dt><strong>TDescriptors</strong> = &lt;class 'mrpt.pymrpt.mrpt.vision.CFeature.TDescriptors'&gt;<dd><tt>All&nbsp;the&nbsp;possible&nbsp;descriptors&nbsp;this&nbsp;feature&nbsp;may&nbsp;have</tt></dl>
-
-<hr>
-Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
-<dl><dt><a name="CFeature-duplicateGetSmartPtr"><strong>duplicateGetSmartPtr</strong></a>(...)</dt><dd><tt><a href="#CFeature-duplicateGetSmartPtr">duplicateGetSmartPtr</a>(self:&nbsp;mrpt.pymrpt.mrpt.rtti.CObject)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.CObject<br>
-&nbsp;<br>
-Makes&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;object&nbsp;and&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;it&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::rtti::CObject::<a href="#CFeature-duplicateGetSmartPtr">duplicateGetSmartPtr</a>()&nbsp;const&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::rtti::CObject&gt;</tt></dd></dl>
-
-<hr>
-Static methods inherited from pybind11_builtins.pybind11_object:<br>
-<dl><dt><a name="CFeature-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
-
-</td></tr></table> <p>
-<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
-<tr bgcolor="#ffc8d8">
-<td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#000000" face="helvetica, arial"><a name="CFeatureExtraction">class <strong>CFeatureExtraction</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
@@ -374,7 +66,7 @@ kinds&nbsp;of&nbsp;interest&nbsp;points&nbsp;and&nbsp;descriptors&nbsp;computed&
 use&nbsp;(see<br>
 &nbsp;&nbsp;&nbsp;<a href="#CFeatureExtraction">CFeatureExtraction</a>::TOptions::featsType),&nbsp;and&nbsp;call<br>
 <a href="#CFeatureExtraction">CFeatureExtraction</a>::detectFeatures.<br>
-&nbsp;&nbsp;This&nbsp;will&nbsp;return&nbsp;a&nbsp;set&nbsp;of&nbsp;features&nbsp;of&nbsp;the&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>,<br>
+&nbsp;&nbsp;This&nbsp;will&nbsp;return&nbsp;a&nbsp;set&nbsp;of&nbsp;features&nbsp;of&nbsp;the&nbsp;class&nbsp;mrpt::vision::CFeature,<br>
 which&nbsp;include<br>
 &nbsp;&nbsp;&nbsp;details&nbsp;for&nbsp;each&nbsp;interest&nbsp;point&nbsp;as&nbsp;well&nbsp;as&nbsp;the&nbsp;desired&nbsp;descriptors&nbsp;and/or<br>
 patches.<br>
@@ -416,7 +108,7 @@ sparse&nbsp;texture&nbsp;representation&nbsp;using&nbsp;affine-invariant&nbsp;re
 Schmid,&nbsp;J&nbsp;Ponce,&nbsp;2003&nbsp;IEEE&nbsp;Computer&nbsp;Society&nbsp;Conference&nbsp;on&nbsp;Computer&nbsp;Vision.<br>
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a><br>&nbsp;</tt></td></tr>
+&nbsp;mrpt::vision::CFeature<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%"><dl><dt>Method resolution order:</dt>
 <dd><a href="mrpt.pymrpt.mrpt.vision.html#CFeatureExtraction">CFeatureExtraction</a></dd>
@@ -536,10 +228,6 @@ input/output&nbsp;by&nbsp;trackers,&nbsp;etc.<br>&nbsp;</tt></td></tr>
 </dl>
 <hr>
 Methods defined here:<br>
-<dl><dt><a name="CFeatureList-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-__getitem__">__getitem__</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;index:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a><br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::operator[](const&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;</tt></dd></dl>
-
 <dl><dt><a name="CFeatureList-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -566,36 +254,23 @@ C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFea
 &nbsp;<br>
 C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-empty">empty</a>()&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
-<dl><dt><a name="CFeatureList-getByID"><strong>getByID</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getByID">getByID</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CFeatureList-getByID">getByID</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;ID:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a><br>
-&nbsp;<br>
-Get&nbsp;a&nbsp;reference&nbsp;to&nbsp;a&nbsp;Feature&nbsp;from&nbsp;its&nbsp;ID&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getByID">getByID</a>(const&nbsp;unsigned&nbsp;long&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;*<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CFeatureList-getByID">getByID</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;ID:&nbsp;int,&nbsp;out_idx:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a><br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getByID">getByID</a>(const&nbsp;unsigned&nbsp;long&nbsp;&amp;,&nbsp;int&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;*</tt></dd></dl>
-
 <dl><dt><a name="CFeatureList-getFeatureID"><strong>getFeatureID</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getFeatureID">getFeatureID</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureID">getFeatureID</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureID">getFeatureID</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-getFeatureResponse"><strong>getFeatureResponse</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getFeatureResponse">getFeatureResponse</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureResponse">getFeatureResponse</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureResponse">getFeatureResponse</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-getFeatureX"><strong>getFeatureX</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getFeatureX">getFeatureX</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@{&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureX">getFeatureX</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureX">getFeatureX</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-getFeatureY"><strong>getFeatureY</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getFeatureY">getFeatureY</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureY">getFeatureY</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getFeatureY">getFeatureY</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-getMaxID"><strong>getMaxID</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getMaxID">getMaxID</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
@@ -605,11 +280,11 @@ C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFea
 
 <dl><dt><a name="CFeatureList-getScale"><strong>getScale</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getScale">getScale</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getScale">getScale</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getScale">getScale</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-getTrackStatus"><strong>getTrackStatus</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-getTrackStatus">getTrackStatus</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TFeatureTrackStatus">TFeatureTrackStatus</a><br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getTrackStatus">getTrackStatus</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::vision::<a href="#TFeatureTrackStatus">TFeatureTrackStatus</a></tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-getTrackStatus">getTrackStatus</a>(size_t)&nbsp;--&gt;&nbsp;enum&nbsp;mrpt::vision::<a href="#TFeatureTrackStatus">TFeatureTrackStatus</a></tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-get_type"><strong>get_type</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-get_type">get_type</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TKeyPointMethod">TKeyPointMethod</a><br>
 &nbsp;<br>
@@ -619,26 +294,26 @@ C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFea
 
 <dl><dt><a name="CFeatureList-isPointFeature"><strong>isPointFeature</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-isPointFeature">isPointFeature</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-isPointFeature">isPointFeature</a>(unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-isPointFeature">isPointFeature</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-kdtree_distance"><strong>kdtree_distance</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-kdtree_distance">kdtree_distance</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;p1:&nbsp;float,&nbsp;idx_p2:&nbsp;int,&nbsp;size:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 Returns&nbsp;the&nbsp;distance&nbsp;between&nbsp;the&nbsp;vector&nbsp;"p1[0:size-1]"&nbsp;and&nbsp;the&nbsp;data<br>
 &nbsp;point&nbsp;with&nbsp;index&nbsp;"idx_p2"&nbsp;stored&nbsp;in&nbsp;the&nbsp;class:<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-kdtree_distance">kdtree_distance</a>(const&nbsp;float&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-kdtree_distance">kdtree_distance</a>(const&nbsp;float&nbsp;*,&nbsp;size_t,&nbsp;size_t)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-kdtree_get_point_count"><strong>kdtree_get_point_count</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-kdtree_get_point_count">kdtree_get_point_count</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
 Must&nbsp;return&nbsp;the&nbsp;number&nbsp;of&nbsp;data&nbsp;points<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-kdtree_get_point_count">kdtree_get_point_count</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-kdtree_get_point_count">kdtree_get_point_count</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-kdtree_get_pt"><strong>kdtree_get_pt</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-kdtree_get_pt">kdtree_get_pt</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;idx:&nbsp;int,&nbsp;dim:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 Returns&nbsp;the&nbsp;dim'th&nbsp;component&nbsp;of&nbsp;the&nbsp;idx'th&nbsp;point&nbsp;in&nbsp;the&nbsp;class:<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-kdtree_get_pt">kdtree_get_pt</a>(const&nbsp;unsigned&nbsp;long,&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-kdtree_get_pt">kdtree_get_pt</a>(size_t,&nbsp;int)&nbsp;const&nbsp;--&gt;&nbsp;float</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-loadFromTextFile"><strong>loadFromTextFile</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-loadFromTextFile">loadFromTextFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;fileName:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -657,37 +332,9 @@ Call&nbsp;this&nbsp;when&nbsp;the&nbsp;list&nbsp;of&nbsp;features&nbsp;has&nbsp;
 &nbsp;<br>
 C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-mark_kdtree_as_outdated">mark_kdtree_as_outdated</a>()&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CFeatureList-nearest"><strong>nearest</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-nearest">nearest</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;x:&nbsp;float,&nbsp;y:&nbsp;float,&nbsp;max_dist:&nbsp;float)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a><br>
-&nbsp;<br>
-Get&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;nearest&nbsp;feature&nbsp;to&nbsp;the&nbsp;a&nbsp;given&nbsp;2D&nbsp;point&nbsp;(version<br>
-&nbsp;returning&nbsp;distance&nbsp;to&nbsp;closest&nbsp;feature&nbsp;in&nbsp;"max_dist")<br>
-&nbsp;&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;[IN]&nbsp;The&nbsp;query&nbsp;point&nbsp;x-coordinate<br>
-&nbsp;&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;[IN]&nbsp;The&nbsp;query&nbsp;point&nbsp;y-coordinate<br>
-&nbsp;&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;[IN/OUT]&nbsp;At&nbsp;input:&nbsp;The&nbsp;maximum&nbsp;distance&nbsp;to&nbsp;search&nbsp;for.<br>
-&nbsp;At&nbsp;output:&nbsp;The&nbsp;actual&nbsp;distance&nbsp;to&nbsp;the&nbsp;feature.<br>
-&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;A&nbsp;pointer&nbsp;to&nbsp;the&nbsp;found&nbsp;feature,&nbsp;or&nbsp;nullptr&nbsp;if&nbsp;not&nbsp;found.<br>
-&nbsp;&nbsp;<br>
-&nbsp;<br>
-&nbsp;See&nbsp;also&nbsp;all&nbsp;the&nbsp;available&nbsp;KD-tree&nbsp;search&nbsp;methods,&nbsp;listed&nbsp;in<br>
-&nbsp;mrpt::math::KDTreeCapable<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-nearest">nearest</a>(const&nbsp;float,&nbsp;const&nbsp;float,&nbsp;double&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;*</tt></dd></dl>
-
-<dl><dt><a name="CFeatureList-push_back"><strong>push_back</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-push_back">push_back</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;f:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-push_back">push_back</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
 <dl><dt><a name="CFeatureList-resize"><strong>resize</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-resize">resize</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;N:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-resize">resize</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-resize">resize</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-saveToTextFile"><strong>saveToTextFile</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-saveToTextFile">saveToTextFile</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -702,39 +349,39 @@ C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFea
 
 <dl><dt><a name="CFeatureList-setFeatureID"><strong>setFeatureID</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setFeatureID">setFeatureID</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;id:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureID">setFeatureID</a>(unsigned&nbsp;long,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureID">setFeatureID</a>(size_t,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-setFeatureResponse"><strong>setFeatureResponse</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setFeatureResponse">setFeatureResponse</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;r:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureResponse">setFeatureResponse</a>(unsigned&nbsp;long,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureResponse">setFeatureResponse</a>(size_t,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-setFeatureX"><strong>setFeatureX</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setFeatureX">setFeatureX</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;x:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureX">setFeatureX</a>(unsigned&nbsp;long,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureX">setFeatureX</a>(size_t,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-setFeatureXf"><strong>setFeatureXf</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setFeatureXf">setFeatureXf</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;x:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureXf">setFeatureXf</a>(unsigned&nbsp;long,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureXf">setFeatureXf</a>(size_t,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-setFeatureY"><strong>setFeatureY</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setFeatureY">setFeatureY</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;y:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureY">setFeatureY</a>(unsigned&nbsp;long,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureY">setFeatureY</a>(size_t,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-setFeatureYf"><strong>setFeatureYf</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setFeatureYf">setFeatureYf</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;y:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureYf">setFeatureYf</a>(unsigned&nbsp;long,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setFeatureYf">setFeatureYf</a>(size_t,&nbsp;float)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-setScale"><strong>setScale</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setScale">setScale</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;s:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setScale">setScale</a>(unsigned&nbsp;long,&nbsp;unsigned&nbsp;char)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setScale">setScale</a>(size_t,&nbsp;uint8_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-setTrackStatus"><strong>setTrackStatus</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-setTrackStatus">setTrackStatus</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>,&nbsp;i:&nbsp;int,&nbsp;s:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TFeatureTrackStatus">TFeatureTrackStatus</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setTrackStatus">setTrackStatus</a>(unsigned&nbsp;long,&nbsp;enum&nbsp;mrpt::vision::<a href="#TFeatureTrackStatus">TFeatureTrackStatus</a>)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-setTrackStatus">setTrackStatus</a>(size_t,&nbsp;enum&nbsp;mrpt::vision::<a href="#TFeatureTrackStatus">TFeatureTrackStatus</a>)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CFeatureList-size"><strong>size</strong></a>(...)</dt><dd><tt><a href="#CFeatureList-size">size</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeatureList">CFeatureList</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>::<a href="#CFeatureList-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <hr>
 Static methods inherited from pybind11_builtins.pybind11_object:<br>
@@ -776,13 +423,6 @@ C++:&nbsp;mrpt::vision::<a href="#CMatchedFeatureList">CMatchedFeatureList</a>::
 Returns&nbsp;the&nbsp;matching&nbsp;features&nbsp;as&nbsp;two&nbsp;separate&nbsp;CFeatureLists&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::vision::<a href="#CMatchedFeatureList">CMatchedFeatureList</a>::<a href="#CMatchedFeatureList-getBothFeatureLists">getBothFeatureLists</a>(class&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
-<dl><dt><a name="CMatchedFeatureList-getByID"><strong>getByID</strong></a>(...)</dt><dd><tt><a href="#CMatchedFeatureList-getByID">getByID</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CMatchedFeatureList">CMatchedFeatureList</a>,&nbsp;ID:&nbsp;int,&nbsp;idx:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TListIdx">TListIdx</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a><br>
-&nbsp;<br>
-Returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;the&nbsp;feature&nbsp;with&nbsp;the&nbsp;provided&nbsp;ID&nbsp;or&nbsp;a&nbsp;empty<br>
-&nbsp;one&nbsp;if&nbsp;not&nbsp;found&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#CMatchedFeatureList">CMatchedFeatureList</a>::<a href="#CMatchedFeatureList-getByID">getByID</a>(const&nbsp;unsigned&nbsp;long&nbsp;&amp;,&nbsp;const&nbsp;enum&nbsp;mrpt::vision::<a href="#TListIdx">TListIdx</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;*</tt></dd></dl>
 
 <dl><dt><a name="CMatchedFeatureList-getMaxID"><strong>getMaxID</strong></a>(...)</dt><dd><tt><a href="#CMatchedFeatureList-getMaxID">getMaxID</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CMatchedFeatureList">CMatchedFeatureList</a>,&nbsp;idx:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TListIdx">TListIdx</a>,&nbsp;firstListID:&nbsp;int,&nbsp;secondListID:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2225,28 +1865,6 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>::operator=(const&nbsp;struct&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>&nbsp;&amp;</tt></dd></dl>
 
-<dl><dt><a name="TSequenceFeatureObservations-compressIDs"><strong>compressIDs</strong></a>(...)</dt><dd><tt><a href="#TSequenceFeatureObservations-compressIDs">compressIDs</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#TSequenceFeatureObservations-compressIDs">compressIDs</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-2.&nbsp;<a href="#TSequenceFeatureObservations-compressIDs">compressIDs</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>,&nbsp;old2new_camIDs:&nbsp;mrpt.pymrpt.std.map_unsigned_long_unsigned_long)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-3.&nbsp;<a href="#TSequenceFeatureObservations-compressIDs">compressIDs</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>,&nbsp;old2new_camIDs:&nbsp;mrpt.pymrpt.std.map_unsigned_long_unsigned_long,&nbsp;old2new_lmIDs:&nbsp;mrpt.pymrpt.std.map_unsigned_long_unsigned_long)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-Rearrange&nbsp;frame&nbsp;and&nbsp;feature&nbsp;IDs&nbsp;such&nbsp;as&nbsp;they&nbsp;start&nbsp;at&nbsp;0&nbsp;and&nbsp;there&nbsp;are&nbsp;no<br>
-&nbsp;gaps.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;If&nbsp;provided,&nbsp;the&nbsp;mapping&nbsp;from&nbsp;old&nbsp;to&nbsp;new&nbsp;IDs&nbsp;is<br>
-&nbsp;stored&nbsp;here.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;If&nbsp;provided,&nbsp;the&nbsp;mapping&nbsp;from&nbsp;old&nbsp;to&nbsp;new&nbsp;IDs&nbsp;is<br>
-&nbsp;stored&nbsp;here.&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>::<a href="#TSequenceFeatureObservations-compressIDs">compressIDs</a>(class&nbsp;std::map&lt;unsigned&nbsp;long,&nbsp;unsigned&nbsp;long,&nbsp;struct&nbsp;std::less&lt;unsigned&nbsp;long&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;unsigned&nbsp;long,&nbsp;unsigned&nbsp;long&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;*,&nbsp;class&nbsp;std::map&lt;unsigned&nbsp;long,&nbsp;unsigned&nbsp;long,&nbsp;struct&nbsp;std::less&lt;unsigned&nbsp;long&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;unsigned&nbsp;long,&nbsp;unsigned&nbsp;long&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
 <dl><dt><a name="TSequenceFeatureObservations-decimateCameraFrames"><strong>decimateCameraFrames</strong></a>(...)</dt><dd><tt><a href="#TSequenceFeatureObservations-decimateCameraFrames">decimateCameraFrames</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>,&nbsp;decimate_ratio:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Remove&nbsp;all&nbsp;but&nbsp;one&nbsp;out&nbsp;of&nbsp;&nbsp;camera&nbsp;frame&nbsp;IDs&nbsp;from&nbsp;the<br>
@@ -2258,7 +1876,7 @@ Remove&nbsp;all&nbsp;but&nbsp;one&nbsp;out&nbsp;of&nbsp;&nbsp;camera&nbsp;frame&
 &nbsp;<br>
 &nbsp;After&nbsp;calling&nbsp;this&nbsp;you&nbsp;may&nbsp;want&nbsp;to&nbsp;call&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>::<a href="#TSequenceFeatureObservations-decimateCameraFrames">decimateCameraFrames</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>::<a href="#TSequenceFeatureObservations-decimateCameraFrames">decimateCameraFrames</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="TSequenceFeatureObservations-loadFromTextFile"><strong>loadFromTextFile</strong></a>(...)</dt><dd><tt><a href="#TSequenceFeatureObservations-loadFromTextFile">loadFromTextFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>,&nbsp;filName:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -2285,7 +1903,7 @@ Remove&nbsp;all&nbsp;those&nbsp;features&nbsp;that&nbsp;don't&nbsp;have&nbsp;a&n
 &nbsp;<br>
 &nbsp;After&nbsp;calling&nbsp;this&nbsp;you&nbsp;may&nbsp;want&nbsp;to&nbsp;call&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>::<a href="#TSequenceFeatureObservations-removeFewObservedFeatures">removeFewObservedFeatures</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#TSequenceFeatureObservations">TSequenceFeatureObservations</a>::<a href="#TSequenceFeatureObservations-removeFewObservedFeatures">removeFewObservedFeatures</a>(size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="TSequenceFeatureObservations-saveToTextFile"><strong>saveToTextFile</strong></a>(...)</dt><dd><tt><a href="#TSequenceFeatureObservations-saveToTextFile">saveToTextFile</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -2447,6 +2065,35 @@ Draw&nbsp;rectangles&nbsp;around&nbsp;each&nbsp;of&nbsp;the&nbsp;features&nbsp;o
 &nbsp;features.<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::vision::<a href="#-addFeaturesToImage">addFeaturesToImage</a>(const&nbsp;class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::img::CImage&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-buildIntrinsicParamsMatrix"><strong>buildIntrinsicParamsMatrix</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-buildIntrinsicParamsMatrix">buildIntrinsicParamsMatrix</a>(focalLengthX:&nbsp;float,&nbsp;focalLengthY:&nbsp;float,&nbsp;centerX:&nbsp;float,&nbsp;centerY:&nbsp;float)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.math.CMatrixFixed_double_3UL_3UL_t<br>
+&nbsp;<br>
+Builds&nbsp;the&nbsp;intrinsic&nbsp;parameters&nbsp;matrix&nbsp;A&nbsp;from&nbsp;parameters:<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;&nbsp;&nbsp;The&nbsp;focal&nbsp;length,&nbsp;in&nbsp;X&nbsp;(horizontal)&nbsp;pixels<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;[IN]&nbsp;&nbsp;&nbsp;The&nbsp;focal&nbsp;length,&nbsp;in&nbsp;Y&nbsp;(vertical)&nbsp;pixels<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;The&nbsp;image&nbsp;center,&nbsp;horizontal,&nbsp;in&nbsp;pixels<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;The&nbsp;image&nbsp;center,&nbsp;vertical,&nbsp;in&nbsp;pixels<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;matrix:<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;f_x0cX&nbsp;<br>
+&nbsp;&nbsp;0f_ycY&nbsp;<br>
+&nbsp;&nbsp;001&nbsp;<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;See&nbsp;also&nbsp;the&nbsp;tutorial&nbsp;discussing&nbsp;the&nbsp;<br>
+camera&nbsp;model&nbsp;parameters.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;pixelTo3D<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::vision::<a href="#-buildIntrinsicParamsMatrix">buildIntrinsicParamsMatrix</a>(const&nbsp;double,&nbsp;const&nbsp;double,&nbsp;const&nbsp;double,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;3,&nbsp;3&gt;</tt></dd></dl>
  <dl><dt><a name="-computeMainOrientation"><strong>computeMainOrientation</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-computeMainOrientation">computeMainOrientation</a>(image:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;x:&nbsp;int,&nbsp;y:&nbsp;int)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 Computes&nbsp;the&nbsp;main&nbsp;orientation&nbsp;of&nbsp;a&nbsp;set&nbsp;of&nbsp;points&nbsp;with&nbsp;an&nbsp;image&nbsp;(for&nbsp;using&nbsp;in<br>
@@ -2540,7 +2187,7 @@ Find&nbsp;the&nbsp;matches&nbsp;between&nbsp;two&nbsp;lists&nbsp;of&nbsp;feature
 &nbsp;<br>
 &nbsp;Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;matched&nbsp;pairs&nbsp;of&nbsp;features.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#-matchFeatures">matchFeatures</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::vision::<a href="#CMatchedFeatureList">CMatchedFeatureList</a>&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::vision::<a href="#TMatchingOptions">TMatchingOptions</a>&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::vision::<a href="#TStereoSystemParams">TStereoSystemParams</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#-matchFeatures">matchFeatures</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeatureList">CFeatureList</a>&nbsp;&amp;,&nbsp;class&nbsp;mrpt::vision::<a href="#CMatchedFeatureList">CMatchedFeatureList</a>&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::vision::<a href="#TMatchingOptions">TMatchingOptions</a>&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::vision::<a href="#TStereoSystemParams">TStereoSystemParams</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
  <dl><dt><a name="-normalizeImage"><strong>normalizeImage</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-normalizeImage">normalizeImage</a>(image:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;nimage:&nbsp;mrpt.pymrpt.mrpt.img.CImage)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Normalizes&nbsp;the&nbsp;brigthness&nbsp;and&nbsp;contrast&nbsp;of&nbsp;an&nbsp;image&nbsp;by&nbsp;setting&nbsp;its&nbsp;mean&nbsp;value<br>
@@ -2553,84 +2200,25 @@ Normalizes&nbsp;the&nbsp;brigthness&nbsp;and&nbsp;contrast&nbsp;of&nbsp;an&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[OUTPUT]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;normalized&nbsp;image.<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::vision::<a href="#-normalizeImage">normalizeImage</a>(const&nbsp;class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;class&nbsp;mrpt::img::CImage&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
- <dl><dt><a name="-openCV_cross_correlation"><strong>openCV_cross_correlation</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-openCV_cross_correlation">openCV_cross_correlation</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
+ <dl><dt><a name="-pixelTo3D"><strong>pixelTo3D</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-pixelTo3D">pixelTo3D</a>(xy:&nbsp;mrpt.pymrpt.mrpt.img.TPixelCoordf,&nbsp;A:&nbsp;mrpt.pymrpt.mrpt.math.CMatrixFixed_double_3UL_3UL_t)&nbsp;-&gt;&nbsp;mrpt::math::TPoint3D_&lt;double&gt;<br>
 &nbsp;<br>
-1.&nbsp;<a href="#-openCV_cross_correlation">openCV_cross_correlation</a>(img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;patch_img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;x_max:&nbsp;int,&nbsp;y_max:&nbsp;int,&nbsp;max_val:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+Extract&nbsp;a&nbsp;UNITARY&nbsp;3D&nbsp;vector&nbsp;in&nbsp;the&nbsp;direction&nbsp;of&nbsp;a&nbsp;3D&nbsp;point,&nbsp;given&nbsp;from&nbsp;its<br>
+&nbsp;(x,y)&nbsp;pixels&nbsp;coordinates,&nbsp;and&nbsp;the&nbsp;camera&nbsp;intrinsic&nbsp;coordinates.<br>
+&nbsp;&nbsp;<br>
 &nbsp;<br>
-2.&nbsp;<a href="#-openCV_cross_correlation">openCV_cross_correlation</a>(img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;patch_img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;x_max:&nbsp;int,&nbsp;y_max:&nbsp;int,&nbsp;max_val:&nbsp;float,&nbsp;x_search_ini:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;Pixels&nbsp;coordinates,&nbsp;from&nbsp;the&nbsp;top-left&nbsp;corner&nbsp;of&nbsp;the<br>
+&nbsp;image.<br>
+&nbsp;&nbsp;<br>
 &nbsp;<br>
-3.&nbsp;<a href="#-openCV_cross_correlation">openCV_cross_correlation</a>(img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;patch_img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;x_max:&nbsp;int,&nbsp;y_max:&nbsp;int,&nbsp;max_val:&nbsp;float,&nbsp;x_search_ini:&nbsp;int,&nbsp;y_search_ini:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;The&nbsp;3x3&nbsp;intrinsic&nbsp;parameters&nbsp;matrix&nbsp;for&nbsp;the&nbsp;camera.<br>
+&nbsp;&nbsp;<br>
 &nbsp;<br>
-4.&nbsp;<a href="#-openCV_cross_correlation">openCV_cross_correlation</a>(img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;patch_img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;x_max:&nbsp;int,&nbsp;y_max:&nbsp;int,&nbsp;max_val:&nbsp;float,&nbsp;x_search_ini:&nbsp;int,&nbsp;y_search_ini:&nbsp;int,&nbsp;x_search_size:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-5.&nbsp;<a href="#-openCV_cross_correlation">openCV_cross_correlation</a>(img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;patch_img:&nbsp;mrpt.pymrpt.mrpt.img.CImage,&nbsp;x_max:&nbsp;int,&nbsp;y_max:&nbsp;int,&nbsp;max_val:&nbsp;float,&nbsp;x_search_ini:&nbsp;int,&nbsp;y_search_ini:&nbsp;int,&nbsp;x_search_size:&nbsp;int,&nbsp;y_search_size:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes&nbsp;the&nbsp;correlation&nbsp;between&nbsp;this&nbsp;image&nbsp;and&nbsp;another&nbsp;one,&nbsp;encapsulating<br>
-&nbsp;the&nbsp;openCV&nbsp;function&nbsp;cvMatchTemplate<br>
-&nbsp;&nbsp;&nbsp;This&nbsp;implementation&nbsp;reduced&nbsp;computation&nbsp;time.<br>
+&nbsp;The&nbsp;mrpt::math::TPoint3D&nbsp;containing&nbsp;the&nbsp;output&nbsp;unitary&nbsp;vector.<br>
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;imput&nbsp;image.&nbsp;This&nbsp;function&nbsp;supports<br>
-&nbsp;gray-scale&nbsp;(1&nbsp;channel&nbsp;only)&nbsp;images.<br>
+&nbsp;buildIntrinsicParamsMatrix,&nbsp;TPixelCoordf<br>
 &nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;"patch"&nbsp;image,&nbsp;which&nbsp;must&nbsp;be&nbsp;equal,&nbsp;or<br>
-&nbsp;smaller&nbsp;than&nbsp;"this"&nbsp;image.&nbsp;This&nbsp;function&nbsp;supports&nbsp;gray-scale&nbsp;(1&nbsp;channel&nbsp;only)<br>
-&nbsp;images.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[OUT]&nbsp;&nbsp;&nbsp;The&nbsp;x&nbsp;coordinate&nbsp;where&nbsp;it&nbsp;was&nbsp;found&nbsp;the&nbsp;maximun<br>
-&nbsp;cross&nbsp;correlation&nbsp;value.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[OUT]&nbsp;&nbsp;&nbsp;The&nbsp;y&nbsp;coordinate&nbsp;where&nbsp;it&nbsp;was&nbsp;found&nbsp;the&nbsp;maximun<br>
-&nbsp;cross&nbsp;correlation&nbsp;value.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[OUT]&nbsp;&nbsp;&nbsp;The&nbsp;maximun&nbsp;value&nbsp;of&nbsp;cross&nbsp;correlation&nbsp;which&nbsp;we<br>
-&nbsp;can&nbsp;find<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;"x"&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;search&nbsp;window.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;"y"&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;search&nbsp;window.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;width&nbsp;of&nbsp;the&nbsp;search&nbsp;window.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;height&nbsp;of&nbsp;the&nbsp;search&nbsp;window.<br>
-&nbsp;&nbsp;Note:&nbsp;By&nbsp;default,&nbsp;the&nbsp;search&nbsp;area&nbsp;is&nbsp;the&nbsp;whole&nbsp;(this)&nbsp;image.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;cross_correlation<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#-openCV_cross_correlation">openCV_cross_correlation</a>(const&nbsp;class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;mrpt::img::CImage&nbsp;&amp;,&nbsp;unsigned&nbsp;long&nbsp;&amp;,&nbsp;unsigned&nbsp;long&nbsp;&amp;,&nbsp;double&nbsp;&amp;,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
- <dl><dt><a name="-projectMatchedFeature"><strong>projectMatchedFeature</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-projectMatchedFeature">projectMatchedFeature</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#-projectMatchedFeature">projectMatchedFeature</a>(leftFeat:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;rightFeat:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;p3D:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-2.&nbsp;<a href="#-projectMatchedFeature">projectMatchedFeature</a>(leftFeat:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;rightFeat:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#CFeature">CFeature</a>,&nbsp;p3D:&nbsp;mrpt::math::TPoint3D_&lt;double&gt;,&nbsp;params:&nbsp;mrpt.pymrpt.mrpt.vision.<a href="#TStereoSystemParams">TStereoSystemParams</a>)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-Computes&nbsp;the&nbsp;3D&nbsp;position&nbsp;of&nbsp;a&nbsp;particular&nbsp;matched&nbsp;feature.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;left&nbsp;feature.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;right&nbsp;feature.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[OUT]&nbsp;&nbsp;&nbsp;The&nbsp;3D&nbsp;position&nbsp;of&nbsp;the&nbsp;projected&nbsp;point.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IN]&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;intrinsic&nbsp;and&nbsp;extrinsic&nbsp;parameters&nbsp;of&nbsp;the<br>
-&nbsp;stereo&nbsp;pair.<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::vision::<a href="#-projectMatchedFeature">projectMatchedFeature</a>(const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;mrpt::vision::<a href="#CFeature">CFeature</a>&nbsp;&amp;,&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;mrpt::vision::<a href="#TStereoSystemParams">TStereoSystemParams</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::vision::<a href="#-pixelTo3D">pixelTo3D</a>(const&nbsp;struct&nbsp;mrpt::img::TPixelCoordf&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;3,&nbsp;3&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::math::TPoint3D_&lt;double&gt;</tt></dd></dl>
  <dl><dt><a name="-projectMatchedFeatures"><strong>projectMatchedFeatures</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-projectMatchedFeatures">projectMatchedFeatures</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>

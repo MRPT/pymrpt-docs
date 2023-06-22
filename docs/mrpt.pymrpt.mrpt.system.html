@@ -29,8 +29,7 @@
 <dt><font face="helvetica, arial">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
 </font></dt><dd>
 <dl>
-<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CConsoleRedirector">CConsoleRedirector</a>
-</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CControlledRateTimer">CControlledRateTimer</a>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CControlledRateTimer">CControlledRateTimer</a>
 </font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CDirectoryExplorer">CDirectoryExplorer</a>
 </font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CFileSystemWatcher">CFileSystemWatcher</a>
 </font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.system.html#CObservable">CObservable</a>
@@ -59,58 +58,6 @@
 </dd>
 </dl>
  <p>
-<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
-<tr bgcolor="#ffc8d8">
-<td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="CConsoleRedirector">class <strong>CConsoleRedirector</strong></a>(pybind11_builtins.pybind11_object)</font></td></tr>
-    
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>By&nbsp;creating&nbsp;an&nbsp;object&nbsp;of&nbsp;this&nbsp;class,&nbsp;all&nbsp;the&nbsp;output&nbsp;to&nbsp;std::cout&nbsp;(and<br>
-std::cerr)&nbsp;will&nbsp;be&nbsp;redirected&nbsp;to&nbsp;a&nbsp;text&nbsp;file,&nbsp;and&nbsp;optionally&nbsp;also&nbsp;shown&nbsp;on<br>
-the&nbsp;console.<br>
-&nbsp;Based&nbsp;on&nbsp;code&nbsp;from&nbsp;<a href="http://www.devmaster.net/forums/showthread.php?t=7037">http://www.devmaster.net/forums/showthread.php?t=7037</a><br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;</td>
-<td width="100%"><dl><dt>Method resolution order:</dt>
-<dd><a href="mrpt.pymrpt.mrpt.system.html#CConsoleRedirector">CConsoleRedirector</a></dd>
-<dd>pybind11_builtins.pybind11_object</dd>
-<dd><a href="builtins.html#object">builtins.object</a></dd>
-</dl>
-<hr>
-Methods defined here:<br>
-<dl><dt><a name="CConsoleRedirector-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CConsoleRedirector-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-doc<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str,&nbsp;arg1:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-doc<br>
-&nbsp;<br>
-3.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str,&nbsp;arg1:&nbsp;bool,&nbsp;arg2:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-doc<br>
-&nbsp;<br>
-4.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;arg0:&nbsp;str,&nbsp;arg1:&nbsp;bool,&nbsp;arg2:&nbsp;bool,&nbsp;arg3:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-doc<br>
-&nbsp;<br>
-5.&nbsp;<a href="#CConsoleRedirector-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;out_file:&nbsp;str,&nbsp;also_to_console:&nbsp;bool,&nbsp;also_cerr:&nbsp;bool,&nbsp;append_file:&nbsp;bool,&nbsp;bufferSize:&nbsp;int)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
-
-<dl><dt><a name="CConsoleRedirector-flush"><strong>flush</strong></a>(...)</dt><dd><tt><a href="#CConsoleRedirector-flush">flush</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#CConsoleRedirector">CConsoleRedirector</a>::<a href="#CConsoleRedirector-flush">flush</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
-<dl><dt><a name="CConsoleRedirector-writeString"><strong>writeString</strong></a>(...)</dt><dd><tt><a href="#CConsoleRedirector-writeString">writeString</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CConsoleRedirector">CConsoleRedirector</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#CConsoleRedirector">CConsoleRedirector</a>::<a href="#CConsoleRedirector-writeString">writeString</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
-
-<hr>
-Static methods inherited from pybind11_builtins.pybind11_object:<br>
-<dl><dt><a name="CConsoleRedirector-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
-
-</td></tr></table> <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
@@ -290,6 +237,59 @@ directories.<br>
 <hr>
 Methods defined here:<br>
 <dl><dt><a name="CDirectoryExplorer-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CDirectoryExplorer-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CDirectoryExplorer">CDirectoryExplorer</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="CDirectoryExplorer-explore"><strong>explore</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CDirectoryExplorer-explore">explore</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CDirectoryExplorer-explore">explore</a>(path:&nbsp;str,&nbsp;mask:&nbsp;int)&nbsp;-&gt;&nbsp;List[mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo]<br>
+&nbsp;<br>
+The&nbsp;path&nbsp;of&nbsp;the&nbsp;directory&nbsp;to&nbsp;examine&nbsp;must&nbsp;be&nbsp;passed&nbsp;to&nbsp;this&nbsp;constructor,<br>
+&nbsp;among&nbsp;the<br>
+&nbsp;&nbsp;According&nbsp;to&nbsp;the&nbsp;following&nbsp;parameters,&nbsp;the&nbsp;object&nbsp;will&nbsp;collect&nbsp;the&nbsp;list<br>
+&nbsp;of&nbsp;files,&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;can&nbsp;be&nbsp;modified&nbsp;later&nbsp;through&nbsp;other&nbsp;methods&nbsp;in&nbsp;this&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;path&nbsp;to&nbsp;examine&nbsp;(IT&nbsp;MUST&nbsp;BE&nbsp;A&nbsp;DIRECTORY),&nbsp;e.g<br>
+&nbsp;"d:\temp\",&nbsp;or&nbsp;"/usr/include/"<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;One&nbsp;or&nbsp;the&nbsp;OR'ed&nbsp;combination&nbsp;of&nbsp;the&nbsp;values<br>
+&nbsp;"FILE_ATTRIB_ARCHIVE"&nbsp;and&nbsp;"FILE_ATTRIB_DIRECTORY",&nbsp;depending&nbsp;on&nbsp;what&nbsp;file<br>
+&nbsp;types&nbsp;do&nbsp;you&nbsp;want&nbsp;in&nbsp;the&nbsp;list&nbsp;(These&nbsp;values&nbsp;are&nbsp;platform-independent).<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;list&nbsp;of&nbsp;found&nbsp;files/directories&nbsp;is&nbsp;stored&nbsp;here.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;sortByName<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::<a href="#CDirectoryExplorer-explore">explore</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;class&nbsp;std::deque&lt;struct&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo&gt;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CDirectoryExplorer-explore">explore</a>(path:&nbsp;str,&nbsp;mask:&nbsp;int,&nbsp;outList:&nbsp;List[mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo])&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::<a href="#CDirectoryExplorer-explore">explore</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;class&nbsp;std::deque&lt;struct&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CDirectoryExplorer-filterByExtension"><strong>filterByExtension</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CDirectoryExplorer-filterByExtension">filterByExtension</a>(lstFiles:&nbsp;List[mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo],&nbsp;extension:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Remove&nbsp;from&nbsp;the&nbsp;list&nbsp;of&nbsp;files&nbsp;those&nbsp;whose&nbsp;extension&nbsp;does&nbsp;not&nbsp;coincide<br>
+&nbsp;(without&nbsp;case)&nbsp;with&nbsp;the&nbsp;given&nbsp;one.<br>
+&nbsp;&nbsp;Example:&nbsp;&nbsp;<a href="#CDirectoryExplorer-filterByExtension">filterByExtension</a>(lst,"txt");<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::<a href="#CDirectoryExplorer-filterByExtension">filterByExtension</a>(class&nbsp;std::deque&lt;struct&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo&gt;&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CDirectoryExplorer-sortByName"><strong>sortByName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CDirectoryExplorer-sortByName">sortByName</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CDirectoryExplorer-sortByName">sortByName</a>(lstFiles:&nbsp;List[mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo])&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CDirectoryExplorer-sortByName">sortByName</a>(lstFiles:&nbsp;List[mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo],&nbsp;ascendingOrder:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Sort&nbsp;the&nbsp;file&nbsp;entries&nbsp;by&nbsp;name,&nbsp;in&nbsp;ascending&nbsp;or&nbsp;descending&nbsp;order<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::<a href="#CDirectoryExplorer-sortByName">sortByName</a>(class&nbsp;std::deque&lt;struct&nbsp;mrpt::system::<a href="#CDirectoryExplorer">CDirectoryExplorer</a>::TFileInfo&gt;&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <hr>
 Data and other attributes defined here:<br>
@@ -688,7 +688,7 @@ Dump&nbsp;all&nbsp;stats&nbsp;through&nbsp;the&nbsp;COutputLogger&nbsp;interface
 &nbsp;getStatsAsText,<br>
 &nbsp;saveToCVSFile&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-dumpAllStats">dumpAllStats</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-dumpAllStats">dumpAllStats</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CTimeLogger-enable"><strong>enable</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-enable">enable</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -737,7 +737,7 @@ Dump&nbsp;all&nbsp;stats&nbsp;to&nbsp;a&nbsp;multi-line&nbsp;text&nbsp;string.&n
 &nbsp;dumpAllStats,<br>
 &nbsp;saveToCVSFile&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-getStatsAsText">getStatsAsText</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#CTimeLogger">CTimeLogger</a>::<a href="#CTimeLogger-getStatsAsText">getStatsAsText</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
 
 <dl><dt><a name="CTimeLogger-isEnabled"><strong>isEnabled</strong></a>(...)</dt><dd><tt><a href="#CTimeLogger-isEnabled">isEnabled</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#CTimeLogger">CTimeLogger</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -1400,11 +1400,11 @@ C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a h
 Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;enqueued&nbsp;tasks,&nbsp;currently&nbsp;waiting&nbsp;for&nbsp;a&nbsp;free<br>
 &nbsp;working&nbsp;thread&nbsp;to&nbsp;process&nbsp;them.&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a href="#WorkerThreadsPool-pendingTasks">pendingTasks</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a href="#WorkerThreadsPool-pendingTasks">pendingTasks</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::size_t</tt></dd></dl>
 
 <dl><dt><a name="WorkerThreadsPool-resize"><strong>resize</strong></a>(...)</dt><dd><tt><a href="#WorkerThreadsPool-resize">resize</a>(self:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#WorkerThreadsPool">WorkerThreadsPool</a>,&nbsp;num_threads:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a href="#WorkerThreadsPool-resize">resize</a>(unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#WorkerThreadsPool">WorkerThreadsPool</a>::<a href="#WorkerThreadsPool-resize">resize</a>(std::size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <hr>
 Data and other attributes defined here:<br>
@@ -1513,7 +1513,7 @@ Required&nbsp;to&nbsp;ensure&nbsp;INVALID_TIMESTAMP&nbsp;returns&nbsp;a&nbsp;"co
 &nbsp;<br>
 &nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.3.3)<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-InvalidTimeStamp">InvalidTimeStamp</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-InvalidTimeStamp">InvalidTimeStamp</a>()&nbsp;--&gt;&nbsp;const&nbsp;mrpt::Clock::time_point&nbsp;&amp;</tt></dd></dl>
  <dl><dt><a name="-MRPT_getCompilationDate"><strong>MRPT_getCompilationDate</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-MRPT_getCompilationDate">MRPT_getCompilationDate</a>()&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Returns&nbsp;the&nbsp;MRPT&nbsp;source&nbsp;code&nbsp;timestamp,&nbsp;according&nbsp;to&nbsp;the&nbsp;Reproducible-Builds<br>
@@ -1532,7 +1532,7 @@ Builds&nbsp;a&nbsp;timestamp&nbsp;from&nbsp;the&nbsp;parts&nbsp;(Parts&nbsp;are&
 &nbsp;<br>
 &nbsp;timestampToParts<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-buildTimestampFromParts">buildTimestampFromParts</a>(const&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-buildTimestampFromParts">buildTimestampFromParts</a>(const&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
  <dl><dt><a name="-buildTimestampFromPartsLocalTime"><strong>buildTimestampFromPartsLocalTime</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-buildTimestampFromPartsLocalTime">buildTimestampFromPartsLocalTime</a>(p:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TTimeParts">TTimeParts</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
 Builds&nbsp;a&nbsp;timestamp&nbsp;from&nbsp;the&nbsp;parts&nbsp;(Parts&nbsp;are&nbsp;in&nbsp;local&nbsp;time)<br>
@@ -1540,7 +1540,7 @@ Builds&nbsp;a&nbsp;timestamp&nbsp;from&nbsp;the&nbsp;parts&nbsp;(Parts&nbsp;are&
 &nbsp;<br>
 &nbsp;timestampToParts,&nbsp;buildTimestampFromParts<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-buildTimestampFromPartsLocalTime">buildTimestampFromPartsLocalTime</a>(const&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-buildTimestampFromPartsLocalTime">buildTimestampFromPartsLocalTime</a>(const&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
  <dl><dt><a name="-changeCurrentProcessPriority"><strong>changeCurrentProcessPriority</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-changeCurrentProcessPriority">changeCurrentProcessPriority</a>(priority:&nbsp;mrpt.pymrpt.mrpt.system.<a href="#TProcessPriority">TProcessPriority</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Change&nbsp;the&nbsp;priority&nbsp;of&nbsp;the&nbsp;given&nbsp;process&nbsp;(it&nbsp;applies&nbsp;to&nbsp;all&nbsp;the&nbsp;threads,<br>
@@ -1583,7 +1583,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 2.&nbsp;<a href="#-compute_CRC16">compute_CRC16</a>(data:&nbsp;int,&nbsp;len:&nbsp;int,&nbsp;gen_pol:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-compute_CRC16">compute_CRC16</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;unsigned&nbsp;short)&nbsp;--&gt;&nbsp;unsigned&nbsp;short</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-compute_CRC16">compute_CRC16</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;size_t,&nbsp;const&nbsp;unsigned&nbsp;short)&nbsp;--&gt;&nbsp;uint16_t</tt></dd></dl>
  <dl><dt><a name="-compute_CRC32"><strong>compute_CRC32</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-compute_CRC32">compute_CRC32</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -1591,7 +1591,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 2.&nbsp;<a href="#-compute_CRC32">compute_CRC32</a>(data:&nbsp;int,&nbsp;len:&nbsp;int,&nbsp;gen_pol:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-compute_CRC32">compute_CRC32</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-compute_CRC32">compute_CRC32</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;size_t,&nbsp;const&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;uint32_t</tt></dd></dl>
  <dl><dt><a name="-consoleColorAndStyle"><strong>consoleColorAndStyle</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-consoleColorAndStyle">consoleColorAndStyle</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -1658,7 +1658,7 @@ Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(i
 &nbsp;<br>
 &nbsp;dateTimeToString<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-dateTimeLocalToString">dateTimeLocalToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-dateTimeLocalToString">dateTimeLocalToString</a>(const&nbsp;mrpt::Clock::time_point)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-dateTimeToString"><strong>dateTimeToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-dateTimeToString">dateTimeToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(UTC&nbsp;time):<br>
@@ -1667,12 +1667,12 @@ Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(U
 &nbsp;<br>
 &nbsp;dateTimeLocalToString<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-dateTimeToString">dateTimeToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-dateTimeToString">dateTimeToString</a>(const&nbsp;mrpt::Clock::time_point)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-dateToString"><strong>dateToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-dateToString">dateToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form:&nbsp;YEAR/MONTH/DAY<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-dateToString">dateToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-dateToString">dateToString</a>(const&nbsp;mrpt::Clock::time_point)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-deleteFile"><strong>deleteFile</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-deleteFile">deleteFile</a>(fileName:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
 Deletes&nbsp;a&nbsp;single&nbsp;file.&nbsp;For&nbsp;multiple&nbsp;files&nbsp;see&nbsp;deleteFiles<br>
@@ -1752,12 +1752,12 @@ C++:&nbsp;mrpt::system::<a href="#-executeCommand">executeCommand</a>(const&nbsp
 &nbsp;<br>
 Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;seconds&nbsp;ellapsed&nbsp;from&nbsp;midnight&nbsp;in&nbsp;the&nbsp;given&nbsp;timestamp<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-extractDayTimeFromTimestamp">extractDayTimeFromTimestamp</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-extractDayTimeFromTimestamp">extractDayTimeFromTimestamp</a>(const&nbsp;mrpt::Clock::time_point)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
  <dl><dt><a name="-extractFileDirectory"><strong>extractFileDirectory</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-extractFileDirectory">extractFileDirectory</a>(filePath:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Extract&nbsp;the&nbsp;whole&nbsp;path&nbsp;(the&nbsp;directory)&nbsp;of&nbsp;a&nbsp;filename&nbsp;from&nbsp;a&nbsp;complete&nbsp;path<br>
 &nbsp;plus&nbsp;name&nbsp;plus&nbsp;extension.<br>
-&nbsp;&nbsp;This&nbsp;function&nbsp;works&nbsp;for&nbsp;either&nbsp;"/"&nbsp;or&nbsp;""&nbsp;directory&nbsp;separators.<br>
+&nbsp;&nbsp;This&nbsp;function&nbsp;works&nbsp;for&nbsp;either&nbsp;"/"&nbsp;or&nbsp;"\"&nbsp;directory&nbsp;separators.<br>
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;extractFileName,extractFileExtension<br>
@@ -1784,7 +1784,7 @@ C++:&nbsp;mrpt::system::<a href="#-extractFileExtension">extractFileExtension</a
 &nbsp;<br>
 Extract&nbsp;just&nbsp;the&nbsp;name&nbsp;(without&nbsp;extension)&nbsp;of&nbsp;a&nbsp;filename&nbsp;from&nbsp;a&nbsp;complete&nbsp;path<br>
 &nbsp;plus&nbsp;name&nbsp;plus&nbsp;extension.<br>
-&nbsp;&nbsp;This&nbsp;function&nbsp;works&nbsp;for&nbsp;either&nbsp;"/"&nbsp;or&nbsp;""&nbsp;directory&nbsp;separators.<br>
+&nbsp;&nbsp;This&nbsp;function&nbsp;works&nbsp;for&nbsp;either&nbsp;"/"&nbsp;or&nbsp;"\"&nbsp;directory&nbsp;separators.<br>
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;extractFileExtension,extractFileDirectory<br>
@@ -1839,7 +1839,7 @@ Returns&nbsp;the&nbsp;first&nbsp;`n`&nbsp;lines&nbsp;(splitted&nbsp;by&nbsp;''&n
 &nbsp;<br>
 &nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.3.2<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-firstNLines">firstNLines</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-firstNLines">firstNLines</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;size_t)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-formatTimeInterval"><strong>formatTimeInterval</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-formatTimeInterval">formatTimeInterval</a>(timeSeconds:&nbsp;float)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Returns&nbsp;a&nbsp;formated&nbsp;string&nbsp;with&nbsp;the&nbsp;given&nbsp;time&nbsp;difference&nbsp;(passed&nbsp;as&nbsp;the<br>
@@ -1856,7 +1856,7 @@ Returns&nbsp;the&nbsp;current&nbsp;(UTC)&nbsp;system&nbsp;time.<br>
 &nbsp;<br>
 &nbsp;now<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-getCurrentTime">getCurrentTime</a>()&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-getCurrentTime">getCurrentTime</a>()&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
  <dl><dt><a name="-getFileModificationTime"><strong>getFileModificationTime</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getFileModificationTime">getFileModificationTime</a>(filename:&nbsp;str)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
 Return&nbsp;the&nbsp;time&nbsp;of&nbsp;the&nbsp;file&nbsp;last&nbsp;modification,&nbsp;or&nbsp;"0"&nbsp;if&nbsp;the&nbsp;file&nbsp;doesn't<br>
@@ -1868,7 +1868,7 @@ C++:&nbsp;mrpt::system::<a href="#-getFileModificationTime">getFileModificationT
 Return&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;given&nbsp;file,&nbsp;or&nbsp;size_t(-1)&nbsp;if&nbsp;some&nbsp;error&nbsp;is&nbsp;found<br>
 &nbsp;accessing&nbsp;that&nbsp;file.&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-getFileSize">getFileSize</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-getFileSize">getFileSize</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
  <dl><dt><a name="-getMRPTLicense"><strong>getMRPTLicense</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-getMRPTLicense">getMRPTLicense</a>()&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Returns&nbsp;a&nbsp;const&nbsp;ref&nbsp;to&nbsp;a&nbsp;text&nbsp;with&nbsp;the&nbsp;same&nbsp;text&nbsp;that&nbsp;appears&nbsp;at&nbsp;the<br>
@@ -1964,7 +1964,7 @@ C++:&nbsp;mrpt::system::<a href="#-md5">md5</a>(const&nbsp;std::string&nbsp;&amp
 &nbsp;<br>
 Computes&nbsp;the&nbsp;md5&nbsp;of&nbsp;a&nbsp;block&nbsp;of&nbsp;data.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-md5">md5</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-md5">md5</a>(const&nbsp;unsigned&nbsp;char&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-now"><strong>now</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-now">now</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
 A&nbsp;shortcut&nbsp;for&nbsp;system::getCurrentTime<br>
@@ -1972,7 +1972,7 @@ A&nbsp;shortcut&nbsp;for&nbsp;system::getCurrentTime<br>
 &nbsp;<br>
 &nbsp;getCurrentTime<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-now">now</a>()&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-now">now</a>()&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
  <dl><dt><a name="-now_double"><strong>now_double</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-now_double">now_double</a>()&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 Returns&nbsp;the&nbsp;current&nbsp;time,&nbsp;as&nbsp;a&nbsp;`double`&nbsp;(fractional&nbsp;version&nbsp;of&nbsp;time_t)<br>
@@ -1990,8 +1990,8 @@ Finds&nbsp;the&nbsp;position&nbsp;of&nbsp;the&nbsp;n-th&nbsp;occurence&nbsp;of&n
 &nbsp;<br>
 &nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.3.2<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-nthOccurrence">nthOccurrence</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
- <dl><dt><a name="-pathJoin"><strong>pathJoin</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-pathJoin">pathJoin</a>(paths:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;str<br>
+C++:&nbsp;mrpt::system::<a href="#-nthOccurrence">nthOccurrence</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
+ <dl><dt><a name="-pathJoin"><strong>pathJoin</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-pathJoin">pathJoin</a>(paths:&nbsp;List[str])&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Portable&nbsp;version&nbsp;of&nbsp;std::filesystem::path::append(),&nbsp;with&nbsp;Python-like&nbsp;name.<br>
 &nbsp;<br>
@@ -2003,7 +2003,7 @@ Portable&nbsp;version&nbsp;of&nbsp;std::filesystem::path::append(),&nbsp;with&nb
 &nbsp;&nbsp;<br>
 &nbsp;(New&nbsp;in&nbsp;MRPT&nbsp;2.5.0)<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-pathJoin">pathJoin</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-pathJoin">pathJoin</a>(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-pause"><strong>pause</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-pause">pause</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -2030,7 +2030,8 @@ Build&nbsp;an&nbsp;text&nbsp;incremental&nbsp;progress&nbsp;bar&nbsp;with<br>
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;See&nbsp;example:&nbsp;<br>
-&nbsp;&nbsp;system_progress_bar/test.cpp&nbsp;example-system-progress-bar<br>
+&nbsp;<br>
+&nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
@@ -2062,7 +2063,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 Enlarge&nbsp;the&nbsp;string&nbsp;with&nbsp;spaces&nbsp;up&nbsp;to&nbsp;the&nbsp;given&nbsp;length.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-rightPad">rightPad</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-rightPad">rightPad</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;size_t,&nbsp;bool)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-strCmp"><strong>strCmp</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-strCmp">strCmp</a>(s1:&nbsp;str,&nbsp;s2:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
 Return&nbsp;true&nbsp;if&nbsp;the&nbsp;two&nbsp;strings&nbsp;are&nbsp;equal&nbsp;(case&nbsp;sensitive)&nbsp;&nbsp;<br>
@@ -2090,28 +2091,17 @@ C++:&nbsp;mrpt::system::<a href="#-strStartsI">strStartsI</a>(const&nbsp;std::st
  <dl><dt><a name="-stringListAsString"><strong>stringListAsString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-stringListAsString">stringListAsString</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
-1.&nbsp;<a href="#-stringListAsString">stringListAsString</a>(lst:&nbsp;mrpt.pymrpt.std.vector_std_string,&nbsp;out:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+1.&nbsp;<a href="#-stringListAsString">stringListAsString</a>(lst:&nbsp;List[str],&nbsp;out:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-2.&nbsp;<a href="#-stringListAsString">stringListAsString</a>(lst:&nbsp;mrpt.pymrpt.std.vector_std_string,&nbsp;out:&nbsp;str,&nbsp;newline:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+2.&nbsp;<a href="#-stringListAsString">stringListAsString</a>(lst:&nbsp;List[str],&nbsp;out:&nbsp;str,&nbsp;newline:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Convert&nbsp;a&nbsp;string&nbsp;list&nbsp;to&nbsp;one&nbsp;single&nbsp;string&nbsp;with&nbsp;new-lines.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-stringListAsString">stringListAsString</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-stringListAsString">stringListAsString</a>(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;,&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
  <dl><dt><a name="-thread_name"><strong>thread_name</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-thread_name">thread_name</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
-1.&nbsp;<a href="#-thread_name">thread_name</a>(name:&nbsp;str,&nbsp;theThread:&nbsp;mrpt.pymrpt.std.thread)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-Sets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;given&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.0.4<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::thread&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
-&nbsp;<br>
-2.&nbsp;<a href="#-thread_name">thread_name</a>(name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+1.&nbsp;<a href="#-thread_name">thread_name</a>(name:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Sets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;current&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
 &nbsp;<br>
@@ -2122,18 +2112,7 @@ Sets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;current&nbsp;thread;&nbsp;useful&n
 &nbsp;<br>
 C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>(const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
 &nbsp;<br>
-3.&nbsp;<a href="#-thread_name">thread_name</a>(theThread:&nbsp;mrpt.pymrpt.std.thread)&nbsp;-&gt;&nbsp;str<br>
-&nbsp;<br>
-Gets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;given&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;New&nbsp;in&nbsp;MRPT&nbsp;2.0.4<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>(class&nbsp;std::thread&nbsp;&amp;)&nbsp;--&gt;&nbsp;std::string<br>
-&nbsp;<br>
-4.&nbsp;<a href="#-thread_name">thread_name</a>()&nbsp;-&gt;&nbsp;str<br>
+2.&nbsp;<a href="#-thread_name">thread_name</a>()&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Gets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;current&nbsp;thread;&nbsp;useful&nbsp;for&nbsp;debuggers.<br>
 &nbsp;<br>
@@ -2148,7 +2127,7 @@ C++:&nbsp;mrpt::system::<a href="#-thread_name">thread_name</a>()&nbsp;--&gt;&nb
 Returns&nbsp;the&nbsp;time&nbsp;difference&nbsp;from&nbsp;t1&nbsp;to&nbsp;t2&nbsp;(positive&nbsp;if&nbsp;t2&nbsp;is&nbsp;posterior&nbsp;to<br>
 &nbsp;t1),&nbsp;in&nbsp;seconds&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-timeDifference">timeDifference</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-timeDifference">timeDifference</a>(const&nbsp;mrpt::Clock::time_point&nbsp;&amp;,&nbsp;const&nbsp;mrpt::Clock::time_point&nbsp;&amp;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
  <dl><dt><a name="-timeLocalToString"><strong>timeLocalToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timeLocalToString">timeLocalToString</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -2158,12 +2137,12 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(in&nbsp;local&nbsp;time):&nbsp;HH:MM:SS.MMMMMM<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-timeLocalToString">timeLocalToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-timeLocalToString">timeLocalToString</a>(const&nbsp;mrpt::Clock::time_point,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-timeToString"><strong>timeToString</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timeToString">timeToString</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Convert&nbsp;a&nbsp;timestamp&nbsp;into&nbsp;this&nbsp;textual&nbsp;form&nbsp;(UTC):&nbsp;HH:MM:SS.MMMMMM<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-timeToString">timeToString</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-timeToString">timeToString</a>(const&nbsp;mrpt::Clock::time_point)&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
  <dl><dt><a name="-time_tToTimestamp"><strong>time_tToTimestamp</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-time_tToTimestamp">time_tToTimestamp</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -2175,7 +2154,7 @@ Transform&nbsp;from&nbsp;standard&nbsp;"time_t"&nbsp;(actually&nbsp;a&nbsp;doubl
 &nbsp;<br>
 &nbsp;timestampTotime_t<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-time_tToTimestamp">time_tToTimestamp</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;<br>
+C++:&nbsp;mrpt::system::<a href="#-time_tToTimestamp">time_tToTimestamp</a>(const&nbsp;double)&nbsp;--&gt;&nbsp;mrpt::Clock::time_point<br>
 &nbsp;<br>
 2.&nbsp;<a href="#-time_tToTimestamp">time_tToTimestamp</a>(t:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
@@ -2184,13 +2163,13 @@ Transform&nbsp;from&nbsp;standard&nbsp;"time_t"&nbsp;to&nbsp;TTimeStamp.<br>
 &nbsp;<br>
 &nbsp;timestampTotime_t<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-time_tToTimestamp">time_tToTimestamp</a>(const&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-time_tToTimestamp">time_tToTimestamp</a>(const&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
  <dl><dt><a name="-timestampAdd"><strong>timestampAdd</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampAdd">timestampAdd</a>(tim:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t,&nbsp;num_seconds:&nbsp;float)&nbsp;-&gt;&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t<br>
 &nbsp;<br>
 Shifts&nbsp;a&nbsp;timestamp&nbsp;the&nbsp;given&nbsp;amount&nbsp;of&nbsp;seconds&nbsp;(&gt;0:&nbsp;forwards&nbsp;in&nbsp;time,&nbsp;&lt;0:<br>
 &nbsp;backwards)&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-timestampAdd">timestampAdd</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-timestampAdd">timestampAdd</a>(const&nbsp;mrpt::Clock::time_point,&nbsp;const&nbsp;double)&nbsp;--&gt;&nbsp;mrpt::Clock::time_point</tt></dd></dl>
  <dl><dt><a name="-timestampToDouble"><strong>timestampToDouble</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampToDouble">timestampToDouble</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 Transform&nbsp;from&nbsp;TTimeStamp&nbsp;to&nbsp;standard&nbsp;"time_t"&nbsp;(actually&nbsp;a&nbsp;double&nbsp;number,&nbsp;it<br>
@@ -2201,7 +2180,7 @@ Transform&nbsp;from&nbsp;TTimeStamp&nbsp;to&nbsp;standard&nbsp;"time_t"&nbsp;(ac
 &nbsp;<br>
 &nbsp;time_tToTimestamp<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-timestampToDouble">timestampToDouble</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-timestampToDouble">timestampToDouble</a>(const&nbsp;mrpt::Clock::time_point)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
  <dl><dt><a name="-timestampToParts"><strong>timestampToParts</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampToParts">timestampToParts</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -2215,7 +2194,7 @@ Gets&nbsp;the&nbsp;individual&nbsp;parts&nbsp;of&nbsp;a&nbsp;date/time&nbsp;(day
 &nbsp;<br>
 &nbsp;buildTimestampFromParts<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-timestampToParts">timestampToParts</a>(struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;,&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-timestampToParts">timestampToParts</a>(mrpt::Clock::time_point,&nbsp;struct&nbsp;mrpt::system::<a href="#TTimeParts">TTimeParts</a>&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
  <dl><dt><a name="-timestampTotime_t"><strong>timestampTotime_t</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-timestampTotime_t">timestampTotime_t</a>(t:&nbsp;mrpt.pymrpt.std.chrono.time_point_mrpt_Clock_std_chrono_duration_long_std_ratio_1_10000000_t)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
 Transform&nbsp;from&nbsp;TTimeStamp&nbsp;to&nbsp;standard&nbsp;"time_t"&nbsp;(actually&nbsp;a&nbsp;double&nbsp;number,&nbsp;it<br>
@@ -2224,7 +2203,7 @@ Transform&nbsp;from&nbsp;TTimeStamp&nbsp;to&nbsp;standard&nbsp;"time_t"&nbsp;(ac
 &nbsp;<br>
 &nbsp;time_tToTimestamp<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-timestampTotime_t">timestampTotime_t</a>(const&nbsp;struct&nbsp;std::chrono::time_point&lt;class&nbsp;mrpt::Clock,&nbsp;struct&nbsp;std::chrono::duration&lt;long,&nbsp;struct&nbsp;std::ratio&lt;1,&nbsp;10000000&gt;&nbsp;&gt;&nbsp;&gt;)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-timestampTotime_t">timestampTotime_t</a>(const&nbsp;mrpt::Clock::time_point)&nbsp;--&gt;&nbsp;double</tt></dd></dl>
  <dl><dt><a name="-toAbsolutePath"><strong>toAbsolutePath</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-toAbsolutePath">toAbsolutePath</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
@@ -2250,9 +2229,9 @@ C++:&nbsp;mrpt::system::<a href="#-toAbsolutePath">toAbsolutePath</a>(const&nbsp
  <dl><dt><a name="-tokenize"><strong>tokenize</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-tokenize">tokenize</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
-1.&nbsp;<a href="#-tokenize">tokenize</a>(inString:&nbsp;str,&nbsp;inDelimiters:&nbsp;str,&nbsp;outTokens:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+1.&nbsp;<a href="#-tokenize">tokenize</a>(inString:&nbsp;str,&nbsp;inDelimiters:&nbsp;str,&nbsp;outTokens:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-2.&nbsp;<a href="#-tokenize">tokenize</a>(inString:&nbsp;str,&nbsp;inDelimiters:&nbsp;str,&nbsp;outTokens:&nbsp;mrpt.pymrpt.std.vector_std_string,&nbsp;skipBlankTokens:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
+2.&nbsp;<a href="#-tokenize">tokenize</a>(inString:&nbsp;str,&nbsp;inDelimiters:&nbsp;str,&nbsp;outTokens:&nbsp;List[str],&nbsp;skipBlankTokens:&nbsp;bool)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Tokenizes&nbsp;a&nbsp;string&nbsp;according&nbsp;to&nbsp;a&nbsp;set&nbsp;of&nbsp;delimiting&nbsp;characters.<br>
 &nbsp;Example:<br>
@@ -2274,7 +2253,7 @@ Tokenizes&nbsp;a&nbsp;string&nbsp;according&nbsp;to&nbsp;a&nbsp;set&nbsp;of&nbsp
 &nbsp;<br>
 &nbsp;Can&nbsp;be&nbsp;a&nbsp;std::vector&nbsp;or&nbsp;std::deque&nbsp;of&nbsp;std::string's.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::system::<a href="#-tokenize">tokenize</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::system::<a href="#-tokenize">tokenize</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;,&nbsp;bool)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
  <dl><dt><a name="-trim"><strong>trim</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-trim">trim</a>(str:&nbsp;str)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 Removes&nbsp;leading&nbsp;and&nbsp;trailing&nbsp;spaces&nbsp;<br>

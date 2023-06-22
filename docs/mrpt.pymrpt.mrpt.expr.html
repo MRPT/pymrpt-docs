@@ -89,9 +89,9 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 1.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-2.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str,&nbsp;variables:&nbsp;mrpt.pymrpt.std.map_std_string_double)&nbsp;-&gt;&nbsp;None<br>
+2.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str,&nbsp;variables:&nbsp;Dict[str,&nbsp;float])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-3.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str,&nbsp;variables:&nbsp;mrpt.pymrpt.std.map_std_string_double,&nbsp;expr_name_for_error_reporting:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+3.&nbsp;<a href="#CRuntimeCompiledExpression-compile">compile</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>,&nbsp;expression:&nbsp;str,&nbsp;variables:&nbsp;Dict[str,&nbsp;float],&nbsp;expr_name_for_error_reporting:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Initializes&nbsp;the&nbsp;object&nbsp;by&nbsp;compiling&nbsp;an&nbsp;expression.<br>
 &nbsp;<br>
@@ -103,7 +103,7 @@ Initializes&nbsp;the&nbsp;object&nbsp;by&nbsp;compiling&nbsp;an&nbsp;expression.
 &nbsp;<br>
 &nbsp;register_symbol_table()<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-compile">compile</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;std::map&lt;std::string,&nbsp;double,&nbsp;struct&nbsp;std::less&lt;std::string&nbsp;&gt;,&nbsp;class&nbsp;std::allocator&lt;struct&nbsp;std::pair&lt;const&nbsp;std::string,&nbsp;double&gt;&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::expr::<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>::<a href="#CRuntimeCompiledExpression-compile">compile</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;class&nbsp;std::map&lt;std::string,&nbsp;double&gt;&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CRuntimeCompiledExpression-eval"><strong>eval</strong></a>(...)</dt><dd><tt><a href="#CRuntimeCompiledExpression-eval">eval</a>(self:&nbsp;mrpt.pymrpt.mrpt.expr.<a href="#CRuntimeCompiledExpression">CRuntimeCompiledExpression</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>

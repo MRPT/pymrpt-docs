@@ -74,7 +74,7 @@ Overloaded&nbsp;function.<br>
 This&nbsp;virtual&nbsp;method&nbsp;has&nbsp;no&nbsp;effect&nbsp;in&nbsp;this&nbsp;implementation&nbsp;over&nbsp;a&nbsp;TCP<br>
 &nbsp;socket,&nbsp;and&nbsp;its&nbsp;use&nbsp;raises&nbsp;an&nbsp;exception&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-Seek">Seek</a>(int64_t,&nbsp;enum&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -126,14 +126,14 @@ C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href
 This&nbsp;virtual&nbsp;method&nbsp;has&nbsp;no&nbsp;effect&nbsp;in&nbsp;this&nbsp;implementation&nbsp;over&nbsp;a&nbsp;TCP<br>
 &nbsp;socket,&nbsp;and&nbsp;its&nbsp;use&nbsp;raises&nbsp;an&nbsp;exception&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-getReadPendingBytes"><strong>getReadPendingBytes</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getReadPendingBytes">getReadPendingBytes</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
 Return&nbsp;the&nbsp;number&nbsp;of&nbsp;bytes&nbsp;already&nbsp;in&nbsp;the&nbsp;receive&nbsp;queue&nbsp;(they&nbsp;can&nbsp;be<br>
 &nbsp;read&nbsp;without&nbsp;waiting)&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getReadPendingBytes">getReadPendingBytes</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getReadPendingBytes">getReadPendingBytes</a>()&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-getSOSendBufffer"><strong>getSOSendBufffer</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getSOSendBufffer">getSOSendBufffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
@@ -152,7 +152,7 @@ C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href
 This&nbsp;virtual&nbsp;method&nbsp;has&nbsp;no&nbsp;effect&nbsp;in&nbsp;this&nbsp;implementation&nbsp;over&nbsp;a&nbsp;TCP<br>
 &nbsp;socket,&nbsp;and&nbsp;its&nbsp;use&nbsp;raises&nbsp;an&nbsp;exception&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-isConnected"><strong>isConnected</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-isConnected">isConnected</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -190,7 +190,7 @@ A&nbsp;method&nbsp;for&nbsp;reading&nbsp;from&nbsp;the&nbsp;socket&nbsp;with&nbs
 &nbsp;<br>
 &nbsp;The&nbsp;number&nbsp;of&nbsp;actually&nbsp;read&nbsp;bytes.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-readAsync">readAsync</a>(void&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-readAsync">readAsync</a>(void&nbsp;*,&nbsp;size_t,&nbsp;const&nbsp;int,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-sendString"><strong>sendString</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-sendString">sendString</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -252,7 +252,7 @@ A&nbsp;method&nbsp;for&nbsp;writing&nbsp;to&nbsp;the&nbsp;socket&nbsp;with&nbsp;
 &nbsp;<br>
 &nbsp;The&nbsp;number&nbsp;of&nbsp;actually&nbsp;written&nbsp;bytes.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-writeAsync">writeAsync</a>(const&nbsp;void&nbsp;*,&nbsp;const&nbsp;unsigned&nbsp;long,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>::<a href="#CClientTCPSocket-writeAsync">writeAsync</a>(const&nbsp;void&nbsp;*,&nbsp;size_t,&nbsp;const&nbsp;int)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <hr>
 Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mrpt.io.CStream</a>:<br>
@@ -261,7 +261,7 @@ Methods inherited from <a href="mrpt.pymrpt.mrpt.io.html#CStream">mrpt.pymrpt.mr
 Introduces&nbsp;a&nbsp;pure&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&nbsp;reading&nbsp;from&nbsp;the<br>
 &nbsp;stream.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-Read">Read</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-ReadBufferImmediate"><strong>ReadBufferImmediate</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-ReadBufferImmediate">ReadBufferImmediate</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
@@ -274,7 +274,7 @@ classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
 &nbsp;<br>
 &nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
@@ -282,7 +282,7 @@ Introduces&nbsp;a&nbsp;pure&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&n
 &nbsp;&nbsp;Write&nbsp;attempts&nbsp;to&nbsp;write&nbsp;up&nbsp;to&nbsp;Count&nbsp;bytes&nbsp;to&nbsp;Buffer,&nbsp;and&nbsp;returns&nbsp;the<br>
 &nbsp;number&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;written.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CClientTCPSocket-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CClientTCPSocket-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CClientTCPSocket-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
@@ -329,8 +329,8 @@ raise&nbsp;an&nbsp;exception&nbsp;of&nbsp;the&nbsp;class&nbsp;`std::exception`<b
 &nbsp;The&nbsp;serial&nbsp;port&nbsp;to&nbsp;open&nbsp;is&nbsp;passed&nbsp;in&nbsp;the&nbsp;constructor&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;a&nbsp;string<br>
 description,&nbsp;which&nbsp;is&nbsp;platform&nbsp;dependent.<br>
 &nbsp;<br>
-&nbsp;In&nbsp;Windows&nbsp;they&nbsp;are&nbsp;numbered&nbsp;"COM1"-"COM4"&nbsp;and&nbsp;"\."&nbsp;for&nbsp;numbers<br>
-above.&nbsp;It&nbsp;is&nbsp;recomended&nbsp;to&nbsp;always&nbsp;use&nbsp;the&nbsp;prefix&nbsp;"\."&nbsp;despite&nbsp;the&nbsp;actual<br>
+&nbsp;In&nbsp;Windows&nbsp;they&nbsp;are&nbsp;numbered&nbsp;"COM1"-"COM4"&nbsp;and&nbsp;"\\.\COMXXX"&nbsp;for&nbsp;numbers<br>
+above.&nbsp;It&nbsp;is&nbsp;recomended&nbsp;to&nbsp;always&nbsp;use&nbsp;the&nbsp;prefix&nbsp;"\\.\"&nbsp;despite&nbsp;the&nbsp;actual<br>
 port&nbsp;number.<br>
 &nbsp;<br>
 &nbsp;In&nbsp;Linux&nbsp;the&nbsp;name&nbsp;must&nbsp;refer&nbsp;to&nbsp;the&nbsp;device,&nbsp;for&nbsp;example:&nbsp;"ttyUSB0","ttyS0".<br>
@@ -364,7 +364,7 @@ Implements&nbsp;the&nbsp;virtual&nbsp;method&nbsp;responsible&nbsp;for&nbsp;read
 &nbsp;<br>
 &nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Read">Read</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Read">Read</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CSerialPort-ReadString"><strong>ReadString</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-ReadString">ReadString</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -410,11 +410,11 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 not&nbsp;applicable&nbsp;in&nbsp;a&nbsp;serial&nbsp;port&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Seek">Seek</a>(long,&nbsp;enum&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Seek">Seek</a>(int64_t,&nbsp;enum&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::TSeekOrigin)&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CSerialPort-Write"><strong>Write</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-Write">Write</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-Write">Write</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CSerialPort-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -445,13 +445,13 @@ C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerial
 &nbsp;<br>
 not&nbsp;applicable&nbsp;in&nbsp;a&nbsp;serial&nbsp;port&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-getPosition">getPosition</a>()&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CSerialPort-getTotalBytesCount"><strong>getTotalBytesCount</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-getTotalBytesCount">getTotalBytesCount</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
 not&nbsp;applicable&nbsp;in&nbsp;a&nbsp;serial&nbsp;port&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CSerialPort">CSerialPort</a>::<a href="#CSerialPort-getTotalBytesCount">getTotalBytesCount</a>()&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CSerialPort-isOpen"><strong>isOpen</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-isOpen">isOpen</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CSerialPort">CSerialPort</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -559,7 +559,7 @@ classes&nbsp;but&nbsp;in&nbsp;some&nbsp;hardware-related&nbsp;&nbsp;classes.<br>
 &nbsp;<br>
 &nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CSerialPort-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::io::<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>::<a href="#CSerialPort-ReadBufferImmediate">ReadBufferImmediate</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CSerialPort-getStreamDescription"><strong>getStreamDescription</strong></a>(...)</dt><dd><tt><a href="#CSerialPort-getStreamDescription">getStreamDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.io.<a href="mrpt.pymrpt.mrpt.io.html#CStream">CStream</a>)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
@@ -645,7 +645,7 @@ Waits&nbsp;for&nbsp;an&nbsp;incoming&nbsp;connection&nbsp;(indefinitely,&nbsp;or
 &nbsp;<br>
 &nbsp;The&nbsp;incoming&nbsp;connection,&nbsp;or&nbsp;nullptr&nbsp;on&nbsp;timeout&nbsp;or&nbsp;error.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::comms::<a href="#CServerTCPSocket">CServerTCPSocket</a>::<a href="#CServerTCPSocket-accept">accept</a>(int)&nbsp;--&gt;&nbsp;class&nbsp;std::unique_ptr&lt;class&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>,&nbsp;struct&nbsp;std::default_delete&lt;class&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>&gt;&nbsp;&gt;</tt></dd></dl>
+C++:&nbsp;mrpt::comms::<a href="#CServerTCPSocket">CServerTCPSocket</a>::<a href="#CServerTCPSocket-accept">accept</a>(int)&nbsp;--&gt;&nbsp;class&nbsp;std::unique_ptr&lt;class&nbsp;mrpt::comms::<a href="#CClientTCPSocket">CClientTCPSocket</a>&gt;</tt></dd></dl>
 
 <dl><dt><a name="CServerTCPSocket-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CServerTCPSocket-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.comms.<a href="#CServerTCPSocket">CServerTCPSocket</a><br>
 &nbsp;<br>

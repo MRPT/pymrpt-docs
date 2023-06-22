@@ -83,28 +83,14 @@ Generate&nbsp;a&nbsp;uniformly&nbsp;distributed&nbsp;pseudo-random&nbsp;number&n
 &nbsp;algorithm,&nbsp;in&nbsp;the&nbsp;whole&nbsp;range&nbsp;of&nbsp;32-bit&nbsp;integers.<br>
 &nbsp;&nbsp;See:&nbsp;<a href="http://en.wikipedia.org/wiki/Mersenne_twister">http://en.wikipedia.org/wiki/Mersenne_twister</a>&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniform32bit">drawUniform32bit</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniform32bit">drawUniform32bit</a>()&nbsp;--&gt;&nbsp;uint32_t</tt></dd></dl>
 
 <dl><dt><a name="CRandomGenerator-drawUniform64bit"><strong>drawUniform64bit</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawUniform64bit">drawUniform64bit</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
 Returns&nbsp;a&nbsp;uniformly&nbsp;distributed&nbsp;pseudo-random&nbsp;number&nbsp;by&nbsp;joining&nbsp;two<br>
 &nbsp;32bit&nbsp;numbers&nbsp;from&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniform64bit">drawUniform64bit</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
-
-<dl><dt><a name="CRandomGenerator-drawUniformUnsignedInt"><strong>drawUniformUnsignedInt</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(*args,&nbsp;**kwargs)<br>
-Overloaded&nbsp;function.<br>
-&nbsp;<br>
-1.&nbsp;<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;ret_number:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-You&nbsp;can&nbsp;call&nbsp;this&nbsp;overloaded&nbsp;method&nbsp;with&nbsp;either&nbsp;32&nbsp;or&nbsp;64bit&nbsp;unsigned<br>
-&nbsp;ints&nbsp;for&nbsp;the&nbsp;sake&nbsp;of&nbsp;general&nbsp;coding.&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(unsigned&nbsp;int&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(self:&nbsp;mrpt.pymrpt.mrpt.random.<a href="#CRandomGenerator">CRandomGenerator</a>,&nbsp;ret_number:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniformUnsignedInt">drawUniformUnsignedInt</a>(unsigned&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::random::<a href="#CRandomGenerator">CRandomGenerator</a>::<a href="#CRandomGenerator-drawUniform64bit">drawUniform64bit</a>()&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CRandomGenerator-randomize"><strong>randomize</strong></a>(...)</dt><dd><tt><a href="#CRandomGenerator-randomize">randomize</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -204,6 +190,6 @@ C++:&nbsp;mrpt::random::<a href="#-getRandomGenerator">getRandomGenerator</a>()&
 A&nbsp;random&nbsp;number&nbsp;generator&nbsp;for&nbsp;usage&nbsp;in&nbsp;STL&nbsp;algorithms&nbsp;expecting&nbsp;a&nbsp;function<br>
 &nbsp;like&nbsp;this&nbsp;(eg,&nbsp;random_shuffle):<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::random::<a href="#-random_generator_for_STL">random_generator_for_STL</a>(long)&nbsp;--&gt;&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::random::<a href="#-random_generator_for_STL">random_generator_for_STL</a>(ptrdiff_t)&nbsp;--&gt;&nbsp;ptrdiff_t</tt></dd></dl>
 </td></tr></table>
 </body></html>

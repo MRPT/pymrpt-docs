@@ -88,17 +88,17 @@ Discard&nbsp;saving&nbsp;(current)&nbsp;changes&nbsp;to&nbsp;physical&nbsp;file&
 &nbsp;<br>
 C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-discardSavingChanges">discardSavingChanges</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFile-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFile-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Returs&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;keys&nbsp;into&nbsp;a&nbsp;section.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFile-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFile-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>,&nbsp;sections:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;section&nbsp;names.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFile">CConfigFile</a>::<a href="#CConfigFile-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CConfigFile-getAssociatedFile"><strong>getAssociatedFile</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-getAssociatedFile">getAssociatedFile</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFile">CConfigFile</a>)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
@@ -227,7 +227,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 2.&nbsp;<a href="#CConfigFile-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFile-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;uint64_t,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CConfigFile-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFile-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -315,17 +315,17 @@ Empties&nbsp;the&nbsp;"config&nbsp;file"&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFileBase-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFileBase-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Returs&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;keys&nbsp;into&nbsp;a&nbsp;section&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFileBase-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFileBase-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;sections:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;section&nbsp;names.&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CConfigFileBase-getContentAsYAML"><strong>getContentAsYAML</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-getContentAsYAML">getContentAsYAML</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>)&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
@@ -429,7 +429,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 2.&nbsp;<a href="#CConfigFileBase-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileBase-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;uint64_t,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CConfigFileBase-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFileBase-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -518,7 +518,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 1.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-2.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;stringList:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+2.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;stringList:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 3.&nbsp;<a href="#CConfigFileMemory-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -536,17 +536,17 @@ Empties&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFileMemory-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFileMemory-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Returs&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;keys&nbsp;into&nbsp;a&nbsp;section&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFileMemory-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFileMemory-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;sections:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;section&nbsp;names&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CConfigFileMemory-getContent"><strong>getContent</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-getContent">getContent</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -564,11 +564,11 @@ C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a h
 <dl><dt><a name="CConfigFileMemory-setContent"><strong>setContent</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-setContent">setContent</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
-1.&nbsp;<a href="#CConfigFileMemory-setContent">setContent</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;stringList:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+1.&nbsp;<a href="#CConfigFileMemory-setContent">setContent</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;stringList:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Changes&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;virtual&nbsp;"config&nbsp;file"&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-setContent">setContent</a>(const&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileMemory">CConfigFileMemory</a>::<a href="#CConfigFileMemory-setContent">setContent</a>(const&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void<br>
 &nbsp;<br>
 2.&nbsp;<a href="#CConfigFileMemory-setContent">setContent</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileMemory">CConfigFileMemory</a>,&nbsp;str:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -680,7 +680,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 2.&nbsp;<a href="#CConfigFileMemory-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFileMemory-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;uint64_t,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CConfigFileMemory-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFileMemory-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -792,13 +792,13 @@ C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::
 &nbsp;<br>
 C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-clear">clear</a>()&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFilePrefixer-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFilePrefixer-getAllKeys"><strong>getAllKeys</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getAllKeys">getAllKeys</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;section:&nbsp;str,&nbsp;keys:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getAllKeys">getAllKeys</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CConfigFilePrefixer-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;sections:&nbsp;mrpt.pymrpt.std.vector_std_string)&nbsp;-&gt;&nbsp;None<br>
+<dl><dt><a name="CConfigFilePrefixer-getAllSections"><strong>getAllSections</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getAllSections">getAllSections</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>,&nbsp;sections:&nbsp;List[str])&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string,&nbsp;class&nbsp;std::allocator&lt;std::string&nbsp;&gt;&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>::<a href="#CConfigFilePrefixer-getAllSections">getAllSections</a>(class&nbsp;std::vector&lt;std::string&nbsp;&gt;&nbsp;&amp;)&nbsp;const&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CConfigFilePrefixer-getBoundConfigFileBase"><strong>getBoundConfigFileBase</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-getBoundConfigFileBase">getBoundConfigFileBase</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFilePrefixer">CConfigFilePrefixer</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a><br>
 &nbsp;<br>
@@ -924,7 +924,7 @@ Overloaded&nbsp;function.<br>
 &nbsp;<br>
 2.&nbsp;<a href="#CConfigFilePrefixer-read_uint64_t">read_uint64_t</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section:&nbsp;str,&nbsp;name:&nbsp;str,&nbsp;defaultValue:&nbsp;int,&nbsp;failIfNotFound:&nbsp;bool)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;unsigned&nbsp;long,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::config::<a href="#CConfigFileBase">CConfigFileBase</a>::<a href="#CConfigFilePrefixer-read_uint64_t">read_uint64_t</a>(const&nbsp;std::string&nbsp;&amp;,&nbsp;const&nbsp;std::string&nbsp;&amp;,&nbsp;uint64_t,&nbsp;bool)&nbsp;const&nbsp;--&gt;&nbsp;uint64_t</tt></dd></dl>
 
 <dl><dt><a name="CConfigFilePrefixer-sectionExists"><strong>sectionExists</strong></a>(...)</dt><dd><tt><a href="#CConfigFilePrefixer-sectionExists">sectionExists</a>(self:&nbsp;mrpt.pymrpt.mrpt.config.<a href="#CConfigFileBase">CConfigFileBase</a>,&nbsp;section_name:&nbsp;str)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>

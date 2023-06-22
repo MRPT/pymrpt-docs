@@ -28,7 +28,15 @@
 </font></dt><dd>
 <dl>
 <dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a>
-</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CExceptionEOF">CExceptionEOF</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>
+</font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CExceptionEOF">CExceptionEOF</a>
 </font></dt><dt><font face="helvetica, arial"><a href="mrpt.pymrpt.mrpt.serialization.html#CMessage">CMessage</a>
 </font></dt></dl>
 </dd>
@@ -81,7 +89,7 @@ C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArch
 &nbsp;<br>
 &nbsp;ReadBufferImmediate&nbsp;;&nbsp;Important,&nbsp;see:&nbsp;ReadBufferFixEndianness,<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchive-ReadBuffer">ReadBuffer</a>(void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchive-ReadBuffer">ReadBuffer</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CArchive-ReadObject"><strong>ReadObject</strong></a>(...)</dt><dd><tt><a href="#CArchive-ReadObject">ReadObject</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -137,7 +145,7 @@ Writes&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;to&nbsp;the&nbsp;stream&nbsp;fr
 &nbsp;<br>
 &nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchive-WriteBuffer">WriteBuffer</a>(const&nbsp;void&nbsp;*,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchive-WriteBuffer">WriteBuffer</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CArchive-WriteObject"><strong>WriteObject</strong></a>(...)</dt><dd><tt><a href="#CArchive-WriteObject">WriteObject</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -152,24 +160,23 @@ C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArch
 &nbsp;<br>
 C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchive-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
-<dl><dt><a name="CArchive-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CArchive-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+<dl><dt><a name="CArchive-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CArchive-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchive-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchive-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
 
 <dl><dt><a name="CArchive-__lshift__"><strong>__lshift__</strong></a>(...)</dt><dd><tt><a href="#CArchive-__lshift__">__lshift__</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
 &nbsp;<br>
-1.&nbsp;<a href="#CArchive-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>,&nbsp;:&nbsp;mrpt.pymrpt.std.monostate)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
-&nbsp;<br>
-Requires&nbsp;to&nbsp;serialize&nbsp;variants&nbsp;without&nbsp;a&nbsp;proper&nbsp;value.&nbsp;<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;struct&nbsp;std::monostate&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
-&nbsp;<br>
-2.&nbsp;<a href="#CArchive-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+1.&nbsp;<a href="#CArchive-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
 &nbsp;<br>
 Write&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;to&nbsp;a&nbsp;stream&nbsp;in&nbsp;the&nbsp;binary&nbsp;MRPT&nbsp;format&nbsp;<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
 &nbsp;<br>
-3.&nbsp;<a href="#CArchive-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+2.&nbsp;<a href="#CArchive-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
 &nbsp;<br>
 C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
 
@@ -251,6 +258,870 @@ C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArch
 <hr>
 Static methods inherited from pybind11_builtins.pybind11_object:<br>
 <dl><dt><a name="CArchive-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">class <strong>CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</strong></a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadAs"><strong>ReadAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadAs">ReadAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadAs">ReadAs</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadBuffer"><strong>ReadBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadBuffer">ReadBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;ReadBufferImmediate&nbsp;;&nbsp;Important,&nbsp;see:&nbsp;ReadBufferFixEndianness,<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadBuffer">ReadBuffer</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject"><strong>ReadObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject">ReadObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;its&nbsp;class&nbsp;determined&nbsp;at&nbsp;runtime,&nbsp;and<br>
+&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;the&nbsp;object.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;undefined&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;existingObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;where&nbsp;its&nbsp;class&nbsp;must&nbsp;be&nbsp;the&nbsp;same<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as&nbsp;the&nbsp;supplied&nbsp;object,&nbsp;where&nbsp;the&nbsp;loaded&nbsp;object&nbsp;will&nbsp;be&nbsp;stored&nbsp;in.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;different&nbsp;class&nbsp;found.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-ReadObject">ReadObject</a>(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteAs"><strong>WriteAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteAs">WriteAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteAs">WriteAs</a>(const&nbsp;unsigned&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteBuffer"><strong>WriteBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteBuffer">WriteBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;to&nbsp;the&nbsp;stream&nbsp;from&nbsp;Buffer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Important,&nbsp;see:&nbsp;WriteBufferFixEndianness<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteBuffer">WriteBuffer</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteObject"><strong>WriteObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteObject">WriteObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;an&nbsp;object&nbsp;to&nbsp;the&nbsp;stream.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;s:&nbsp;mrpt.pymrpt.mrpt.io.CFileGZInputStream)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__lshift__"><strong>__lshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__lshift__">__lshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Write&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;to&nbsp;a&nbsp;stream&nbsp;in&nbsp;the&nbsp;binary&nbsp;MRPT&nbsp;format&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__rshift__"><strong>__rshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__rshift__">__rshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;from&nbsp;the&nbsp;stream&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator=(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-getArchiveDescription"><strong>getArchiveDescription</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-getArchiveDescription">getArchiveDescription</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::CArchiveStreamBase&lt;mrpt::io::CFileGZInputStream&gt;::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+If&nbsp;redefined&nbsp;in&nbsp;derived&nbsp;classes,&nbsp;allows&nbsp;finding&nbsp;a&nbsp;human-friendly<br>
+&nbsp;description&nbsp;of&nbsp;the&nbsp;underlying&nbsp;stream&nbsp;(e.g.&nbsp;filename)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-receiveMessage"><strong>receiveMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-receiveMessage">receiveMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Tries&nbsp;to&nbsp;receive&nbsp;a&nbsp;message&nbsp;from&nbsp;the&nbsp;device.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;True&nbsp;if&nbsp;successful,&nbsp;false&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;new&nbsp;data&nbsp;from&nbsp;the<br>
+&nbsp;device&nbsp;(but&nbsp;communications&nbsp;seem&nbsp;to&nbsp;work&nbsp;fine)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;frame&nbsp;format&nbsp;is&nbsp;described&nbsp;in&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-sendMessage">sendMessage</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-receiveMessage">receiveMessage</a>(class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-sendMessage"><strong>sendMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-sendMessage">sendMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;device.<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;only&nbsp;the&nbsp;low&nbsp;byte&nbsp;from&nbsp;the&nbsp;"type"&nbsp;field&nbsp;will&nbsp;be&nbsp;used.<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&lt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&gt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-sendMessage">sendMessage</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZInputStream_t-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">class <strong>CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</strong></a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadAs"><strong>ReadAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadAs">ReadAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadAs">ReadAs</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadBuffer"><strong>ReadBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadBuffer">ReadBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;ReadBufferImmediate&nbsp;;&nbsp;Important,&nbsp;see:&nbsp;ReadBufferFixEndianness,<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadBuffer">ReadBuffer</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject"><strong>ReadObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject">ReadObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;its&nbsp;class&nbsp;determined&nbsp;at&nbsp;runtime,&nbsp;and<br>
+&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;the&nbsp;object.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;undefined&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;existingObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;where&nbsp;its&nbsp;class&nbsp;must&nbsp;be&nbsp;the&nbsp;same<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as&nbsp;the&nbsp;supplied&nbsp;object,&nbsp;where&nbsp;the&nbsp;loaded&nbsp;object&nbsp;will&nbsp;be&nbsp;stored&nbsp;in.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;different&nbsp;class&nbsp;found.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-ReadObject">ReadObject</a>(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteAs"><strong>WriteAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteAs">WriteAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteAs">WriteAs</a>(const&nbsp;unsigned&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteBuffer"><strong>WriteBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteBuffer">WriteBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;to&nbsp;the&nbsp;stream&nbsp;from&nbsp;Buffer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Important,&nbsp;see:&nbsp;WriteBufferFixEndianness<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteBuffer">WriteBuffer</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteObject"><strong>WriteObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteObject">WriteObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;an&nbsp;object&nbsp;to&nbsp;the&nbsp;stream.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;s:&nbsp;mrpt.pymrpt.mrpt.io.CFileGZOutputStream)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__lshift__"><strong>__lshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__lshift__">__lshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Write&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;to&nbsp;a&nbsp;stream&nbsp;in&nbsp;the&nbsp;binary&nbsp;MRPT&nbsp;format&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__rshift__"><strong>__rshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__rshift__">__rshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;from&nbsp;the&nbsp;stream&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator=(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-getArchiveDescription"><strong>getArchiveDescription</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-getArchiveDescription">getArchiveDescription</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::CArchiveStreamBase&lt;mrpt::io::CFileGZOutputStream&gt;::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+If&nbsp;redefined&nbsp;in&nbsp;derived&nbsp;classes,&nbsp;allows&nbsp;finding&nbsp;a&nbsp;human-friendly<br>
+&nbsp;description&nbsp;of&nbsp;the&nbsp;underlying&nbsp;stream&nbsp;(e.g.&nbsp;filename)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-receiveMessage"><strong>receiveMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-receiveMessage">receiveMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Tries&nbsp;to&nbsp;receive&nbsp;a&nbsp;message&nbsp;from&nbsp;the&nbsp;device.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;True&nbsp;if&nbsp;successful,&nbsp;false&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;new&nbsp;data&nbsp;from&nbsp;the<br>
+&nbsp;device&nbsp;(but&nbsp;communications&nbsp;seem&nbsp;to&nbsp;work&nbsp;fine)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;frame&nbsp;format&nbsp;is&nbsp;described&nbsp;in&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-sendMessage">sendMessage</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-receiveMessage">receiveMessage</a>(class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-sendMessage"><strong>sendMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-sendMessage">sendMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;device.<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;only&nbsp;the&nbsp;low&nbsp;byte&nbsp;from&nbsp;the&nbsp;"type"&nbsp;field&nbsp;will&nbsp;be&nbsp;used.<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&lt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&gt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-sendMessage">sendMessage</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t">class <strong>CArchiveStreamBase_mrpt_io_CFileInputStream_t</strong></a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadAs"><strong>ReadAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadAs">ReadAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadAs">ReadAs</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadBuffer"><strong>ReadBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadBuffer">ReadBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;ReadBufferImmediate&nbsp;;&nbsp;Important,&nbsp;see:&nbsp;ReadBufferFixEndianness,<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadBuffer">ReadBuffer</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject"><strong>ReadObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject">ReadObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;its&nbsp;class&nbsp;determined&nbsp;at&nbsp;runtime,&nbsp;and<br>
+&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;the&nbsp;object.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;undefined&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;existingObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;where&nbsp;its&nbsp;class&nbsp;must&nbsp;be&nbsp;the&nbsp;same<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as&nbsp;the&nbsp;supplied&nbsp;object,&nbsp;where&nbsp;the&nbsp;loaded&nbsp;object&nbsp;will&nbsp;be&nbsp;stored&nbsp;in.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;different&nbsp;class&nbsp;found.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-ReadObject">ReadObject</a>(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteAs"><strong>WriteAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteAs">WriteAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteAs">WriteAs</a>(const&nbsp;unsigned&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteBuffer"><strong>WriteBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteBuffer">WriteBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;to&nbsp;the&nbsp;stream&nbsp;from&nbsp;Buffer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Important,&nbsp;see:&nbsp;WriteBufferFixEndianness<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteBuffer">WriteBuffer</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteObject"><strong>WriteObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteObject">WriteObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;an&nbsp;object&nbsp;to&nbsp;the&nbsp;stream.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;s:&nbsp;mrpt.pymrpt.mrpt.io.CFileInputStream)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-__lshift__"><strong>__lshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__lshift__">__lshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Write&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;to&nbsp;a&nbsp;stream&nbsp;in&nbsp;the&nbsp;binary&nbsp;MRPT&nbsp;format&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-__rshift__"><strong>__rshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__rshift__">__rshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;from&nbsp;the&nbsp;stream&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator=(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-getArchiveDescription"><strong>getArchiveDescription</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-getArchiveDescription">getArchiveDescription</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::CArchiveStreamBase&lt;mrpt::io::CFileInputStream&gt;::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+If&nbsp;redefined&nbsp;in&nbsp;derived&nbsp;classes,&nbsp;allows&nbsp;finding&nbsp;a&nbsp;human-friendly<br>
+&nbsp;description&nbsp;of&nbsp;the&nbsp;underlying&nbsp;stream&nbsp;(e.g.&nbsp;filename)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-receiveMessage"><strong>receiveMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-receiveMessage">receiveMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Tries&nbsp;to&nbsp;receive&nbsp;a&nbsp;message&nbsp;from&nbsp;the&nbsp;device.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;True&nbsp;if&nbsp;successful,&nbsp;false&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;new&nbsp;data&nbsp;from&nbsp;the<br>
+&nbsp;device&nbsp;(but&nbsp;communications&nbsp;seem&nbsp;to&nbsp;work&nbsp;fine)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;frame&nbsp;format&nbsp;is&nbsp;described&nbsp;in&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-sendMessage">sendMessage</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-receiveMessage">receiveMessage</a>(class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-sendMessage"><strong>sendMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-sendMessage">sendMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;device.<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;only&nbsp;the&nbsp;low&nbsp;byte&nbsp;from&nbsp;the&nbsp;"type"&nbsp;field&nbsp;will&nbsp;be&nbsp;used.<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&lt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&gt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t-sendMessage">sendMessage</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileInputStream_t-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t">class <strong>CArchiveStreamBase_mrpt_io_CFileOutputStream_t</strong></a>(<a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a></dd>
+<dd><a href="mrpt.pymrpt.mrpt.serialization.html#CArchive">CArchive</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadAs"><strong>ReadAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadAs">ReadAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadAs">ReadAs</a>()&nbsp;--&gt;&nbsp;unsigned&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadBuffer"><strong>ReadBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadBuffer">ReadBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+@{&nbsp;<br>
+&nbsp;<br>
+&nbsp;Reads&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;from&nbsp;the&nbsp;stream&nbsp;into&nbsp;Buffer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error,&nbsp;or&nbsp;if&nbsp;ZERO&nbsp;bytes&nbsp;are&nbsp;read.<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;amound&nbsp;of&nbsp;bytes&nbsp;actually&nbsp;read.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;ReadBufferImmediate&nbsp;;&nbsp;Important,&nbsp;see:&nbsp;ReadBufferFixEndianness,<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadBuffer">ReadBuffer</a>(void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject"><strong>ReadObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject">ReadObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a><br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;its&nbsp;class&nbsp;determined&nbsp;at&nbsp;runtime,&nbsp;and<br>
+&nbsp;returns&nbsp;a&nbsp;smart&nbsp;pointer&nbsp;to&nbsp;the&nbsp;object.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;undefined&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject">ReadObject</a>()&nbsp;--&gt;&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject">ReadObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;existingObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Reads&nbsp;an&nbsp;object&nbsp;from&nbsp;stream,&nbsp;where&nbsp;its&nbsp;class&nbsp;must&nbsp;be&nbsp;the&nbsp;same<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as&nbsp;the&nbsp;supplied&nbsp;object,&nbsp;where&nbsp;the&nbsp;loaded&nbsp;object&nbsp;will&nbsp;be&nbsp;stored&nbsp;in.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;I/O&nbsp;error&nbsp;or&nbsp;different&nbsp;class&nbsp;found.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<a href="#CExceptionEOF">CExceptionEOF</a>&nbsp;On&nbsp;an&nbsp;End-Of-File&nbsp;condition&nbsp;found<br>
+&nbsp;at&nbsp;a&nbsp;correct&nbsp;place:&nbsp;an&nbsp;EOF&nbsp;that&nbsp;abruptly&nbsp;finishes&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;one<br>
+&nbsp;object&nbsp;raises&nbsp;a&nbsp;plain&nbsp;std::exception&nbsp;instead.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-ReadObject">ReadObject</a>(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteAs"><strong>WriteAs</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteAs">WriteAs</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteAs">WriteAs</a>(const&nbsp;unsigned&nbsp;long&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteBuffer"><strong>WriteBuffer</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteBuffer">WriteBuffer</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;Buffer:&nbsp;capsule,&nbsp;Count:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;a&nbsp;block&nbsp;of&nbsp;bytes&nbsp;to&nbsp;the&nbsp;stream&nbsp;from&nbsp;Buffer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;any&nbsp;error<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;Important,&nbsp;see:&nbsp;WriteBufferFixEndianness<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;This&nbsp;method&nbsp;is&nbsp;endianness-dependent.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteBuffer">WriteBuffer</a>(const&nbsp;void&nbsp;*,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteObject"><strong>WriteObject</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteObject">WriteObject</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Writes&nbsp;an&nbsp;object&nbsp;to&nbsp;the&nbsp;stream.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*)&nbsp;--&gt;&nbsp;void<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteObject">WriteObject</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-WriteObject">WriteObject</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;s:&nbsp;mrpt.pymrpt.mrpt.io.CFileOutputStream)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__init__">__init__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;arg0:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>)&nbsp;-&gt;&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__lshift__"><strong>__lshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__lshift__">__lshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Write&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;to&nbsp;a&nbsp;stream&nbsp;in&nbsp;the&nbsp;binary&nbsp;MRPT&nbsp;format&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__lshift__">__lshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&lt;&lt;(const&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__rshift__"><strong>__rshift__</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__rshift__">__rshift__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+Reads&nbsp;a&nbsp;<a href="#CSerializable">CSerializable</a>&nbsp;object&nbsp;from&nbsp;the&nbsp;stream&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__rshift__">__rshift__</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;pObj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator&gt;&gt;(class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-assign"><strong>assign</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-assign">assign</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchive">CArchive</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::operator=(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>&nbsp;&amp;</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-getArchiveDescription"><strong>getArchiveDescription</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-getArchiveDescription">getArchiveDescription</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::CArchiveStreamBase&lt;mrpt::io::CFileOutputStream&gt;::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-getArchiveDescription">getArchiveDescription</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+If&nbsp;redefined&nbsp;in&nbsp;derived&nbsp;classes,&nbsp;allows&nbsp;finding&nbsp;a&nbsp;human-friendly<br>
+&nbsp;description&nbsp;of&nbsp;the&nbsp;underlying&nbsp;stream&nbsp;(e.g.&nbsp;filename)&nbsp;<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-getArchiveDescription">getArchiveDescription</a>()&nbsp;const&nbsp;--&gt;&nbsp;std::string</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-receiveMessage"><strong>receiveMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-receiveMessage">receiveMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Tries&nbsp;to&nbsp;receive&nbsp;a&nbsp;message&nbsp;from&nbsp;the&nbsp;device.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;True&nbsp;if&nbsp;successful,&nbsp;false&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;new&nbsp;data&nbsp;from&nbsp;the<br>
+&nbsp;device&nbsp;(but&nbsp;communications&nbsp;seem&nbsp;to&nbsp;work&nbsp;fine)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;frame&nbsp;format&nbsp;is&nbsp;described&nbsp;in&nbsp;<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-sendMessage">sendMessage</a>()<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-receiveMessage">receiveMessage</a>(class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-sendMessage"><strong>sendMessage</strong></a>(...)</dt><dd><tt><a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-sendMessage">sendMessage</a>(self:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a>,&nbsp;msg:&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;device.<br>
+&nbsp;&nbsp;Note&nbsp;that&nbsp;only&nbsp;the&nbsp;low&nbsp;byte&nbsp;from&nbsp;the&nbsp;"type"&nbsp;field&nbsp;will&nbsp;be&nbsp;used.<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&lt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;For&nbsp;frames&nbsp;of&nbsp;size&nbsp;&gt;&nbsp;255&nbsp;the&nbsp;frame&nbsp;format&nbsp;is&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes&nbsp;in&nbsp;this<br>
+&nbsp;order:<br>
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;communication&nbsp;errors<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#CArchive">CArchive</a>::<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t-sendMessage">sendMessage</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CMessage">CMessage</a>&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="CArchiveStreamBase_mrpt_io_CFileOutputStream_t-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
 </td></tr></table> <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
@@ -445,5 +1316,64 @@ C++:&nbsp;mrpt::rtti::<a href="mrpt.pymrpt.mrpt.rtti.html#CObject">CObject</a>::
 Static methods inherited from pybind11_builtins.pybind11_object:<br>
 <dl><dt><a name="CSerializable-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from pybind11_builtins.pybind11_type</font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
-</td></tr></table></td></tr></table>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-ObjectToOctetVector"><strong>ObjectToOctetVector</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-ObjectToOctetVector">ObjectToOctetVector</a>(o:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>,&nbsp;out_vector:&nbsp;List[int])&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Converts&nbsp;(serializes)&nbsp;an&nbsp;MRPT&nbsp;object&nbsp;into&nbsp;an&nbsp;array&nbsp;of&nbsp;bytes.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;vector&nbsp;which&nbsp;at&nbsp;return&nbsp;will&nbsp;contain&nbsp;the&nbsp;data.&nbsp;Size&nbsp;will<br>
+&nbsp;be&nbsp;set&nbsp;automatically.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;OctetVectorToObject,&nbsp;ObjectToString<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#-ObjectToOctetVector">ObjectToOctetVector</a>(const&nbsp;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&nbsp;*,&nbsp;class&nbsp;std::vector&lt;unsigned&nbsp;char&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-OctetVectorToObject"><strong>OctetVectorToObject</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-OctetVectorToObject">OctetVectorToObject</a>(in_data:&nbsp;List[int],&nbsp;obj:&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CSerializable">CSerializable</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Converts&nbsp;back&nbsp;(de-serializes)&nbsp;a&nbsp;sequence&nbsp;of&nbsp;binary&nbsp;data&nbsp;into&nbsp;a&nbsp;MRPT&nbsp;object,<br>
+&nbsp;without&nbsp;prior&nbsp;information&nbsp;about&nbsp;the&nbsp;object's&nbsp;class.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;serialized&nbsp;input&nbsp;data&nbsp;representing&nbsp;the&nbsp;object.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;newly&nbsp;created&nbsp;object&nbsp;will&nbsp;be&nbsp;stored&nbsp;in&nbsp;this&nbsp;smart&nbsp;pointer.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;None&nbsp;On&nbsp;any&nbsp;internal&nbsp;exception,&nbsp;this&nbsp;function&nbsp;returns&nbsp;a&nbsp;nullptr<br>
+&nbsp;pointer.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;ObjectToOctetVector,&nbsp;StringToObject<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#-OctetVectorToObject">OctetVectorToObject</a>(const&nbsp;class&nbsp;std::vector&lt;unsigned&nbsp;char&gt;&nbsp;&amp;,&nbsp;class&nbsp;std::shared_ptr&lt;class&nbsp;mrpt::serialization::<a href="#CSerializable">CSerializable</a>&gt;&nbsp;&amp;)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+ <dl><dt><a name="-archiveFrom"><strong>archiveFrom</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> method of builtins.PyCapsule instance</font></font></dt><dd><tt><a href="#-archiveFrom">archiveFrom</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#-archiveFrom">archiveFrom</a>(s:&nbsp;mrpt.pymrpt.mrpt.io.CFileGZInputStream)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZInputStream_t">CArchiveStreamBase_mrpt_io_CFileGZInputStream_t</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#-archiveFrom">archiveFrom</a>(class&nbsp;mrpt::io::CFileGZInputStream&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::CArchiveStreamBase&lt;class&nbsp;mrpt::io::CFileGZInputStream&gt;<br>
+&nbsp;<br>
+2.&nbsp;<a href="#-archiveFrom">archiveFrom</a>(s:&nbsp;mrpt.pymrpt.mrpt.io.CFileGZOutputStream)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t">CArchiveStreamBase_mrpt_io_CFileGZOutputStream_t</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#-archiveFrom">archiveFrom</a>(class&nbsp;mrpt::io::CFileGZOutputStream&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::CArchiveStreamBase&lt;class&nbsp;mrpt::io::CFileGZOutputStream&gt;<br>
+&nbsp;<br>
+3.&nbsp;<a href="#-archiveFrom">archiveFrom</a>(s:&nbsp;mrpt.pymrpt.mrpt.io.CFileInputStream)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileInputStream_t">CArchiveStreamBase_mrpt_io_CFileInputStream_t</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#-archiveFrom">archiveFrom</a>(class&nbsp;mrpt::io::CFileInputStream&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::CArchiveStreamBase&lt;class&nbsp;mrpt::io::CFileInputStream&gt;<br>
+&nbsp;<br>
+4.&nbsp;<a href="#-archiveFrom">archiveFrom</a>(s:&nbsp;mrpt.pymrpt.mrpt.io.CFileOutputStream)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.serialization.<a href="#CArchiveStreamBase_mrpt_io_CFileOutputStream_t">CArchiveStreamBase_mrpt_io_CFileOutputStream_t</a><br>
+&nbsp;<br>
+C++:&nbsp;mrpt::serialization::<a href="#-archiveFrom">archiveFrom</a>(class&nbsp;mrpt::io::CFileOutputStream&nbsp;&amp;)&nbsp;--&gt;&nbsp;class&nbsp;mrpt::serialization::CArchiveStreamBase&lt;class&nbsp;mrpt::io::CFileOutputStream&gt;</tt></dd></dl>
+</td></tr></table>
 </body></html>

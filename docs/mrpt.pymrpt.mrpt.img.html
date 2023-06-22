@@ -206,6 +206,51 @@ Draw&nbsp;a&nbsp;mark.<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-drawMark">drawMark</a>(int,&nbsp;int,&nbsp;const&nbsp;struct&nbsp;mrpt::img::<a href="#TColor">TColor</a>,&nbsp;char,&nbsp;int,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
+<dl><dt><a name="CCanvas-ellipseGaussian"><strong>ellipseGaussian</strong></a>(...)</dt><dd><tt><a href="#CCanvas-ellipseGaussian">ellipseGaussian</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CCanvas-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CCanvas-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CCanvas-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CCanvas-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>,&nbsp;width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CCanvas-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>,&nbsp;width:&nbsp;int,&nbsp;nEllipsePoints:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Draws&nbsp;an&nbsp;ellipse&nbsp;representing&nbsp;a&nbsp;given&nbsp;confidence&nbsp;interval&nbsp;of&nbsp;a&nbsp;2D<br>
+&nbsp;Gaussian&nbsp;distribution.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;x&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;center&nbsp;point&nbsp;of&nbsp;the&nbsp;ellipse.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;y&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;center&nbsp;point&nbsp;of&nbsp;the&nbsp;ellipse.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;A&nbsp;2x2&nbsp;covariance&nbsp;matrix.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;How&nbsp;many&nbsp;"sigmas"&nbsp;for&nbsp;the&nbsp;confidence&nbsp;level&nbsp;(i.e.<br>
+&nbsp;2-&gt;95%,&nbsp;3=99.97%,...)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;color&nbsp;of&nbsp;the&nbsp;ellipse<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;desired&nbsp;width&nbsp;of&nbsp;the&nbsp;line&nbsp;(this&nbsp;is&nbsp;IGNORED&nbsp;in&nbsp;this<br>
+&nbsp;virtual&nbsp;class)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;number&nbsp;of&nbsp;points&nbsp;to&nbsp;generate&nbsp;to&nbsp;approximate<br>
+&nbsp;the&nbsp;ellipse&nbsp;shape.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;an&nbsp;invalid&nbsp;matrix.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-ellipseGaussian">ellipseGaussian</a>(const&nbsp;class&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2,&nbsp;2&gt;&nbsp;&amp;,&nbsp;const&nbsp;double,&nbsp;const&nbsp;double,&nbsp;double,&nbsp;const&nbsp;struct&nbsp;mrpt::img::<a href="#TColor">TColor</a>&nbsp;&amp;,&nbsp;unsigned&nbsp;int,&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
 <dl><dt><a name="CCanvas-filledRectangle"><strong>filledRectangle</strong></a>(...)</dt><dd><tt><a href="#CCanvas-filledRectangle">filledRectangle</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;x0:&nbsp;int,&nbsp;y0:&nbsp;int,&nbsp;x1:&nbsp;int,&nbsp;y1:&nbsp;int,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
 Draws&nbsp;a&nbsp;filled&nbsp;rectangle.<br>
@@ -236,13 +281,13 @@ C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-filledRec
 &nbsp;<br>
 Returns&nbsp;the&nbsp;height&nbsp;of&nbsp;the&nbsp;image&nbsp;in&nbsp;pixels<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-getHeight">getHeight</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-getHeight">getHeight</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CCanvas-getWidth"><strong>getWidth</strong></a>(...)</dt><dd><tt><a href="#CCanvas-getWidth">getWidth</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
 Returns&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;image&nbsp;in&nbsp;pixels<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-getWidth">getWidth</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-getWidth">getWidth</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CCanvas-line"><strong>line</strong></a>(...)</dt><dd><tt><a href="#CCanvas-line">line</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -355,7 +400,7 @@ Changes&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;pixel&nbsp;(x,y).<br>
 &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-setPixel">setPixel</a>(int,&nbsp;int,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CCanvas-setPixel">setPixel</a>(int,&nbsp;int,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CCanvas-textOut"><strong>textOut</strong></a>(...)</dt><dd><tt><a href="#CCanvas-textOut">textOut</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;x0:&nbsp;int,&nbsp;y0:&nbsp;int,&nbsp;str:&nbsp;str,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1031,7 +1076,7 @@ C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getExternalS
 Returns&nbsp;the&nbsp;height&nbsp;of&nbsp;the&nbsp;image&nbsp;in&nbsp;pixels&nbsp;<br>
 &nbsp;getSize&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getHeight">getHeight</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getHeight">getHeight</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CImage-getMaxAsFloat"><strong>getMaxAsFloat</strong></a>(...)</dt><dd><tt><a href="#CImage-getMaxAsFloat">getMaxAsFloat</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CImage">CImage</a>)&nbsp;-&gt;&nbsp;float<br>
 &nbsp;<br>
@@ -1056,7 +1101,7 @@ Returns&nbsp;the&nbsp;row&nbsp;stride&nbsp;of&nbsp;the&nbsp;image:&nbsp;this&nbs
 &nbsp;<br>
 &nbsp;getSize,&nbsp;as,&nbsp;ptr,&nbsp;ptrLine&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getRowStride">getRowStride</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getRowStride">getRowStride</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CImage-getSize"><strong>getSize</strong></a>(...)</dt><dd><tt><a href="#CImage-getSize">getSize</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -1080,7 +1125,7 @@ C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getSize">get
 Returns&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;image&nbsp;in&nbsp;pixels&nbsp;<br>
 &nbsp;getSize&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getWidth">getWidth</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getWidth">getWidth</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CImage-grayscale"><strong>grayscale</strong></a>(...)</dt><dd><tt><a href="#CImage-grayscale">grayscale</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -1287,7 +1332,7 @@ Changes&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;image,&nbsp;erasing&nbsp;previo
 &nbsp;<br>
 &nbsp;scaleImage<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-resize">resize</a>(unsigned&nbsp;long,&nbsp;unsigned&nbsp;long,&nbsp;enum&nbsp;mrpt::img::<a href="#TImageChannels">TImageChannels</a>,&nbsp;enum&nbsp;mrpt::img::<a href="#PixelDepth">PixelDepth</a>)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-resize">resize</a>(std::size_t,&nbsp;std::size_t,&nbsp;enum&nbsp;mrpt::img::<a href="#TImageChannels">TImageChannels</a>,&nbsp;enum&nbsp;mrpt::img::<a href="#PixelDepth">PixelDepth</a>)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CImage-rotateImage"><strong>rotateImage</strong></a>(...)</dt><dd><tt><a href="#CImage-rotateImage">rotateImage</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -1427,7 +1472,7 @@ By&nbsp;using&nbsp;this&nbsp;method&nbsp;the&nbsp;image&nbsp;is&nbsp;marked&nbsp
 &nbsp;&nbsp;&nbsp;An&nbsp;image&nbsp;becomes&nbsp;of&nbsp;type&nbsp;"external&nbsp;storage"&nbsp;only&nbsp;through&nbsp;calling<br>
 &nbsp;setExternalStorage.&nbsp;This&nbsp;property&nbsp;remains&nbsp;after&nbsp;serializing&nbsp;the&nbsp;object.<br>
 &nbsp;&nbsp;&nbsp;File&nbsp;names&nbsp;can&nbsp;be&nbsp;absolute,&nbsp;or&nbsp;relative&nbsp;to&nbsp;the<br>
-&nbsp;<a href="#CImage">CImage</a>::<a href="#CImage-getImagesPathBase">getImagesPathBase</a>()&nbsp;directory.&nbsp;Filenames&nbsp;staring&nbsp;with&nbsp;"X:"&nbsp;or<br>
+&nbsp;<a href="#CImage">CImage</a>::<a href="#CImage-getImagesPathBase">getImagesPathBase</a>()&nbsp;directory.&nbsp;Filenames&nbsp;staring&nbsp;with&nbsp;"X:\"&nbsp;or<br>
 &nbsp;"/"<br>
 &nbsp;are&nbsp;considered&nbsp;absolute&nbsp;paths.<br>
 &nbsp;&nbsp;&nbsp;By&nbsp;calling&nbsp;this&nbsp;method&nbsp;the&nbsp;current&nbsp;contents&nbsp;of&nbsp;the&nbsp;image&nbsp;are&nbsp;NOT&nbsp;saved<br>
@@ -1465,7 +1510,7 @@ Changes&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;pixel&nbsp;(x,y).<br>
 &nbsp;<br>
 &nbsp;at,&nbsp;ptr<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-setPixel">setPixel</a>(int,&nbsp;int,&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-setPixel">setPixel</a>(int,&nbsp;int,&nbsp;size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CImage-swap"><strong>swap</strong></a>(...)</dt><dd><tt><a href="#CImage-swap">swap</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CImage">CImage</a>,&nbsp;o:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CImage">CImage</a>)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -1589,10 +1634,6 @@ C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-SERIALIZATIO
 &nbsp;<br>
 C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-SERIALIZATION_JPEG_QUALITY">SERIALIZATION_JPEG_QUALITY</a>()&nbsp;--&gt;&nbsp;int</tt></dd></dl>
 
-<dl><dt><a name="CImage-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CImage-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_17_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#CImage">CImage</a>::<a href="#CImage-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;17&gt;</tt></dd></dl>
-
 <dl><dt><a name="CImage-getImagesPathBase"><strong>getImagesPathBase</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CImage-getImagesPathBase">getImagesPathBase</a>()&nbsp;-&gt;&nbsp;str<br>
 &nbsp;<br>
 By&nbsp;default,&nbsp;"."&nbsp;&nbsp;<br>
@@ -1662,6 +1703,51 @@ Draw&nbsp;a&nbsp;mark.<br>
 &nbsp;The&nbsp;desired&nbsp;width&nbsp;of&nbsp;the&nbsp;cross&nbsp;(this&nbsp;is&nbsp;IGNORED&nbsp;yet)<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CImage-drawMark">drawMark</a>(int,&nbsp;int,&nbsp;const&nbsp;struct&nbsp;mrpt::img::<a href="#TColor">TColor</a>,&nbsp;char,&nbsp;int,&nbsp;unsigned&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+
+<dl><dt><a name="CImage-ellipseGaussian"><strong>ellipseGaussian</strong></a>(...)</dt><dd><tt><a href="#CImage-ellipseGaussian">ellipseGaussian</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#CImage-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#CImage-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+3.&nbsp;<a href="#CImage-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+4.&nbsp;<a href="#CImage-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>,&nbsp;width:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+5.&nbsp;<a href="#CImage-ellipseGaussian">ellipseGaussian</a>(self:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#CCanvas">CCanvas</a>,&nbsp;cov2D:&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2ul,&nbsp;2ul&gt;,&nbsp;mean_x:&nbsp;float,&nbsp;mean_y:&nbsp;float,&nbsp;confIntervalStds:&nbsp;float,&nbsp;color:&nbsp;mrpt.pymrpt.mrpt.img.<a href="#TColor">TColor</a>,&nbsp;width:&nbsp;int,&nbsp;nEllipsePoints:&nbsp;int)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Draws&nbsp;an&nbsp;ellipse&nbsp;representing&nbsp;a&nbsp;given&nbsp;confidence&nbsp;interval&nbsp;of&nbsp;a&nbsp;2D<br>
+&nbsp;Gaussian&nbsp;distribution.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;x&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;center&nbsp;point&nbsp;of&nbsp;the&nbsp;ellipse.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;y&nbsp;coordinate&nbsp;of&nbsp;the&nbsp;center&nbsp;point&nbsp;of&nbsp;the&nbsp;ellipse.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;A&nbsp;2x2&nbsp;covariance&nbsp;matrix.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;How&nbsp;many&nbsp;"sigmas"&nbsp;for&nbsp;the&nbsp;confidence&nbsp;level&nbsp;(i.e.<br>
+&nbsp;2-&gt;95%,&nbsp;3=99.97%,...)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;color&nbsp;of&nbsp;the&nbsp;ellipse<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;desired&nbsp;width&nbsp;of&nbsp;the&nbsp;line&nbsp;(this&nbsp;is&nbsp;IGNORED&nbsp;in&nbsp;this<br>
+&nbsp;virtual&nbsp;class)<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;The&nbsp;number&nbsp;of&nbsp;points&nbsp;to&nbsp;generate&nbsp;to&nbsp;approximate<br>
+&nbsp;the&nbsp;ellipse&nbsp;shape.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;std::exception&nbsp;On&nbsp;an&nbsp;invalid&nbsp;matrix.<br>
+&nbsp;<br>
+C++:&nbsp;mrpt::img::<a href="#CCanvas">CCanvas</a>::<a href="#CImage-ellipseGaussian">ellipseGaussian</a>(const&nbsp;class&nbsp;mrpt::math::CMatrixFixed&lt;double,&nbsp;2,&nbsp;2&gt;&nbsp;&amp;,&nbsp;const&nbsp;double,&nbsp;const&nbsp;double,&nbsp;double,&nbsp;const&nbsp;struct&nbsp;mrpt::img::<a href="#TColor">TColor</a>&nbsp;&amp;,&nbsp;unsigned&nbsp;int,&nbsp;int)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CImage-rectangle"><strong>rectangle</strong></a>(...)</dt><dd><tt><a href="#CImage-rectangle">rectangle</a>(*args,&nbsp;**kwargs)<br>
 Overloaded&nbsp;function.<br>
@@ -2265,10 +2351,6 @@ C++:&nbsp;mrpt::img::<a href="#TCamera">TCamera</a>::<a href="#TCamera-FromYAML"
 <dl><dt><a name="TCamera-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TCamera-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::img::<a href="#TCamera">TCamera</a>::<a href="#TCamera-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="TCamera-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TCamera-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_18_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#TCamera">TCamera</a>::<a href="#TCamera-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;18&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -2890,10 +2972,6 @@ C++:&nbsp;mrpt::img::<a href="#TStereoCamera">TStereoCamera</a>::<a href="#TSter
 <dl><dt><a name="TStereoCamera-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TStereoCamera-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::img::<a href="#TStereoCamera">TStereoCamera</a>::<a href="#TStereoCamera-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="TStereoCamera-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#TStereoCamera-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_24_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::img::<a href="#TStereoCamera">TStereoCamera</a>::<a href="#TStereoCamera-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;24&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>

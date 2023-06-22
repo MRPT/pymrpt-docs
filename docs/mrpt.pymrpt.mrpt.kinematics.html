@@ -121,13 +121,13 @@ C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a h
 &nbsp;<br>
 Get&nbsp;a&nbsp;ref&nbsp;to&nbsp;a&nbsp;given&nbsp;link&nbsp;(read-only)&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getLink">getLink</a>(const&nbsp;unsigned&nbsp;long)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::kinematics::<a href="#TKinematicLink">TKinematicLink</a>&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getLink">getLink</a>(size_t)&nbsp;const&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::kinematics::<a href="#TKinematicLink">TKinematicLink</a>&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CKinematicChain-getLinkRef"><strong>getLinkRef</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-getLinkRef">getLinkRef</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;idx:&nbsp;int)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#TKinematicLink">TKinematicLink</a><br>
 &nbsp;<br>
 Get&nbsp;a&nbsp;ref&nbsp;to&nbsp;a&nbsp;given&nbsp;link&nbsp;(read-write)&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getLinkRef">getLinkRef</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::kinematics::<a href="#TKinematicLink">TKinematicLink</a>&nbsp;&amp;</tt></dd></dl>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getLinkRef">getLinkRef</a>(size_t)&nbsp;--&gt;&nbsp;struct&nbsp;mrpt::kinematics::<a href="#TKinematicLink">TKinematicLink</a>&nbsp;&amp;</tt></dd></dl>
 
 <dl><dt><a name="CKinematicChain-getOriginPose"><strong>getOriginPose</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-getOriginPose">getOriginPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>)&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D<br>
 &nbsp;<br>
@@ -139,7 +139,7 @@ C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a h
 &nbsp;<br>
 Removes&nbsp;one&nbsp;link&nbsp;from&nbsp;the&nbsp;kinematic&nbsp;chain&nbsp;(0&lt;=idx&lt;N)&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-removeLink">removeLink</a>(const&nbsp;unsigned&nbsp;long)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-removeLink">removeLink</a>(size_t)&nbsp;--&gt;&nbsp;void</tt></dd></dl>
 
 <dl><dt><a name="CKinematicChain-setOriginPose"><strong>setOriginPose</strong></a>(...)</dt><dd><tt><a href="#CKinematicChain-setOriginPose">setOriginPose</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CKinematicChain">CKinematicChain</a>,&nbsp;new_pose:&nbsp;mrpt.pymrpt.mrpt.poses.CPose3D)&nbsp;-&gt;&nbsp;None<br>
 &nbsp;<br>
@@ -152,7 +152,7 @@ C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a h
 &nbsp;<br>
 Return&nbsp;the&nbsp;number&nbsp;of&nbsp;links&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-size">size</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <hr>
 Static methods defined here:<br>
@@ -163,10 +163,6 @@ C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a h
 <dl><dt><a name="CKinematicChain-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CKinematicChain-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CKinematicChain-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CKinematicChain-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_33_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CKinematicChain">CKinematicChain</a>::<a href="#CKinematicChain-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;33&gt;</tt></dd></dl>
 
 <hr>
 Methods inherited from <a href="mrpt.pymrpt.mrpt.rtti.html#CObject">mrpt.pymrpt.mrpt.rtti.CObject</a>:<br>
@@ -781,7 +777,7 @@ C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a hre
 &nbsp;<br>
 Get&nbsp;number&nbsp;of&nbsp;components&nbsp;in&nbsp;each&nbsp;velocity&nbsp;command&nbsp;<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd">CVehicleVelCmd</a>::<a href="#CVehicleVelCmd-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CVehicleVelCmd-isStopCmd"><strong>isStopCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd-isStopCmd">isStopCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd">CVehicleVelCmd</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -899,7 +895,7 @@ C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_
 
 <dl><dt><a name="CVehicleVelCmd_DiffDriven-getVelCmdLength"><strong>getVelCmdLength</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-getVelCmdLength">getVelCmdLength</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CVehicleVelCmd_DiffDriven-isStopCmd"><strong>isStopCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-isStopCmd">isStopCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -922,10 +918,6 @@ C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_
 <dl><dt><a name="CVehicleVelCmd_DiffDriven-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CVehicleVelCmd_DiffDriven-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_DiffDriven-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_43_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_DiffDriven">CVehicleVelCmd_DiffDriven</a>::<a href="#CVehicleVelCmd_DiffDriven-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;43&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -1018,7 +1010,7 @@ C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</
 
 <dl><dt><a name="CVehicleVelCmd_Holo-getVelCmdLength"><strong>getVelCmdLength</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-getVelCmdLength">getVelCmdLength</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;int<br>
 &nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;unsigned&nbsp;long</tt></dd></dl>
+C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-getVelCmdLength">getVelCmdLength</a>()&nbsp;const&nbsp;--&gt;&nbsp;size_t</tt></dd></dl>
 
 <dl><dt><a name="CVehicleVelCmd_Holo-isStopCmd"><strong>isStopCmd</strong></a>(...)</dt><dd><tt><a href="#CVehicleVelCmd_Holo-isStopCmd">isStopCmd</a>(self:&nbsp;mrpt.pymrpt.mrpt.kinematics.<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>)&nbsp;-&gt;&nbsp;bool<br>
 &nbsp;<br>
@@ -1041,10 +1033,6 @@ C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</
 <dl><dt><a name="CVehicleVelCmd_Holo-GetRuntimeClassIdStatic"><strong>GetRuntimeClassIdStatic</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_Holo-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.rtti.TRuntimeClassId<br>
 &nbsp;<br>
 C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-GetRuntimeClassIdStatic">GetRuntimeClassIdStatic</a>()&nbsp;--&gt;&nbsp;const&nbsp;struct&nbsp;mrpt::rtti::TRuntimeClassId&nbsp;&amp;</tt></dd></dl>
-
-<dl><dt><a name="CVehicleVelCmd_Holo-getClassName"><strong>getClassName</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from builtins.PyCapsule</font></font></dt><dd><tt><a href="#CVehicleVelCmd_Holo-getClassName">getClassName</a>()&nbsp;-&gt;&nbsp;mrpt.pymrpt.mrpt.typemeta.string_literal_37_t<br>
-&nbsp;<br>
-C++:&nbsp;mrpt::kinematics::<a href="#CVehicleVelCmd_Holo">CVehicleVelCmd_Holo</a>::<a href="#CVehicleVelCmd_Holo-getClassName">getClassName</a>()&nbsp;--&gt;&nbsp;class&nbsp;mrpt::typemeta::string_literal&lt;37&gt;</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
